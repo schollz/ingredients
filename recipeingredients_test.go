@@ -2,6 +2,7 @@ package recipeingredients
 
 import (
 	"fmt"
+	"io/ioutil"
 	"os"
 	"path/filepath"
 	"strings"
@@ -52,6 +53,7 @@ func ExampleRecipe1() {
 }
 
 func TestParseRecipes(t *testing.T) {
+	log.SetLevel("info")
 	urls := []string{}
 	err := filepath.Walk("testing/sites", func(path string, f os.FileInfo, err error) error {
 		if !f.IsDir() {
@@ -63,13 +65,19 @@ func TestParseRecipes(t *testing.T) {
 		panic(err)
 	}
 	for _, urlToTest := range urls {
+		log.Info(urlToTest)
 		pathToFile := "testing/sites/" + urlToTest
+		pathToFileIngredients := "testing/sites.ingredients/" + strings.Replace(urlToTest, "/", "-", -1)
 		log.Infof("working on %s", pathToFile)
 		r, err := NewFromFile(pathToFile)
 		assert.Nil(t, err)
 		err = r.Parse()
 		assert.Nil(t, err)
-		fmt.Println(urlToTest)
-		fmt.Println(r.IngredientList())
+		b, err := ioutil.ReadFile(pathToFileIngredients)
+		if err != nil {
+			b = []byte(fmt.Sprintf("%s", r.IngredientList()))
+			ioutil.WriteFile(pathToFileIngredients, b, 0644)
+		}
+		assert.Equal(t, fmt.Sprintf("%s", r.IngredientList()), string(b))
 	}
 }
