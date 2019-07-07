@@ -1,4 +1,4 @@
-package extractrecipe
+package recipeingredients
 
 import (
 	"errors"

@@ -1,4 +1,4 @@
-package extractrecipe
+package recipeingredients
 
 // func TestGetIngredientsInString(t *testing.T) {
 // 	fmt.Println(strings.Index("1/2 cup chocolate chips (melted", "chocolate chips"))

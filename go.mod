@@ -1,4 +1,4 @@
-module github.com/schollz/extractrecipe
+module github.com/schollz/recipeingredients
 
 go 1.12
 
