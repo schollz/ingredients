@@ -215,6 +215,7 @@ func getWordPositions(s string, corpus []string) (wordPositions []WordPosition) 
 	for _, ing := range corpus {
 		pos := strings.Index(s, ing)
 		if pos > -1 {
+			log.Debug(ing)
 			s = strings.Replace(s, ing, strings.Repeat(" ", utf8.RuneCountInString(ing)), 1)
 			ing = strings.TrimSpace(ing)
 			wordPositions = append(wordPositions, WordPosition{ing, pos})
