@@ -37,7 +37,6 @@ func ExampleRecipe1() {
 	r, _ := NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
 	r.Parse()
 	fmt.Println(r.PrintIngredientList())
-	fmt.Println(r)
 	// Output:
 	// 1 cup butter
 	// 1 cup white sugar
@@ -48,7 +47,8 @@ func ExampleRecipe1() {
 	// 1 tsp baking soda
 	// 1/2 tsp baking powder
 	// 1 tsp salt
-	// 2 cups chocolate
+	// 2 cups chocolate chips
+
 }
 
 func TestParseRecipes(t *testing.T) {

@@ -109,24 +109,28 @@ func main() {
 			continue
 		}
 		ingredientSizes[ing] = len(ing)
+		ingredientSizes[ing+"s"] = len(ing) + 1
 	}
 	for _, ing := range fruitList {
 		if len(ing) == 0 {
 			continue
 		}
 		ingredientSizes[ing] = len(ing)
+		ingredientSizes[ing+"s"] = len(ing) + 1
 	}
 	for _, ing := range herbList {
 		if len(ing) == 0 {
 			continue
 		}
 		ingredientSizes[ing] = len(ing)
+		ingredientSizes[ing+"s"] = len(ing) + 1
 	}
 	for _, ing := range vegetableList {
 		if len(ing) == 0 {
 			continue
 		}
 		ingredientSizes[ing] = len(ing)
+		ingredientSizes[ing+"s"] = len(ing) + 1
 	}
 
 	pl = make(pairList, len(ingredientSizes))
@@ -142,12 +146,9 @@ func main() {
 		return pl[i].Value > pl[j].Value
 	})
 
-	corpusIngredients = make([]string, len(pl)*2)
+	corpusIngredients = make([]string, len(pl))
 	for i, p := range pl {
 		corpusIngredients[i] = " " + strings.TrimSpace(p.Key) + " "
-	}
-	for i, p := range pl {
-		corpusIngredients[i+len(pl)] = " " + strings.TrimSpace(p.Key) + "s "
 	}
 	f.WriteString(`var corpusIngredients = []string{"` + strings.Join(corpusIngredients, `"`+",\n"+`"`) + `"}` + "\n")
 	f.Sync()
