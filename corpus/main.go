@@ -142,9 +142,12 @@ func main() {
 		return pl[i].Value > pl[j].Value
 	})
 
-	corpusIngredients = make([]string, len(pl))
+	corpusIngredients = make([]string, len(pl)*2)
 	for i, p := range pl {
 		corpusIngredients[i] = " " + strings.TrimSpace(p.Key) + " "
+	}
+	for i, p := range pl {
+		corpusIngredients[i+len(pl)] = " " + strings.TrimSpace(p.Key) + "s "
 	}
 	f.WriteString(`var corpusIngredients = []string{"` + strings.Join(corpusIngredients, `"`+",\n"+`"`) + `"}` + "\n")
 	f.Sync()
