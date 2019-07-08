@@ -31,6 +31,23 @@ func BenchmarkParse(b *testing.B) {
 // 	}
 // }
 
+func ExampleBananaBread1() {
+	log.SetLevel("info")
+	r, _ := NewFromURL("https://thesaltymarshmallow.com/best-banana-bread-recipe/")
+	r.Parse()
+	fmt.Println(r.PrintIngredientList())
+	// Output:
+	// 1 whole butter
+	// 3 whole bananas
+	// 2 whole eggs
+	// 1 teaspoon vanilla
+	// 2 cups flour
+	// 1 cup granulated sugar
+	// 1 teaspoon baking soda
+	// 1/2 teaspoon salt
+	// 1/2 teaspoon cinnamon
+}
+
 func ExampleChocolateChip1() {
 	log.SetLevel("info")
 	r, _ := NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
@@ -47,7 +64,6 @@ func ExampleChocolateChip1() {
 	// 1/2 tsp baking powder
 	// 1 tsp salt
 	// 2 cups chocolate chips
-
 }
 
 func ExampleChocolateChip2() {
