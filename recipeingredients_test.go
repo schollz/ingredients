@@ -7,6 +7,7 @@ import (
 	"testing"
 
 	log "github.com/schollz/logger"
+	"github.com/stretchr/testify/assert"
 )
 
 func BenchmarkParse(b *testing.B) {
@@ -96,6 +97,39 @@ func ExampleChocolateChip2() {
 	// 3 cups flour (all purpose)
 	// 2 cups chocolate chips (semisweet)
 	// 1 cup walnuts (chopped)
+}
+
+type URLIngredients struct {
+	URL         string
+	Ingredients string
+}
+
+func TestTableChocolateChipCookies(t *testing.T) {
+	log.SetLevel("info")
+	ts := []URLIngredients{
+		{"https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies", `1 1/4 tsp kosher salt (morton)
+3/4 tsp baking soda
+3/4 cup butter (unsalted)
+1 cup brown sugar (dark)
+1/4 cup granulated sugar
+1 whole egg
+2 whole egg yolks
+2 tsp vanilla
+6 oz chocolate chips (coarsely chopped or semisweet)`},
+	}
+	for _, t0 := range ts {
+		fileToGet := t0.URL
+		fileToGet = strings.TrimPrefix(fileToGet, "https://")
+		if string(fileToGet[len(fileToGet)-1]) == "/" {
+			fileToGet += "index.html"
+		}
+		fileToGet = path.Join("testing", "sites", fileToGet)
+		r, err := NewFromFile(fileToGet)
+		assert.Nil(t, err)
+		err = r.Parse()
+		assert.Nil(t, err)
+		assert.Equal(t, t0.Ingredients, strings.TrimSpace(fmt.Sprint(r.IngredientList())))
+	}
 }
 
 func ExampleChocolateChip3() {
