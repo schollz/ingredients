@@ -154,6 +154,9 @@ func (r *Recipe) Parse() (rerr error) {
 		line = SanitizeLine(line)
 		lineInfos[i].Line = line
 		lineInfos[i].IngredientsInString = GetIngredientsInString(line)
+		if len(lineInfos[i].IngredientsInString) ==2 && len(lineInfos[i].IngredientsInString[1].Word) > len(lineInfos[i].IngredientsInString[0].Word) {
+			lineInfos[i].IngredientsInString[0] = lineInfos[i].IngredientsInString[1]
+		}
 		lineInfos[i].AmountInString = GetNumbersInString(line)
 		lineInfos[i].MeasureInString = GetMeasuresInString(line)
 
@@ -201,7 +204,7 @@ func (r *Recipe) Parse() (rerr error) {
 	scores = scores[:i+1]
 	lineInfos = lineInfos[:i+1]
 
-	// debugging purposes
+	// //debugging purposes
 	// lines = make([]string, len(lineInfos))
 	// for i, li := range lineInfos {
 	// 	lines[i] = li.Line
@@ -257,6 +260,8 @@ func (r *Recipe) Parse() (rerr error) {
 		)
 		if err != nil {
 			log.Debugf("[%s]: %s", lineInfo.LineOriginal, err.Error())
+		} else {
+			log.Debugf("[%s]: %+v", lineInfo.LineOriginal, lineInfo)
 		}
 
 		r.Lines = append(r.Lines, lineInfo)

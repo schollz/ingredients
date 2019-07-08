@@ -173,3 +173,34 @@ func ExampleChocolateChip5() {
 	// 3/4 teaspoon salt
 	// 2 1/2 cups chocolate chips
 }
+
+func ExampleChocolateChip6() {
+	log.SetLevel("info")
+	urlToParse := "https://laurenslatest.com/actually-perfect-chocolate-chip-cookies/"
+	fileToGet := urlToParse
+	fileToGet = strings.TrimPrefix(fileToGet, "https://")
+	if string(fileToGet[len(fileToGet)-1]) == "/" {
+		fileToGet += "index.html"
+	}
+	fileToGet = path.Join("testing", "sites", fileToGet)
+	r, err := NewFromFile(fileToGet)
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = r.Parse()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(r.IngredientList())
+	// Output:
+	// 3/4 cup butter
+	// 1 cup brown sugar (packed)
+	// 1/2 cup granulated sugar
+	// 1 whole egg yolk
+	// 2 teaspoons vanilla
+	// 2 cups flour (all purpose)
+	// 1/2 teaspoon baking soda
+	// 1/2 teaspoon salt
+	// 1 cup chocolate chips (semi sweet)
+	// 1 cup chocolate chips (milk)
+}

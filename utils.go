@@ -210,6 +210,7 @@ type WordPosition struct {
 	Position int
 }
 
+
 func getWordPositions(s string, corpus []string) (wordPositions []WordPosition) {
 	wordPositions = []WordPosition{}
 	for _, ing := range corpus {
