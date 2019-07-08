@@ -107,7 +107,9 @@ type URLIngredients struct {
 func TestTableChocolateChipCookies(t *testing.T) {
 	log.SetLevel("info")
 	ts := []URLIngredients{
-		{"https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies", `1 1/4 tsp kosher salt (morton)
+		{
+			"https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies",
+			`1 1/4 tsp kosher salt (morton)
 3/4 tsp baking soda
 3/4 cup butter (unsalted)
 1 cup brown sugar (dark)
@@ -115,7 +117,8 @@ func TestTableChocolateChipCookies(t *testing.T) {
 1 whole egg
 2 whole egg yolks
 2 tsp vanilla
-6 oz chocolate chips (coarsely chopped or semisweet)`},
+6 oz chocolate chips (coarsely chopped or semisweet)`,
+		},
 	}
 	for _, t0 := range ts {
 		fileToGet := t0.URL
