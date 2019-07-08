@@ -85,7 +85,6 @@ func ExampleChocolateChip2() {
 func ExampleChocolateChip3() {
 	log.SetLevel("info")
 	urlToParse := "https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies"
-	log.Info(urlToParse)
 	fileToGet := urlToParse
 	fileToGet = strings.TrimPrefix(fileToGet, "https://")
 	if string(fileToGet[len(fileToGet)-1]) == "/" {
@@ -111,5 +110,66 @@ func ExampleChocolateChip3() {
 	// 2 whole egg yolks
 	// 2 tsp vanilla
 	// 6 oz chocolate chips (coarsely chopped or semisweet)
+}
 
+func ExampleChocolateChip4() {
+	log.SetLevel("info")
+	urlToParse := "https://pinchofyum.com/the-best-soft-chocolate-chip-cookies"
+	fileToGet := urlToParse
+	fileToGet = strings.TrimPrefix(fileToGet, "https://")
+	if string(fileToGet[len(fileToGet)-1]) == "/" {
+		fileToGet += "index.html"
+	}
+	fileToGet = path.Join("testing", "sites", fileToGet)
+	r, err := NewFromFile(fileToGet)
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = r.Parse()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(r.IngredientList())
+	// Output:
+	// 8 tablespoon butter (s of salted)
+	// 1/2 cup white sugar
+	// 1/4 cup brown sugar (packed light)
+	// 1 teaspoon vanilla
+	// 1 whole egg
+	// 1 1/2 cup flour (s all purpose)
+	// 1/2 teaspoon baking soda
+	// 1/4 teaspoon salt
+	// 3/4 cup chocolate chips
+
+}
+
+func ExampleChocolateChip5() {
+	log.SetLevel("info")
+	urlToParse := "https://www.modernhoney.com/the-best-chocolate-chip-cookies/"
+	fileToGet := urlToParse
+	fileToGet = strings.TrimPrefix(fileToGet, "https://")
+	if string(fileToGet[len(fileToGet)-1]) == "/" {
+		fileToGet += "index.html"
+	}
+	fileToGet = path.Join("testing", "sites", fileToGet)
+	r, err := NewFromFile(fileToGet)
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = r.Parse()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(r.IngredientList())
+	// Output:
+	// 1 cup butter (cold)
+	// 1 cup brown sugar
+	// 1/2 cup sugar (2 tablespoons)
+	// 2 whole eggs
+	// 2 teaspoons vanilla
+	// 2 3/4 cups flour
+	// 1 teaspoon cornstarch
+	// 3/4 teaspoon baking soda
+	// 3/4 teaspoon salt
+	// 2 1/2 cups chocolate chips
 }
