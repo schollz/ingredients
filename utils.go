@@ -215,11 +215,9 @@ func getWordPositions(s string, corpus []string) (wordPositions []WordPosition) 
 	for _, ing := range corpus {
 		pos := strings.Index(s, ing)
 		if pos > -1 {
-			log.Debug(ing)
 			s = strings.Replace(s, ing, strings.Repeat(" ", utf8.RuneCountInString(ing)), 1)
 			ing = strings.TrimSpace(ing)
 			wordPositions = append(wordPositions, WordPosition{ing, pos})
-			// fmt.Println(s)
 		}
 	}
 	sort.Slice(wordPositions, func(i, j int) bool {
@@ -261,7 +259,7 @@ func SanitizeLine(s string) string {
 
 	// replace unicode fractions with fractions
 	for v := range corpusFractionNumberMap {
-		s = strings.Replace(s, v, corpusFractionNumberMap[v].fractionString, -1)
+		s = strings.Replace(s, v, " "+corpusFractionNumberMap[v].fractionString+" ", -1)
 	}
 
 	// remove non-alphanumeric
@@ -270,12 +268,10 @@ func SanitizeLine(s string) string {
 
 	// replace fractions with unicode fractions
 	for v := range corpusFractionNumberMap {
-		s = strings.Replace(s, corpusFractionNumberMap[v].fractionString, v, -1)
+		s = strings.Replace(s, corpusFractionNumberMap[v].fractionString, " "+v+" ", -1)
 	}
 
 	s = strings.Replace(s, " one ", " 1 ", -1)
-	s = strings.Replace(s, " egg ", " eggs ", -1)
-	s = strings.Replace(s, " apples ", " apple ", -1)
 
 	return s
 }

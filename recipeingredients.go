@@ -195,7 +195,7 @@ func (r *Recipe) Parse() (rerr error) {
 		if score == 1 {
 			score = 0.0
 		}
-		// log.Debugf("'%s' (%d)", line, score)
+		// log.Debugf("'%s' (%2.1f)", line, score)
 		scores[i] = score
 	}
 	scores = scores[:i+1]

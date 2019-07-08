@@ -2,14 +2,11 @@ package recipeingredients
 
 import (
 	"fmt"
-	"io/ioutil"
-	"os"
-	"path/filepath"
+	"path"
 	"strings"
 	"testing"
 
 	log "github.com/schollz/logger"
-	"github.com/stretchr/testify/assert"
 )
 
 func BenchmarkParse(b *testing.B) {
@@ -34,7 +31,8 @@ func BenchmarkParse(b *testing.B) {
 // 	}
 // }
 
-func ExampleRecipe1() {
+func ExampleChocolateChip1() {
+	log.SetLevel("info")
 	r, _ := NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
 	r.Parse()
 	fmt.Println(r.PrintIngredientList())
@@ -52,32 +50,66 @@ func ExampleRecipe1() {
 
 }
 
-func TestParseRecipes(t *testing.T) {
+func ExampleChocolateChip2() {
 	log.SetLevel("info")
-	urls := []string{}
-	err := filepath.Walk("testing/sites", func(path string, f os.FileInfo, err error) error {
-		if !f.IsDir() {
-			urls = append(urls, strings.TrimLeft(path, "testing/sites/"))
-		}
-		return nil
-	})
+	urlToParse := "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/"
+	fileToGet := urlToParse
+	fileToGet = strings.TrimPrefix(fileToGet, "https://")
+	if string(fileToGet[len(fileToGet)-1]) == "/" {
+		fileToGet += "index.html"
+	}
+	fileToGet = path.Join("testing", "sites", fileToGet)
+	r, err := NewFromFile(fileToGet)
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
 	}
-	for _, urlToTest := range urls {
-		log.Info(urlToTest)
-		pathToFile := "testing/sites/" + urlToTest
-		pathToFileIngredients := "testing/sites.ingredients/" + strings.Replace(urlToTest, "/", "-", -1)
-		log.Infof("working on %s", pathToFile)
-		r, err := NewFromFile(pathToFile)
-		assert.Nil(t, err)
-		err = r.Parse()
-		assert.Nil(t, err)
-		b, err := ioutil.ReadFile(pathToFileIngredients)
-		if err != nil {
-			b = []byte(fmt.Sprintf("%s", r.IngredientList()))
-			ioutil.WriteFile(pathToFileIngredients, b, 0644)
-		}
-		assert.Equal(t, fmt.Sprintf("%s", r.IngredientList()), string(b))
+	err = r.Parse()
+	if err != nil {
+		fmt.Println(err)
 	}
+	fmt.Println(r.IngredientList())
+	// Output:
+	// 	1 cup butter
+	// 1 cup white sugar
+	// 1 cup brown sugar (packed)
+	// 2 whole eggs
+	// 2 teaspoons vanilla
+	// 1 teaspoon baking soda
+	// 2 teaspoons water (hot)
+	// 1/2 teaspoon salt
+	// 3 cups flour (all purpose)
+	// 2 cups chocolate chips (semisweet)
+	// 1 cup walnuts (chopped)
+}
+
+func ExampleChocolateChip3() {
+	log.SetLevel("info")
+	urlToParse := "https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies"
+	log.Info(urlToParse)
+	fileToGet := urlToParse
+	fileToGet = strings.TrimPrefix(fileToGet, "https://")
+	if string(fileToGet[len(fileToGet)-1]) == "/" {
+		fileToGet += "index.html"
+	}
+	fileToGet = path.Join("testing", "sites", fileToGet)
+	r, err := NewFromFile(fileToGet)
+	if err != nil {
+		fmt.Println(err)
+	}
+	err = r.Parse()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(r.IngredientList())
+	// Output:
+	// 1 1/4 tsp kosher salt (morton)
+	// 3/4 tsp baking soda
+	// 3/4 cup butter (unsalted)
+	// 1 cup brown sugar (dark)
+	// 1/4 cup granulated sugar
+	// 1 whole egg
+	// 2 whole egg yolks
+	// 2 tsp vanilla
+	// 6 oz chocolate chips (coarsely chopped or semisweet)
+
 }
