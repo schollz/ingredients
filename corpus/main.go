@@ -105,6 +105,7 @@ func main() {
 	corpusIngredients := strings.Split(string(b), "\n")
 	ingredientSizes := make(map[string]int)
 	for _, ing := range corpusIngredients {
+		ing = strings.TrimSpace(ing)
 		if len(ing) == 0 {
 			continue
 		}
@@ -112,6 +113,7 @@ func main() {
 		ingredientSizes[ing+"s"] = len(ing) + 1
 	}
 	for _, ing := range fruitList {
+		ing = strings.TrimSpace(ing)
 		if len(ing) == 0 {
 			continue
 		}
@@ -119,6 +121,7 @@ func main() {
 		ingredientSizes[ing+"s"] = len(ing) + 1
 	}
 	for _, ing := range herbList {
+		ing = strings.TrimSpace(ing)
 		if len(ing) == 0 {
 			continue
 		}
@@ -126,6 +129,7 @@ func main() {
 		ingredientSizes[ing+"s"] = len(ing) + 1
 	}
 	for _, ing := range vegetableList {
+		ing = strings.TrimSpace(ing)
 		if len(ing) == 0 {
 			continue
 		}

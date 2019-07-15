@@ -346,1770 +346,1761 @@ var vegetableMap = map[string]struct{}{
 	"zucchini":            {},
 }
 
-var corpusIngredients = []string{" can cream of chicken soups ",
-	" nonhydrogenated margarines ",
+var corpusIngredients = []string{" can cream of chicken soups ",
+	" nonhydrogenated margarines ",
 	" can cream of chicken soup ",
 	" nonhydrogenated margarine ",
-	" pomegranate concentrates ",
-	" cream of mushroom soups ",
+	" pomegranate concentrates ",
+	" cream of mushroom soups ",
 	" pomegranate concentrate ",
-	" cocktail pumpernickels ",
+	" cocktail pumpernickels ",
 	" cream of mushroom soup ",
-	" graham cracker crumbss ",
-	" miniature marshmallows ",
-	" raspberry vinaigrettes ",
-	" salt and black peppers ",
-	" balsamic vinaigrettes ",
-	" blueberry blackberrys ",
-	" butterscotch puddings ",
-	" chanterelle mushrooms ",
+	" graham cracker crumbss ",
+	" miniature marshmallows ",
+	" raspberry vinaigrettes ",
+	" salt and black peppers ",
+	" balsamic vinaigrettes ",
+	" blueberry blackberrys ",
+	" butterscotch puddings ",
+	" chanterelle mushrooms ",
 	" cocktail pumpernickel ",
-	" decaffeinated coffees ",
+	" decaffeinated coffees ",
 	" graham cracker crumbs ",
-	" heavy whipping creams ",
-	" jagermeister liqueurs ",
-	" meringue buttercreams ",
+	" heavy whipping creams ",
+	" jagermeister liqueurs ",
+	" limnophila aromaticas ",
+	" meringue buttercreams ",
 	" miniature marshmallow ",
-	" monosodium glutamates ",
-	" raspberry blackberrys ",
+	" monosodium glutamates ",
+	" raspberry blackberrys ",
 	" raspberry vinaigrette ",
 	" salt and black pepper ",
-	" tamarind concentrates ",
-	" vegetable shortenings ",
-	" vinaigrette dressings ",
-	" worcestershire sauces ",
-	" apple cider vinegars ",
-	" assorted decorations ",
+	" tamarind concentrates ",
+	" vegetable shortenings ",
+	" vietnamese corianders ",
+	" vinaigrette dressings ",
+	" worcestershire sauces ",
+	" apple cider vinegars ",
+	" assorted decorations ",
 	" balsamic vinaigrette ",
-	" benedictine liqueurs ",
+	" benedictine liqueurs ",
 	" blueberry blackberry ",
 	" butterscotch pudding ",
 	" chanterelle mushroom ",
-	" chipotle mayonnaises ",
-	" confectioners sugars ",
-	" crystallized gingers ",
-	" cultured buttermilks ",
+	" chipotle mayonnaises ",
+	" confectioners sugars ",
+	" crystallized gingers ",
+	" cultured buttermilks ",
 	" decaffeinated coffee ",
-	" elderflower cordials ",
-	" elderflower liqueurs ",
-	" guanciale pancettums ",
+	" elderflower cordials ",
+	" elderflower liqueurs ",
+	" guanciale pancettums ",
 	" heavy whipping cream ",
-	" hellmann mayonnaises ",
+	" hellmann mayonnaises ",
 	" jagermeister liqueur ",
-	" jerusalem artichokes ",
-	" limeade concentrates ",
-	" limnophila aromaticas ",
-	" marinated artichokes ",
+	" jerusalem artichokes ",
+	" limeade concentrates ",
+	" limnophila aromatica ",
+	" marinated artichokes ",
 	" meringue buttercream ",
 	" monosodium glutamate ",
-	" orange flower waters ",
-	" parmigiano reggianos ",
-	" pepperoncini peppers ",
-	" portabella mushrooms ",
-	" portobello mushrooms ",
+	" new zealand spinachs ",
+	" orange flower waters ",
+	" parmigiano reggianos ",
+	" pepperoncini peppers ",
+	" portabella mushrooms ",
+	" portobello mushrooms ",
 	" raspberry blackberry ",
-	" shallot vinaigrettes ",
-	" sweetened cranberrys ",
-	" szechuan peppercorns ",
+	" shallot vinaigrettes ",
+	" sweetened cranberrys ",
+	" szechuan peppercorns ",
 	" tamarind concentrate ",
 	" vegetable shortening ",
-	" vietnamese corianders ",
+	" vietnamese coriander ",
 	" vinaigrette dressing ",
 	" worcestershire sauce ",
-	" amontillado sherrys ",
-	" appenzeller cheeses ",
+	" amontillado sherrys ",
+	" appenzeller cheeses ",
 	" apple cider vinegar ",
 	" assorted decoration ",
-	" assorted vegetables ",
-	" balsamic reductions ",
+	" assorted vegetables ",
+	" balsamic reductions ",
 	" benedictine liqueur ",
-	" bucatini spaghettis ",
-	" buffalo mozzarellas ",
-	" buttermilk biscuits ",
-	" butterscotch sauces ",
-	" cabernet sauvignons ",
-	" californium walnuts ",
-	" chartreuse liqueurs ",
-	" cheesecake fillings ",
-	" chicken tenderloins ",
-	" chilled buttermilks ",
+	" bolivian corianders ",
+	" bucatini spaghettis ",
+	" buffalo mozzarellas ",
+	" buttermilk biscuits ",
+	" butterscotch sauces ",
+	" cabernet sauvignons ",
+	" californium walnuts ",
+	" chartreuse liqueurs ",
+	" cheesecake fillings ",
+	" chicken tenderloins ",
+	" chilled buttermilks ",
 	" chipotle mayonnaise ",
-	" chocolate frostings ",
-	" clementine segments ",
+	" chocolate frostings ",
+	" clementine segments ",
 	" confectioners sugar ",
-	" corkscrew macaronis ",
-	" crystalized gingers ",
+	" corkscrew macaronis ",
+	" crystalized gingers ",
 	" crystallized ginger ",
 	" cultured buttermilk ",
-	" desiccated coconuts ",
+	" desiccated coconuts ",
 	" elderflower cordial ",
 	" elderflower liqueur ",
+	" grains of paradises ",
 	" guanciale pancettum ",
 	" hellmann mayonnaise ",
+	" houttuynia cordatas ",
 	" jerusalem artichoke ",
-	" jerusalem artichokes ",
 	" limeade concentrate ",
-	" limnophila aromatica ",
-	" limoncello liqueurs ",
-	" luxardo maraschinos ",
-	" maraschino liqueurs ",
+	" limoncello liqueurs ",
+	" luxardo maraschinos ",
+	" maraschino liqueurs ",
 	" marinated artichoke ",
-	" nasturtium blossoms ",
-	" new zealand spinachs ",
+	" nasturtium blossoms ",
+	" new zealand spinach ",
 	" orange flower water ",
 	" parmigiano reggiano ",
-	" peppermint schnapps ",
+	" peppermint schnapps ",
 	" pepperoncini pepper ",
 	" portabella mushroom ",
 	" portobello mushroom ",
-	" portuguese sausages ",
-	" precooked polentums ",
-	" pumpernickel breads ",
-	" quality mayonnaises ",
-	" romanesco broccolis ",
-	" rotisserie chickens ",
+	" portuguese sausages ",
+	" precooked polentums ",
+	" pumpernickel breads ",
+	" quality mayonnaises ",
+	" romanesco broccolis ",
+	" rotisserie chickens ",
 	" shallot vinaigrette ",
-	" shichimi togarashis ",
-	" sichuan peppercorns ",
-	" sourdough baguettes ",
-	" spaghetti linguines ",
-	" spinach fettuccines ",
-	" strawberry gelatins ",
+	" shichimi togarashis ",
+	" sichuan peppercorns ",
+	" sourdough baguettes ",
+	" spaghetti linguines ",
+	" spinach fettuccines ",
+	" strawberry gelatins ",
 	" sweetened cranberry ",
 	" szechuan peppercorn ",
-	" vegetable bouillons ",
-	" vegetarian sausages ",
-	" venison tenderloins ",
-	" vietnamese coriander ",
-	" white wine vinegars ",
-	" yellowtail snappers ",
+	" vegetable bouillons ",
+	" vegetarian sausages ",
+	" venison tenderloins ",
+	" white wine vinegars ",
+	" yellowtail snappers ",
 	" amontillado sherry ",
-	" andouille sausages ",
+	" andouille sausages ",
 	" appenzeller cheese ",
-	" apple concentrates ",
-	" assorted mushrooms ",
+	" apple concentrates ",
+	" assorted mushrooms ",
 	" assorted vegetable ",
 	" balsamic reduction ",
-	" barbecued chickens ",
-	" black peppercornss ",
-	" blackberry brandys ",
-	" blanched hazelnuts ",
-	" bolivian corianders ",
-	" breakfast sausages ",
-	" broccoli flowerets ",
+	" barbecued chickens ",
+	" black peppercornss ",
+	" blackberry brandys ",
+	" blanched hazelnuts ",
+	" bolivian coriander ",
+	" breakfast sausages ",
+	" broccoli flowerets ",
 	" bucatini spaghetti ",
 	" buffalo mozzarella ",
 	" buttermilk biscuit ",
-	" butterscotch chips ",
+	" butterscotch chips ",
 	" butterscotch sauce ",
 	" cabernet sauvignon ",
 	" californium walnut ",
-	" candy thermometers ",
-	" caramelized onions ",
-	" cellophane noodles ",
-	" champagne vinegars ",
+	" candy thermometers ",
+	" caramelized onions ",
+	" cellophane noodles ",
+	" champagne vinegars ",
 	" chartreuse liqueur ",
-	" cheese tortellinis ",
+	" cheese tortellinis ",
 	" cheesecake filling ",
 	" chicken tenderloin ",
 	" chilled buttermilk ",
-	" chilled champagnes ",
-	" chimichurri sauces ",
-	" chinkiang vinegars ",
-	" chocolate biscuits ",
+	" chilled champagnes ",
+	" chimichurri sauces ",
+	" chinkiang vinegars ",
+	" chocolate biscuits ",
 	" chocolate frosting ",
-	" chocolate liqueurs ",
-	" chocolate puddings ",
-	" chocolate shavings ",
-	" chocolate soymilks ",
-	" chunky applesauces ",
+	" chocolate liqueurs ",
+	" chocolate puddings ",
+	" chocolate shavings ",
+	" chocolate soymilks ",
+	" chunky applesauces ",
 	" clementine segment ",
-	" cointreau liqueurs ",
+	" cointreau liqueurs ",
 	" corkscrew macaroni ",
-	" cornstarch sifteds ",
-	" cranberry liqueurs ",
-	" cream of mushrooms ",
-	" crisco shortenings ",
+	" cornstarch sifteds ",
+	" cranberry liqueurs ",
+	" cream of mushrooms ",
+	" crisco shortenings ",
 	" crystalized ginger ",
-	" cultivated mussels ",
+	" cultivated mussels ",
 	" desiccated coconut ",
-	" digestive biscuits ",
-	" dijon vinaigrettes ",
-	" emmentaler cheeses ",
-	" european cucumbers ",
-	" fingerling potatos ",
-	" flatbread crackers ",
-	" framboise liqueurs ",
-	" gingerbread spices ",
-	" gingersnap cookies ",
-	" gorgonzola cheeses ",
-	" grains of paradises ",
-	" granular fructoses ",
-	" granulated garlics ",
-	" green bell peppers ",
-	" hardwood charcoals ",
-	" horseradish sauces ",
-	" hothouse cucumbers ",
-	" houttuynia cordatas ",
-	" hulled strawberrys ",
-	" hungarian paprikas ",
-	" imitation vanillas ",
-	" italian seasonings ",
-	" japanese cucumbers ",
-	" japanese eggplants ",
-	" jerusalem artichoke ",
-	" juice concentrates ",
-	" kefalotyri cheeses ",
-	" kewpie mayonnaises ",
-	" lebanese cucumbers ",
-	" lemon vinaigrettes ",
+	" digestive biscuits ",
+	" dijon vinaigrettes ",
+	" east asian peppers ",
+	" emmentaler cheeses ",
+	" european cucumbers ",
+	" fingerling potatos ",
+	" flatbread crackers ",
+	" framboise liqueurs ",
+	" gingerbread spices ",
+	" gingersnap cookies ",
+	" gorgonzola cheeses ",
+	" grains of paradise ",
+	" granular fructoses ",
+	" granulated garlics ",
+	" green bell peppers ",
+	" hardwood charcoals ",
+	" horseradish sauces ",
+	" hothouse cucumbers ",
+	" houttuynia cordata ",
+	" hulled strawberrys ",
+	" hungarian paprikas ",
+	" imitation vanillas ",
+	" italian seasonings ",
+	" japanese cucumbers ",
+	" japanese eggplants ",
+	" juice concentrates ",
+	" kefalotyri cheeses ",
+	" kewpie mayonnaises ",
+	" lebanese cucumbers ",
+	" lemon vinaigrettes ",
 	" limoncello liqueur ",
-	" lowfat buttermilks ",
-	" lowfat mayonnaises ",
+	" lowfat buttermilks ",
+	" lowfat mayonnaises ",
 	" luxardo maraschino ",
-	" malaguetum peppers ",
-	" manzanilla sherrys ",
-	" maraschino cherrys ",
+	" malaguetum peppers ",
+	" manzanilla sherrys ",
+	" maraschino cherrys ",
 	" maraschino liqueur ",
-	" marshmallow creams ",
-	" marshmallow cremes ",
-	" marshmallow fluffs ",
-	" mascarpone cheeses ",
-	" mccormick paprikas ",
-	" mexican chocolates ",
-	" mozzarella cheeses ",
+	" marshmallow creams ",
+	" marshmallow cremes ",
+	" marshmallow fluffs ",
+	" mascarpone cheeses ",
+	" mccormick paprikas ",
+	" mexican chocolates ",
+	" mozzarella cheeses ",
 	" nasturtium blossom ",
-	" neufchatel cheeses ",
-	" new zealand spinach ",
-	" nonfat buttermilks ",
-	" nonfat mayonnaises ",
-	" parmesan pecorinos ",
-	" peekytoe crabmeats ",
+	" neufchatel cheeses ",
+	" nonfat buttermilks ",
+	" nonfat mayonnaises ",
+	" parmesan pecorinos ",
+	" peekytoe crabmeats ",
 	" peppermint schnapp ",
-	" pickled vegetables ",
-	" pickling cucumbers ",
-	" pomegranate juices ",
-	" pomegranate syrups ",
-	" porterhouse steaks ",
+	" pickled vegetables ",
+	" pickling cucumbers ",
+	" pomegranate juices ",
+	" pomegranate syrups ",
+	" porterhouse steaks ",
 	" portuguese sausage ",
 	" precooked polentum ",
 	" pumpernickel bread ",
-	" pumpkin pie spices ",
+	" pumpkin pie spices ",
+	" purple mangosteens ",
 	" quality mayonnaise ",
-	" raspberry liqueurs ",
-	" raspberry vinegars ",
-	" red pepper flakess ",
+	" raspberry liqueurs ",
+	" raspberry vinegars ",
+	" red pepper flakess ",
 	" romanesco broccoli ",
 	" rotisserie chicken ",
-	" shaken buttermilks ",
+	" shaken buttermilks ",
 	" shichimi togarashi ",
-	" shiitake mushrooms ",
-	" shoestring potatos ",
-	" shortbread cookies ",
-	" shortcrust pastrys ",
+	" shiitake mushrooms ",
+	" shoestring potatos ",
+	" shortbread cookies ",
+	" shortcrust pastrys ",
 	" sichuan peppercorn ",
-	" slender asparaguss ",
-	" smoked mozzarellas ",
+	" slender asparaguss ",
+	" smoked mozzarellas ",
 	" sourdough baguette ",
-	" sourdough croutons ",
-	" sourdough starters ",
+	" sourdough croutons ",
+	" sourdough starters ",
 	" spaghetti linguine ",
 	" spinach fettuccine ",
 	" strawberry gelatin ",
-	" strawberry yogurts ",
-	" sweetened coconuts ",
-	" turkey tenderloins ",
-	" unblanched almonds ",
-	" vanilla flavorings ",
-	" vanilla ice creams ",
+	" strawberry yogurts ",
+	" sweetened coconuts ",
+	" turkey tenderloins ",
+	" unblanched almonds ",
+	" vanilla flavorings ",
+	" vanilla ice creams ",
 	" vegetable bouillon ",
 	" vegetarian sausage ",
 	" venison tenderloin ",
-	" vermicelli noodles ",
-	" watermelon radishs ",
-	" wheat orecchiettes ",
-	" white horseradishs ",
+	" vermicelli noodles ",
+	" watermelon radishs ",
+	" wheat orecchiettes ",
+	" white horseradishs ",
 	" white wine vinegar ",
-	" whole wheat flours ",
-	" yellow chartreuses ",
+	" whole wheat flours ",
+	" yellow chartreuses ",
 	" yellowtail snapper ",
-	" additional salsas ",
-	" amaretti biscuits ",
-	" amaretto liqueurs ",
-	" amaro montenegros ",
+	" additional salsas ",
+	" alligator peppers ",
+	" amaretti biscuits ",
+	" amaretto liqueurs ",
+	" amaro montenegros ",
 	" andouille sausage ",
 	" apple concentrate ",
-	" artichoke bottoms ",
-	" artichoke heartss ",
-	" assorted fillings ",
+	" artichoke bottoms ",
+	" artichoke heartss ",
+	" assorted fillings ",
 	" assorted mushroom ",
-	" assorted toppings ",
-	" baking chocolates ",
-	" balsamic vinegars ",
+	" assorted toppings ",
+	" baking chocolates ",
+	" balsamic vinegars ",
 	" barbecued chicken ",
-	" beefsteak tomatos ",
-	" berry strawberrys ",
+	" beefsteak tomatos ",
+	" berry strawberrys ",
 	" black peppercorns ",
 	" blackberry brandy ",
-	" blackberry syrups ",
+	" blackberry syrups ",
 	" blanched hazelnut ",
-	" bolivian coriander ",
-	" bottle champagnes ",
-	" breakfast cereals ",
-	" breakfast radishs ",
+	" bottle champagnes ",
+	" brazilian peppers ",
+	" breakfast cereals ",
+	" breakfast radishs ",
 	" breakfast sausage ",
-	" broccoli floretss ",
+	" broccoli floretss ",
 	" broccoli floweret ",
-	" buckwheat noodles ",
-	" butter margarines ",
-	" buttermilk breads ",
-	" butternut squashs ",
+	" buckwheat noodles ",
+	" butter margarines ",
+	" buttermilk breads ",
+	" butternut squashs ",
 	" butterscotch chip ",
-	" camembert cheeses ",
-	" canadian whiskeys ",
+	" camembert cheeses ",
+	" canadian whiskeys ",
 	" candy thermometer ",
 	" caramelized onion ",
-	" carbonated waters ",
+	" carbonated waters ",
 	" cellophane noodle ",
 	" champagne vinegar ",
 	" cheese tortellini ",
-	" cherrystone clams ",
-	" chicken bouillons ",
-	" chicken drumettes ",
-	" chihuahua cheeses ",
+	" cherrystone clams ",
+	" chicken bouillons ",
+	" chicken drumettes ",
+	" chihuahua cheeses ",
 	" chilled champagne ",
-	" chilled proseccos ",
+	" chilled proseccos ",
 	" chimichurri sauce ",
-	" chinese broccolis ",
-	" chinese eggplants ",
+	" chinese broccolis ",
+	" chinese eggplants ",
 	" chinkiang vinegar ",
 	" chocolate biscuit ",
-	" chocolate cookies ",
+	" chocolate cookies ",
 	" chocolate liqueur ",
-	" chocolate morsels ",
-	" chocolate mousses ",
+	" chocolate morsels ",
+	" chocolate mousses ",
 	" chocolate pudding ",
 	" chocolate shaving ",
 	" chocolate soymilk ",
-	" chocolate spreads ",
+	" chocolate spreads ",
 	" chunky applesauce ",
-	" clarified butters ",
-	" clementine juices ",
-	" cocchi americanos ",
-	" cocktail sausages ",
-	" coconut crystalss ",
-	" coconut macaroons ",
+	" clarified butters ",
+	" clementine juices ",
+	" cocchi americanos ",
+	" cocktail sausages ",
+	" coconut crystalss ",
+	" coconut macaroons ",
 	" cointreau liqueur ",
-	" compressed yeasts ",
-	" cornflake cereals ",
-	" cornichon pickles ",
-	" cornish game hens ",
+	" compressed yeasts ",
+	" cornflake cereals ",
+	" cornichon pickles ",
+	" cornish game hens ",
 	" cornstarch sifted ",
 	" cranberry liqueur ",
 	" cream of mushroom ",
-	" cremini mushrooms ",
-	" crimini mushrooms ",
+	" cremini mushrooms ",
+	" crimini mushrooms ",
 	" crisco shortening ",
-	" cubanelle peppers ",
+	" cubanelle peppers ",
 	" cultivated mussel ",
-	" dandelion flowers ",
-	" decorative sugars ",
-	" delicatum squashs ",
+	" dandelion flowers ",
+	" decorative sugars ",
+	" delicatum squashs ",
 	" digestive biscuit ",
-	" dijon mayonnaises ",
+	" dijon mayonnaises ",
 	" dijon vinaigrette ",
-	" dumpling wrappers ",
-	" east asian peppers ",
+	" dumpling wrappers ",
+	" east asian pepper ",
 	" emmentaler cheese ",
-	" empanada wrappers ",
-	" english cucumbers ",
-	" espelette peppers ",
+	" empanada wrappers ",
+	" english cucumbers ",
+	" espelette peppers ",
 	" european cucumber ",
 	" fingerling potato ",
 	" flatbread cracker ",
 	" framboise liqueur ",
-	" german chocolates ",
-	" ginger marmalades ",
+	" german chocolates ",
+	" ginger marmalades ",
 	" gingerbread spice ",
 	" gingersnap cookie ",
 	" gorgonzola cheese ",
-	" gorgonzola dolces ",
-	" grains of paradise ",
+	" gorgonzola dolces ",
 	" granular fructose ",
 	" granulated garlic ",
-	" grapefruit juices ",
+	" grapefruit juices ",
+	" greater galangals ",
 	" green bell pepper ",
-	" green chartreuses ",
-	" green peppercorns ",
+	" green chartreuses ",
+	" green peppercorns ",
 	" hardwood charcoal ",
-	" hazelnut liqueurs ",
-	" homogenized milks ",
-	" honeycrisp apples ",
+	" hazelnut liqueurs ",
+	" homogenized milks ",
+	" honeycrisp apples ",
 	" horseradish sauce ",
-	" hot pepper sauces ",
+	" hot pepper sauces ",
 	" hothouse cucumber ",
-	" houttuynia cordata ",
 	" hulled strawberry ",
 	" hungarian paprika ",
 	" imitation vanilla ",
-	" instant espressos ",
-	" instant polentums ",
-	" italian dressings ",
-	" italian eggplants ",
-	" italian meatballs ",
-	" italian parmesans ",
+	" instant espressos ",
+	" instant polentums ",
+	" italian dressings ",
+	" italian eggplants ",
+	" italian meatballs ",
+	" italian parmesans ",
 	" italian seasoning ",
-	" jalapeno chiliess ",
+	" jalapeno chiliess ",
 	" japanese cucumber ",
 	" japanese eggplant ",
-	" japanese pumpkins ",
-	" jarlsberg cheeses ",
+	" japanese pumpkins ",
+	" jarlsberg cheeses ",
 	" juice concentrate ",
 	" kefalotyri cheese ",
-	" kentucky bourbons ",
+	" kentucky bourbons ",
 	" kewpie mayonnaise ",
-	" kielbasa sausages ",
+	" kielbasa sausages ",
 	" lebanese cucumber ",
 	" lemon vinaigrette ",
-	" linguica sausages ",
+	" linguica sausages ",
 	" lowfat buttermilk ",
-	" lowfat margarines ",
+	" lowfat margarines ",
 	" lowfat mayonnaise ",
-	" maitake mushrooms ",
+	" maitake mushrooms ",
 	" malaguetum pepper ",
 	" manzanilla sherry ",
 	" maraschino cherry ",
 	" marshmallow cream ",
 	" marshmallow creme ",
 	" marshmallow fluff ",
-	" marshmallow peeps ",
+	" marshmallow peeps ",
 	" mascarpone cheese ",
 	" mccormick paprika ",
 	" mexican chocolate ",
-	" mixed peppercorns ",
+	" mixed peppercorns ",
 	" mozzarella cheese ",
-	" multigrain breads ",
-	" mushroom risottos ",
+	" multigrain breads ",
+	" mushroom risottos ",
 	" neufchatel cheese ",
-	" nondairy creamers ",
+	" nondairy creamers ",
 	" nonfat buttermilk ",
 	" nonfat mayonnaise ",
-	" orange marmalades ",
-	" panko breadcrumbs ",
-	" pareve margarines ",
-	" parmesan croutons ",
+	" orange marmalades ",
+	" panko breadcrumbs ",
+	" pareve margarines ",
+	" parmesan croutons ",
 	" parmesan pecorino ",
-	" parsley cilantros ",
-	" pecorino toscanos ",
+	" parsley cilantros ",
+	" pecorino toscanos ",
 	" peekytoe crabmeat ",
-	" pencil asparaguss ",
-	" pickled cucumbers ",
-	" pickled jalapenos ",
+	" pencil asparaguss ",
+	" pickled cucumbers ",
+	" pickled jalapenos ",
 	" pickled vegetable ",
 	" pickling cucumber ",
 	" pomegranate juice ",
-	" pomegranate seeds ",
+	" pomegranate seeds ",
 	" pomegranate syrup ",
-	" porcini mushrooms ",
+	" porcini mushrooms ",
 	" porterhouse steak ",
-	" processed cheeses ",
-	" prosciutto cottos ",
-	" provolone cheeses ",
+	" processed cheeses ",
+	" prosciutto cottos ",
+	" provolone cheeses ",
 	" pumpkin pie spice ",
-	" purple mangosteens ",
+	" purple mangosteen ",
 	" raspberry liqueur ",
-	" raspberry sorbets ",
+	" raspberry sorbets ",
 	" raspberry vinegar ",
 	" red pepper flakes ",
-	" red wine vinegars ",
-	" reposado tequilas ",
-	" roasting chickens ",
-	" roquefort cheeses ",
-	" saffron optionals ",
+	" red wine vinegars ",
+	" reposado tequilas ",
+	" roasting chickens ",
+	" roquefort cheeses ",
+	" saffron optionals ",
 	" shaken buttermilk ",
-	" shaved chocolates ",
+	" shaved chocolates ",
 	" shiitake mushroom ",
-	" shitake mushrooms ",
+	" shitake mushrooms ",
 	" shoestring potato ",
 	" shortbread cookie ",
-	" shortbread crusts ",
+	" shortbread crusts ",
 	" shortcrust pastry ",
-	" skinned hazelnuts ",
+	" skinned hazelnuts ",
 	" slender asparagus ",
-	" smoked bratwursts ",
+	" smoked bratwursts ",
 	" smoked mozzarella ",
-	" smoked whitefishs ",
-	" solid shortenings ",
+	" smoked whitefishs ",
+	" solid shortenings ",
 	" sourdough crouton ",
 	" sourdough starter ",
-	" southern comforts ",
-	" spaghetti noodles ",
-	" spaghetti squashs ",
-	" spanish mackerels ",
-	" spinach linguines ",
-	" spinach tortillas ",
-	" splash grenadines ",
-	" splenda granulars ",
-	" square focacciums ",
-	" strawberry juices ",
-	" strawberry purees ",
-	" strawberry sauces ",
-	" strawberry syrups ",
+	" southern comforts ",
+	" spaghetti noodles ",
+	" spaghetti squashs ",
+	" spanish mackerels ",
+	" spinach linguines ",
+	" spinach tortillas ",
+	" splash grenadines ",
+	" splenda granulars ",
+	" square focacciums ",
+	" strawberry juices ",
+	" strawberry purees ",
+	" strawberry sauces ",
+	" strawberry syrups ",
 	" strawberry yogurt ",
-	" sugar substitutes ",
-	" sunflower sprouts ",
+	" sugar substitutes ",
+	" sunflower sprouts ",
 	" sweetened coconut ",
-	" tarragon parsleys ",
-	" tarragon vinegars ",
-	" tenderloin roasts ",
-	" togarashi peppers ",
-	" turkey pepperonis ",
+	" tarragon parsleys ",
+	" tarragon vinegars ",
+	" tasmanian peppers ",
+	" tenderloin roasts ",
+	" togarashi peppers ",
+	" turkey pepperonis ",
 	" turkey tenderloin ",
 	" unblanched almond ",
-	" unbleached flours ",
-	" unprocessed brans ",
-	" valencium oranges ",
+	" unbleached flours ",
+	" unprocessed brans ",
+	" valencium oranges ",
 	" vanilla flavoring ",
-	" vanilla frostings ",
+	" vanilla frostings ",
 	" vanilla ice cream ",
-	" vegan mayonnaises ",
-	" vegetarian bacons ",
-	" vegetarian chilis ",
-	" velveetum cheeses ",
+	" vegan mayonnaises ",
+	" vegetarian bacons ",
+	" vegetarian chilis ",
+	" velveetum cheeses ",
 	" vermicelli noodle ",
-	" watermelon juices ",
+	" watermelon juices ",
 	" watermelon radish ",
-	" wheat breadcrumbs ",
-	" wheat fettuccines ",
+	" wheat breadcrumbs ",
+	" wheat fettuccines ",
 	" wheat orecchiette ",
-	" white grapefruits ",
+	" white grapefruits ",
 	" white horseradish ",
-	" white peppercorns ",
+	" white peppercorns ",
 	" whole wheat flour ",
-	" wildflower honeys ",
-	" winter vegetables ",
+	" wildflower honeys ",
+	" winter vegetables ",
 	" yellow chartreuse ",
-	" zucchini blossoms ",
+	" zucchini blossoms ",
 	" additional salsa ",
-	" alligator peppers ",
+	" alligator pepper ",
 	" amaretti biscuit ",
-	" amaretti cookies ",
+	" amaretti cookies ",
 	" amaretto liqueur ",
 	" amaro montenegro ",
-	" american cheeses ",
-	" apricot gelatins ",
-	" apricot liqueurs ",
-	" armagnac cognacs ",
-	" arrowroot flours ",
+	" american cheeses ",
+	" apricot gelatins ",
+	" apricot liqueurs ",
+	" armagnac cognacs ",
+	" aromatic gingers ",
+	" arrowroot flours ",
 	" artichoke bottom ",
-	" artichoke hearts ",
 	" artichoke hearts ",
 	" assorted filling ",
 	" assorted topping ",
-	" atlantic salmons ",
-	" bacon pancettums ",
+	" atlantic salmons ",
+	" bacon pancettums ",
 	" baking chocolate ",
 	" balsamic vinegar ",
-	" beef tenderloins ",
+	" beef tenderloins ",
 	" beefsteak tomato ",
 	" berry strawberry ",
-	" black peppercorns ",
+	" black peppercorn ",
 	" blackberry syrup ",
-	" blanched almonds ",
-	" bloody mary mixs ",
-	" blueberry juices ",
+	" blanched almonds ",
+	" bloody mary mixs ",
+	" blueberry juices ",
 	" bottle champagne ",
-	" bourbon whiskeys ",
-	" brazilian peppers ",
+	" bourbon whiskeys ",
+	" brazilian pepper ",
 	" breakfast cereal ",
 	" breakfast radish ",
-	" brewed espressos ",
+	" brewed espressos ",
 	" broccoli florets ",
-	" broiler chickens ",
-	" buckwheat flours ",
-	" buckwheat groats ",
-	" buckwheat honeys ",
+	" broiler chickens ",
+	" brussels sprouts ",
+	" buckwheat flours ",
+	" buckwheat groats ",
+	" buckwheat honeys ",
 	" buckwheat noodle ",
-	" burratum cheeses ",
+	" bunium persicums ",
+	" burratum cheeses ",
 	" butter margarine ",
-	" butter optionals ",
-	" buttered noodles ",
+	" butter optionals ",
+	" buttered noodles ",
 	" buttermilk bread ",
 	" butternut squash ",
-	" butternut squashs ",
-	" buttery crackers ",
-	" button mushrooms ",
-	" cacao chocolates ",
-	" caesar dressings ",
-	" calamatum olives ",
+	" buttery crackers ",
+	" button mushrooms ",
+	" cacao chocolates ",
+	" caesar dressings ",
+	" calamatum olives ",
 	" camembert cheese ",
 	" canadian whiskey ",
-	" cannellini beans ",
-	" caramel toppings ",
+	" cannellini beans ",
+	" caramel toppings ",
 	" carbonated water ",
-	" cerignola olives ",
-	" challah brioches ",
-	" champagne grapes ",
-	" champagne yeasts ",
-	" charentai melons ",
-	" cherry tomatoess ",
+	" cerignola olives ",
+	" challah brioches ",
+	" champagne grapes ",
+	" champagne yeasts ",
+	" charentai melons ",
+	" cherry tomatoess ",
 	" cherrystone clam ",
-	" chervil parsleys ",
+	" chervil parsleys ",
 	" chicken bouillon ",
-	" chicken breastss ",
-	" chicken carcasss ",
+	" chicken breastss ",
+	" chicken carcasss ",
 	" chicken drumette ",
-	" chicken gizzards ",
-	" chicken sausages ",
-	" chickpea rinseds ",
-	" chicory lettuces ",
+	" chicken gizzards ",
+	" chicken sausages ",
+	" chickpea rinseds ",
+	" chicory lettuces ",
 	" chihuahua cheese ",
 	" chilled prosecco ",
-	" chilled seltzers ",
+	" chilled seltzers ",
 	" chinese broccoli ",
-	" chinese cabbages ",
+	" chinese cabbages ",
 	" chinese eggplant ",
-	" chinese mustards ",
-	" chinese sausages ",
-	" chipotle peppers ",
+	" chinese mustards ",
+	" chinese sausages ",
+	" chipotle peppers ",
 	" chocolate cookie ",
-	" chocolate crusts ",
+	" chocolate crusts ",
 	" chocolate morsel ",
 	" chocolate mousse ",
-	" chocolate sauces ",
+	" chocolate sauces ",
 	" chocolate spread ",
-	" chocolate syrups ",
-	" chocolate wafers ",
-	" chorizo sausages ",
-	" ciabattum breads ",
-	" cilantro leavess ",
-	" cipolline onions ",
-	" cipollini onions ",
+	" chocolate syrups ",
+	" chocolate wafers ",
+	" chorizo sausages ",
+	" ciabattum breads ",
+	" cilantro leavess ",
+	" cipolline onions ",
+	" cipollini onions ",
 	" clarified butter ",
 	" clementine juice ",
 	" cocchi americano ",
-	" cocktail peanuts ",
+	" cocktail peanuts ",
 	" cocktail sausage ",
 	" coconut crystals ",
 	" coconut macaroon ",
-	" coconut shavings ",
-	" coconut vinegars ",
-	" common mushrooms ",
+	" coconut shavings ",
+	" coconut vinegars ",
+	" common mushrooms ",
 	" compressed yeast ",
-	" cornbread crumbs ",
+	" cornbread crumbs ",
 	" cornflake cereal ",
-	" cornflake crumbs ",
+	" cornflake crumbs ",
 	" cornichon pickle ",
 	" cornish game hen ",
-	" country sausages ",
-	" cranberry jellys ",
-	" cranberry juices ",
-	" cranberry sauces ",
-	" cranberry vodkas ",
-	" cream of tartars ",
+	" country sausages ",
+	" cranberry jellys ",
+	" cranberry juices ",
+	" cranberry sauces ",
+	" cranberry vodkas ",
+	" cream of tartars ",
 	" cremini mushroom ",
 	" crimini mushroom ",
-	" croissant doughs ",
-	" crusty baguettes ",
+	" croissant doughs ",
+	" crusty baguettes ",
 	" cubanelle pepper ",
-	" cultured butters ",
+	" cultured butters ",
 	" dandelion flower ",
-	" dandelion greens ",
+	" dandelion greens ",
 	" decorative sugar ",
 	" delicatum squash ",
-	" desired toppings ",
+	" desired toppings ",
 	" dijon mayonnaise ",
 	" dumpling wrapper ",
-	" east asian pepper ",
-	" elephant garlics ",
-	" emmental cheeses ",
+	" elephant garlics ",
+	" emmental cheeses ",
 	" empanada wrapper ",
-	" enchilada sauces ",
+	" enchilada sauces ",
 	" english cucumber ",
-	" english mustards ",
+	" english mustards ",
 	" espelette pepper ",
-	" espresso coffees ",
-	" evaporated milks ",
-	" florida avocados ",
-	" flour tortillass ",
-	" focaccium breads ",
-	" focaccium doughs ",
-	" freestone peachs ",
-	" french baguettes ",
-	" gelatin desserts ",
+	" espresso coffees ",
+	" evaporated milks ",
+	" florida avocados ",
+	" flour tortillass ",
+	" focaccium breads ",
+	" focaccium doughs ",
+	" freestone peachs ",
+	" french baguettes ",
+	" gelatin desserts ",
 	" german chocolate ",
 	" ginger marmalade ",
-	" globe artichokes ",
-	" golden flaxseeds ",
+	" globe artichokes ",
+	" golden flaxseeds ",
 	" gorgonzola dolce ",
-	" graham crackerss ",
+	" graham crackerss ",
+	" grains of selims ",
 	" grapefruit juice ",
-	" grapefruit peels ",
-	" greater galangals ",
-	" green asparaguss ",
+	" grapefruit peels ",
+	" greater galangal ",
+	" green asparaguss ",
 	" green chartreuse ",
-	" green corianders ",
+	" green corianders ",
 	" green peppercorn ",
-	" green peppercorns ",
-	" grenadine syrups ",
-	" habanero peppers ",
-	" halloumi cheeses ",
-	" hazelnut butters ",
+	" grenadine syrups ",
+	" habanero peppers ",
+	" halloumi cheeses ",
+	" hazelnut butters ",
 	" hazelnut liqueur ",
-	" hazelnut spreads ",
-	" hefeweizen beers ",
+	" hazelnut spreads ",
+	" hefeweizen beers ",
+	" herbs and spices ",
 	" homogenized milk ",
 	" honeycrisp apple ",
 	" hot pepper sauce ",
-	" iceberg lettuces ",
-	" iceburg lettuces ",
-	" instant couscous ",
+	" iceberg lettuces ",
+	" iceburg lettuces ",
+	" indian bay leafs ",
+	" instant couscous ",
 	" instant espresso ",
 	" instant polentum ",
-	" instant tapiocas ",
-	" israeli couscous ",
+	" instant tapiocas ",
+	" israeli couscous ",
 	" italian dressing ",
 	" italian eggplant ",
-	" italian fontinas ",
+	" italian fontinas ",
 	" italian meatball ",
 	" italian parmesan ",
-	" italian parsleys ",
-	" italian sausages ",
+	" italian parsleys ",
+	" italian sausages ",
 	" jalapeno chilies ",
-	" jalapeno peppers ",
+	" jalapeno peppers ",
 	" japanese pumpkin ",
 	" jarlsberg cheese ",
-	" kalamatum olives ",
+	" kalamatum olives ",
 	" kentucky bourbon ",
 	" kielbasa sausage ",
-	" kitchen bouquets ",
-	" lamb tenderloins ",
-	" lasagna noodless ",
-	" lavender flowers ",
-	" lemon marmalades ",
-	" lime mayonnaises ",
-	" lingonberry jams ",
+	" kitchen bouquets ",
+	" lamb tenderloins ",
+	" lasagna noodless ",
+	" lavender flowers ",
+	" lemon marmalades ",
+	" lesser galangals ",
+	" lime mayonnaises ",
+	" lingonberry jams ",
 	" linguica sausage ",
-	" littleneck clams ",
+	" littleneck clams ",
 	" lowfat margarine ",
-	" lumpium wrappers ",
-	" macaroni noodles ",
-	" macintosh apples ",
+	" lumpium wrappers ",
+	" macaroni noodles ",
+	" macintosh apples ",
 	" maitake mushroom ",
-	" manchego cheeses ",
-	" mandarin oranges ",
-	" margaritum salts ",
+	" manchego cheeses ",
+	" mandarin oranges ",
+	" margaritum salts ",
 	" marshmallow peep ",
-	" merguez sausages ",
-	" mexican chorizos ",
-	" mexican oreganos ",
-	" milk mozzarellas ",
-	" miniature bagels ",
+	" merguez sausages ",
+	" mexican chorizos ",
+	" mexican oreganos ",
+	" milk mozzarellas ",
+	" miniature bagels ",
 	" mixed peppercorn ",
-	" mixed vegetables ",
-	" muenster cheeses ",
+	" mixed vegetables ",
+	" muenster cheeses ",
 	" multigrain bread ",
-	" muscovado sugars ",
+	" muscovado sugars ",
 	" mushroom risotto ",
-	" mzarella cheeses ",
+	" mzarella cheeses ",
 	" nondairy creamer ",
-	" nonpareil capers ",
+	" nonpareil capers ",
 	" orange marmalade ",
-	" oyster mushrooms ",
-	" pancettum bacons ",
+	" oyster mushrooms ",
+	" pancettum bacons ",
 	" panko breadcrumb ",
 	" pareve margarine ",
-	" parmesan cheeses ",
+	" parmesan cheeses ",
 	" parmesan crouton ",
-	" parmesan shaveds ",
-	" parsley chervils ",
+	" parmesan shaveds ",
+	" parsley chervils ",
 	" parsley cilantro ",
-	" pasteurized eggs ",
-	" pattypan squashs ",
-	" peach nectarines ",
-	" pecorino cheeses ",
-	" pecorino romanos ",
+	" pasteurized eggs ",
+	" pattypan squashs ",
+	" peach nectarines ",
+	" pecorino cheeses ",
+	" pecorino romanos ",
 	" pecorino toscano ",
 	" pencil asparagus ",
-	" peppadew peppers ",
+	" peppadew peppers ",
+	" peruvian peppers ",
 	" pickled cucumber ",
-	" pickled herrings ",
+	" pickled herrings ",
 	" pickled jalapeno ",
-	" pickled mustards ",
-	" piloncillo cones ",
-	" pimiento peppers ",
-	" pineapple juices ",
-	" pineapple salsas ",
-	" piquillo peppers ",
-	" pistachio pecans ",
-	" polish kielbasas ",
-	" polska kielbasas ",
+	" pickled mustards ",
+	" piloncillo cones ",
+	" pimiento peppers ",
+	" pineapple juices ",
+	" pineapple salsas ",
+	" piquillo peppers ",
+	" pistachio pecans ",
+	" polish kielbasas ",
+	" polska kielbasas ",
 	" pomegranate seed ",
-	" pomegranate seeds ",
 	" porcini mushroom ",
-	" pork tenderloins ",
-	" premium tequilas ",
-	" pressure cookers ",
+	" pork tenderloins ",
+	" premium tequilas ",
+	" pressure cookers ",
 	" processed cheese ",
 	" prosciutto cotto ",
 	" provolone cheese ",
-	" purple mangosteen ",
-	" raclette cheeses ",
-	" raspberry coulis ",
-	" raspberry juices ",
-	" raspberry purees ",
-	" raspberry sauces ",
+	" raclette cheeses ",
+	" raspberry coulis ",
+	" raspberry juices ",
+	" raspberry purees ",
+	" raspberry sauces ",
 	" raspberry sorbet ",
-	" raspberry vodkas ",
-	" red bell peppers ",
+	" raspberry vodkas ",
+	" red bell peppers ",
 	" red wine vinegar ",
-	" remoulade sauces ",
+	" remoulade sauces ",
 	" reposado tequila ",
-	" rice vermicellis ",
+	" rice vermicellis ",
 	" roasting chicken ",
-	" romaine lettuces ",
+	" romaine lettuces ",
 	" roquefort cheese ",
-	" rosemary branchs ",
-	" ruby grapefruits ",
+	" rosemary branchs ",
+	" ruby grapefruits ",
 	" saffron optional ",
-	" salt and peppers ",
-	" saltine crackers ",
-	" saskatoon berrys ",
-	" sauvignon blancs ",
-	" seltzer chilleds ",
+	" salt and peppers ",
+	" saltine crackers ",
+	" saskatoon berrys ",
+	" sauvignon blancs ",
+	" seltzer chilleds ",
 	" shaved chocolate ",
-	" shaved parmesans ",
-	" shishito peppers ",
+	" shaved parmesans ",
+	" shishito peppers ",
 	" shitake mushroom ",
 	" shortbread crust ",
-	" shrimp bouillons ",
+	" shrimp bouillons ",
 	" skinned hazelnut ",
-	" smoked bluefishs ",
+	" smoked bluefishs ",
 	" smoked bratwurst ",
-	" smoked kielbasas ",
-	" smoked mackerels ",
+	" smoked kielbasas ",
+	" smoked mackerels ",
 	" smoked whitefish ",
 	" solid shortening ",
-	" sourdough breads ",
+	" sourdough breads ",
 	" southern comfort ",
-	" spaetzle noodles ",
+	" spaetzle noodles ",
 	" spaghetti noodle ",
 	" spaghetti squash ",
-	" spaghetti squashs ",
-	" spanish chorizos ",
+	" spanish chorizos ",
 	" spanish mackerel ",
-	" spanish paprikas ",
-	" sparkling ciders ",
-	" sparkling sugars ",
-	" sparkling waters ",
-	" sparkling whites ",
+	" spanish paprikas ",
+	" sparkling ciders ",
+	" sparkling sugars ",
+	" sparkling waters ",
+	" sparkling whites ",
 	" spinach linguine ",
-	" spinach souffles ",
+	" spinach souffles ",
 	" spinach tortilla ",
 	" splash grenadine ",
 	" splenda granular ",
 	" square focaccium ",
-	" stewing chickens ",
+	" stewing chickens ",
 	" strawberry juice ",
 	" strawberry puree ",
 	" strawberry sauce ",
 	" strawberry syrup ",
 	" sugar substitute ",
-	" sundried tomatos ",
+	" sundried tomatos ",
 	" sunflower sprout ",
-	" superfine sugars ",
-	" swordfish steaks ",
-	" szechwan peppers ",
-	" taleggio cheeses ",
-	" tandoori masalas ",
-	" tangerine juices ",
+	" superfine sugars ",
+	" swordfish steaks ",
+	" szechwan peppers ",
+	" taleggio cheeses ",
+	" tandoori masalas ",
+	" tangerine juices ",
 	" tarragon parsley ",
 	" tarragon vinegar ",
-	" tasmanian peppers ",
+	" tasmanian pepper ",
 	" tenderloin roast ",
-	" thick asparaguss ",
+	" thick asparaguss ",
 	" togarashi pepper ",
-	" tomatillo salsas ",
-	" tomatillo sauces ",
-	" tomato bouillons ",
-	" tomato passatums ",
-	" tomato tapenades ",
-	" turbinado sugars ",
-	" turkey drippings ",
-	" turkey kielbasas ",
+	" tomatillo salsas ",
+	" tomatillo sauces ",
+	" tomato bouillons ",
+	" tomato passatums ",
+	" tomato tapenades ",
+	" turbinado sugars ",
+	" turkey drippings ",
+	" turkey kielbasas ",
 	" turkey pepperoni ",
-	" turkey stuffings ",
-	" turkish apricots ",
+	" turkey stuffings ",
+	" turkish apricots ",
 	" unbleached flour ",
 	" unprocessed bran ",
-	" unrefined sugars ",
-	" unripe plantains ",
-	" unseasoned rices ",
+	" unrefined sugars ",
+	" unripe plantains ",
+	" unseasoned rices ",
 	" valencium orange ",
-	" vanilla custards ",
-	" vanilla essences ",
+	" vanilla custards ",
+	" vanilla essences ",
 	" vanilla frosting ",
-	" vanilla puddings ",
-	" veal scallopinis ",
-	" veal scaloppines ",
-	" vegan chocolates ",
-	" vegan margarines ",
+	" vanilla puddings ",
+	" veal scallopinis ",
+	" veal scaloppines ",
+	" vegan chocolates ",
+	" vegan margarines ",
 	" vegan mayonnaise ",
-	" vegetable broths ",
-	" vegetable juices ",
-	" vegetable sprays ",
-	" vegetable stocks ",
+	" vegetable broths ",
+	" vegetable juices ",
+	" vegetable sprays ",
+	" vegetable stocks ",
 	" vegetarian bacon ",
 	" vegetarian chili ",
 	" velveetum cheese ",
-	" water chestnutss ",
+	" water chestnutss ",
 	" watermelon juice ",
 	" wheat breadcrumb ",
 	" wheat fettuccine ",
-	" wheat spaghettis ",
-	" white asparaguss ",
-	" white chocolates ",
+	" wheat spaghettis ",
+	" white asparaguss ",
+	" white chocolates ",
 	" white grapefruit ",
 	" white peppercorn ",
-	" white peppercorns ",
-	" wholemeal flours ",
+	" wholemeal flours ",
 	" wildflower honey ",
 	" winter vegetable ",
-	" worchestershires ",
-	" yellow cake mixs ",
-	" yellow capsicums ",
-	" yellow cornmeals ",
-	" yellow plantains ",
-	" yellow zucchinis ",
+	" worchestershires ",
+	" yellow cake mixs ",
+	" yellow capsicums ",
+	" yellow cornmeals ",
+	" yellow plantains ",
+	" yellow zucchinis ",
 	" zucchini blossom ",
-	" zucchini flowers ",
-	" zucchini noodles ",
-	" alfalfa sprouts ",
-	" alligator meats ",
-	" alligator pepper ",
-	" allspice berrys ",
-	" almond essences ",
-	" almond extracts ",
-	" almond liqueurs ",
-	" alphonso mangos ",
-	" amaranth flours ",
-	" amarena cherrys ",
+	" zucchini flowers ",
+	" zucchini noodles ",
+	" alfalfa sprouts ",
+	" alligator meats ",
+	" allspice berrys ",
+	" almond essences ",
+	" almond extracts ",
+	" almond liqueurs ",
+	" alphonso mangos ",
+	" amaranth flours ",
+	" amarena cherrys ",
 	" amaretti cookie ",
 	" american cheese ",
-	" anaheim peppers ",
-	" anned chickpeas ",
-	" apricot brandys ",
+	" anaheim peppers ",
+	" anned chickpeas ",
+	" apricot brandys ",
 	" apricot gelatin ",
-	" apricot halveds ",
+	" apricot halveds ",
 	" apricot liqueur ",
-	" apricot nectars ",
+	" apricot nectars ",
 	" armagnac cognac ",
-	" aromatic gingers ",
+	" aromatic ginger ",
 	" arrowroot flour ",
 	" artichoke heart ",
-	" asadero cheeses ",
-	" asian eggplants ",
-	" assorted fruits ",
-	" assorted greens ",
-	" assorted olives ",
+	" asadero cheeses ",
+	" asian eggplants ",
+	" assorted fruits ",
+	" assorted greens ",
+	" assorted olives ",
 	" atlantic salmon ",
-	" baby artichokes ",
-	" baby asparaguss ",
-	" bacon drippings ",
+	" baby artichokes ",
+	" baby asparaguss ",
+	" bacon drippings ",
 	" bacon pancettum ",
-	" banana liqueurs ",
-	" banyul vinegars ",
-	" barbecue sauces ",
-	" barbecued porks ",
-	" barbeque sauces ",
-	" bechamel sauces ",
+	" banana liqueurs ",
+	" banyul vinegars ",
+	" barbecue sauces ",
+	" barbecued porks ",
+	" barbeque sauces ",
+	" bechamel sauces ",
 	" beef tenderloin ",
-	" belgian endifes ",
-	" belgian endives ",
-	" black peppercorn ",
-	" blackberry jams ",
-	" blanc vermouths ",
+	" belgian endifes ",
+	" belgian endives ",
+	" black cardamoms ",
+	" black-eyed peas ",
+	" blackberry jams ",
+	" blanc vermouths ",
 	" blanched almond ",
-	" blanco tequilas ",
+	" blanco tequilas ",
 	" bloody mary mix ",
 	" blueberry juice ",
-	" boston lettuces ",
-	" bottle ketchups ",
-	" bourbon brandys ",
+	" boston lettuces ",
+	" bottle ketchups ",
+	" bourbon brandys ",
 	" bourbon whiskey ",
-	" boursin cheeses ",
-	" braeburn apples ",
-	" braising greens ",
-	" bratwurst links ",
-	" brazilian pepper ",
-	" bread stuffings ",
+	" boursin cheeses ",
+	" braeburn apples ",
+	" braising greens ",
+	" bratwurst links ",
+	" bread stuffings ",
 	" brewed espresso ",
-	" broccoli crowns ",
+	" broccoli crowns ",
 	" broiler chicken ",
-	" brown flaxseeds ",
-	" browned butters ",
-	" brussel sprouts ",
-	" brussels sprouts ",
-	" brut champagnes ",
+	" brown flaxseeds ",
+	" browned butters ",
+	" brussel sprouts ",
+	" brussels sprout ",
+	" brut champagnes ",
 	" buckwheat flour ",
 	" buckwheat groat ",
 	" buckwheat honey ",
-	" buckwheat sobas ",
-	" budweiser beers ",
-	" bunium persicums ",
+	" buckwheat sobas ",
+	" budweiser beers ",
+	" bunium persicum ",
 	" burratum cheese ",
-	" butter lettuces ",
+	" butter lettuces ",
 	" butter optional ",
 	" buttered noodle ",
-	" buttered toasts ",
-	" butternut squash ",
+	" buttered toasts ",
 	" buttery cracker ",
 	" button mushroom ",
-	" cabbage kimchis ",
+	" cabbage kimchis ",
 	" cacao chocolate ",
 	" caesar dressing ",
 	" calamatum olive ",
-	" canadian bacons ",
-	" candied cherrys ",
-	" candied citrons ",
-	" candied gingers ",
-	" candied walnuts ",
+	" canadian bacons ",
+	" candied cherrys ",
+	" candied citrons ",
+	" candied gingers ",
+	" candied walnuts ",
 	" cannellini bean ",
 	" caramel topping ",
-	" carnaroli rices ",
-	" cayenne peppers ",
+	" carnaroli rices ",
+	" cayenne peppers ",
 	" cerignola olive ",
 	" challah brioche ",
 	" champagne grape ",
 	" champagne yeast ",
-	" charcoal grills ",
+	" charcoal grills ",
 	" charentai melon ",
-	" chayote squashs ",
-	" cheddar cheeses ",
-	" cheese crackers ",
-	" cherry gelatins ",
-	" cherry heerings ",
-	" cherry liqueurs ",
+	" chayote squashs ",
+	" cheddar cheeses ",
+	" cheese crackers ",
+	" cherry gelatins ",
+	" cherry heerings ",
+	" cherry liqueurs ",
 	" cherry tomatoes ",
 	" chervil parsley ",
-	" chestnut creams ",
-	" chestnut flours ",
-	" chestnut honeys ",
-	" chestnut purees ",
-	" chicken breasts ",
+	" chestnut creams ",
+	" chestnut flours ",
+	" chestnut honeys ",
+	" chestnut purees ",
 	" chicken breasts ",
 	" chicken carcass ",
-	" chicken giblets ",
+	" chicken giblets ",
 	" chicken gizzard ",
-	" chicken nuggets ",
+	" chicken nuggets ",
 	" chicken sausage ",
-	" chicken tenders ",
-	" chicken thighss ",
-	" chickpea flours ",
+	" chicken tenders ",
+	" chicken thighss ",
+	" chickpea flours ",
 	" chickpea rinsed ",
 	" chicory lettuce ",
 	" chilled seltzer ",
 	" chinese cabbage ",
-	" chinese celerys ",
+	" chinese celerys ",
 	" chinese mustard ",
 	" chinese sausage ",
-	" chipotle chiles ",
-	" chipotle chilis ",
+	" chipotle chiles ",
+	" chipotle chilis ",
 	" chipotle pepper ",
-	" chipotle purees ",
-	" chipotle salsas ",
-	" chipotle sauces ",
-	" chocolate cakes ",
-	" chocolate chips ",
+	" chipotle purees ",
+	" chipotle salsas ",
+	" chipotle sauces ",
+	" chocolate cakes ",
+	" chocolate chips ",
 	" chocolate crust ",
-	" chocolate curls ",
-	" chocolate kisss ",
-	" chocolate milks ",
+	" chocolate curls ",
+	" chocolate kisss ",
+	" chocolate milks ",
 	" chocolate sauce ",
 	" chocolate syrup ",
 	" chocolate wafer ",
 	" chorizo sausage ",
 	" ciabattum bread ",
-	" ciabattum loafs ",
-	" ciabattum rolls ",
-	" cilantro basils ",
-	" cilantro creams ",
+	" ciabattum loafs ",
+	" ciabattum rolls ",
+	" cilantro basils ",
+	" cilantro creams ",
 	" cilantro leaves ",
-	" cilantro sauces ",
-	" cinnamon creams ",
-	" cinnamon sugars ",
+	" cilantro sauces ",
+	" cinnamon creams ",
+	" cinnamon sugars ",
 	" cipolline onion ",
 	" cipollini onion ",
-	" cocktail franks ",
-	" cocktail olives ",
-	" cocktail onions ",
+	" cocktail franks ",
+	" cocktail olives ",
+	" cocktail onions ",
 	" cocktail peanut ",
-	" cocktail sauces ",
-	" coconut butters ",
+	" cocktail sauces ",
+	" coconut butters ",
 	" coconut shaving ",
-	" coconut sorbets ",
+	" coconut sorbets ",
 	" coconut vinegar ",
-	" coconut yogurts ",
-	" coffee liqueurs ",
-	" common crackers ",
+	" coconut yogurts ",
+	" coffee liqueurs ",
+	" common crackers ",
 	" common mushroom ",
-	" condensed milks ",
-	" converted rices ",
-	" coriander seeds ",
-	" corn tortillass ",
+	" condensed milks ",
+	" converted rices ",
+	" coriander leafs ",
+	" coriander seeds ",
+	" corn tortillass ",
 	" cornbread crumb ",
 	" cornflake crumb ",
-	" cornmeal crusts ",
-	" cortland apples ",
-	" cottage cheeses ",
+	" cornmeal crusts ",
+	" cortland apples ",
+	" cottage cheeses ",
 	" country sausage ",
-	" cranberry beans ",
+	" cranberry beans ",
 	" cranberry jelly ",
 	" cranberry juice ",
 	" cranberry sauce ",
 	" cranberry vodka ",
 	" cream of tartar ",
-	" crema mexicanas ",
-	" creme anglaises ",
-	" creole mustards ",
-	" crispy shallots ",
+	" crema mexicanas ",
+	" creme anglaises ",
+	" creole mustards ",
+	" crispy shallots ",
 	" croissant dough ",
 	" crusty baguette ",
-	" cucumber salads ",
+	" cucumber salads ",
 	" cultured butter ",
 	" dandelion green ",
-	" dark chocolates ",
-	" demerara sugars ",
-	" demerara syrups ",
+	" dark chocolates ",
+	" demerara sugars ",
+	" demerara syrups ",
 	" desired topping ",
-	" dry white wines ",
-	" dulce de leches ",
-	" dungeness crabs ",
-	" edible glitters ",
-	" egg fettuccines ",
-	" egg substitutes ",
-	" elbow macaronis ",
+	" dry white wines ",
+	" dulce de leches ",
+	" dungeness crabs ",
+	" edible glitters ",
+	" egg fettuccines ",
+	" egg substitutes ",
+	" elbow macaronis ",
 	" elephant garlic ",
 	" emmental cheese ",
-	" empanada doughs ",
+	" empanada doughs ",
 	" enchilada sauce ",
-	" english muffins ",
+	" english muffins ",
 	" english mustard ",
-	" english walnuts ",
-	" enoki mushrooms ",
-	" enriched flours ",
+	" english walnuts ",
+	" enoki mushrooms ",
+	" enriched flours ",
 	" espresso coffee ",
 	" evaporated milk ",
-	" fat buttermilks ",
-	" fat mayonnaises ",
-	" fennel sausages ",
-	" fenugreek seeds ",
-	" filtered waters ",
-	" finishing salts ",
-	" flageolet beans ",
-	" flatiron steaks ",
-	" flavorless oils ",
+	" fat buttermilks ",
+	" fat mayonnaises ",
+	" fennel sausages ",
+	" fenugreek seeds ",
+	" filtered waters ",
+	" finishing salts ",
+	" flageolet beans ",
+	" flatiron steaks ",
+	" flavorless oils ",
 	" florida avocado ",
-	" flour tortillas ",
 	" flour tortillas ",
 	" focaccium bread ",
 	" focaccium dough ",
-	" fontina cheeses ",
-	" forbidden rices ",
+	" fontina cheeses ",
+	" forbidden rices ",
 	" freestone peach ",
 	" french baguette ",
-	" french mustards ",
-	" frying chickens ",
-	" fuyu persimmons ",
-	" garbanzo flours ",
-	" garlic croutons ",
-	" garlic granules ",
-	" garlic sausages ",
+	" french mustards ",
+	" frying chickens ",
+	" fuyu persimmons ",
+	" garbanzo flours ",
+	" garlic croutons ",
+	" garlic granules ",
+	" garlic sausages ",
 	" gelatin dessert ",
-	" german mustards ",
-	" gherkin pickles ",
-	" ginger liqueurs ",
+	" german mustards ",
+	" gherkin pickles ",
+	" ginger liqueurs ",
 	" globe artichoke ",
-	" globe eggplants ",
+	" globe eggplants ",
 	" golden flaxseed ",
-	" graham crackers ",
 	" graham crackers ",
-	" grains of selims ",
-	" granola cereals ",
+	" grains of selim ",
+	" granola cereals ",
 	" grapefruit peel ",
-	" greater galangal ",
 	" green asparagus ",
-	" green capsicums ",
-	" green cardamoms ",
+	" green capsicums ",
+	" green cardamoms ",
 	" green coriander ",
-	" green peppercorn ",
-	" green plantains ",
-	" green scallions ",
-	" green zucchinis ",
+	" green plantains ",
+	" green scallions ",
+	" green zucchinis ",
 	" grenadine syrup ",
-	" gruyere cheeses ",
-	" guajillo chiles ",
-	" guajillo chilis ",
-	" guinness stouts ",
-	" habanero chiles ",
-	" habanero chilis ",
+	" gruyere cheeses ",
+	" guajillo chiles ",
+	" guajillo chilis ",
+	" guinness stouts ",
+	" habanero chiles ",
+	" habanero chilis ",
 	" habanero pepper ",
-	" habanero sauces ",
+	" habanero sauces ",
 	" halloumi cheese ",
-	" haloumi cheeses ",
-	" hamburger meats ",
-	" hamburger rolls ",
-	" hardboiled eggs ",
-	" havarti cheeses ",
+	" haloumi cheeses ",
+	" hamburger meats ",
+	" hamburger rolls ",
+	" hardboiled eggs ",
+	" havarti cheeses ",
 	" hazelnut butter ",
-	" hazelnut flours ",
+	" hazelnut flours ",
 	" hazelnut spread ",
-	" hazelnut syrups ",
+	" hazelnut syrups ",
 	" hefeweizen beer ",
-	" herbed croutons ",
-	" herbs and spices ",
-	" hibiscu flowers ",
-	" honeydew melons ",
+	" herbed croutons ",
+	" herbs and spice ",
+	" hibiscu flowers ",
+	" honeydew melons ",
+	" hubbard squashs ",
 	" iceberg lettuce ",
 	" iceburg lettuce ",
-	" imported olives ",
-	" indian bay leafs ",
-	" instant coffees ",
+	" imported olives ",
+	" indian bay leaf ",
+	" instant coffees ",
 	" instant couscou ",
 	" instant tapioca ",
 	" israeli couscou ",
 	" italian fontina ",
 	" italian parsley ",
 	" italian sausage ",
-	" italian tomatos ",
-	" jalapeno chiles ",
-	" jalapeno chilis ",
+	" italian tomatos ",
+	" jalapeno chiles ",
+	" jalapeno chilis ",
 	" jalapeno pepper ",
-	" jonagold apples ",
-	" kabocha squashs ",
+	" jonagold apples ",
+	" kabocha squashs ",
 	" kalamatum olive ",
-	" kasseri cheeses ",
+	" kasseri cheeses ",
 	" kitchen bouquet ",
 	" lamb tenderloin ",
-	" lasagna noodles ",
 	" lasagna noodles ",
 	" lavender flower ",
-	" lavender honeys ",
+	" lavender honeys ",
 	" lemon marmalade ",
-	" lesser galangals ",
-	" lettuce tomatos ",
+	" lesser galangal ",
+	" lettuce tomatos ",
 	" lime mayonnaise ",
 	" lingonberry jam ",
 	" littleneck clam ",
-	" loaf ciabattums ",
+	" loaf ciabattums ",
 	" lumpium wrapper ",
-	" luxardo cherrys ",
-	" macadamium nuts ",
+	" luxardo cherrys ",
+	" macadamium nuts ",
 	" macaroni noodle ",
 	" macintosh apple ",
 	" manchego cheese ",
-	" mandarin juices ",
+	" mandarin juices ",
 	" mandarin orange ",
-	" mandarin vodkas ",
-	" marcona almonds ",
-	" margaritum mixs ",
+	" mandarin vodkas ",
+	" marcona almonds ",
+	" margaritum mixs ",
 	" margaritum salt ",
-	" marinara sauces ",
-	" marshmallow crs ",
-	" mcintosh apples ",
+	" marinara sauces ",
+	" marshmallow crs ",
+	" mcintosh apples ",
 	" merguez sausage ",
 	" mexican chorizo ",
 	" mexican oregano ",
-	" mexican tomatos ",
-	" mezzi rigatonis ",
-	" milk chocolates ",
+	" mexican tomatos ",
+	" mezzi rigatonis ",
+	" milk chocolates ",
 	" milk mozzarella ",
 	" miniature bagel ",
-	" minute tapiocas ",
-	" mixed mushrooms ",
+	" minute tapiocas ",
+	" mixed mushrooms ",
 	" mixed vegetable ",
-	" morel mushrooms ",
+	" morel mushrooms ",
 	" muenster cheese ",
 	" muscovado sugar ",
-	" mushroom broths ",
-	" mushroom sauces ",
+	" mushroom broths ",
+	" mushroom sauces ",
 	" mzarella cheese ",
-	" natural almonds ",
-	" natural yogurts ",
+	" natural almonds ",
+	" natural yogurts ",
+	" nigella sativas ",
 	" nonpareil caper ",
-	" nonstick sprays ",
-	" oatmeal cookies ",
-	" olive tapenades ",
-	" onion scallions ",
-	" orange blossoms ",
-	" orange curacaos ",
-	" orange gelatins ",
-	" orange liqueurs ",
-	" oyster crackers ",
+	" nonstick sprays ",
+	" oatmeal cookies ",
+	" olive tapenades ",
+	" onion scallions ",
+	" orange blossoms ",
+	" orange curacaos ",
+	" orange gelatins ",
+	" orange liqueurs ",
+	" oyster crackers ",
 	" oyster mushroom ",
-	" oyster shuckeds ",
-	" package tempehs ",
-	" pancake batters ",
+	" oyster shuckeds ",
+	" package tempehs ",
+	" pancake batters ",
 	" pancettum bacon ",
-	" parboiled rices ",
+	" parboiled rices ",
 	" parmesan cheese ",
 	" parmesan shaved ",
 	" parsley chervil ",
-	" parsley flakess ",
-	" parsley leavess ",
+	" parsley flakess ",
+	" parsley leavess ",
 	" pasteurized egg ",
 	" pattypan squash ",
 	" peach nectarine ",
-	" peanut brittles ",
-	" pearled barleys ",
+	" peanut brittles ",
+	" pearled barleys ",
 	" pecorino cheese ",
 	" pecorino romano ",
 	" peppadew pepper ",
-	" pepper vinegars ",
-	" peppered bacons ",
-	" peruvian peppers ",
-	" pickled garlics ",
-	" pickled gingers ",
+	" pepper vinegars ",
+	" peppered bacons ",
+	" peruvian pepper ",
+	" pickled garlics ",
+	" pickled gingers ",
 	" pickled herring ",
 	" pickled mustard ",
-	" pickled peppers ",
-	" pickling spices ",
+	" pickled peppers ",
+	" pickling spices ",
 	" piloncillo cone ",
-	" pimento peppers ",
+	" pimento peppers ",
 	" pimiento pepper ",
 	" pineapple juice ",
 	" pineapple salsa ",
 	" piquillo pepper ",
 	" pistachio pecan ",
-	" poached salmons ",
-	" poblano peppers ",
+	" poached salmons ",
+	" poblano peppers ",
 	" polish kielbasa ",
-	" polish sausages ",
+	" polish sausages ",
 	" polska kielbasa ",
-	" pomegranate seed ",
-	" popcorn kernels ",
-	" popped popcorns ",
+	" popcorn kernels ",
+	" popped popcorns ",
 	" pork tenderloin ",
-	" portobello caps ",
-	" potato gnocchis ",
-	" powdered sugars ",
+	" portobello caps ",
+	" potato gnocchis ",
+	" powdered sugars ",
 	" premium tequila ",
 	" pressure cooker ",
-	" prosciutto hams ",
-	" pumpkin butters ",
-	" purified waters ",
-	" purple cabbages ",
+	" prosciutto hams ",
+	" pumpkin butters ",
+	" purified waters ",
+	" purple cabbages ",
 	" raclette cheese ",
-	" rainbow quinoas ",
-	" raisin currants ",
-	" ranch dressings ",
+	" rainbow quinoas ",
+	" raisin currants ",
+	" ranch dressings ",
 	" raspberry couli ",
 	" raspberry juice ",
 	" raspberry puree ",
 	" raspberry sauce ",
 	" raspberry vodka ",
-	" realemon juices ",
+	" realemon juices ",
 	" red bell pepper ",
 	" remoulade sauce ",
 	" rice vermicelli ",
-	" ricotta cheeses ",
-	" robiola cheeses ",
+	" ricotta cheeses ",
+	" robiola cheeses ",
 	" romaine lettuce ",
 	" rosemary branch ",
-	" rosemary thymes ",
-	" rubber spatulas ",
+	" rosemary thymes ",
+	" rubber spatulas ",
 	" ruby grapefruit ",
-	" saffron strands ",
-	" saffron threads ",
-	" salad dressings ",
+	" saffron strands ",
+	" saffron threads ",
+	" salad dressings ",
 	" salt and pepper ",
 	" saltine cracker ",
-	" sandwich breads ",
+	" sandwich breads ",
 	" saskatoon berry ",
-	" satsuma oranges ",
-	" sausage casings ",
+	" satsuma oranges ",
+	" sausage casings ",
 	" sauvignon blanc ",
-	" scallion greens ",
-	" scallion whites ",
-	" scotch whiskeys ",
-	" seasoning salts ",
+	" scallion greens ",
+	" scallion whites ",
+	" scotch whiskeys ",
+	" seasoning salts ",
 	" seltzer chilled ",
-	" semolina flours ",
-	" serrano peppers ",
-	" seville oranges ",
-	" shallot halveds ",
+	" semolina flours ",
+	" serrano peppers ",
+	" seville oranges ",
+	" shallot halveds ",
 	" shaved parmesan ",
-	" sherry vinegars ",
+	" sherry vinegars ",
 	" shishito pepper ",
 	" shrimp bouillon ",
-	" shucked oysters ",
-	" sichuan peppers ",
-	" silver tequilas ",
-	" simmered pintos ",
+	" shucked oysters ",
+	" sichuan peppers ",
+	" silver tequilas ",
+	" simmered pintos ",
 	" smoked bluefish ",
 	" smoked kielbasa ",
 	" smoked mackerel ",
-	" smoked paprikas ",
-	" smoked sausages ",
-	" sockeye salmons ",
+	" smoked paprikas ",
+	" smoked sausages ",
+	" sockeye salmons ",
 	" sourdough bread ",
-	" sourdough loafs ",
-	" sourdough rolls ",
+	" sourdough loafs ",
+	" sourdough rolls ",
 	" spaetzle noodle ",
-	" spaghetti squash ",
-	" spanish brandys ",
+	" spanish brandys ",
 	" spanish chorizo ",
 	" spanish paprika ",
-	" spanish peanuts ",
+	" spanish peanuts ",
 	" sparkling cider ",
 	" sparkling sugar ",
 	" sparkling water ",
 	" sparkling white ",
-	" sparkling wines ",
+	" sparkling wines ",
 	" spinach souffle ",
-	" split chickpeas ",
-	" squash blossoms ",
-	" sriracha sauces ",
-	" stale baguettes ",
-	" starchy potatos ",
+	" split chickpeas ",
+	" squash blossoms ",
+	" sriracha sauces ",
+	" stale baguettes ",
+	" starchy potatos ",
 	" stewing chicken ",
-	" stilton cheeses ",
-	" stirred tahinis ",
-	" strawberry jams ",
-	" submarine rolls ",
-	" sugar snap peas ",
-	" sultana raisins ",
+	" stilton cheeses ",
+	" stirred tahinis ",
+	" strawberry jams ",
+	" submarine rolls ",
+	" sugar snap peas ",
+	" sultana raisins ",
 	" sundried tomato ",
-	" sunflower seeds ",
+	" sunflower seeds ",
 	" superfine sugar ",
-	" sweet potatoess ",
+	" sweet potatoess ",
 	" swordfish steak ",
 	" szechwan pepper ",
+	" tabasco peppers ",
 	" taleggio cheese ",
-	" tamarind juices ",
+	" tamarind juices ",
 	" tandoori masala ",
 	" tangerine juice ",
-	" tangerine peels ",
-	" tapioca starchs ",
-	" tasmanian pepper ",
-	" tender lettuces ",
-	" tequila blancos ",
-	" teriyaki sauces ",
+	" tangerine peels ",
+	" tapioca starchs ",
+	" tender lettuces ",
+	" tequila blancos ",
+	" teriyaki sauces ",
 	" thick asparagus ",
-	" thyme rosemarys ",
+	" thyme rosemarys ",
 	" tomatillo salsa ",
 	" tomatillo sauce ",
 	" tomato bouillon ",
-	" tomato chutneys ",
-	" tomato ketchups ",
+	" tomato chutneys ",
+	" tomato ketchups ",
 	" tomato passatum ",
 	" tomato tapenade ",
-	" tonkatsu sauces ",
-	" tortilla flours ",
-	" tropical fruits ",
-	" truffle butters ",
+	" tonkatsu sauces ",
+	" tortilla flours ",
+	" tropical fruits ",
+	" truffle butters ",
 	" turbinado sugar ",
-	" turkey carcasss ",
+	" turkey carcasss ",
 	" turkey dripping ",
 	" turkey kielbasa ",
-	" turkey sausages ",
+	" turkey sausages ",
 	" turkey stuffing ",
 	" turkish apricot ",
-	" tzatziki sauces ",
+	" tzatziki sauces ",
 	" unrefined sugar ",
 	" unripe plantain ",
 	" unseasoned rice ",
-	" unsmoked bacons ",
+	" unsmoked bacons ",
 	" vanilla custard ",
 	" vanilla essence ",
 	" vanilla pudding ",
-	" vanilla yogurts ",
+	" vanilla yogurts ",
 	" veal scallopini ",
 	" veal scaloppine ",
 	" vegan chocolate ",
 	" vegan margarine ",
 	" vegetable broth ",
 	" vegetable juice ",
-	" vegetable soups ",
+	" vegetable soups ",
 	" vegetable spray ",
 	" vegetable stock ",
-	" vidalium onions ",
-	" vienna sausages ",
-	" wakame seaweeds ",
-	" water chestnuts ",
+	" vidalium onions ",
+	" vienna sausages ",
+	" voatsiperiferys ",
+	" wakame seaweeds ",
 	" water chestnuts ",
-	" wheat baguettes ",
-	" wheat farfalles ",
-	" wheat macaronis ",
-	" wheat rigatonis ",
+	" wheat baguettes ",
+	" wheat farfalles ",
+	" wheat macaronis ",
+	" wheat rigatonis ",
 	" wheat spaghetti ",
-	" wheat tortillas ",
-	" whipping creams ",
+	" wheat tortillas ",
+	" whipping creams ",
 	" white asparagus ",
 	" white chocolate ",
-	" white cornmeals ",
-	" white mushrooms ",
-	" white peppercorn ",
-	" white vermouths ",
+	" white cornmeals ",
+	" white mushrooms ",
+	" white vermouths ",
 	" wholemeal flour ",
-	" wild asparaguss ",
-	" wild blueberrys ",
-	" wonton wrappers ",
-	" worcestershires ",
+	" wild asparaguss ",
+	" wild blueberrys ",
+	" wonton wrappers ",
+	" worcestershires ",
 	" worchestershire ",
 	" yellow cake mix ",
 	" yellow capsicum ",
 	" yellow cornmeal ",
-	" yellow mustards ",
+	" yellow mustards ",
 	" yellow plantain ",
 	" yellow zucchini ",
-	" yellowfin tunas ",
-	" young pecorinos ",
+	" yellowfin tunas ",
+	" young pecorinos ",
 	" zucchini flower ",
 	" zucchini noodle ",
-	" absolut vodkas ",
-	" acacium honeys ",
-	" albacore tunas ",
-	" aleppo peppers ",
+	" absolut vodkas ",
+	" acacium honeys ",
+	" albacore tunas ",
+	" aleppo peppers ",
 	" alfalfa sprout ",
-	" alfalfa sprouts ",
-	" alfredo sauces ",
+	" alfredo sauces ",
 	" alligator meat ",
 	" allspice berry ",
-	" allspice drams ",
-	" almond butters ",
+	" allspice drams ",
+	" almond butters ",
 	" almond essence ",
 	" almond extract ",
 	" almond liqueur ",
-	" almond slivers ",
+	" almond slivers ",
 	" alphonso mango ",
 	" amaranth flour ",
-	" amaranth seeds ",
+	" amaranth seeds ",
 	" amarena cherry ",
-	" anaheim chiles ",
-	" anaheim chilis ",
+	" anaheim chiles ",
+	" anaheim chilis ",
 	" anaheim pepper ",
-	" anchovy filets ",
-	" anise liqueurs ",
+	" anchovy filets ",
+	" anise liqueurs ",
 	" anned chickpea ",
-	" apple chutneys ",
-	" apple schnapps ",
-	" apple vinegars ",
+	" apple chutneys ",
+	" apple schnapps ",
+	" apple vinegars ",
 	" apricot brandy ",
 	" apricot halved ",
 	" apricot nectar ",
-	" arame seaweeds ",
-	" aromatic ginger ",
-	" arugula pestos ",
-	" arugula salads ",
+	" arame seaweeds ",
+	" arugula pestos ",
+	" arugula salads ",
 	" asadero cheese ",
-	" asiago cheeses ",
+	" asiago cheeses ",
 	" asian eggplant ",
 	" assorted fruit ",
 	" assorted green ",
-	" assorted herbs ",
+	" assorted herbs ",
 	" assorted olive ",
 	" baby artichoke ",
 	" baby asparagus ",
-	" baby broccolis ",
-	" baby cucumbers ",
-	" baby eggplants ",
-	" baby zucchinis ",
-	" bacardi limons ",
+	" baby broccolis ",
+	" baby cucumbers ",
+	" baby eggplants ",
+	" baby zucchinis ",
+	" bacardi limons ",
 	" bacon dripping ",
-	" bag cranberrys ",
-	" baking potatos ",
-	" baking powders ",
-	" bamboo skewers ",
+	" bag cranberrys ",
+	" baking potatos ",
+	" baking powders ",
+	" bamboo skewers ",
 	" banana liqueur ",
-	" banana peppers ",
+	" banana peppers ",
+	" banana squashs ",
 	" banyul vinegar ",
 	" barbecue sauce ",
 	" barbecued pork ",
 	" barbeque sauce ",
-	" basil parsleys ",
+	" basil parsleys ",
 	" bechamel sauce ",
-	" beef bouillons ",
-	" beef consommes ",
-	" beef drippings ",
-	" beefeater gins ",
+	" beef bouillons ",
+	" beef consommes ",
+	" beef drippings ",
+	" beefeater gins ",
 	" belgian endife ",
 	" belgian endive ",
-	" beluga lentils ",
-	" black cardamoms ",
-	" black-eyed peas ",
+	" beluga lentils ",
+	" black cardamom ",
+	" black mustards ",
+	" black-eyed pea ",
 	" blackberry jam ",
 	" blanc vermouth ",
 	" blanco tequila ",
-	" blood sausages ",
-	" blueberry jams ",
-	" borlotti beans ",
+	" blood sausages ",
+	" blueberry jams ",
+	" borlotti beans ",
 	" boston lettuce ",
-	" bottle aperols ",
+	" bottle aperols ",
 	" bottle ketchup ",
-	" bouquet garnis ",
+	" bouquet garnis ",
 	" bourbon brandy ",
-	" bourbon sauces ",
+	" bourbon sauces ",
 	" boursin cheese ",
-	" box raspberrys ",
+	" box raspberrys ",
 	" braeburn apple ",
 	" braising green ",
 	" bratwurst link ",
-	" bread crackers ",
-	" bread puddings ",
+	" bread crackers ",
+	" bread puddings ",
 	" bread stuffing ",
-	" brewed coffees ",
+	" brewed coffees ",
 	" broccoli crown ",
-	" broccoli rabes ",
-	" broccoli slaws ",
-	" broken walnuts ",
+	" broccoli rabes ",
+	" broccoli slaws ",
+	" broken walnuts ",
 	" brown flaxseed ",
-	" brown mustards ",
+	" brown mustards ",
 	" browned butter ",
 	" brussel sprout ",
-	" brussels sprout ",
 	" brut champagne ",
 	" buckwheat soba ",
 	" budweiser beer ",
-	" buffalo sauces ",
-	" bunium persicum ",
-	" burgundy wines ",
-	" butter cookies ",
+	" buffalo sauces ",
+	" burgundy wines ",
+	" butter cookies ",
 	" butter lettuce ",
 	" buttered toast ",
 	" cabbage kimchi ",
 	" canadian bacon ",
 	" candied cherry ",
 	" candied citron ",
-	" candied fruits ",
+	" candied fruits ",
 	" candied ginger ",
-	" candied pecans ",
+	" candied pecans ",
 	" candied walnut ",
-	" candy coatings ",
-	" caramel sauces ",
-	" caramel syrups ",
-	" cardamom seeds ",
+	" candy coatings ",
+	" caramel sauces ",
+	" caramel syrups ",
+	" cardamom seeds ",
 	" carnaroli rice ",
-	" cashew butters ",
-	" cassi liqueurs ",
+	" cashew butters ",
+	" cassi liqueurs ",
 	" cayenne pepper ",
-	" cayenne peppers ",
-	" challah breads ",
+	" celery powders ",
+	" challah breads ",
 	" charcoal grill ",
 	" chayote squash ",
 	" cheddar cheese ",
 	" cheese cracker ",
-	" cheese spreads ",
-	" cherry brandys ",
+	" cheese spreads ",
+	" cherry brandys ",
 	" cherry gelatin ",
 	" cherry heering ",
 	" cherry liqueur ",
-	" cherry peppers ",
-	" cherry tomatos ",
+	" cherry peppers ",
+	" cherry tomatos ",
 	" chestnut cream ",
 	" chestnut flour ",
 	" chestnut honey ",
 	" chestnut puree ",
 	" chicken breast ",
-	" chicken broths ",
+	" chicken broths ",
 	" chicken giblet ",
-	" chicken livers ",
+	" chicken livers ",
 	" chicken nugget ",
-	" chicken salads ",
-	" chicken stocks ",
-	" chicken strips ",
+	" chicken salads ",
+	" chicken stocks ",
+	" chicken strips ",
 	" chicken tender ",
-	" chicken thighs ",
 	" chicken thighs ",
 	" chickpea flour ",
-	" chilled waters ",
+	" chilled waters ",
 	" chinese celery ",
-	" chinese chilis ",
+	" chinese chilis ",
 	" chipotle chile ",
 	" chipotle chili ",
 	" chipotle puree ",
 	" chipotle salsa ",
 	" chipotle sauce ",
-	" chive blossoms ",
-	" chocolate bars ",
+	" chive blossoms ",
+	" chocolate bars ",
 	" chocolate cake ",
 	" chocolate chip ",
 	" chocolate curl ",
-	" chocolate eggs ",
+	" chocolate eggs ",
 	" chocolate kiss ",
 	" chocolate milk ",
 	" ciabattum loaf ",
 	" ciabattum roll ",
-	" cider vinegars ",
+	" cider vinegars ",
 	" cilantro basil ",
 	" cilantro cream ",
-	" cilantro mints ",
+	" cilantro mints ",
 	" cilantro sauce ",
-	" cinnamon barks ",
+	" cinnamon barks ",
 	" cinnamon cream ",
 	" cinnamon sugar ",
-	" clam scrubbeds ",
-	" clamato juices ",
-	" clotted creams ",
+	" clam scrubbeds ",
+	" clamato juices ",
+	" clotted creams ",
 	" cocktail frank ",
 	" cocktail olive ",
 	" cocktail onion ",
 	" cocktail sauce ",
 	" coconut butter ",
-	" coconut creams ",
-	" coconut fleshs ",
-	" coconut flours ",
+	" coconut creams ",
+	" coconut fleshs ",
+	" coconut flours ",
 	" coconut sorbet ",
-	" coconut sugars ",
-	" coconut waters ",
+	" coconut sugars ",
+	" coconut waters ",
 	" coconut yogurt ",
-	" coffee filters ",
+	" coffee filters ",
 	" coffee liqueur ",
-	" collard greens ",
-	" colored sugars ",
+	" collard greens ",
+	" colored sugars ",
 	" common cracker ",
-	" concord grapes ",
+	" concord grapes ",
 	" condensed milk ",
 	" converted rice ",
-	" cooking sprays ",
-	" coriander leafs ",
+	" cooking sprays ",
+	" coriander leaf ",
 	" coriander seed ",
-	" coriander seeds ",
-	" corn tortillas ",
 	" corn tortillas ",
 	" cornmeal crust ",
 	" cortland apple ",
-	" cotija cheeses ",
+	" cotija cheeses ",
 	" cottage cheese ",
-	" country breads ",
-	" cracker crumbs ",
-	" cracker toasts ",
+	" country breads ",
+	" cracker crumbs ",
+	" cracker toasts ",
 	" cranberry bean ",
-	" cranberry jams ",
-	" crawfish tails ",
-	" crayfish tails ",
-	" cream coconuts ",
+	" cranberry jams ",
+	" crawfish tails ",
+	" crayfish tails ",
+	" cream coconuts ",
 	" crema mexicana ",
 	" creme anglaise ",
-	" creme fraiches ",
+	" creme fraiches ",
 	" creole mustard ",
 	" crispy shallot ",
 	" cucumber salad ",
-	" cured chorizos ",
-	" curly parsleys ",
-	" curly spinachs ",
-	" currant jellys ",
-	" daikon radishs ",
+	" cured chorizos ",
+	" curly parsleys ",
+	" curly spinachs ",
+	" currant jellys ",
+	" daikon radishs ",
 	" dark chocolate ",
 	" demerara sugar ",
 	" demerara syrup ",
-	" dessert apples ",
-	" dijon mustards ",
-	" dinosaur kales ",
+	" dessert apples ",
+	" dijon mustards ",
+	" dinosaur kales ",
 	" dry white wine ",
 	" dulce de leche ",
 	" dungeness crab ",
-	" edible flowers ",
+	" edible flowers ",
 	" edible glitter ",
 	" egg fettuccine ",
 	" egg substitute ",
@@ -2119,65 +2110,65 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" english walnut ",
 	" enoki mushroom ",
 	" enriched flour ",
-	" espresso beans ",
-	" farmer cheeses ",
+	" espresso beans ",
+	" farmer cheeses ",
 	" fat buttermilk ",
 	" fat mayonnaise ",
-	" favorite beers ",
-	" fennel pollens ",
+	" favorite beers ",
+	" fennel pollens ",
 	" fennel sausage ",
 	" fenugreek seed ",
-	" fernet brancas ",
+	" fernet brancas ",
 	" filtered water ",
 	" finishing salt ",
 	" flageolet bean ",
 	" flatiron steak ",
 	" flavorless oil ",
-	" flaxseed meals ",
+	" flaxseed meals ",
 	" flour tortilla ",
-	" floury potatos ",
+	" floury potatos ",
 	" fontina cheese ",
-	" food colorings ",
+	" food colorings ",
 	" forbidden rice ",
-	" french lentils ",
+	" french lentils ",
 	" french mustard ",
-	" fried chickens ",
-	" fried shallots ",
-	" frizzled leeks ",
-	" fromage blancs ",
-	" fruit chutneys ",
-	" fruit compotes ",
-	" fryer chickens ",
+	" fried chickens ",
+	" fried shallots ",
+	" frizzled leeks ",
+	" fromage blancs ",
+	" fruit chutneys ",
+	" fruit compotes ",
+	" fryer chickens ",
 	" frying chicken ",
 	" fuyu persimmon ",
-	" garbanzo beans ",
+	" garbanzo beans ",
 	" garbanzo flour ",
-	" garlic confits ",
+	" garlic chivess ",
+	" garlic confits ",
 	" garlic crouton ",
 	" garlic granule ",
-	" garlic powders ",
+	" garlic powders ",
 	" garlic sausage ",
-	" garlic sprouts ",
-	" gelatin sheets ",
+	" garlic sprouts ",
+	" gelatin sheets ",
 	" german mustard ",
 	" gherkin pickle ",
-	" ginger cookies ",
+	" ginger cookies ",
 	" ginger liqueur ",
 	" globe eggplant ",
-	" glucose syrups ",
-	" glutinou rices ",
-	" golden raisins ",
+	" glucose syrups ",
+	" glutinou rices ",
+	" golden raisins ",
 	" graham cracker ",
-	" grains of selim ",
-	" grand marniers ",
+	" grand marniers ",
 	" granola cereal ",
-	" grapeseed oils ",
-	" greek oreganos ",
-	" green cabbages ",
+	" grapeseed oils ",
+	" greek oreganos ",
+	" green cabbages ",
 	" green capsicum ",
 	" green cardamom ",
-	" green chiliess ",
-	" green pepperss ",
+	" green chiliess ",
+	" green pepperss ",
 	" green plantain ",
 	" green scallion ",
 	" green zucchini ",
@@ -2185,298 +2176,295 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" guajillo chile ",
 	" guajillo chili ",
 	" guinness stout ",
-	" gyoza wrappers ",
+	" gyoza wrappers ",
 	" habanero chile ",
 	" habanero chili ",
 	" habanero sauce ",
-	" half and halfs ",
-	" halibut steaks ",
+	" half and halfs ",
+	" halibut steaks ",
 	" haloumi cheese ",
-	" hamburger buns ",
+	" hamburger buns ",
 	" hamburger meat ",
 	" hamburger roll ",
 	" hardboiled egg ",
-	" harissa sauces ",
+	" harissa sauces ",
 	" havarti cheese ",
 	" hazelnut flour ",
-	" hazelnut meals ",
-	" hazelnut skins ",
+	" hazelnut meals ",
+	" hazelnut skins ",
 	" hazelnut syrup ",
-	" heart of palms ",
-	" heart romaines ",
+	" heart of palms ",
+	" heart romaines ",
 	" herbed crouton ",
-	" herbs and spice ",
 	" hibiscu flower ",
-	" honey mustards ",
+	" honey mustards ",
 	" honeydew melon ",
-	" hubbard squashs ",
+	" hubbard squash ",
 	" imported olive ",
-	" inch baguettes ",
-	" inch tortillas ",
-	" indian bay leaf ",
+	" inch baguettes ",
+	" inch tortillas ",
 	" instant coffee ",
-	" instant flours ",
-	" instant yeasts ",
-	" irish whiskeys ",
-	" italian basils ",
-	" italian breads ",
+	" instant flours ",
+	" instant yeasts ",
+	" irish whiskeys ",
+	" italian basils ",
+	" italian breads ",
 	" italian tomato ",
 	" jalapeno chile ",
 	" jalapeno chili ",
-	" jello gelatins ",
+	" jello gelatins ",
 	" jonagold apple ",
-	" juniper berrys ",
+	" juniper berrys ",
 	" kabocha squash ",
 	" kasseri cheese ",
-	" kohlrabi bulbs ",
-	" kombu seaweeds ",
-	" lacinato kales ",
+	" kohlrabi bulbs ",
+	" kombu seaweeds ",
+	" lacinato kales ",
 	" lasagna noodle ",
-	" lasagna sheets ",
+	" lasagna sheets ",
 	" lavender honey ",
-	" lemon gelatins ",
-	" lesser galangal ",
-	" lettuce greens ",
+	" lemon gelatins ",
+	" lemon verbenas ",
+	" lettuce greens ",
 	" lettuce tomato ",
-	" linguine finis ",
+	" linguine finis ",
+	" litsea cubebas ",
 	" loaf ciabattum ",
-	" long eggplants ",
-	" lowfat yogurts ",
+	" long eggplants ",
+	" lowfat yogurts ",
 	" luxardo cherry ",
 	" macadamium nut ",
-	" maine lobsters ",
+	" maine lobsters ",
 	" mandarin juice ",
 	" mandarin vodka ",
-	" mango chutneys ",
-	" manioc starchs ",
+	" mango chutneys ",
+	" manioc starchs ",
 	" marcona almond ",
 	" margaritum mix ",
 	" marinara sauce ",
 	" marshmallow cr ",
 	" mcintosh apple ",
-	" mesclun greens ",
-	" metaxa brandys ",
-	" mexican cremas ",
-	" mexican lagers ",
+	" mesclun greens ",
+	" metaxa brandys ",
+	" mexican cremas ",
+	" mexican lagers ",
 	" mexican tomato ",
 	" mezzi rigatoni ",
 	" milk chocolate ",
-	" mineral waters ",
+	" mineral waters ",
 	" minute tapioca ",
-	" mixed lettuces ",
+	" mixed lettuces ",
 	" mixed mushroom ",
-	" monterey jacks ",
+	" monterey jacks ",
 	" morel mushroom ",
-	" muffin batters ",
+	" muffin batters ",
 	" mushroom broth ",
 	" mushroom sauce ",
-	" mushroom soups ",
-	" mustard greens ",
+	" mushroom soups ",
+	" mustard greens ",
 	" natural almond ",
 	" natural yogurt ",
-	" nicoise olives ",
-	" nigella sativas ",
-	" nonfat yogurts ",
+	" nicoise olives ",
+	" nigella sativa ",
+	" nonfat yogurts ",
 	" nonstick spray ",
-	" northern beans ",
+	" northern beans ",
 	" oatmeal cookie ",
-	" oaxaca cheeses ",
+	" oaxaca cheeses ",
 	" olive tapenade ",
 	" onion scallion ",
 	" orange blossom ",
 	" orange curacao ",
 	" orange gelatin ",
-	" orange lentils ",
+	" orange lentils ",
 	" orange liqueur ",
-	" orange peppers ",
-	" orange roughys ",
-	" orange sorbets ",
+	" orange peppers ",
+	" orange roughys ",
+	" orange sorbets ",
 	" oyster cracker ",
 	" oyster shucked ",
 	" package tempeh ",
 	" pancake batter ",
-	" paneer cheeses ",
-	" panela cheeses ",
+	" paneer cheeses ",
+	" panela cheeses ",
 	" parboiled rice ",
-	" parsley basils ",
+	" parsley basils ",
 	" parsley flakes ",
 	" parsley leaves ",
-	" parsley pestos ",
-	" parsley thymes ",
-	" pasilla chiles ",
-	" passion fruits ",
-	" peach gelatins ",
-	" peach liqueurs ",
-	" peach schnapps ",
+	" parsley pestos ",
+	" parsley thymes ",
+	" pasilla chiles ",
+	" passion fruits ",
+	" peach gelatins ",
+	" peach liqueurs ",
+	" peach schnapps ",
 	" peanut brittle ",
-	" peanut butters ",
-	" pearl couscous ",
-	" pearl tapiocas ",
+	" peanut butters ",
+	" pearl couscous ",
+	" pearl tapiocas ",
 	" pearled barley ",
-	" peasant breads ",
-	" penne fusillis ",
+	" peasant breads ",
+	" penne fusillis ",
 	" pepper vinegar ",
 	" peppered bacon ",
-	" peruvian pepper ",
-	" phyllo pastrys ",
-	" picante salsas ",
-	" picante sauces ",
-	" pickle relishs ",
+	" phyllo pastrys ",
+	" picante salsas ",
+	" picante sauces ",
+	" pickle relishs ",
 	" pickled garlic ",
 	" pickled ginger ",
-	" pickled onions ",
+	" pickled onions ",
 	" pickled pepper ",
-	" pickling limes ",
-	" pickling salts ",
+	" pickling limes ",
+	" pickling salts ",
 	" pickling spice ",
 	" pimento pepper ",
-	" pineapple rums ",
-	" pistachio nuts ",
-	" pistachio oils ",
-	" plum tomatoess ",
+	" pineapple rums ",
+	" pistachio nuts ",
+	" pistachio oils ",
+	" plum tomatoess ",
 	" poached salmon ",
-	" poblano chiles ",
-	" poblano chilis ",
+	" poblano chiles ",
+	" poblano chilis ",
 	" poblano pepper ",
-	" poire williams ",
+	" poire williams ",
 	" polish sausage ",
 	" popcorn kernel ",
 	" popped popcorn ",
-	" pork spareribs ",
+	" pork spareribs ",
 	" portobello cap ",
 	" potato gnocchi ",
-	" potato starchs ",
+	" potato starchs ",
 	" powdered sugar ",
-	" premium vodkas ",
+	" premium vodkas ",
 	" prosciutto ham ",
-	" puffed millets ",
-	" pullman breads ",
+	" puffed millets ",
+	" pullman breads ",
 	" pumpkin butter ",
-	" pumpkin fleshs ",
-	" pumpkin purees ",
-	" pureed bananas ",
-	" pureed tomatos ",
+	" pumpkin fleshs ",
+	" pumpkin purees ",
+	" pureed bananas ",
+	" pureed tomatos ",
 	" purified water ",
 	" purple cabbage ",
-	" purple potatos ",
-	" quick oatmeals ",
-	" radish sprouts ",
-	" rainbow chards ",
+	" purple potatos ",
+	" quick oatmeals ",
+	" radish sprouts ",
+	" rainbow chards ",
 	" rainbow quinoa ",
-	" rainbow trouts ",
+	" rainbow trouts ",
 	" raisin currant ",
 	" ranch dressing ",
-	" raspberry jams ",
+	" raspberry jams ",
 	" realemon juice ",
-	" rendered ducks ",
-	" rhubarb syrups ",
+	" rendered ducks ",
+	" rhubarb syrups ",
 	" ricotta cheese ",
-	" riesling wines ",
-	" roast chickens ",
+	" riesling wines ",
+	" roast chickens ",
 	" robiola cheese ",
-	" rolled barleys ",
-	" romaine hearts ",
-	" romano cheeses ",
-	" romesco sauces ",
+	" rolled barleys ",
+	" romaine hearts ",
+	" romano cheeses ",
+	" romesco sauces ",
 	" rosemary thyme ",
 	" rubber spatula ",
-	" russet potatos ",
-	" safflower oils ",
+	" russet potatos ",
+	" safflower oils ",
 	" saffron strand ",
 	" saffron thread ",
 	" salad dressing ",
-	" salsa picantes ",
-	" sanding sugars ",
+	" salsa picantes ",
+	" sanding sugars ",
 	" sandwich bread ",
-	" sandwich rolls ",
+	" sandwich rolls ",
 	" satsuma orange ",
 	" sausage casing ",
-	" savoy cabbages ",
+	" savoy cabbages ",
 	" scallion green ",
 	" scallion white ",
-	" scotch bonnets ",
+	" scotch bonnets ",
 	" scotch whiskey ",
-	" scotch whiskys ",
-	" scrambled eggs ",
+	" scotch whiskys ",
+	" scrambled eggs ",
 	" seasoning salt ",
-	" seltzer waters ",
+	" seltzer waters ",
 	" semolina flour ",
-	" serrano chiles ",
-	" serrano chilis ",
+	" serrano chiles ",
+	" serrano chilis ",
 	" serrano pepper ",
-	" sesame tahinis ",
+	" sesame tahinis ",
 	" seville orange ",
 	" shallot halved ",
-	" shaoxing wines ",
-	" sharp cheddars ",
-	" shelling beans ",
+	" shaoxing wines ",
+	" sharp cheddars ",
+	" shelling beans ",
 	" sherry vinegar ",
 	" shucked oyster ",
 	" sichuan pepper ",
-	" sichuan peppers ",
 	" silver tequila ",
 	" simmered pinto ",
-	" sirloin steaks ",
-	" sirloin strips ",
-	" smoked almonds ",
+	" sirloin steaks ",
+	" sirloin strips ",
+	" smoked almonds ",
 	" smoked paprika ",
-	" smoked salmons ",
+	" smoked salmons ",
 	" smoked sausage ",
-	" smoked turkeys ",
-	" snack crackers ",
+	" smoked turkeys ",
+	" snack crackers ",
 	" sockeye salmon ",
-	" sorghum flours ",
-	" sorghum syrups ",
+	" sorghum flours ",
+	" sorghum syrups ",
 	" sourdough loaf ",
 	" sourdough roll ",
-	" soy margarines ",
+	" soy margarines ",
 	" spanish brandy ",
-	" spanish olives ",
-	" spanish onions ",
+	" spanish olives ",
+	" spanish onions ",
 	" spanish peanut ",
 	" sparkling wine ",
-	" spicy mustards ",
-	" spicy sausages ",
-	" spiny lobsters ",
+	" spicy mustards ",
+	" spicy sausages ",
+	" spiny lobsters ",
 	" split chickpea ",
-	" spring garlics ",
+	" spring garlics ",
 	" squash blossom ",
-	" squeeze lemons ",
+	" squeeze lemons ",
 	" sriracha sauce ",
 	" stale baguette ",
 	" starchy potato ",
-	" stewed tomatos ",
+	" stewed tomatos ",
 	" stilton cheese ",
 	" stirred tahini ",
 	" strawberry jam ",
-	" streaky bacons ",
-	" string cheeses ",
+	" streaky bacons ",
+	" string cheeses ",
 	" submarine roll ",
-	" sugar pumpkins ",
+	" sugar pumpkins ",
 	" sugar snap pea ",
 	" sultana raisin ",
-	" sunflower oils ",
+	" sunflower oils ",
 	" sunflower seed ",
 	" sweet potatoes ",
-	" tabasco peppers ",
-	" tabasco sauces ",
+	" tabasco pepper ",
+	" tabasco sauces ",
 	" tamarind juice ",
-	" tamarind pulps ",
+	" tamarind pulps ",
 	" tangerine peel ",
-	" tapioca flours ",
-	" tapioca pearls ",
+	" tapioca flours ",
+	" tapioca pearls ",
 	" tapioca starch ",
 	" tender lettuce ",
 	" tequila blanco ",
 	" teriyaki sauce ",
-	" thyme oreganos ",
-	" thyme parsleys ",
+	" thyme oreganos ",
+	" thyme parsleys ",
 	" thyme rosemary ",
 	" tomato chutney ",
 	" tomato ketchup ",
-	" tomato relishs ",
+	" tomato relishs ",
 	" tonkatsu sauce ",
-	" tortilla chips ",
+	" tortilla chips ",
 	" tortilla flour ",
 	" tropical fruit ",
 	" truffle butter ",
@@ -2484,1275 +2472,1247 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" turkey sausage ",
 	" tzatziki sauce ",
 	" unsmoked bacon ",
-	" vanilla sauces ",
-	" vanilla sugars ",
-	" vanilla syrups ",
-	" vanilla vodkas ",
-	" vanilla wafers ",
+	" vanilla sauces ",
+	" vanilla sugars ",
+	" vanilla syrups ",
+	" vanilla vodkas ",
+	" vanilla wafers ",
 	" vanilla yogurt ",
-	" vegan chickens ",
-	" vegetable oils ",
+	" vegan chickens ",
+	" vegetable oils ",
 	" vegetable soup ",
-	" veggie burgers ",
-	" venison steaks ",
+	" veggie burgers ",
+	" venison steaks ",
 	" vidalium onion ",
 	" vienna sausage ",
-	" vinegar sauces ",
-	" virginium hams ",
-	" voatsiperiferys ",
-	" vodka chilleds ",
+	" vinegar sauces ",
+	" virginium hams ",
+	" voatsiperifery ",
+	" vodka chilleds ",
 	" wakame seaweed ",
-	" walnut butters ",
+	" walnut butters ",
 	" water chestnut ",
-	" water chestnuts ",
-	" water crackers ",
+	" water crackers ",
 	" wheat baguette ",
-	" wheat couscous ",
-	" wheat crackers ",
+	" wheat couscous ",
+	" wheat crackers ",
 	" wheat farfalle ",
 	" wheat macaroni ",
 	" wheat rigatoni ",
 	" wheat tortilla ",
-	" whipped creams ",
+	" whipped creams ",
 	" whipping cream ",
-	" white cabbages ",
-	" white cheddars ",
+	" white cabbages ",
+	" white cheddars ",
 	" white cornmeal ",
-	" white creamers ",
+	" white creamers ",
 	" white mushroom ",
-	" white tequilas ",
-	" white truffles ",
+	" white mustards ",
+	" white tequilas ",
+	" white truffles ",
 	" white vermouth ",
-	" white vinegars ",
+	" white vinegars ",
 	" wild asparagus ",
 	" wild blueberry ",
-	" wild mushrooms ",
-	" winter squashs ",
+	" wild mushrooms ",
+	" winter squashs ",
 	" wonton wrapper ",
-	" wooden skewers ",
+	" wooden skewers ",
 	" worcestershire ",
-	" yellow hominys ",
-	" yellow lentils ",
+	" yellow hominys ",
+	" yellow lentils ",
 	" yellow mustard ",
-	" yellow peppers ",
-	" yellow potatos ",
-	" yellow squashs ",
-	" yellow tomatos ",
+	" yellow peppers ",
+	" yellow potatos ",
+	" yellow squashs ",
+	" yellow tomatos ",
 	" yellowfin tuna ",
 	" young pecorino ",
 	" absolut vodka ",
 	" acacium honey ",
-	" achiote seeds ",
-	" acorn squashs ",
-	" agave nectars ",
-	" aged cheddars ",
+	" achiote seeds ",
+	" acorn squashs ",
+	" agave nectars ",
+	" aged cheddars ",
 	" albacore tuna ",
-	" aleppo chilis ",
+	" aleppo chilis ",
 	" aleppo pepper ",
-	" alfalfa sprout ",
 	" alfredo sauce ",
 	" allspice dram ",
 	" almond butter ",
-	" almond flours ",
+	" almond flours ",
 	" almond sliver ",
-	" almond syrups ",
+	" almond syrups ",
 	" amaranth seed ",
 	" anaheim chile ",
 	" anaheim chili ",
 	" anchovy filet ",
 	" anise liqueur ",
-	" annatto seeds ",
-	" apple brandys ",
-	" apple butters ",
+	" annatto seeds ",
+	" apple brandys ",
+	" apple butters ",
 	" apple chutney ",
 	" apple schnapp ",
 	" apple vinegar ",
 	" arame seaweed ",
-	" arborio rices ",
+	" arborio rices ",
 	" arugula pesto ",
 	" arugula salad ",
 	" asiago cheese ",
 	" assorted herb ",
-	" assorted nuts ",
-	" averna amaros ",
-	" baby arugulas ",
+	" assorted nuts ",
+	" averna amaros ",
+	" baby arugulas ",
 	" baby broccoli ",
 	" baby cucumber ",
 	" baby eggplant ",
-	" baby lettuces ",
-	" baby spinachs ",
+	" baby lettuces ",
+	" baby spinachs ",
 	" baby zucchini ",
 	" bacardi limon ",
-	" bacon greases ",
+	" bacon greases ",
 	" bag cranberry ",
-	" baked potatos ",
-	" bakery breads ",
-	" baking apples ",
+	" baked potatos ",
+	" bakery breads ",
+	" baking apples ",
 	" baking potato ",
 	" baking powder ",
-	" baking sprays ",
+	" baking sprays ",
 	" bamboo skewer ",
-	" banana breads ",
+	" banana breads ",
 	" banana pepper ",
-	" banana purees ",
-	" banana squashs ",
-	" barbecue rubs ",
-	" barley flours ",
-	" basil leavess ",
+	" banana purees ",
+	" banana squash ",
+	" barbecue rubs ",
+	" barley flours ",
+	" basil leavess ",
 	" basil parsley ",
-	" basmati rices ",
+	" basmati rices ",
 	" beef bouillon ",
-	" beef briskets ",
-	" beef consomms ",
+	" beef briskets ",
 	" beef consomme ",
+	" beef consomms ",
 	" beef dripping ",
-	" beef sirloins ",
+	" beef sirloins ",
 	" beefeater gin ",
 	" beluga lentil ",
-	" beurre blancs ",
-	" bibb lettuces ",
-	" black cardamom ",
-	" black mustards ",
-	" black olivess ",
-	" black peppers ",
-	" black-eyed pea ",
-	" blood oranges ",
+	" beurre blancs ",
+	" bibb lettuces ",
+	" black mustard ",
+	" black olivess ",
+	" black peppers ",
+	" blackcurrants ",
+	" blood oranges ",
 	" blood sausage ",
-	" blue curacaos ",
+	" blue curacaos ",
 	" blueberry jam ",
-	" bone removeds ",
+	" bone removeds ",
 	" borlotti bean ",
-	" borlotti beans ",
 	" bottle aperol ",
 	" bouquet garni ",
 	" bourbon sauce ",
 	" box raspberry ",
 	" bread cracker ",
-	" bread crumbss ",
+	" bread crumbss ",
 	" bread pudding ",
 	" brewed coffee ",
-	" brioche rolls ",
+	" brioche rolls ",
+	" broccoflowers ",
 	" broccoli rabe ",
 	" broccoli slaw ",
-	" broken pecans ",
+	" broken pecans ",
 	" broken walnut ",
-	" brown butters ",
-	" brown lentils ",
+	" brown butters ",
+	" brown lentils ",
 	" brown mustard ",
-	" brown mustards ",
-	" brown raisins ",
+	" brown raisins ",
 	" buffalo sauce ",
-	" bulb shallots ",
-	" bulgar wheats ",
-	" bulgur wheats ",
-	" bulk sausages ",
+	" bulb shallots ",
+	" bulgar wheats ",
+	" bulgur wheats ",
+	" bulk sausages ",
 	" burgundy wine ",
 	" butter cookie ",
-	" butter pecans ",
-	" butter sauces ",
-	" butterscotchs ",
-	" calrose rices ",
-	" can chickpeas ",
+	" butter pecans ",
+	" butter sauces ",
+	" butterscotchs ",
+	" calrose rices ",
+	" can chickpeas ",
+	" canary melons ",
 	" candied fruit ",
 	" candied pecan ",
-	" candied peels ",
+	" candied peels ",
 	" candy coating ",
-	" canning salts ",
+	" canning salts ",
 	" caramel sauce ",
 	" caramel syrup ",
-	" caraway seeds ",
-	" cardamom pods ",
+	" caraway seeds ",
+	" cardamom pods ",
 	" cardamom seed ",
-	" carrot juices ",
+	" carrot juices ",
 	" cashew butter ",
-	" cashew creams ",
+	" cashew creams ",
 	" cassi liqueur ",
-	" caster sugars ",
-	" cayenne pepper ",
-	" celery hearts ",
-	" celery powders ",
-	" chaat masalas ",
+	" caster sugars ",
+	" celery hearts ",
+	" celery powder ",
+	" chaat masalas ",
 	" challah bread ",
-	" cheese sauces ",
+	" cheese sauces ",
 	" cheese spread ",
 	" cherry brandy ",
-	" cherry juices ",
+	" cherry juices ",
 	" cherry pepper ",
-	" cherry syrups ",
+	" cherry syrups ",
 	" cherry tomato ",
-	" cherry vodkas ",
-	" chicken bones ",
+	" cherry vodkas ",
+	" chicken bones ",
 	" chicken broth ",
 	" chicken liver ",
-	" chicken meats ",
+	" chicken meats ",
 	" chicken salad ",
-	" chicken skins ",
-	" chicken soups ",
+	" chicken skins ",
+	" chicken soups ",
 	" chicken stock ",
 	" chicken strip ",
 	" chicken thigh ",
-	" chicken wings ",
-	" chile peppers ",
-	" chili peppers ",
-	" chili powders ",
-	" chilled lards ",
+	" chicken wings ",
+	" chile peppers ",
+	" chili peppers ",
+	" chili powders ",
+	" chilled lards ",
 	" chilled water ",
 	" chinese chili ",
-	" chinese wines ",
-	" chipotle rubs ",
+	" chinese wines ",
+	" chipotle rubs ",
 	" chive blossom ",
 	" chocolate bar ",
 	" chocolate egg ",
-	" chunky salsas ",
+	" chunky salsas ",
 	" cider vinegar ",
 	" cilantro mint ",
 	" cinnamon bark ",
-	" clam chowders ",
+	" clam chowders ",
 	" clam scrubbed ",
 	" clamato juice ",
 	" clotted cream ",
-	" clover honeys ",
-	" cocoa butters ",
-	" coconut chips ",
+	" clover honeys ",
+	" cocoa butters ",
+	" coconut chips ",
 	" coconut cream ",
 	" coconut flesh ",
 	" coconut flour ",
-	" coconut meats ",
-	" coconut milks ",
+	" coconut meats ",
+	" coconut milks ",
 	" coconut sugar ",
 	" coconut water ",
 	" coffee filter ",
-	" colby cheeses ",
-	" coleslaw mixs ",
+	" colby cheeses ",
+	" coleslaw mixs ",
 	" collard green ",
-	" collard greens ",
 	" colored sugar ",
-	" comte cheeses ",
+	" comte cheeses ",
 	" concord grape ",
-	" cookie crumbs ",
+	" cookie crumbs ",
 	" cooking spray ",
-	" coriander leaf ",
-	" coriander seed ",
-	" corn kernelss ",
-	" corn shuckeds ",
+	" corn kernelss ",
+	" corn shuckeds ",
 	" corn tortilla ",
 	" cotija cheese ",
 	" country bread ",
-	" country loafs ",
+	" country loafs ",
 	" cracker crumb ",
 	" cracker toast ",
 	" cranberry jam ",
 	" crawfish tail ",
 	" crayfish tail ",
-	" cream cheeses ",
+	" cream cheeses ",
 	" cream coconut ",
-	" cream sherrys ",
-	" creamed corns ",
+	" cream sherrys ",
+	" creamed corns ",
 	" creme fraiche ",
-	" creole spices ",
-	" crusty breads ",
+	" creole spices ",
+	" crusty breads ",
 	" cured chorizo ",
-	" curly endives ",
+	" curly endives ",
 	" curly parsley ",
 	" curly spinach ",
 	" currant jelly ",
-	" curry powders ",
+	" curry powders ",
 	" daikon radish ",
-	" demerara rums ",
+	" demerara rums ",
 	" dessert apple ",
 	" dijon mustard ",
-	" dill parsleys ",
+	" dill parsleys ",
 	" dinosaur kale ",
-	" double creams ",
-	" dry red wines ",
-	" edamame beans ",
+	" double creams ",
+	" dry red wines ",
+	" edamame beans ",
 	" edible flower ",
 	" espresso bean ",
 	" farmer cheese ",
 	" favorite beer ",
-	" fennel fronds ",
+	" fennel fronds ",
 	" fennel pollen ",
 	" fernet branca ",
-	" fetum cheeses ",
-	" filet mignons ",
-	" flat anchovys ",
-	" flat parsleys ",
+	" fetum cheeses ",
+	" filet mignons ",
+	" flat anchovys ",
+	" flat parsleys ",
 	" flaxseed meal ",
-	" flaxseed oils ",
-	" floral honeys ",
+	" flaxseed oils ",
+	" floral honeys ",
 	" floury potato ",
 	" food coloring ",
-	" french breads ",
+	" french breads ",
 	" french lentil ",
-	" french toasts ",
-	" fresno chiles ",
+	" french toasts ",
+	" fresno chiles ",
 	" fried chicken ",
-	" fried potatos ",
+	" fried potatos ",
 	" fried shallot ",
 	" frizzled leek ",
 	" fromage blanc ",
 	" fruit chutney ",
 	" fruit compote ",
 	" fryer chicken ",
-	" gaetum olives ",
-	" garam masalas ",
+	" gaetum olives ",
+	" garam masalas ",
 	" garbanzo bean ",
-	" garlic broths ",
-	" garlic chives ",
-	" garlic chivess ",
+	" garlic broths ",
+	" garlic chives ",
 	" garlic confit ",
-	" garlic hummus ",
-	" garlic juices ",
+	" garlic hummus ",
+	" garlic juices ",
 	" garlic powder ",
-	" garlic scapes ",
+	" garlic scapes ",
 	" garlic sprout ",
-	" gefilte fishs ",
+	" gefilte fishs ",
 	" gelatin sheet ",
-	" giblet broths ",
-	" gigante beans ",
+	" giblet broths ",
+	" gigante beans ",
 	" ginger cookie ",
-	" ginger juices ",
-	" ginger syrups ",
-	" globe tomatos ",
+	" ginger juices ",
+	" ginger syrups ",
+	" globe tomatos ",
 	" glucose syrup ",
-	" gluten flours ",
+	" gluten flours ",
 	" glutinou rice ",
-	" gold tequilas ",
+	" gold tequilas ",
 	" golden raisin ",
-	" golden syrups ",
-	" gouda cheeses ",
-	" grana padanos ",
+	" golden syrups ",
+	" gouda cheeses ",
+	" grana padanos ",
 	" grand marnier ",
-	" grape tomatos ",
+	" grape tomatos ",
 	" grapeseed oil ",
 	" greek oregano ",
-	" greek yogurts ",
-	" green bananas ",
+	" greek yogurts ",
+	" green bananas ",
 	" green cabbage ",
-	" green cherrys ",
+	" green cherrys ",
 	" green chilies ",
-	" green garlics ",
-	" green lentils ",
-	" green onionss ",
-	" green papayas ",
-	" green peppers ",
+	" green garlics ",
+	" green lentils ",
+	" green onionss ",
+	" green papayas ",
 	" green peppers ",
-	" green tomatos ",
-	" guava nectars ",
+	" green tomatos ",
+	" guava nectars ",
 	" gyoza wrapper ",
 	" half and half ",
 	" halibut steak ",
-	" halved lemons ",
+	" halved lemons ",
 	" hamburger bun ",
-	" hanger steaks ",
-	" haricot verts ",
+	" hanger steaks ",
+	" haricot verts ",
 	" harissa sauce ",
 	" hazelnut meal ",
-	" hazelnut oils ",
+	" hazelnut oils ",
 	" hazelnut skin ",
 	" heart of palm ",
 	" heart romaine ",
-	" hearty breads ",
-	" hearty greens ",
-	" herb bouquets ",
-	" herb mixtures ",
-	" hickory chips ",
-	" hoisin sauces ",
+	" hearty breads ",
+	" hearty greens ",
+	" herb bouquets ",
+	" herb mixtures ",
+	" hickory chips ",
+	" hoisin sauces ",
 	" honey mustard ",
-	" hubbard squash ",
 	" inch baguette ",
 	" inch tortilla ",
 	" instant flour ",
-	" instant grits ",
-	" instant milks ",
+	" instant grits ",
+	" instant milks ",
 	" instant yeast ",
-	" iodized salts ",
+	" iodized salts ",
 	" irish whiskey ",
 	" italian basil ",
 	" italian bread ",
-	" italian herbs ",
-	" italian plums ",
-	" italian tunas ",
-	" jamaican rums ",
-	" jarred salsas ",
-	" jasmine rices ",
+	" italian herbs ",
+	" italian plums ",
+	" italian tunas ",
+	" jamaican rums ",
+	" jarred salsas ",
+	" jasmine rices ",
 	" jello gelatin ",
-	" jigger vodkas ",
-	" juice oranges ",
-	" jumbo shrimps ",
+	" jigger vodkas ",
+	" juice oranges ",
+	" jumbo shrimps ",
 	" juniper berry ",
-	" juniper berrys ",
-	" kidney beanss ",
-	" kimchi juices ",
-	" kirschwassers ",
+	" kidney beanss ",
+	" kimchi juices ",
+	" kirschwassers ",
 	" kohlrabi bulb ",
 	" kombu seaweed ",
 	" lacinato kale ",
 	" lasagna sheet ",
-	" laughing cows ",
-	" lavender buds ",
+	" laughing cows ",
+	" lavender buds ",
 	" lemon gelatin ",
-	" lemon halveds ",
-	" lemon peppers ",
-	" lemon verbenas ",
-	" lemon yogurts ",
+	" lemon halveds ",
+	" lemon myrtles ",
+	" lemon peppers ",
+	" lemon verbena ",
+	" lemon yogurts ",
 	" lettuce green ",
-	" lillet blancs ",
+	" lillet blancs ",
 	" linguine fini ",
-	" link sausages ",
-	" litsea cubebas ",
-	" little waters ",
-	" live lobsters ",
-	" loaf brioches ",
-	" loaf challahs ",
-	" lobster meats ",
-	" lobster tails ",
-	" london broils ",
+	" link sausages ",
+	" litsea cubeba ",
+	" little waters ",
+	" live lobsters ",
+	" loaf brioches ",
+	" loaf challahs ",
+	" lobster meats ",
+	" lobster tails ",
+	" london broils ",
 	" long eggplant ",
 	" lowfat yogurt ",
-	" lychee juices ",
-	" madeira wines ",
+	" lychee juices ",
+	" madeira wines ",
 	" maine lobster ",
-	" malt vinegars ",
+	" malt vinegars ",
 	" mango chutney ",
-	" mango sorbets ",
+	" mango sorbets ",
+	" mango-gingers ",
 	" manioc starch ",
-	" marsala wines ",
-	" marshmallowss ",
-	" matzo farfels ",
-	" meat fillings ",
-	" meatloaf mixs ",
-	" medjool dates ",
+	" marsala wines ",
+	" marshmallowss ",
+	" matzo farfels ",
+	" meat fillings ",
+	" meatloaf mixs ",
+	" medjool dates ",
 	" mesclun green ",
-	" metal skewers ",
+	" metal skewers ",
 	" metaxa brandy ",
-	" mexican beers ",
+	" mexican beers ",
 	" mexican crema ",
 	" mexican lager ",
-	" mexican rices ",
-	" millet flours ",
+	" mexican rices ",
+	" millet flours ",
 	" mineral water ",
-	" mint garnishs ",
-	" mint parsleys ",
-	" miracle whips ",
+	" mint garnishs ",
+	" mint parsleys ",
+	" miracle whips ",
 	" mixed lettuce ",
-	" mixed tomatos ",
+	" mixed tomatos ",
 	" monterey jack ",
 	" muffin batter ",
-	" mushroom caps ",
+	" mushroom caps ",
 	" mushroom soup ",
 	" mustard green ",
-	" mustard greens ",
-	" mustard seeds ",
-	" napa cabbages ",
-	" navel oranges ",
+	" mustard seeds ",
+	" napa cabbages ",
+	" navel oranges ",
 	" nicoise olive ",
-	" nigella sativa ",
-	" nigella seeds ",
+	" nigella seeds ",
 	" nonfat yogurt ",
-	" nori seaweeds ",
+	" nori seaweeds ",
 	" northern bean ",
 	" oaxaca cheese ",
-	" onion powders ",
-	" orange juices ",
+	" onion powders ",
+	" orange juices ",
 	" orange lentil ",
 	" orange pepper ",
 	" orange roughy ",
-	" orange sauces ",
+	" orange sauces ",
 	" orange sorbet ",
-	" orange wheels ",
-	" orgeat syrups ",
-	" oyster sauces ",
-	" oz spaghettis ",
-	" pan drippings ",
-	" panch phorons ",
+	" orange wheels ",
+	" orgeat syrups ",
+	" oyster sauces ",
+	" oz spaghettis ",
+	" pan drippings ",
+	" panch phorons ",
 	" paneer cheese ",
 	" panela cheese ",
 	" parsley basil ",
-	" parsley dills ",
-	" parsley mints ",
+	" parsley dills ",
+	" parsley mints ",
 	" parsley pesto ",
 	" parsley thyme ",
 	" pasilla chile ",
 	" passion fruit ",
-	" pastry brushs ",
-	" pastry creams ",
-	" pastry doughs ",
-	" pastry flours ",
-	" peach brandys ",
+	" passionfruits ",
+	" pastry brushs ",
+	" pastry creams ",
+	" pastry doughs ",
+	" pastry flours ",
+	" peach brandys ",
 	" peach gelatin ",
 	" peach liqueur ",
-	" peach nectars ",
+	" peach nectars ",
 	" peach schnapp ",
-	" peach yogurts ",
+	" peach yogurts ",
 	" peanut butter ",
-	" peanut sauces ",
-	" pear liqueurs ",
-	" pearl barleys ",
+	" peanut sauces ",
+	" pear liqueurs ",
+	" pearl barleys ",
 	" pearl couscou ",
 	" pearl tapioca ",
 	" peasant bread ",
-	" pecan walnuts ",
+	" pecan walnuts ",
 	" penne fusilli ",
-	" penne rigates ",
-	" pepper jellys ",
-	" pepper sauces ",
-	" pepper tastes ",
-	" pepper vodkas ",
-	" pepperoncinis ",
-	" pequin chiles ",
-	" percent milks ",
-	" petrale soles ",
-	" phyllo doughs ",
+	" penne rigates ",
+	" pepper jellys ",
+	" pepper sauces ",
+	" pepper tastes ",
+	" pepper vodkas ",
+	" pepperoncinis ",
+	" pequin chiles ",
+	" percent milks ",
+	" petrale soles ",
+	" phyllo doughs ",
 	" phyllo pastry ",
-	" phyllo sheets ",
+	" phyllo sheets ",
 	" picante salsa ",
 	" picante sauce ",
-	" pickle brines ",
-	" pickle juices ",
+	" pickle brines ",
+	" pickle juices ",
 	" pickle relish ",
-	" pickled beets ",
+	" pickled beets ",
 	" pickled onion ",
-	" pickled pears ",
+	" pickled pears ",
 	" pickling lime ",
 	" pickling salt ",
 	" pineapple rum ",
-	" pippin apples ",
+	" pippin apples ",
 	" pistachio nut ",
 	" pistachio oil ",
-	" pitum pockets ",
-	" plastic wraps ",
+	" pitum pockets ",
+	" plastic wraps ",
 	" plum tomatoes ",
-	" plymouth gins ",
+	" plymouth gins ",
 	" poblano chile ",
 	" poblano chili ",
 	" poire william ",
-	" pork sausages ",
+	" pork sausages ",
 	" pork sparerib ",
-	" porridge oats ",
-	" potato breads ",
-	" potato flours ",
-	" potato salads ",
+	" porridge oats ",
+	" potato breads ",
+	" potato flours ",
+	" potato salads ",
 	" potato starch ",
 	" premium vodka ",
-	" pretzel salts ",
-	" prickly pears ",
+	" pretzel salts ",
+	" prickly pears ",
 	" puffed millet ",
 	" pullman bread ",
-	" pumpernickels ",
+	" pumpernickels ",
 	" pumpkin flesh ",
 	" pumpkin puree ",
-	" pumpkin seeds ",
+	" pumpkin seeds ",
 	" pureed banana ",
 	" pureed tomato ",
-	" purple basils ",
-	" purple onions ",
+	" purple basils ",
+	" purple onions ",
 	" purple potato ",
-	" quark cheeses ",
-	" queso blancos ",
-	" queso frescos ",
+	" quark cheeses ",
+	" queso blancos ",
+	" queso frescos ",
 	" quick oatmeal ",
-	" quinoa flours ",
-	" radish greens ",
+	" quinoa flours ",
+	" radish greens ",
 	" radish sprout ",
 	" rainbow chard ",
 	" rainbow trout ",
-	" raisin breads ",
-	" raman noodles ",
-	" rapeseed oils ",
+	" raisin breads ",
+	" raman noodles ",
+	" rapeseed oils ",
 	" raspberry jam ",
-	" real vanillas ",
-	" refried beans ",
+	" real vanillas ",
+	" refried beans ",
 	" rendered duck ",
 	" rhubarb syrup ",
-	" rice crackers ",
-	" rice vinegars ",
+	" rice crackers ",
+	" rice vinegars ",
 	" riesling wine ",
-	" risotto rices ",
-	" ritz crackers ",
+	" risotto rices ",
+	" ritz crackers ",
 	" roast chicken ",
-	" roast turkeys ",
-	" roasting pans ",
-	" roll wrappers ",
+	" roast turkeys ",
+	" roasting pans ",
+	" roll wrappers ",
 	" rolled barley ",
 	" romaine heart ",
 	" romano cheese ",
 	" romesco sauce ",
-	" rose essences ",
-	" rotel tomatos ",
+	" rose essences ",
+	" rotel tomatos ",
 	" russet potato ",
 	" safflower oil ",
-	" sage sausages ",
-	" salmon filets ",
-	" salmon steaks ",
-	" salsa frescas ",
+	" sage sausages ",
+	" salmon filets ",
+	" salmon steaks ",
+	" salsa frescas ",
 	" salsa picante ",
-	" sambal oeleks ",
+	" sambal oeleks ",
 	" sanding sugar ",
-	" sandwich buns ",
+	" sandwich buns ",
 	" sandwich roll ",
-	" sausage links ",
-	" sausage meats ",
+	" sarsaparillas ",
+	" sausage links ",
+	" sausage meats ",
 	" savoy cabbage ",
-	" scalded milks ",
+	" scalded milks ",
 	" scotch bonnet ",
 	" scotch whisky ",
 	" scrambled egg ",
-	" season blends ",
+	" season blends ",
 	" seltzer water ",
 	" serrano chile ",
 	" serrano chili ",
-	" sesame seedss ",
+	" sesame seedss ",
 	" sesame tahini ",
 	" shaoxing wine ",
 	" sharp cheddar ",
 	" shelling bean ",
-	" sichuan pepper ",
-	" sifted flours ",
-	" single creams ",
-	" sirloin beefs ",
+	" sifted flours ",
+	" single creams ",
+	" sirloin beefs ",
 	" sirloin steak ",
 	" sirloin strip ",
-	" skimmed milks ",
+	" skimmed milks ",
 	" smoked almond ",
-	" smoked bacons ",
-	" smoked goudas ",
+	" smoked bacons ",
+	" smoked goudas ",
 	" smoked salmon ",
-	" smoked trouts ",
+	" smoked trouts ",
 	" smoked turkey ",
 	" snack cracker ",
-	" soda crackers ",
-	" soft caramels ",
-	" soppressatums ",
+	" soda crackers ",
+	" soft caramels ",
+	" soppressatums ",
 	" sorghum flour ",
 	" sorghum syrup ",
 	" soy margarine ",
 	" spanish olive ",
 	" spanish onion ",
-	" spanish rices ",
+	" spanish rices ",
 	" spicy mustard ",
 	" spicy sausage ",
 	" spiny lobster ",
-	" splash waters ",
+	" splash waters ",
 	" spring garlic ",
-	" spring greens ",
-	" spring onions ",
-	" spring waters ",
+	" spring greens ",
+	" spring onions ",
+	" spring waters ",
 	" squeeze lemon ",
-	" squeeze limes ",
-	" steamed rices ",
+	" squeeze limes ",
+	" steamed rices ",
 	" stewed tomato ",
-	" stewing beefs ",
-	" stewing lambs ",
-	" strawberriess ",
+	" stewing beefs ",
+	" stewing lambs ",
+	" strawberriess ",
 	" streaky bacon ",
 	" string cheese ",
-	" striped basss ",
-	" stuffing mixs ",
-	" sturdy greens ",
-	" sugar cookies ",
-	" sugar neededs ",
+	" striped basss ",
+	" stuffing mixs ",
+	" sturdy greens ",
+	" sugar cookies ",
+	" sugar neededs ",
 	" sugar pumpkin ",
 	" sunflower oil ",
-	" swiss cheeses ",
-	" tabasco pepper ",
+	" sweet potatos ",
+	" swiss cheeses ",
 	" tabasco sauce ",
-	" tahini sauces ",
-	" tamari sauces ",
+	" tahini sauces ",
+	" tamari sauces ",
 	" tamarind pulp ",
 	" tapioca flour ",
 	" tapioca pearl ",
-	" tartar sauces ",
-	" tempeh bacons ",
-	" thick yogurts ",
-	" thyme branchs ",
-	" thyme leavess ",
+	" tartar sauces ",
+	" tempeh bacons ",
+	" thick yogurts ",
+	" thyme branchs ",
+	" thyme leavess ",
 	" thyme oregano ",
 	" thyme parsley ",
-	" tiger shrimps ",
-	" tofu crumbles ",
-	" tomato basils ",
-	" tomato juices ",
-	" tomato pastes ",
-	" tomato pestos ",
-	" tomato purees ",
+	" tiger shrimps ",
+	" tofu crumbles ",
+	" tomato basils ",
+	" tomato juices ",
+	" tomato pastes ",
+	" tomato pestos ",
+	" tomato purees ",
 	" tomato relish ",
-	" tomato salsas ",
-	" tomato sauces ",
+	" tomato salsas ",
+	" tomato sauces ",
 	" tortilla chip ",
-	" truffle salts ",
-	" turkey bacons ",
-	" turkey broths ",
-	" turkey gravys ",
-	" turkey thighs ",
-	" turnip greens ",
-	" vanilla beans ",
+	" truffle salts ",
+	" turkey bacons ",
+	" turkey broths ",
+	" turkey gravys ",
+	" turkey thighs ",
+	" turnip greens ",
+	" vanilla beans ",
 	" vanilla sauce ",
 	" vanilla sugar ",
 	" vanilla syrup ",
 	" vanilla vodka ",
 	" vanilla wafer ",
-	" veal scallops ",
-	" vegan butters ",
-	" vegan cheeses ",
+	" veal scallops ",
+	" vegan butters ",
+	" vegan cheeses ",
 	" vegan chicken ",
 	" vegetable oil ",
 	" veggie burger ",
 	" venison steak ",
-	" vialone nanos ",
+	" vialone nanos ",
 	" vinegar sauce ",
 	" virginium ham ",
-	" voatsiperifery ",
 	" vodka chilled ",
-	" wafer cookies ",
+	" wafer cookies ",
 	" walnut butter ",
-	" walnut flours ",
-	" walnut pecans ",
-	" water chestnut ",
+	" walnut flours ",
+	" walnut pecans ",
 	" water cracker ",
 	" wheat couscou ",
 	" wheat cracker ",
-	" wheat glutens ",
+	" wheat glutens ",
 	" whipped cream ",
 	" white cabbage ",
 	" white cheddar ",
-	" white cheeses ",
+	" white cheeses ",
 	" white creamer ",
-	" white hominys ",
-	" white mustards ",
-	" white peppers ",
-	" white potatos ",
-	" white quinoas ",
-	" white radishs ",
-	" white raisins ",
+	" white hominys ",
+	" white mustard ",
+	" white peppers ",
+	" white potatos ",
+	" white quinoas ",
+	" white radishs ",
+	" white raisins ",
 	" white tequila ",
 	" white truffle ",
-	" white turnips ",
+	" white turnips ",
 	" white vinegar ",
-	" wild arugulas ",
+	" wild arugulas ",
 	" wild mushroom ",
-	" wine vinegars ",
+	" wine vinegars ",
 	" winter squash ",
-	" wondra flours ",
+	" wondra flours ",
 	" wooden skewer ",
-	" yellow apples ",
-	" yellow chiles ",
+	" yellow apples ",
+	" yellow chiles ",
 	" yellow hominy ",
 	" yellow lentil ",
-	" yellow onions ",
+	" yellow onions ",
 	" yellow pepper ",
 	" yellow potato ",
 	" yellow squash ",
 	" yellow tomato ",
-	" yogurt sauces ",
-	" young carrots ",
+	" yogurt sauces ",
+	" young carrots ",
 	" achiote seed ",
 	" acorn squash ",
-	" acorn squashs ",
-	" adobo sauces ",
-	" adzuki beans ",
+	" adobo sauces ",
+	" adzuki beans ",
 	" agave nectar ",
-	" agave syrups ",
+	" agave syrups ",
 	" aged cheddar ",
-	" ajwain seeds ",
-	" alaskan cods ",
+	" ajwain seeds ",
+	" alaskan cods ",
 	" aleppo chili ",
 	" almond flour ",
-	" almond meals ",
-	" almond milks ",
-	" almond skins ",
+	" almond meals ",
+	" almond milks ",
+	" almond skins ",
 	" almond syrup ",
-	" amontillados ",
-	" ancho chiles ",
-	" ancho chilis ",
-	" annatto oils ",
+	" amontillados ",
+	" ancho chiles ",
+	" ancho chilis ",
+	" annatto oils ",
 	" annatto seed ",
 	" apple brandy ",
 	" apple butter ",
-	" apple ciders ",
-	" apple jellys ",
-	" apple juices ",
-	" apple purees ",
-	" apple sauces ",
-	" apple syrups ",
-	" apricot jams ",
-	" arbol chiles ",
+	" apple ciders ",
+	" apple jellys ",
+	" apple juices ",
+	" apple purees ",
+	" apple sauces ",
+	" apple syrups ",
+	" apricot jams ",
+	" arbol chiles ",
 	" arborio rice ",
-	" arctic chars ",
-	" arepa flours ",
+	" arctic chars ",
+	" arepa flours ",
 	" assorted nut ",
 	" averna amaro ",
-	" avocado dips ",
-	" avocado oils ",
+	" avocado dips ",
+	" avocado oils ",
 	" baby arugula ",
-	" baby carrots ",
-	" baby fennels ",
+	" baby carrots ",
+	" baby fennels ",
 	" baby lettuce ",
-	" baby potatos ",
-	" baby rockets ",
-	" baby shrimps ",
+	" baby potatos ",
+	" baby rockets ",
+	" baby shrimps ",
 	" baby spinach ",
-	" baby squashs ",
-	" baby tomatos ",
-	" baby turnips ",
-	" bacardi rums ",
+	" baby squashs ",
+	" baby tomatos ",
+	" baby turnips ",
+	" bacardi rums ",
 	" bacon grease ",
-	" bacon strips ",
-	" bag spinachs ",
+	" bacon strips ",
+	" bag spinachs ",
 	" baked potato ",
 	" bakery bread ",
 	" baking apple ",
-	" baking sodas ",
+	" baking sodas ",
 	" baking spray ",
 	" banana bread ",
-	" banana chips ",
+	" banana chips ",
 	" banana puree ",
-	" banana squash ",
 	" barbecue rub ",
 	" barley flour ",
-	" barley malts ",
-	" basil chives ",
+	" barley malts ",
+	" basil chives ",
 	" basil leaves ",
-	" basil pestos ",
+	" basil pestos ",
 	" basmati rice ",
-	" bay scallops ",
-	" bean sprouts ",
-	" bean threads ",
+	" bay scallops ",
+	" bean sprouts ",
+	" bean threads ",
 	" beef brisket ",
 	" beef consomm ",
-	" beef marrows ",
+	" beef marrows ",
 	" beef sirloin ",
-	" beef tongues ",
-	" bell peppers ",
-	" benedictines ",
-	" besan flours ",
+	" beef tongues ",
+	" bell peppers ",
+	" benedictines ",
+	" besan flours ",
 	" beurre blanc ",
 	" bibb lettuce ",
-	" bing cherrys ",
-	" bird peppers ",
-	" biscuit mixs ",
-	" black beanss ",
-	" black mustard ",
+	" bing cherrys ",
+	" bird peppers ",
+	" biscuit mixs ",
+	" black beanss ",
 	" black olives ",
 	" black pepper ",
-	" blackcurrants ",
-	" blended oils ",
-	" bleu cheeses ",
+	" blackcurrant ",
+	" blended oils ",
+	" bleu cheeses ",
 	" blood orange ",
-	" blood oranges ",
-	" blue cheeses ",
+	" blue cheeses ",
 	" blue curacao ",
-	" blueberriess ",
+	" blueberriess ",
 	" bone removed ",
-	" borlotti bean ",
-	" bourbon ryes ",
-	" boysenberrys ",
-	" bread crumbs ",
+	" bourbon ryes ",
+	" boysenberrys ",
 	" bread crumbs ",
-	" bread flours ",
-	" breadcrumbss ",
-	" brie cheeses ",
-	" brioche buns ",
+	" bread flours ",
+	" breadcrumbss ",
+	" brie cheeses ",
+	" brioche buns ",
 	" brioche roll ",
-	" broccoflowers ",
+	" broad beanss ",
+	" broccoflower ",
 	" broken pecan ",
-	" brook trouts ",
+	" brook trouts ",
 	" brown butter ",
 	" brown lentil ",
-	" brown mustard ",
-	" brown onions ",
+	" brown onions ",
 	" brown raisin ",
-	" brown sugars ",
-	" bruschettums ",
-	" bulb fennels ",
-	" bulb garlics ",
+	" brown sugars ",
+	" bruschettums ",
+	" bulb fennels ",
+	" bulb garlics ",
 	" bulb shallot ",
 	" bulgar wheat ",
 	" bulgur wheat ",
 	" bulk sausage ",
-	" butter beans ",
+	" butter beans ",
 	" butter pecan ",
 	" butter sauce ",
 	" butterscotch ",
-	" californiums ",
+	" californiums ",
 	" calrose rice ",
 	" can chickpea ",
-	" canary melons ",
+	" canary melon ",
 	" candied peel ",
 	" canning salt ",
-	" caper berrys ",
-	" caper brines ",
-	" caper juices ",
+	" caper berrys ",
+	" caper brines ",
+	" caper juices ",
 	" caraway seed ",
 	" cardamom pod ",
-	" carne asadas ",
-	" carrot curls ",
+	" carne asadas ",
+	" carrot curls ",
 	" carrot juice ",
 	" cashew cream ",
-	" cashew halfs ",
-	" cashew milks ",
+	" cashew halfs ",
+	" cashew milks ",
 	" caster sugar ",
-	" cauliflowers ",
+	" cauliflowers ",
 	" celery heart ",
-	" celery powder ",
-	" celery salts ",
-	" celery seeds ",
+	" celery salts ",
+	" celery seeds ",
 	" chaat masala ",
-	" chanterelles ",
-	" chat masalas ",
-	" cheese curds ",
+	" chanterelles ",
+	" chat masalas ",
+	" cheese curds ",
 	" cheese sauce ",
-	" cheese soups ",
-	" cheese whizs ",
-	" cheesecloths ",
-	" cherry colas ",
+	" cheese soups ",
+	" cheese whizs ",
+	" cheesecloths ",
+	" cherry colas ",
 	" cherry juice ",
 	" cherry syrup ",
 	" cherry vodka ",
-	" chex cereals ",
+	" chex cereals ",
 	" chicken bone ",
-	" chicken fats ",
+	" chicken fats ",
 	" chicken meat ",
 	" chicken skin ",
 	" chicken soup ",
 	" chicken wing ",
 	" chile pepper ",
-	" chile salsas ",
-	" chile sauces ",
+	" chile salsas ",
+	" chile sauces ",
 	" chili pepper ",
-	" chili peppers ",
 	" chili powder ",
-	" chili sauces ",
+	" chili sauces ",
 	" chilled lard ",
-	" chimichurris ",
+	" chimichurris ",
 	" chinese wine ",
 	" chipotle rub ",
-	" chuck roasts ",
-	" chuck steaks ",
+	" chuck roasts ",
+	" chuck steaks ",
 	" chunky salsa ",
-	" citric acids ",
-	" citru fruits ",
-	" citru juices ",
-	" citru vodkas ",
+	" citric acids ",
+	" citru fruits ",
+	" citru juices ",
+	" citru vodkas ",
 	" clam chowder ",
-	" clear honeys ",
+	" clear honeys ",
 	" clover honey ",
 	" cocoa butter ",
 	" coconut chip ",
 	" coconut meat ",
 	" coconut milk ",
-	" coconut oils ",
-	" coconut rums ",
-	" coffee beans ",
-	" coffee cakes ",
-	" coho salmons ",
+	" coconut oils ",
+	" coconut rums ",
+	" coffee beans ",
+	" coffee cakes ",
+	" coho salmons ",
 	" colby cheese ",
 	" coleslaw mix ",
-	" collard green ",
-	" comice pears ",
-	" comt cheeses ",
+	" comice pears ",
+	" comt cheeses ",
 	" comte cheese ",
 	" cookie crumb ",
-	" cooking oils ",
-	" corn kernels ",
+	" cooking oils ",
 	" corn kernels ",
-	" corn niblets ",
-	" corn relishs ",
+	" corn niblets ",
+	" corn relishs ",
 	" corn shucked ",
-	" corn starchs ",
-	" corned beefs ",
-	" cornish hens ",
-	" corona beers ",
-	" country hams ",
+	" corn starchs ",
+	" corned beefs ",
+	" cornish hens ",
+	" corona beers ",
+	" country hams ",
 	" country loaf ",
-	" cranberriess ",
+	" cranberriess ",
 	" cream cheese ",
-	" cream sauces ",
+	" cream sauces ",
 	" cream sherry ",
 	" creamed corn ",
 	" creole spice ",
-	" crisp apples ",
-	" crisp bacons ",
-	" crme fraches ",
+	" crisp apples ",
+	" crisp bacons ",
+	" crme fraches ",
 	" crusty bread ",
-	" crusty rolls ",
-	" curing salts ",
+	" crusty rolls ",
+	" curing salts ",
 	" curly endive ",
 	" curry powder ",
-	" custard mixs ",
-	" cut chickens ",
-	" deli turkeys ",
+	" custard mixs ",
+	" cut chickens ",
+	" deli turkeys ",
 	" demerara rum ",
 	" dill parsley ",
-	" dill pickles ",
-	" dinner rolls ",
+	" dill pickles ",
+	" dinner rolls ",
 	" double cream ",
-	" dry mustards ",
+	" dragonfruits ",
+	" dry mustards ",
 	" dry red wine ",
-	" duck confits ",
-	" edam cheeses ",
+	" duck confits ",
+	" edam cheeses ",
 	" edamame bean ",
-	" egg noodless ",
-	" egg whiskeds ",
-	" english peas ",
-	" fennel bulbs ",
+	" egg noodless ",
+	" egg whiskeds ",
+	" english peas ",
+	" fennel bulbs ",
 	" fennel frond ",
-	" fennel seeds ",
-	" feta cheeses ",
+	" fennel seeds ",
+	" feta cheeses ",
 	" fetum cheese ",
 	" filet mignon ",
-	" filo pastrys ",
-	" fino sherrys ",
-	" flank steaks ",
+	" filo pastrys ",
+	" fino sherrys ",
+	" flank steaks ",
 	" flat anchovy ",
 	" flat parsley ",
 	" flaxseed oil ",
 	" floral honey ",
-	" frankfurters ",
-	" french beans ",
+	" frankfurters ",
+	" french beans ",
 	" french bread ",
-	" french rolls ",
+	" french rolls ",
 	" french toast ",
 	" fresno chile ",
-	" fried onions ",
+	" fried onions ",
 	" fried potato ",
-	" fruit juices ",
-	" fruit salads ",
-	" fruit salsas ",
+	" fruit juices ",
+	" fruit salads ",
+	" fruit salsas ",
 	" gaetum olive ",
 	" garam masala ",
 	" garlic broth ",
-	" garlic bulbs ",
+	" garlic bulbs ",
 	" garlic chive ",
-	" garlic chives ",
 	" garlic hummu ",
 	" garlic juice ",
-	" garlic salts ",
+	" garlic salts ",
 	" garlic scape ",
 	" gefilte fish ",
-	" gem lettuces ",
+	" gem lettuces ",
 	" giblet broth ",
 	" gigante bean ",
-	" ginger beers ",
+	" ginger beers ",
 	" ginger juice ",
-	" ginger snaps ",
+	" ginger snaps ",
 	" ginger syrup ",
-	" gingerbreads ",
+	" gingerbreads ",
 	" globe tomato ",
 	" gluten flour ",
-	" gluten frees ",
-	" goat cheeses ",
+	" gluten frees ",
+	" goat cheeses ",
 	" gold tequila ",
-	" golden beets ",
+	" golden beets ",
 	" golden syrup ",
 	" gouda cheese ",
 	" grana padano ",
-	" granola bars ",
-	" grape jellys ",
+	" granola bars ",
+	" grape jellys ",
 	" grape tomato ",
-	" greek fetums ",
-	" greek olives ",
+	" greek fetums ",
+	" greek olives ",
 	" greek yogurt ",
-	" green apples ",
+	" green apples ",
 	" green banana ",
-	" green beanss ",
+	" green beanss ",
 	" green cherry ",
-	" green chiles ",
-	" green chilis ",
+	" green chiles ",
+	" green chilis ",
 	" green garlic ",
-	" green grapes ",
+	" green grapes ",
 	" green lentil ",
-	" green mangos ",
-	" green olives ",
-	" green onions ",
+	" green mangos ",
+	" green olives ",
 	" green onions ",
 	" green papaya ",
 	" green pepper ",
-	" green peppers ",
-	" green salsas ",
+	" green salsas ",
 	" green tomato ",
-	" guava juices ",
+	" guava juices ",
 	" guava nectar ",
-	" haa avocados ",
+	" haa avocados ",
 	" halved lemon ",
 	" hanger steak ",
-	" hardy greens ",
+	" hardy greens ",
 	" haricot vert ",
 	" hazelnut oil ",
 	" hearty bread ",
 	" hearty green ",
-	" heavy creams ",
+	" heavy creams ",
 	" herb bouquet ",
-	" herb butters ",
+	" herb butters ",
 	" herb mixture ",
 	" hickory chip ",
 	" hoisin sauce ",
-	" hollandaises ",
-	" hominy grits ",
-	" honey syrups ",
-	" horseradishs ",
-	" huckleberrys ",
-	" icing sugars ",
-	" inch celerys ",
-	" inch gingers ",
+	" hollandaises ",
+	" hominy grits ",
+	" honey syrups ",
+	" horseradishs ",
+	" huckleberrys ",
+	" icing sugars ",
+	" inch celerys ",
+	" inch gingers ",
 	" instant grit ",
 	" instant milk ",
 	" iodized salt ",
-	" irish creams ",
+	" irish creams ",
 	" italian herb ",
 	" italian plum ",
 	" italian tuna ",
-	" jack cheeses ",
-	" jamaica rums ",
+	" jack cheeses ",
+	" jamaica rums ",
 	" jamaican rum ",
 	" jarred salsa ",
 	" jasmine rice ",
 	" jigger vodka ",
 	" juice orange ",
 	" jumbo shrimp ",
-	" juniper berry ",
-	" kaffir limes ",
-	" kaiser rolls ",
-	" kernel corns ",
-	" ketjap manis ",
-	" kidney beans ",
+	" kaffir limes ",
+	" kaiser rolls ",
+	" kernel corns ",
+	" ketjap manis ",
 	" kidney beans ",
 	" kimchi juice ",
-	" king salmons ",
+	" king salmons ",
 	" kirschwasser ",
-	" kosher salts ",
-	" langoustines ",
+	" kosher salts ",
+	" langoustines ",
 	" laughing cow ",
 	" lavender bud ",
-	" leafy greens ",
-	" lemon aiolis ",
-	" lemon basils ",
-	" lemon grasss ",
+	" leafy greens ",
+	" lemon aiolis ",
+	" lemon basils ",
+	" lemon grasss ",
 	" lemon halved ",
-	" lemon juices ",
-	" lemon myrtles ",
+	" lemon juices ",
+	" lemon myrtle ",
 	" lemon pepper ",
-	" lemon thymes ",
-	" lemon verbena ",
-	" lemon vodkas ",
-	" lemon wheels ",
+	" lemon thymes ",
+	" lemon vodkas ",
+	" lemon wheels ",
 	" lemon yogurt ",
 	" lillet blanc ",
-	" lime butters ",
-	" lime halveds ",
-	" lingonberrys ",
+	" lime butters ",
+	" lime halveds ",
+	" lingonberrys ",
 	" link sausage ",
-	" litsea cubeba ",
 	" little water ",
 	" live lobster ",
-	" live mussels ",
+	" live mussels ",
 	" loaf brioche ",
 	" loaf challah ",
 	" lobster meat ",
 	" lobster tail ",
 	" london broil ",
-	" lowfat milks ",
+	" long peppers ",
+	" lowfat milks ",
 	" lychee juice ",
 	" madeira wine ",
-	" madra currys ",
-	" maldon salts ",
+	" madra currys ",
+	" maldon salts ",
 	" malt vinegar ",
-	" mango purees ",
-	" mango salsas ",
+	" mango purees ",
+	" mango salsas ",
 	" mango sorbet ",
-	" mango-gingers ",
-	" manila clams ",
-	" maple sugars ",
-	" maple syrups ",
-	" mara peppers ",
-	" marrow bones ",
+	" mango-ginger ",
+	" manila clams ",
+	" maple sugars ",
+	" maple syrups ",
+	" mara peppers ",
+	" marrow bones ",
 	" marsala wine ",
-	" marshmallows ",
 	" marshmallows ",
-	" masa harinas ",
+	" masa harinas ",
 	" matzo farfel ",
-	" matzoh meals ",
+	" matzoh meals ",
 	" meat filling ",
 	" meatloaf mix ",
 	" medjool date ",
 	" metal skewer ",
 	" mexican beer ",
 	" mexican rice ",
-	" meyer lemons ",
-	" milk yogurts ",
+	" meyer lemons ",
+	" milk yogurts ",
 	" millet flour ",
 	" mint garnish ",
-	" mint leavess ",
+	" mint leavess ",
 	" mint parsley ",
-	" minute rices ",
+	" minute rices ",
 	" miracle whip ",
-	" mixed berrys ",
-	" mixed citrus ",
-	" mixed fruits ",
-	" mixed greens ",
-	" mixed olives ",
-	" mixed spices ",
+	" mixed berrys ",
+	" mixed citrus ",
+	" mixed fruits ",
+	" mixed greens ",
+	" mixed olives ",
+	" mixed spices ",
 	" mixed tomato ",
-	" muscat wines ",
+	" muscat wines ",
 	" mushroom cap ",
-	" mustard green ",
-	" mustard oils ",
+	" mustard oils ",
 	" mustard seed ",
 	" napa cabbage ",
 	" navel orange ",
-	" neutral oils ",
+	" neutral oils ",
 	" nigella seed ",
-	" nilla wafers ",
-	" noilly prats ",
-	" nonfat milks ",
+	" nilla wafers ",
+	" noilly prats ",
+	" nonfat milks ",
 	" nori seaweed ",
-	" nut biscuits ",
+	" nut biscuits ",
 	" onion powder ",
 	" orange juice ",
-	" orange peels ",
+	" orange peels ",
 	" orange sauce ",
-	" orange sodas ",
+	" orange sodas ",
 	" orange wheel ",
-	" orecchiettes ",
-	" oreo cookies ",
+	" orecchiettes ",
+	" oreo cookies ",
 	" orgeat syrup ",
 	" oyster sauce ",
-	" oz parmesans ",
-	" oz proseccos ",
+	" oz parmesans ",
+	" oz proseccos ",
 	" oz spaghetti ",
-	" pacific cods ",
-	" paella rices ",
+	" pacific cods ",
+	" paella rices ",
 	" pan dripping ",
-	" pancake mixs ",
+	" pancake mixs ",
 	" panch phoron ",
-	" papaya seeds ",
-	" pappardelles ",
+	" papaya seeds ",
+	" pappardelles ",
 	" parsley dill ",
 	" parsley mint ",
-	" passionfruits ",
+	" passionfruit ",
 	" pastry brush ",
 	" pastry cream ",
 	" pastry dough ",
 	" pastry flour ",
-	" pea tendrils ",
+	" pea tendrils ",
 	" peach brandy ",
 	" peach nectar ",
-	" peach purees ",
-	" peach syrups ",
+	" peach purees ",
+	" peach syrups ",
 	" peach yogurt ",
 	" peanut sauce ",
-	" pear brandys ",
+	" pear brandys ",
 	" pear liqueur ",
-	" pear nectars ",
-	" pear tomatos ",
+	" pear nectars ",
+	" pear tomatos ",
 	" pearl barley ",
-	" pearl onions ",
-	" pearl sugars ",
+	" pearl onions ",
+	" pearl sugars ",
 	" pecan walnut ",
-	" peking ducks ",
+	" peking ducks ",
 	" penne rigate ",
-	" peperoncinis ",
-	" peperoncinos ",
+	" peperoncinis ",
+	" peperoncinos ",
 	" pepper jelly ",
 	" pepper sauce ",
 	" pepper taste ",
@@ -3760,188 +3720,189 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" pepperoncini ",
 	" pequin chile ",
 	" percent milk ",
-	" perciatellis ",
-	" pesto sauces ",
+	" perciatellis ",
+	" pesto sauces ",
 	" petrale sole ",
 	" phyllo dough ",
 	" phyllo sheet ",
 	" pickle brine ",
-	" pickle chips ",
+	" pickle chips ",
 	" pickle juice ",
 	" pickled beet ",
 	" pickled pear ",
-	" pig trotters ",
-	" pignoli nuts ",
+	" pig trotters ",
+	" pignoli nuts ",
 	" pippin apple ",
-	" pitum breads ",
+	" pitum breads ",
 	" pitum pocket ",
-	" pizza crusts ",
-	" pizza doughs ",
-	" pizza sauces ",
+	" pizza crusts ",
+	" pizza doughs ",
+	" pizza sauces ",
 	" plastic wrap ",
-	" plum tomatos ",
+	" plum tomatos ",
 	" plymouth gin ",
-	" poached eggs ",
-	" pomegranates ",
-	" ponzu sauces ",
-	" popped corns ",
+	" poached eggs ",
+	" pomegranates ",
+	" ponzu sauces ",
+	" popped corns ",
 	" pork sausage ",
 	" porridge oat ",
 	" potato bread ",
-	" potato chips ",
+	" potato chips ",
 	" potato flour ",
-	" potato rolls ",
+	" potato rolls ",
 	" potato salad ",
 	" pretzel salt ",
 	" prickly pear ",
-	" prune juices ",
-	" prune purees ",
-	" pudding mixs ",
-	" puff pastrys ",
-	" puffed rices ",
+	" prune juices ",
+	" prune purees ",
+	" pudding mixs ",
+	" puff pastrys ",
+	" puffed rices ",
 	" pumpernickel ",
-	" pumpkin pies ",
+	" pumpkin pies ",
 	" pumpkin seed ",
-	" pumpkinseeds ",
+	" pumpkinseeds ",
 	" purple basil ",
 	" purple onion ",
-	" purple plums ",
+	" purple plums ",
 	" quark cheese ",
-	" quatre pices ",
+	" quatre pices ",
 	" queso blanco ",
 	" queso fresco ",
-	" quick breads ",
+	" quick breads ",
 	" quinoa flour ",
 	" radish green ",
 	" raisin bread ",
 	" raman noodle ",
 	" rapeseed oil ",
-	" raspberriess ",
-	" real butters ",
+	" raspberriess ",
+	" real butters ",
 	" real vanilla ",
-	" red pepperss ",
+	" red pepperss ",
 	" refried bean ",
-	" rice cereals ",
+	" rice cereals ",
 	" rice cracker ",
-	" rice krispys ",
-	" rice noodles ",
+	" rice krispys ",
+	" rice noodles ",
 	" rice vinegar ",
 	" risotto rice ",
-	" rittenhouses ",
+	" rittenhouses ",
 	" ritz cracker ",
 	" roast turkey ",
 	" roasting pan ",
 	" roll wrapper ",
-	" roma tomatos ",
-	" romano beans ",
+	" roma tomatos ",
+	" romano beans ",
 	" rose essence ",
 	" rotel tomato ",
-	" royal icings ",
-	" rubbed sages ",
-	" rum liqueurs ",
-	" rye whiskeys ",
+	" royal icings ",
+	" rubbed sages ",
+	" rum liqueurs ",
+	" runner beans ",
+	" rye whiskeys ",
 	" sage sausage ",
-	" salad greens ",
+	" salad greens ",
+	" salal berrys ",
 	" salmon filet ",
-	" salmon skins ",
+	" salmon skins ",
 	" salmon steak ",
 	" salsa fresca ",
-	" salsa verdes ",
-	" salt peppers ",
+	" salsa verdes ",
+	" salt peppers ",
 	" sambal oelek ",
-	" san marzanos ",
+	" san marzanos ",
 	" sandwich bun ",
-	" sarsaparillas ",
-	" satay sauces ",
+	" sarsaparilla ",
+	" satay sauces ",
 	" sausage link ",
 	" sausage meat ",
 	" scalded milk ",
 	" season blend ",
-	" season salts ",
-	" seckel pears ",
-	" serrano hams ",
-	" sesame seeds ",
+	" season salts ",
+	" seckel pears ",
+	" serrano hams ",
 	" sesame seeds ",
-	" shallot oils ",
-	" sheet matzos ",
-	" sherry wines ",
+	" shallot oils ",
+	" sheet matzos ",
+	" sherry wines ",
 	" sifted flour ",
-	" silken tofus ",
+	" silken tofus ",
 	" single cream ",
 	" sirloin beef ",
-	" sirloin tips ",
+	" sirloin tips ",
 	" skimmed milk ",
-	" skirt steaks ",
-	" smith apples ",
+	" skirt steaks ",
+	" smith apples ",
 	" smoked bacon ",
-	" smoked fishs ",
+	" smoked fishs ",
 	" smoked gouda ",
-	" smoked salts ",
-	" smoked tofus ",
+	" smoked salts ",
+	" smoked tofus ",
 	" smoked trout ",
-	" smoky bacons ",
-	" soba noodles ",
+	" smoky bacons ",
+	" soba noodles ",
 	" soda cracker ",
-	" soft butters ",
+	" soft butters ",
 	" soft caramel ",
-	" soft cheeses ",
+	" soft cheeses ",
 	" soppressatum ",
-	" sour cherrys ",
-	" sour pickles ",
-	" soy proteins ",
-	" soybean oils ",
-	" spaghettinis ",
+	" sour cherrys ",
+	" sour pickles ",
+	" soy proteins ",
+	" soybean oils ",
+	" spaghettinis ",
 	" spanish rice ",
-	" spelt berrys ",
-	" spelt flours ",
-	" spicy greens ",
+	" spelt berrys ",
+	" spelt flours ",
+	" spicy greens ",
 	" splash water ",
-	" sponge cakes ",
+	" sponge cakes ",
 	" spring green ",
 	" spring onion ",
 	" spring water ",
-	" squash seeds ",
+	" squash seeds ",
 	" squeeze lime ",
-	" stale breads ",
-	" steak sauces ",
+	" stale breads ",
+	" steak sauces ",
 	" steamed rice ",
 	" stewing beef ",
 	" stewing lamb ",
-	" sticky rices ",
+	" sticky rices ",
 	" strawberries ",
-	" string beans ",
-	" strip bacons ",
-	" strip steaks ",
+	" string beans ",
+	" strip bacons ",
+	" strip steaks ",
 	" striped bass ",
 	" stuffing mix ",
 	" sturdy green ",
 	" sugar cookie ",
 	" sugar needed ",
-	" sugar syrups ",
-	" sweet onions ",
-	" sweet potatos ",
-	" swiss chards ",
+	" sugar syrups ",
+	" sweet onions ",
+	" sweet potato ",
+	" swiss chards ",
 	" swiss cheese ",
-	" table creams ",
-	" tagliatelles ",
+	" table creams ",
+	" tagliatelles ",
 	" tahini sauce ",
 	" tamari sauce ",
-	" tart cherrys ",
+	" tart cherrys ",
 	" tartar sauce ",
 	" tempeh bacon ",
-	" tender herbs ",
-	" tepid waters ",
-	" thai peppers ",
-	" thick bacons ",
+	" tender herbs ",
+	" tepid waters ",
+	" thai peppers ",
+	" thick bacons ",
 	" thick yogurt ",
 	" thyme branch ",
-	" thyme honeys ",
+	" thyme honeys ",
 	" thyme leaves ",
-	" tiger prawns ",
+	" tiger prawns ",
 	" tiger shrimp ",
-	" tiny potatos ",
-	" tium mariums ",
-	" toast points ",
+	" tiny potatos ",
+	" tium mariums ",
+	" toast points ",
 	" tofu crumble ",
 	" tomato basil ",
 	" tomato juice ",
@@ -3950,77 +3911,74 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" tomato puree ",
 	" tomato salsa ",
 	" tomato sauce ",
-	" tomato soups ",
-	" tonic waters ",
-	" tortiglionis ",
-	" truffle oils ",
+	" tomato soups ",
+	" tonic waters ",
+	" tortiglionis ",
+	" truffle oils ",
 	" truffle salt ",
 	" turkey bacon ",
-	" turkey bones ",
+	" turkey bones ",
 	" turkey broth ",
 	" turkey gravy ",
-	" turkey meats ",
+	" turkey meats ",
 	" turkey thigh ",
-	" turkey wings ",
+	" turkey wings ",
 	" turnip green ",
-	" udon noodles ",
+	" udon noodles ",
 	" vanilla bean ",
-	" vanilla pods ",
+	" vanilla pods ",
 	" veal scallop ",
 	" vegan butter ",
 	" vegan cheese ",
-	" vegan sugars ",
+	" vegan sugars ",
 	" vialone nano ",
-	" vinaigrettes ",
-	" vsop cognacs ",
+	" vinaigrettes ",
+	" vsop cognacs ",
 	" wafer cookie ",
 	" walnut flour ",
-	" walnut halfs ",
+	" walnut halfs ",
 	" walnut pecan ",
-	" waxy potatos ",
-	" wheat bagels ",
-	" wheat berrys ",
-	" wheat breads ",
-	" wheat flours ",
+	" waxy potatos ",
+	" wheat bagels ",
+	" wheat berrys ",
+	" wheat breads ",
+	" wheat flours ",
 	" wheat gluten ",
-	" wheat pennes ",
-	" wheat pitums ",
-	" wheat toasts ",
+	" wheat pennes ",
+	" wheat pitums ",
+	" wheat toasts ",
 	" white cheese ",
-	" white flours ",
-	" white grapes ",
+	" white flours ",
+	" white grapes ",
 	" white hominy ",
-	" white mustard ",
-	" white onions ",
-	" white peachs ",
+	" white onions ",
+	" white peachs ",
 	" white pepper ",
 	" white potato ",
 	" white quinoa ",
 	" white radish ",
-	" white radishs ",
 	" white raisin ",
-	" white sauces ",
-	" white sugars ",
+	" white sauces ",
+	" white sugars ",
 	" white turnip ",
-	" white wheats ",
+	" white wheats ",
 	" wild arugula ",
-	" wild salmons ",
+	" wild salmons ",
 	" wine vinegar ",
 	" wondra flour ",
-	" wonton skins ",
-	" xanthan gums ",
+	" wonton skins ",
+	" xanthan gums ",
 	" yellow apple ",
-	" yellow beets ",
+	" yellow beets ",
 	" yellow chile ",
-	" yellow corns ",
-	" yellow finns ",
-	" yellow grits ",
-	" yellow misos ",
+	" yellow corns ",
+	" yellow finns ",
+	" yellow grits ",
+	" yellow misos ",
 	" yellow onion ",
-	" yellow rices ",
+	" yellow rices ",
 	" yogurt sauce ",
 	" young carrot ",
-	" acorn squash ",
 	" adobo sauce ",
 	" adzuki bean ",
 	" agave syrup ",
@@ -4028,37 +3986,38 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" alaskan cod ",
 	" almond meal ",
 	" almond milk ",
-	" almond oils ",
+	" almond oils ",
 	" almond skin ",
-	" amber beers ",
+	" amber beers ",
 	" amontillado ",
 	" ancho chile ",
 	" ancho chili ",
-	" anise seeds ",
-	" anjou pears ",
+	" anise seeds ",
+	" anjou pears ",
 	" annatto oil ",
-	" apple cakes ",
+	" apple cakes ",
 	" apple cider ",
 	" apple jelly ",
 	" apple juice ",
-	" apple pears ",
+	" apple pears ",
 	" apple puree ",
 	" apple sauce ",
 	" apple syrup ",
-	" applesauces ",
+	" applesauces ",
 	" apricot jam ",
 	" arbol chile ",
 	" arctic char ",
 	" arepa flour ",
-	" asafoetidas ",
-	" asian pears ",
+	" asafoetidas ",
+	" asian pears ",
 	" avocado dip ",
 	" avocado oil ",
-	" baby capers ",
+	" azuki beans ",
+	" baby capers ",
 	" baby carrot ",
 	" baby fennel ",
-	" baby greens ",
-	" baby onions ",
+	" baby greens ",
+	" baby onions ",
 	" baby potato ",
 	" baby rocket ",
 	" baby shrimp ",
@@ -4068,148 +4027,137 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" bacardi rum ",
 	" bacon strip ",
 	" bag spinach ",
-	" bagel chips ",
-	" baked beans ",
-	" baked tofus ",
-	" baking mixs ",
+	" bagel chips ",
+	" baked beans ",
+	" baked tofus ",
+	" baking mixs ",
 	" baking soda ",
 	" banana chip ",
-	" banana rums ",
+	" banana rums ",
 	" barley malt ",
 	" basil chive ",
-	" basil mints ",
+	" basil mints ",
 	" basil pesto ",
-	" bay leavess ",
+	" bay leavess ",
 	" bay scallop ",
-	" bay shrimps ",
-	" bean broths ",
-	" bean purees ",
-	" bean salads ",
+	" bay shrimps ",
+	" bean broths ",
+	" bean purees ",
+	" bean salads ",
 	" bean sprout ",
-	" bean sprouts ",
 	" bean thread ",
-	" beaten eggs ",
-	" beef broths ",
-	" beef cheeks ",
-	" beef chucks ",
-	" beef livers ",
+	" beaten eggs ",
+	" beef broths ",
+	" beef cheeks ",
+	" beef chucks ",
+	" beef livers ",
 	" beef marrow ",
-	" beef minces ",
-	" beef roasts ",
-	" beef steaks ",
-	" beef stocks ",
+	" beef minces ",
+	" beef roasts ",
+	" beef steaks ",
+	" beef stocks ",
 	" beef tongue ",
-	" beet greens ",
+	" beet greens ",
 	" bell pepper ",
-	" bell peppers ",
 	" benedictine ",
-	" benne seeds ",
-	" berry wines ",
+	" benne seeds ",
+	" berry wines ",
 	" besan flour ",
-	" big carrots ",
+	" big carrots ",
 	" bing cherry ",
-	" bird chiles ",
+	" bird chiles ",
 	" bird pepper ",
 	" biscuit mix ",
 	" black beans ",
-	" blackberrys ",
-	" blackcurrant ",
+	" blackberrys ",
 	" blended oil ",
 	" bleu cheese ",
-	" blood orange ",
 	" blue cheese ",
 	" blueberries ",
-	" bocconcinis ",
-	" bomba rices ",
+	" bocconcinis ",
+	" bomba rices ",
 	" bourbon rye ",
 	" boysenberry ",
-	" boysenberrys ",
-	" brazil nuts ",
+	" brazil nuts ",
 	" bread crumb ",
 	" bread flour ",
-	" bread rolls ",
-	" breadcrumbs ",
+	" bread rolls ",
 	" breadcrumbs ",
-	" breadfruits ",
+	" breadfruits ",
 	" brie cheese ",
 	" brioche bun ",
-	" broad beans ",
-	" broad beanss ",
-	" broccoflower ",
-	" broccolinis ",
+	" broad beans ",
+	" broccolinis ",
 	" brook trout ",
 	" brown onion ",
-	" brown rices ",
+	" brown rices ",
 	" brown sugar ",
 	" bruschettum ",
 	" bulb fennel ",
 	" bulb garlic ",
-	" burger buns ",
+	" burger buns ",
 	" butter bean ",
-	" butter oils ",
-	" buttermilks ",
-	" cake flours ",
-	" cake yeasts ",
-	" calf livers ",
+	" butter oils ",
+	" buttermilks ",
+	" cake flours ",
+	" cake yeasts ",
+	" calf livers ",
 	" californium ",
-	" campanelles ",
-	" canary melon ",
-	" candy canes ",
-	" cane sugars ",
-	" cane syrups ",
-	" cannellinis ",
-	" cannellonis ",
-	" canola oils ",
-	" cantaloupes ",
+	" campanelles ",
+	" candy canes ",
+	" cane sugars ",
+	" cane syrups ",
+	" cannellinis ",
+	" cannellonis ",
+	" canola oils ",
+	" cantaloupes ",
 	" caper berry ",
 	" caper brine ",
 	" caper juice ",
-	" caperberrys ",
-	" cappuccinos ",
+	" caperberrys ",
+	" cappuccinos ",
 	" carne asada ",
-	" carob chips ",
+	" carob chips ",
 	" carrot curl ",
 	" cashew half ",
 	" cashew milk ",
-	" cashew nuts ",
+	" cashew nuts ",
 	" cauliflower ",
-	" cauliflowers ",
-	" celery ribs ",
+	" celery ribs ",
 	" celery salt ",
 	" celery seed ",
-	" celery seeds ",
-	" channa dals ",
+	" channa dals ",
 	" chanterelle ",
-	" chardonnays ",
+	" chardonnays ",
 	" chat masala ",
 	" cheese curd ",
 	" cheese soup ",
 	" cheese whiz ",
-	" cheesecakes ",
+	" cheesecakes ",
 	" cheesecloth ",
 	" cherry cola ",
-	" cherry jams ",
+	" cherry jams ",
 	" chex cereal ",
 	" chicken fat ",
 	" chile salsa ",
 	" chile sauce ",
-	" chili beans ",
-	" chili pepper ",
+	" chili beans ",
 	" chili sauce ",
 	" chimichurri ",
-	" chium seeds ",
-	" chive dills ",
+	" chium seeds ",
+	" chive dills ",
 	" chuck roast ",
 	" chuck steak ",
 	" citric acid ",
 	" citru fruit ",
 	" citru juice ",
 	" citru vodka ",
-	" clam broths ",
-	" clam juices ",
+	" clam broths ",
+	" clam juices ",
 	" clear honey ",
-	" clementines ",
-	" co lettuces ",
+	" clementines ",
+	" cloudberrys ",
+	" co lettuces ",
 	" coconut oil ",
 	" coconut rum ",
 	" coffee bean ",
@@ -4218,19 +4166,20 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" comice pear ",
 	" comt cheese ",
 	" cooking oil ",
-	" cool waters ",
-	" corn breads ",
-	" corn flours ",
+	" cool waters ",
+	" corn breads ",
+	" corn flours ",
 	" corn kernel ",
 	" corn niblet ",
 	" corn relish ",
+	" corn salads ",
 	" corn starch ",
-	" corn syrups ",
+	" corn syrups ",
 	" corned beef ",
 	" cornish hen ",
-	" cornstarchs ",
+	" cornstarchs ",
 	" corona beer ",
-	" cottonseeds ",
+	" cottonseeds ",
 	" country ham ",
 	" cranberries ",
 	" cream sauce ",
@@ -4238,89 +4187,92 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" crisp bacon ",
 	" crme frache ",
 	" crusty roll ",
-	" cumin seeds ",
-	" cured meats ",
+	" cumin seeds ",
+	" cured meats ",
 	" curing salt ",
-	" curly kales ",
+	" curly kales ",
+	" curry leafs ",
 	" custard mix ",
 	" cut chicken ",
-	" cuttlefishs ",
-	" date sugars ",
-	" date syrups ",
-	" decorations ",
+	" cuttlefishs ",
+	" date sugars ",
+	" date syrups ",
+	" decorations ",
 	" deli turkey ",
-	" demi glaces ",
-	" dill chives ",
-	" dill fronds ",
+	" demi glaces ",
+	" dill chives ",
+	" dill fronds ",
 	" dill pickle ",
-	" dilly beans ",
+	" dilly beans ",
 	" dinner roll ",
-	" dragonfruits ",
+	" dragonfruit ",
+	" dried limes ",
 	" dry mustard ",
-	" dry sherrys ",
+	" dry sherrys ",
 	" duck confit ",
 	" edam cheese ",
-	" egg noodles ",
 	" egg noodles ",
-	" egg tomatos ",
+	" egg tomatos ",
 	" egg whisked ",
-	" elderberrys ",
-	" emmentalers ",
+	" elderberrys ",
+	" emmentalers ",
 	" english pea ",
-	" erythritols ",
-	" farfallines ",
+	" erythritols ",
+	" farfallines ",
 	" fennel bulb ",
 	" fennel seed ",
 	" feta cheese ",
-	" fettuccines ",
+	" fettuccines ",
+	" fiddleheads ",
 	" filo pastry ",
+	" fingerroots ",
 	" fino sherry ",
-	" fish broths ",
-	" fish sauces ",
-	" fish steaks ",
-	" flaky salts ",
+	" fish broths ",
+	" fish sauces ",
+	" fish steaks ",
+	" flaky salts ",
 	" flank steak ",
-	" flat breads ",
-	" frangelicos ",
+	" flat breads ",
+	" frangelicos ",
 	" frankfurter ",
 	" french bean ",
-	" french frys ",
+	" french frys ",
 	" french roll ",
 	" fried onion ",
-	" fried rices ",
-	" fried tofus ",
+	" fried rices ",
+	" fried tofus ",
 	" fruit juice ",
 	" fruit salad ",
 	" fruit salsa ",
-	" frying oils ",
-	" gala apples ",
-	" garden peas ",
+	" frying oils ",
+	" gala apples ",
+	" garden peas ",
 	" garlic bulb ",
-	" garlic oils ",
+	" garlic oils ",
 	" garlic salt ",
 	" gem lettuce ",
-	" ginger ales ",
+	" gem squashs ",
+	" ginger ales ",
 	" ginger beer ",
 	" ginger snap ",
 	" gingerbread ",
-	" gingerroots ",
-	" gingersnaps ",
+	" gingerroots ",
+	" gingersnaps ",
 	" gluten free ",
 	" goat cheese ",
-	" goji berrys ",
+	" goji berrys ",
 	" golden beet ",
-	" golden rums ",
-	" good breads ",
-	" good honeys ",
-	" gooseberrys ",
-	" gorgonzolas ",
+	" golden rums ",
+	" good breads ",
+	" good honeys ",
+	" gooseberrys ",
+	" gorgonzolas ",
 	" granola bar ",
 	" grape jelly ",
-	" grapefruits ",
+	" grapefruits ",
 	" greek fetum ",
 	" greek olive ",
 	" green apple ",
-	" green beans ",
 	" green beans ",
 	" green chile ",
 	" green chili ",
@@ -4328,139 +4280,133 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" green mango ",
 	" green olive ",
 	" green onion ",
-	" green pears ",
-	" green pepper ",
+	" green pears ",
 	" green salsa ",
 	" guava juice ",
-	" gumbo files ",
+	" gumbo files ",
 	" haa avocado ",
 	" hardy green ",
-	" hash browns ",
+	" hash browns ",
 	" heavy cream ",
 	" herb butter ",
-	" hoagie buns ",
+	" hoagie buns ",
+	" hoja santas ",
 	" hollandaise ",
-	" holy basils ",
+	" holy basils ",
 	" hominy grit ",
 	" honey syrup ",
 	" horseradish ",
-	" horseradishs ",
 	" huckleberry ",
-	" huckleberrys ",
-	" iced waters ",
+	" iced waters ",
 	" icing sugar ",
 	" inch celery ",
 	" inch ginger ",
 	" irish cream ",
 	" jack cheese ",
 	" jamaica rum ",
-	" jelly beans ",
+	" jelly beans ",
 	" kaffir lime ",
 	" kaiser roll ",
-	" kecap manis ",
+	" kecap manis ",
 	" kernel corn ",
 	" ketjap mani ",
 	" kidney bean ",
-	" kidney beans ",
 	" king salmon ",
-	" kiwi fruits ",
+	" kiwi fruits ",
 	" kosher salt ",
-	" lady apples ",
-	" ladyfingers ",
-	" lager beers ",
-	" lamb minces ",
-	" lamb steaks ",
+	" lady apples ",
+	" ladyfingers ",
+	" lager beers ",
+	" lamb minces ",
+	" lamb steaks ",
 	" langoustine ",
 	" leafy green ",
-	" leek greens ",
-	" leek whites ",
+	" leek greens ",
+	" leek whites ",
 	" lemon aioli ",
-	" lemon balms ",
+	" lemon balms ",
 	" lemon basil ",
-	" lemon curds ",
+	" lemon curds ",
 	" lemon grass ",
-	" lemon grasss ",
-	" lemon halfs ",
+	" lemon halfs ",
 	" lemon juice ",
-	" lemon limes ",
-	" lemon myrtle ",
-	" lemon peels ",
-	" lemon rinds ",
-	" lemon soles ",
+	" lemon limes ",
+	" lemon peels ",
+	" lemon rinds ",
+	" lemon soles ",
 	" lemon thyme ",
 	" lemon vodka ",
 	" lemon wheel ",
-	" lemongrasss ",
+	" lemongrasss ",
 	" lime butter ",
 	" lime halved ",
-	" lime juices ",
-	" lime wheels ",
-	" limoncellos ",
+	" lime juices ",
+	" lime wheels ",
+	" limoncellos ",
 	" lingonberry ",
 	" live mussel ",
-	" liver pates ",
-	" liverwursts ",
-	" loaf breads ",
-	" long peppers ",
+	" liver pates ",
+	" liverwursts ",
+	" loaf breads ",
+	" long pepper ",
 	" lowfat milk ",
 	" madra curry ",
 	" maldon salt ",
-	" malibu rums ",
-	" malt syrups ",
-	" mango pulps ",
+	" malibu rums ",
+	" malt syrups ",
+	" mango pulps ",
 	" mango puree ",
 	" mango salsa ",
-	" mango-ginger ",
 	" manila clam ",
 	" maple sugar ",
 	" maple syrup ",
 	" mara pepper ",
-	" margaritums ",
+	" margaritums ",
 	" marrow bone ",
 	" marshmallow ",
 	" masa harina ",
-	" mascarpones ",
-	" matzo meals ",
+	" mascarpones ",
+	" matzo meals ",
 	" matzoh meal ",
-	" mayonnaises ",
-	" meat sauces ",
+	" mayonnaises ",
+	" meat sauces ",
 	" meyer lemon ",
-	" microgreens ",
-	" milk creams ",
-	" milk crumbs ",
+	" microgreens ",
+	" milk creams ",
+	" milk crumbs ",
 	" milk yogurt ",
-	" minestrones ",
+	" minestrones ",
 	" mint leaves ",
-	" mint pestos ",
-	" mint sauces ",
-	" mint syrups ",
+	" mint pestos ",
+	" mint sauces ",
+	" mint syrups ",
 	" minute rice ",
 	" mixed berry ",
 	" mixed citru ",
 	" mixed fruit ",
 	" mixed green ",
-	" mixed herbs ",
+	" mixed herbs ",
 	" mixed olive ",
-	" mixed seeds ",
+	" mixed seeds ",
 	" mixed spice ",
-	" mole sauces ",
-	" mortadellas ",
-	" mozzarellas ",
+	" mole sauces ",
+	" mortadellas ",
+	" mozzarellas ",
 	" muscat wine ",
 	" mustard oil ",
-	" naan breads ",
+	" naan breads ",
 	" neutral oil ",
-	" new potatos ",
+	" new potatos ",
 	" nilla wafer ",
 	" noilly prat ",
 	" nonfat milk ",
-	" nori sheets ",
+	" nori sheets ",
 	" nut biscuit ",
-	" nut butters ",
-	" oil butters ",
-	" onion salts ",
-	" opal basils ",
-	" orange oils ",
+	" nut butters ",
+	" oil butters ",
+	" onion salts ",
+	" opal basils ",
+	" orange oils ",
 	" orange peel ",
 	" orange soda ",
 	" orecchiette ",
@@ -4469,65 +4415,63 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" oz prosecco ",
 	" pacific cod ",
 	" paella rice ",
-	" pale lagers ",
-	" palm sugars ",
+	" pale lagers ",
+	" palm sugars ",
 	" pancake mix ",
 	" papaya seed ",
 	" pappardelle ",
-	" parmigianos ",
-	" passionfruit ",
-	" pat butters ",
+	" parmigianos ",
+	" pat butters ",
 	" pea tendril ",
 	" peach puree ",
 	" peach syrup ",
-	" peanut oils ",
+	" peanut oils ",
 	" pear brandy ",
-	" pear juices ",
+	" pear juices ",
 	" pear nectar ",
 	" pear tomato ",
 	" pearl onion ",
 	" pearl sugar ",
-	" pecan meals ",
-	" pekin ducks ",
+	" pecan meals ",
+	" pekin ducks ",
 	" peking duck ",
 	" peperoncini ",
 	" peperoncino ",
-	" peppercorns ",
-	" peppermints ",
+	" peppercorns ",
+	" peppermints ",
 	" perciatelli ",
 	" pesto sauce ",
-	" petite peas ",
+	" petite peas ",
 	" pickle chip ",
-	" pie pastrys ",
+	" pie pastrys ",
 	" pig trotter ",
-	" pigeon peas ",
+	" pigeon peas ",
 	" pignoli nut ",
-	" piloncillos ",
-	" pinot noirs ",
-	" pinto beans ",
+	" piloncillos ",
+	" pinot noirs ",
+	" pinto beans ",
 	" pitum bread ",
 	" pizza crust ",
 	" pizza dough ",
 	" pizza sauce ",
-	" plum sauces ",
+	" plum sauces ",
 	" plum tomato ",
 	" poached egg ",
 	" pomegranate ",
-	" pomegranates ",
 	" ponzu sauce ",
 	" popped corn ",
-	" poppy seeds ",
-	" pork bellys ",
-	" pork livers ",
-	" pork roasts ",
-	" pork steaks ",
-	" portobellos ",
-	" potato buns ",
+	" poppy seeds ",
+	" pork bellys ",
+	" pork livers ",
+	" pork roasts ",
+	" pork steaks ",
+	" portobellos ",
+	" potato buns ",
 	" potato chip ",
 	" potato roll ",
-	" prosciuttos ",
+	" prosciuttos ",
 	" prune juice ",
-	" prune plums ",
+	" prune plums ",
 	" prune puree ",
 	" pudding mix ",
 	" puff pastry ",
@@ -4535,200 +4479,201 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" pumpkin pie ",
 	" pumpkinseed ",
 	" purple plum ",
-	" quaker oats ",
+	" quaker oats ",
 	" quatre pice ",
-	" quesadillas ",
+	" quesadillas ",
 	" quick bread ",
-	" ramp greens ",
+	" ramp greens ",
 	" raspberries ",
 	" real butter ",
-	" red peppers ",
 	" red peppers ",
-	" rib celerys ",
+	" redcurrants ",
+	" rib celerys ",
 	" rice cereal ",
-	" rice flours ",
+	" rice flours ",
 	" rice krispy ",
 	" rice noodle ",
-	" rice papers ",
-	" rice pilafs ",
+	" rice papers ",
+	" rice pilafs ",
 	" rittenhouse ",
-	" roast beefs ",
-	" roast porks ",
-	" rolled oats ",
+	" roast beefs ",
+	" roast porks ",
+	" rock melons ",
+	" rolled oats ",
 	" roma tomato ",
 	" romano bean ",
-	" rome apples ",
-	" rose petals ",
-	" rose waters ",
+	" rome apples ",
+	" rose petals ",
+	" rose waters ",
 	" royal icing ",
 	" rubbed sage ",
 	" rum liqueur ",
-	" rump roasts ",
-	" rump steaks ",
-	" runner beans ",
+	" rump roasts ",
+	" rump steaks ",
+	" runner bean ",
 	" rye whiskey ",
-	" rye whiskys ",
-	" sage thymes ",
+	" rye whiskys ",
+	" sage thymes ",
 	" salad green ",
-	" salal berrys ",
-	" salmon roes ",
+	" salal berry ",
+	" salmon roes ",
 	" salmon skin ",
 	" salsa verde ",
 	" salt pepper ",
-	" salt waters ",
+	" salt waters ",
 	" san marzano ",
-	" sarsaparilla ",
 	" satay sauce ",
-	" sauerkrauts ",
+	" sauerkrauts ",
 	" season salt ",
 	" seckel pear ",
 	" serrano ham ",
-	" sesame oils ",
+	" sesame oils ",
 	" sesame seed ",
 	" shallot oil ",
 	" sheet matzo ",
 	" sherry wine ",
-	" shiro misos ",
-	" shortbreads ",
-	" shortenings ",
+	" shiro misos ",
+	" shortbreads ",
+	" shortenings ",
 	" silken tofu ",
 	" sirloin tip ",
-	" skate wings ",
+	" skate wings ",
 	" skirt steak ",
-	" slider buns ",
+	" slider buns ",
 	" smith apple ",
 	" smoked fish ",
-	" smoked hams ",
+	" smoked hams ",
 	" smoked salt ",
 	" smoked tofu ",
 	" smoky bacon ",
-	" snack cakes ",
+	" snack cakes ",
 	" soba noodle ",
-	" soda breads ",
-	" soda waters ",
+	" soda breads ",
+	" soda waters ",
 	" soft butter ",
 	" soft cheese ",
-	" soft drinks ",
-	" soft fruits ",
-	" solid tunas ",
-	" sour apples ",
+	" soft drinks ",
+	" soft fruits ",
+	" solid tunas ",
+	" sour apples ",
 	" sour cherry ",
-	" sour creams ",
+	" sour creams ",
 	" sour pickle ",
 	" soy protein ",
-	" soy yogurts ",
-	" soya sauces ",
+	" soy yogurts ",
+	" soya sauces ",
 	" soybean oil ",
 	" spaghettini ",
 	" spelt berry ",
 	" spelt flour ",
-	" spiced rums ",
+	" spiced rums ",
 	" spicy green ",
 	" sponge cake ",
 	" squash seed ",
-	" st germains ",
+	" st germains ",
 	" stale bread ",
-	" star anises ",
-	" star fruits ",
+	" star anises ",
+	" star fruits ",
 	" steak sauce ",
 	" sticky rice ",
-	" stout beers ",
-	" strawberrys ",
+	" stout beers ",
+	" strawberrys ",
 	" string bean ",
 	" strip bacon ",
 	" strip steak ",
-	" stroganoffs ",
-	" sugar canes ",
-	" sugar cones ",
+	" stroganoffs ",
+	" sugar canes ",
+	" sugar cones ",
 	" sugar syrup ",
-	" sushi rices ",
+	" sushi rices ",
 	" sweet onion ",
-	" sweet potato ",
-	" sweetbreads ",
+	" sweetbreads ",
 	" swiss chard ",
 	" table cream ",
-	" table salts ",
+	" table salts ",
 	" tagliatelle ",
-	" tart apples ",
+	" tart apples ",
 	" tart cherry ",
-	" tart crusts ",
-	" tawny ports ",
-	" teff flours ",
+	" tart crusts ",
+	" tawny ports ",
+	" teff flours ",
 	" tender herb ",
 	" tepid water ",
-	" thai basils ",
-	" thai chiles ",
-	" thai chilis ",
+	" thai basils ",
+	" thai chiles ",
+	" thai chilis ",
 	" thai pepper ",
 	" thick bacon ",
 	" thyme honey ",
 	" tiger prawn ",
-	" tiny capers ",
+	" tiny capers ",
 	" tiny potato ",
 	" tium marium ",
 	" toast point ",
-	" toffee bits ",
-	" tomato jams ",
-	" tomato oils ",
+	" toffee bits ",
+	" tomato jams ",
+	" tomato oils ",
 	" tomato soup ",
 	" tonic water ",
-	" torn basils ",
-	" torn greens ",
-	" tortellinis ",
+	" tonka beans ",
+	" topinamburs ",
+	" torn basils ",
+	" torn greens ",
+	" tortellinis ",
 	" tortiglioni ",
-	" triple secs ",
+	" triple secs ",
 	" truffle oil ",
-	" tuna salads ",
-	" tuna steaks ",
-	" tuna waters ",
+	" tuna salads ",
+	" tuna steaks ",
+	" tuna waters ",
 	" turkey bone ",
-	" turkey fats ",
-	" turkey hams ",
+	" turkey fats ",
+	" turkey hams ",
 	" turkey meat ",
 	" turkey wing ",
 	" udon noodle ",
+	" ugli fruits ",
 	" vanilla pod ",
-	" veal roasts ",
+	" veal roasts ",
 	" vegan sugar ",
-	" vermicellis ",
+	" vermicellis ",
 	" vinaigrette ",
 	" vsop cognac ",
 	" walnut half ",
-	" walnut oils ",
-	" watercresss ",
-	" watermelons ",
+	" walnut oils ",
+	" watercresss ",
+	" watermelons ",
 	" waxy potato ",
-	" weisswursts ",
+	" weisswursts ",
 	" wheat bagel ",
-	" wheat beers ",
+	" wheat beers ",
 	" wheat berry ",
-	" wheat brans ",
+	" wheat brans ",
 	" wheat bread ",
 	" wheat flour ",
-	" wheat germs ",
+	" wheat germs ",
 	" wheat penne ",
-	" wheat pitas ",
+	" wheat pitas ",
 	" wheat pitum ",
 	" wheat toast ",
-	" white beans ",
-	" white beers ",
-	" white corns ",
-	" white fishs ",
+	" white beans ",
+	" white beers ",
+	" white corns ",
+	" white fishs ",
 	" white flour ",
 	" white grape ",
-	" white grits ",
-	" white karos ",
-	" white misos ",
+	" white grits ",
+	" white karos ",
+	" white misos ",
 	" white onion ",
 	" white peach ",
-	" white ports ",
-	" white radish ",
-	" white rices ",
+	" white ports ",
+	" white rices ",
 	" white sauce ",
 	" white sugar ",
-	" white tunas ",
+	" white tunas ",
 	" white wheat ",
-	" white wines ",
+	" white wines ",
 	" wild salmon ",
 	" wonton skin ",
 	" xanthan gum ",
@@ -4738,60 +4683,58 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" yellow grit ",
 	" yellow miso ",
 	" yellow rice ",
-	" yukon golds ",
-	" yuzu juices ",
-	" ziti pennes ",
-	" agar agars ",
+	" yukon golds ",
+	" yuzu juices ",
+	" ziti pennes ",
+	" agar agars ",
 	" almond oil ",
 	" amber beer ",
-	" amber rums ",
-	" andouilles ",
-	" anise oils ",
+	" amber rums ",
+	" andouilles ",
+	" anise oils ",
 	" anise seed ",
 	" anjou pear ",
 	" apple cake ",
-	" apple jams ",
+	" apple jams ",
 	" apple pear ",
-	" apple pies ",
-	" applejacks ",
+	" apple pies ",
+	" applejacks ",
 	" applesauce ",
-	" arrowroots ",
-	" artichokes ",
-	" asafetidas ",
+	" arrowroots ",
+	" artichokes ",
+	" asafetidas ",
 	" asafoetida ",
-	" asafoetidas ",
 	" asian pear ",
-	" asparaguss ",
-	" aubergines ",
-	" azuki beans ",
-	" baby beets ",
+	" asparaguss ",
+	" aubergines ",
+	" azuki bean ",
+	" baby beets ",
 	" baby caper ",
-	" baby clams ",
-	" baby corns ",
+	" baby clams ",
+	" baby corns ",
 	" baby green ",
-	" baby kales ",
-	" baby lambs ",
-	" baby leeks ",
+	" baby kales ",
+	" baby lambs ",
+	" baby leeks ",
 	" baby onion ",
-	" bacon bits ",
-	" bacon fats ",
+	" bacon bits ",
+	" bacon fats ",
 	" bagel chip ",
 	" baked bean ",
-	" baked hams ",
+	" baked hams ",
 	" baked tofu ",
 	" baking mix ",
 	" banana rum ",
 	" basil mint ",
-	" basil oils ",
+	" basil oils ",
 	" bay leaves ",
 	" bay shrimp ",
-	" bbq sauces ",
+	" bbq sauces ",
 	" bean broth ",
 	" bean puree ",
 	" bean salad ",
-	" bean sprout ",
 	" beaten egg ",
-	" beef bones ",
+	" beef bones ",
 	" beef broth ",
 	" beef cheek ",
 	" beef chuck ",
@@ -4799,54 +4742,50 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" beef mince ",
 	" beef roast ",
 	" beef steak ",
-	" beef stews ",
+	" beef stews ",
 	" beef stock ",
-	" beef suets ",
-	" beefsteaks ",
+	" beef suets ",
+	" beefsteaks ",
 	" beet green ",
-	" bell pepper ",
 	" benne seed ",
 	" berry wine ",
 	" big carrot ",
 	" bird chile ",
-	" black beans ",
+	" black bean ",
 	" blackberry ",
-	" blackberrys ",
-	" blackfishs ",
-	" blue crabs ",
-	" blueberrys ",
+	" blackfishs ",
+	" blue crabs ",
+	" blueberrys ",
 	" bocconcini ",
-	" bologneses ",
+	" bologneses ",
 	" bomba rice ",
-	" bosc pears ",
-	" boysenberry ",
-	" bratwursts ",
+	" bosc pears ",
+	" bratwursts ",
 	" brazil nut ",
 	" bread roll ",
 	" breadcrumb ",
 	" breadfruit ",
-	" breadfruits ",
-	" breakfasts ",
+	" breakfasts ",
 	" broad bean ",
-	" broad beans ",
 	" broccolini ",
 	" brown rice ",
-	" buckwheats ",
-	" budweisers ",
+	" buckwheats ",
+	" budweisers ",
 	" burger bun ",
 	" butter oil ",
 	" buttermilk ",
-	" butternuts ",
-	" cacao nibs ",
+	" butternuts ",
+	" cacao nibs ",
 	" cake flour ",
-	" cake tofus ",
+	" cake tofus ",
 	" cake yeast ",
-	" calamatums ",
+	" calabreses ",
+	" calamatums ",
 	" calf liver ",
-	" camemberts ",
+	" camemberts ",
 	" campanelle ",
-	" candlenuts ",
-	" candy bars ",
+	" candlenuts ",
+	" candy bars ",
 	" candy cane ",
 	" cane sugar ",
 	" cane syrup ",
@@ -4854,247 +4793,234 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" cannelloni ",
 	" canola oil ",
 	" cantaloupe ",
-	" cantaloupes ",
-	" capellinis ",
+	" capellinis ",
 	" caperberry ",
-	" capocollos ",
-	" caponatums ",
+	" capocollos ",
+	" caponatums ",
 	" cappuccino ",
-	" carambolas ",
-	" cardamaros ",
-	" caribbeans ",
+	" carambolas ",
+	" cardamaros ",
+	" caribbeans ",
 	" carob chip ",
 	" cashew nut ",
-	" cauliflower ",
-	" cavatappis ",
-	" cavatellis ",
+	" cavatappis ",
+	" cavatellis ",
 	" celery rib ",
-	" celery seed ",
-	" chamomiles ",
-	" champagnes ",
+	" chamomiles ",
+	" champagnes ",
 	" channa dal ",
 	" chardonnay ",
 	" cheesecake ",
-	" chermoulas ",
+	" cherimoyas ",
+	" chermoulas ",
 	" cherry jam ",
-	" chick peas ",
-	" chickpeass ",
-	" chile oils ",
+	" chick peas ",
+	" chickpeass ",
+	" chile oils ",
 	" chili bean ",
-	" chili oils ",
+	" chili oils ",
 	" chium seed ",
 	" chive dill ",
-	" chive plus ",
-	" chocolates ",
-	" chopsticks ",
-	" chow meins ",
-	" ciabattums ",
+	" chive plus ",
+	" chocolates ",
+	" chopsticks ",
+	" chow meins ",
+	" ciabattums ",
 	" clam broth ",
 	" clam juice ",
 	" clementine ",
-	" clementines ",
-	" cloudberrys ",
-	" club sodas ",
+	" cloudberry ",
+	" club sodas ",
 	" co lettuce ",
-	" coca colas ",
-	" cocoa nibs ",
-	" cod steaks ",
-	" cointreaus ",
-	" condiments ",
+	" coca colas ",
+	" cocoa nibs ",
+	" cod steaks ",
+	" cointreaus ",
+	" condiments ",
 	" cool water ",
-	" cool whips ",
-	" corianders ",
+	" cool whips ",
+	" corianders ",
 	" corn bread ",
-	" corn chips ",
+	" corn chips ",
 	" corn flour ",
-	" corn grits ",
-	" corn husks ",
-	" corn meals ",
-	" corn salads ",
+	" corn grits ",
+	" corn husks ",
+	" corn meals ",
+	" corn salad ",
 	" corn syrup ",
-	" cornbreads ",
-	" cornflakes ",
-	" cornflours ",
-	" cornichons ",
+	" cornbreads ",
+	" cornflakes ",
+	" cornflours ",
+	" cornichons ",
 	" cornstarch ",
 	" cottonseed ",
-	" courgettes ",
-	" crab cakes ",
-	" crab meats ",
-	" cranberrys ",
-	" croissants ",
+	" courgettes ",
+	" crab cakes ",
+	" crab meats ",
+	" cranberrys ",
+	" croissants ",
 	" cumin seed ",
-	" cured hams ",
+	" cured hams ",
 	" cured meat ",
 	" curly kale ",
-	" curry leafs ",
-	" curry oils ",
+	" curry leaf ",
+	" curry oils ",
 	" cuttlefish ",
-	" dandelions ",
+	" dandelions ",
 	" date sugar ",
 	" date syrup ",
 	" decoration ",
-	" deli meats ",
+	" deli meats ",
 	" demi glace ",
 	" dill chive ",
 	" dill frond ",
-	" dill seeds ",
-	" dill weeds ",
+	" dill seeds ",
+	" dill weeds ",
 	" dilly bean ",
-	" dr peppers ",
-	" dragonfruit ",
-	" dried limes ",
+	" dr peppers ",
+	" dried lime ",
 	" dry sherry ",
 	" egg noodle ",
-	" egg salads ",
+	" egg salads ",
 	" egg tomato ",
-	" egg whites ",
+	" egg whites ",
 	" elderberry ",
-	" elderberrys ",
 	" emmentaler ",
-	" emmenthals ",
-	" enchiladas ",
-	" entrecotes ",
+	" emmenthals ",
+	" enchiladas ",
+	" entrecotes ",
 	" erythritol ",
-	" escabeches ",
-	" everclears ",
+	" escabeches ",
+	" everclears ",
 	" farfalline ",
-	" fava beans ",
-	" fenugreeks ",
+	" fava beans ",
+	" fenugreeks ",
 	" fettuccine ",
-	" fettucines ",
-	" fiddleheads ",
-	" field peas ",
-	" fingerroots ",
-	" fish bones ",
+	" fettucines ",
+	" fiddlehead ",
+	" field peas ",
+	" fingerroot ",
+	" fish bones ",
 	" fish broth ",
-	" fish cakes ",
+	" fish cakes ",
 	" fish sauce ",
 	" fish steak ",
 	" flaky salt ",
 	" flat bread ",
-	" flatbreads ",
-	" flavorings ",
-	" flax meals ",
-	" flax seeds ",
-	" focacciums ",
-	" framboises ",
+	" flatbreads ",
+	" flavorings ",
+	" flax meals ",
+	" flax seeds ",
+	" focacciums ",
+	" framboises ",
 	" frangelico ",
 	" french fry ",
-	" fried eggs ",
+	" fried eggs ",
 	" fried rice ",
 	" fried tofu ",
-	" frittatums ",
-	" fruit jams ",
+	" frittatums ",
+	" fruit jams ",
 	" frying oil ",
 	" gala apple ",
 	" garden pea ",
 	" garlic oil ",
-	" gem squashs ",
+	" gem squash ",
 	" ginger ale ",
 	" gingerroot ",
 	" gingersnap ",
-	" goat meats ",
-	" goat milks ",
-	" gochugarus ",
-	" gochujangs ",
+	" goat meats ",
+	" goat milks ",
+	" gochugarus ",
+	" gochujangs ",
 	" goji berry ",
-	" goji berrys ",
 	" golden rum ",
 	" good bread ",
 	" good honey ",
-	" goose fats ",
+	" goose fats ",
 	" gooseberry ",
-	" gooseberrys ",
 	" gorgonzola ",
 	" grapefruit ",
-	" grapefruits ",
-	" grapeseeds ",
+	" grapeseeds ",
 	" green bean ",
-	" green beans ",
-	" green peas ",
 	" green pear ",
-	" grenadines ",
-	" guacamoles ",
-	" guanciales ",
+	" green peas ",
+	" grenadines ",
+	" guacamoles ",
+	" guanciales ",
 	" gumbo file ",
-	" half halfs ",
-	" ham steaks ",
-	" hamburgers ",
+	" half halfs ",
+	" ham steaks ",
+	" hamburgers ",
 	" hash brown ",
-	" hazelnutss ",
-	" heath bars ",
-	" hemp seeds ",
-	" herb salts ",
-	" herbsaints ",
-	" hero rolls ",
+	" hazelnutss ",
+	" heath bars ",
+	" hemp seeds ",
+	" herb salts ",
+	" herbsaints ",
+	" hero rolls ",
 	" hoagie bun ",
-	" hoja santas ",
+	" hoja santa ",
 	" holy basil ",
-	" holy basils ",
-	" honeycombs ",
-	" horseradish ",
-	" hot sauces ",
-	" huckleberry ",
+	" honeycombs ",
+	" hot sauces ",
 	" iced water ",
-	" jackfruits ",
-	" jambalayas ",
+	" jackfruits ",
+	" jambalayas ",
 	" jelly bean ",
-	" jumbo eggs ",
+	" jumbo eggs ",
 	" kecap mani ",
-	" kidney bean ",
+	" kinh giois ",
 	" kiwi fruit ",
-	" kiwi fruits ",
-	" kiwifruits ",
-	" kochujangs ",
-	" kochukarus ",
+	" kiwifruits ",
+	" kochujangs ",
+	" kochukarus ",
 	" lady apple ",
 	" ladyfinger ",
 	" lager beer ",
-	" lamb bones ",
-	" lamb meats ",
+	" lamb bones ",
+	" lamb meats ",
 	" lamb mince ",
 	" lamb steak ",
-	" lamb stews ",
+	" lamb stews ",
 	" leek green ",
 	" leek white ",
 	" lemon balm ",
-	" lemon balms ",
 	" lemon curd ",
-	" lemon grass ",
 	" lemon half ",
 	" lemon lime ",
 	" lemon peel ",
 	" lemon rind ",
 	" lemon sole ",
 	" lemongrass ",
-	" lima beans ",
-	" lime halfs ",
+	" lima beans ",
+	" lime halfs ",
 	" lime juice ",
-	" lime peels ",
+	" lime peels ",
 	" lime wheel ",
 	" limoncello ",
+	" liquorices ",
 	" liver pate ",
 	" liverwurst ",
 	" loaf bread ",
-	" long beans ",
-	" long pepper ",
-	" mahi mahis ",
+	" long beans ",
+	" mahi mahis ",
 	" malibu rum ",
 	" malt syrup ",
+	" mandarines ",
+	" mangetouts ",
 	" mango pulp ",
-	" mango rums ",
-	" manicottis ",
-	" margarines ",
+	" mango rums ",
+	" manicottis ",
+	" margarines ",
 	" margaritum ",
-	" marmalades ",
+	" marmalades ",
 	" mascarpone ",
 	" matzo meal ",
 	" mayonnaise ",
-	" meat loafs ",
+	" meat loafs ",
 	" meat sauce ",
-	" medallions ",
-	" membrillos ",
+	" medallions ",
+	" membrillos ",
 	" microgreen ",
 	" milk cream ",
 	" milk crumb ",
@@ -5103,246 +5029,237 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" mint sauce ",
 	" mint syrup ",
 	" mixed herb ",
-	" mixed nuts ",
+	" mixed nuts ",
 	" mixed seed ",
 	" mole sauce ",
 	" mortadella ",
 	" mozzarella ",
-	" mung beans ",
-	" mushroomss ",
+	" mung beans ",
+	" mushroomss ",
 	" naan bread ",
-	" navy beans ",
-	" nectarines ",
+	" navy beans ",
+	" nectarines ",
 	" new potato ",
-	" newspapers ",
+	" newspapers ",
 	" nori sheet ",
-	" nuoc chams ",
+	" nuoc chams ",
 	" nut butter ",
-	" oat flours ",
+	" oat flours ",
 	" oil butter ",
-	" oil sprays ",
-	" olive oils ",
+	" oil sprays ",
+	" olive oils ",
 	" onion salt ",
 	" opal basil ",
 	" orange oil ",
 	" pale lager ",
 	" palm sugar ",
-	" pan juices ",
-	" pan sprays ",
-	" pancettums ",
-	" panettones ",
-	" parchments ",
-	" parma hams ",
+	" pan juices ",
+	" pan sprays ",
+	" pancettums ",
+	" panettones ",
+	" parchments ",
+	" parma hams ",
 	" parmigiano ",
-	" partridges ",
+	" partridges ",
 	" pat butter ",
-	" peach jams ",
+	" patty pans ",
+	" peach jams ",
 	" peanut oil ",
 	" pear juice ",
 	" pecan meal ",
-	" pecan nuts ",
+	" pecan nuts ",
 	" pekin duck ",
 	" peppercorn ",
 	" peppermint ",
-	" pepperonis ",
-	" persimmons ",
+	" pepperonis ",
+	" persimmons ",
 	" petite pea ",
-	" pie crusts ",
-	" pie doughs ",
+	" pie crusts ",
+	" pie doughs ",
 	" pie pastry ",
-	" pie shells ",
+	" pie shells ",
 	" pigeon pea ",
 	" piloncillo ",
-	" pine nutss ",
-	" pineapples ",
+	" pine nutss ",
+	" pineapples ",
 	" pinot noir ",
 	" pinto bean ",
-	" pinto beans ",
-	" piri piris ",
-	" pistachios ",
+	" piri piris ",
+	" pistachios ",
 	" plum sauce ",
-	" plum wines ",
-	" pole beans ",
-	" pomegranate ",
+	" plum wines ",
+	" pole beans ",
 	" poppy seed ",
-	" poppy seeds ",
 	" pork belly ",
-	" pork butts ",
-	" pork lards ",
+	" pork butts ",
+	" pork lards ",
 	" pork liver ",
-	" pork meats ",
+	" pork meats ",
 	" pork roast ",
 	" pork steak ",
-	" port wines ",
+	" port wines ",
 	" portobello ",
-	" pot roasts ",
+	" pot roasts ",
 	" potato bun ",
 	" prosciutto ",
-	" provolones ",
+	" provolones ",
 	" prune plum ",
-	" quail eggs ",
+	" quail eggs ",
 	" quaker oat ",
 	" quesadilla ",
-	" quick oats ",
-	" radiatores ",
-	" radicchios ",
+	" quick oats ",
+	" radiatores ",
+	" radicchios ",
 	" ramp green ",
-	" raspberrys ",
-	" reblochons ",
-	" red onions ",
+	" raspberrys ",
+	" reblochons ",
+	" red onions ",
 	" red pepper ",
-	" redcurrants ",
-	" remoulades ",
+	" redcurrant ",
+	" remoulades ",
 	" rib celery ",
-	" rib roasts ",
-	" rib steaks ",
-	" rice cakes ",
+	" rib roasts ",
+	" rib steaks ",
+	" rice cakes ",
 	" rice flour ",
-	" rice milks ",
+	" rice milks ",
 	" rice paper ",
 	" rice pilaf ",
-	" rice wines ",
+	" rice wines ",
 	" roast beef ",
 	" roast pork ",
-	" rock melons ",
-	" rock salts ",
+	" rock melon ",
+	" rock salts ",
 	" rolled oat ",
 	" rome apple ",
-	" roqueforts ",
+	" roqueforts ",
 	" rose petal ",
 	" rose water ",
-	" rose wines ",
-	" rosewaters ",
-	" ruby ports ",
+	" rose wines ",
+	" rosewaters ",
+	" ruby ports ",
 	" rump roast ",
 	" rump steak ",
-	" runner bean ",
-	" rye berrys ",
-	" rye breads ",
-	" rye flours ",
+	" rye berrys ",
+	" rye breads ",
+	" rye flours ",
 	" rye whisky ",
-	" sablefishs ",
-	" safflowers ",
+	" sablefishs ",
+	" safflowers ",
 	" sage thyme ",
-	" salad oils ",
-	" salal berry ",
+	" salad oils ",
 	" salmon roe ",
-	" salt porks ",
+	" salt porks ",
 	" salt water ",
+	" sassafrass ",
 	" sauerkraut ",
-	" savoiardis ",
-	" scallionss ",
-	" schnitzels ",
+	" savoiardis ",
+	" scallionss ",
+	" schnitzels ",
 	" sesame oil ",
-	" shellfishs ",
+	" shellfishs ",
 	" shiro miso ",
-	" short ribs ",
+	" short ribs ",
 	" shortbread ",
-	" shortcakes ",
+	" shortcakes ",
 	" shortening ",
 	" skate wing ",
-	" skim milks ",
+	" skim milks ",
 	" slider bun ",
-	" sloppy jos ",
+	" sloppy jos ",
 	" smoked ham ",
 	" snack cake ",
-	" snap beans ",
+	" snap beans ",
 	" soda bread ",
 	" soda water ",
 	" soft drink ",
 	" soft fruit ",
-	" soft herbs ",
-	" soft rolls ",
-	" soft tofus ",
+	" soft herbs ",
+	" soft rolls ",
+	" soft tofus ",
 	" solid tuna ",
 	" sour apple ",
 	" sour cream ",
-	" sourdoughs ",
-	" soy creams ",
-	" soy flours ",
-	" soy sauces ",
+	" sourdoughs ",
+	" soy creams ",
+	" soy flours ",
+	" soy sauces ",
 	" soy yogurt ",
-	" soya milks ",
+	" soya milks ",
 	" soya sauce ",
-	" spaghettis ",
-	" spare ribs ",
-	" spearmints ",
-	" spice mixs ",
-	" spice rubs ",
+	" spaghettis ",
+	" spare ribs ",
+	" spearmints ",
+	" spice mixs ",
+	" spice rubs ",
 	" spiced rum ",
-	" spirulinas ",
-	" split peas ",
-	" squid inks ",
+	" spirulinas ",
+	" split peas ",
+	" squid inks ",
 	" st germain ",
 	" star anise ",
-	" star anises ",
 	" star fruit ",
-	" star fruits ",
-	" stew beefs ",
-	" stew meats ",
+	" stew beefs ",
+	" stew meats ",
 	" stout beer ",
 	" strawberry ",
-	" strawberrys ",
 	" stroganoff ",
-	" succotashs ",
+	" succotashs ",
 	" sugar cane ",
 	" sugar cone ",
-	" sunflowers ",
+	" sunflowers ",
 	" sushi rice ",
 	" sweetbread ",
-	" sweetcorns ",
-	" swordfishs ",
+	" sweetcorns ",
+	" swordfishs ",
 	" table salt ",
-	" tamarillos ",
-	" tangerines ",
-	" tap waters ",
+	" tamarillos ",
+	" tangerines ",
+	" tap waters ",
 	" tart apple ",
 	" tart crust ",
-	" tater tots ",
+	" tater tots ",
 	" tawny port ",
 	" teff flour ",
 	" thai basil ",
-	" thai basils ",
 	" thai chile ",
 	" thai chili ",
-	" thai crabs ",
+	" thai crabs ",
 	" tiny caper ",
 	" toffee bit ",
-	" togarashis ",
-	" tomatillos ",
+	" togarashis ",
+	" tomatillos ",
 	" tomato jam ",
 	" tomato oil ",
-	" tonka beans ",
-	" topinamburs ",
+	" tonka bean ",
+	" topinambur ",
 	" torn basil ",
 	" torn green ",
 	" tortellini ",
-	" trail mixs ",
+	" trail mixs ",
 	" triple sec ",
-	" trout roes ",
-	" tuna fishs ",
+	" trout roes ",
+	" tuna fishs ",
 	" tuna salad ",
 	" tuna steak ",
 	" tuna water ",
-	" turbinados ",
+	" turbinados ",
 	" turkey fat ",
 	" turkey ham ",
-	" ugli fruits ",
-	" veal bones ",
+	" ugli fruit ",
+	" veal bones ",
 	" veal roast ",
-	" vegenaises ",
-	" vegetables ",
+	" vegenaises ",
+	" vegetables ",
 	" vermicelli ",
-	" vin santos ",
+	" vin santos ",
 	" walnut oil ",
 	" watercress ",
-	" watercresss ",
 	" watermelon ",
-	" watermelons ",
 	" weisswurst ",
 	" wheat beer ",
 	" wheat bran ",
-	" wheat buns ",
+	" wheat buns ",
 	" wheat germ ",
 	" wheat pita ",
 	" white bean ",
@@ -5354,559 +5271,504 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" white miso ",
 	" white port ",
 	" white rice ",
-	" white rums ",
+	" white rums ",
 	" white tuna ",
 	" white wine ",
-	" whitefishs ",
-	" wild boars ",
-	" wild ducks ",
-	" wild rices ",
-	" wood chips ",
+	" whitefishs ",
+	" wild boars ",
+	" wild ducks ",
+	" wild rices ",
+	" wood chips ",
 	" yukon gold ",
 	" yuzu juice ",
-	" zinfandels ",
+	" zinfandels ",
 	" ziti penne ",
-	" absinthes ",
-	" advocaats ",
+	" absinthes ",
+	" advocaats ",
 	" agar agar ",
-	" aged rums ",
-	" ahi tunas ",
-	" allspices ",
-	" amaranths ",
-	" amarettis ",
-	" amarettos ",
+	" aged rums ",
+	" ahi tunas ",
+	" allspices ",
+	" amaranths ",
+	" amarettis ",
+	" amarettos ",
 	" amber rum ",
 	" andouille ",
+	" angelicas ",
 	" anise oil ",
-	" anisettes ",
+	" anisettes ",
 	" apple jam ",
 	" apple pie ",
 	" applejack ",
-	" armagnacs ",
+	" armagnacs ",
 	" arrowroot ",
 	" artichoke ",
-	" artichokes ",
 	" asafetida ",
-	" asafoetida ",
 	" asparagus ",
-	" asparaguss ",
-	" assemblys ",
+	" assemblys ",
 	" aubergine ",
-	" aubergines ",
-	" azuki bean ",
 	" baby beet ",
 	" baby clam ",
 	" baby corn ",
 	" baby kale ",
 	" baby lamb ",
 	" baby leek ",
-	" baby peas ",
+	" baby peas ",
 	" bacon bit ",
 	" bacon fat ",
-	" baguettes ",
+	" baguettes ",
 	" baked ham ",
-	" balsamics ",
-	" barbecues ",
-	" barberrys ",
+	" balsamics ",
+	" barbecues ",
+	" barberrys ",
 	" basil oil ",
-	" bay leafs ",
+	" bay leafs ",
 	" bbq sauce ",
-	" bechamels ",
+	" bechamels ",
 	" beef bone ",
-	" beef fats ",
-	" beef ribs ",
+	" beef fats ",
+	" beef ribs ",
 	" beef stew ",
 	" beef suet ",
 	" beefsteak ",
-	" beetroots ",
-	" biscottis ",
-	" bisquicks ",
-	" black bean ",
-	" blackberry ",
+	" beetroots ",
+	" bilberrys ",
+	" biscottis ",
+	" bisquicks ",
 	" blackfish ",
 	" blue crab ",
 	" blueberry ",
-	" blueberrys ",
-	" bluefishs ",
-	" bok choys ",
+	" bluefishs ",
+	" bok choys ",
 	" bolognese ",
 	" bosc pear ",
-	" bouillons ",
-	" branzinos ",
+	" bouillons ",
+	" branzinos ",
 	" bratwurst ",
-	" breadfruit ",
 	" breakfast ",
-	" bresaolas ",
-	" broccolis ",
-	" bucatinis ",
+	" bresaolas ",
+	" broccolis ",
+	" bucatinis ",
 	" buckwheat ",
 	" budweiser ",
-	" burratums ",
+	" burratums ",
 	" butternut ",
 	" cacao nib ",
-	" cake mixs ",
+	" cake mixs ",
 	" cake tofu ",
-	" calabreses ",
-	" calamaris ",
+	" calabrese ",
+	" calamaris ",
 	" calamatum ",
-	" callaloos ",
+	" callaloos ",
 	" camembert ",
 	" candlenut ",
 	" candy bar ",
-	" cantaloupe ",
 	" capellini ",
-	" capicolas ",
+	" capicolas ",
 	" capocollo ",
 	" caponatum ",
-	" capsicums ",
+	" capsicums ",
 	" carambola ",
 	" cardamaro ",
-	" cardamoms ",
+	" cardamoms ",
 	" caribbean ",
 	" cavatappi ",
 	" cavatelli ",
-	" celeriacs ",
-	" chambords ",
+	" celeriacs ",
+	" chambords ",
 	" chamomile ",
-	" chamomiles ",
 	" champagne ",
-	" char sius ",
-	" cherimoyas ",
+	" char sius ",
+	" cherimoya ",
 	" chermoula ",
-	" cherriess ",
-	" chestnuts ",
+	" cherriess ",
+	" chestnuts ",
 	" chick pea ",
-	" chickpeas ",
 	" chickpeas ",
 	" chile oil ",
 	" chili oil ",
-	" chipotles ",
+	" chipotles ",
 	" chive plu ",
 	" chocolate ",
 	" chopstick ",
 	" chow mein ",
-	" choy sums ",
+	" choy sums ",
 	" ciabattum ",
-	" cilantros ",
-	" cinnamons ",
-	" clementine ",
-	" cloudberry ",
+	" cilantros ",
+	" cinnamons ",
 	" club soda ",
 	" coca cola ",
-	" cocktails ",
+	" cocktails ",
 	" cocoa nib ",
 	" cod steak ",
 	" cointreau ",
-	" coleslaws ",
+	" coleslaws ",
 	" condiment ",
 	" cool whip ",
 	" coriander ",
 	" corn chip ",
-	" corn cobs ",
+	" corn cobs ",
 	" corn grit ",
 	" corn husk ",
 	" corn meal ",
-	" corn oils ",
-	" corn salad ",
+	" corn oils ",
 	" cornbread ",
 	" cornflake ",
 	" cornflour ",
 	" cornichon ",
-	" cornmeals ",
+	" cornmeals ",
 	" courgette ",
-	" courgettes ",
 	" crab cake ",
 	" crab meat ",
-	" crabmeats ",
+	" crabmeats ",
 	" cranberry ",
-	" cranberrys ",
-	" crawfishs ",
+	" crawfishs ",
 	" croissant ",
-	" crostinis ",
-	" cucumbers ",
-	" culantros ",
+	" crostinis ",
+	" cucumbers ",
+	" culantros ",
 	" cured ham ",
-	" curry leaf ",
 	" curry oil ",
 	" dandelion ",
-	" deli hams ",
+	" deli hams ",
 	" deli meat ",
-	" demeraras ",
+	" delicatas ",
+	" demeraras ",
 	" dill seed ",
-	" dill seeds ",
 	" dill weed ",
-	" ditalinis ",
+	" ditalinis ",
 	" dr pepper ",
-	" drambuies ",
-	" dressings ",
-	" dried lime ",
-	" dubonnets ",
-	" duck eggs ",
-	" duck fats ",
-	" ducklings ",
-	" dumplings ",
-	" ear corns ",
-	" egg rolls ",
+	" drambuies ",
+	" dressings ",
+	" dubonnets ",
+	" duck eggs ",
+	" duck fats ",
+	" ducklings ",
+	" dumplings ",
+	" ear corns ",
+	" egg rolls ",
 	" egg salad ",
-	" egg washs ",
+	" egg washs ",
 	" egg white ",
-	" egg yolks ",
-	" eggplants ",
-	" elderberry ",
-	" emmentals ",
+	" egg yolks ",
+	" eggplants ",
+	" emmentals ",
 	" emmenthal ",
-	" empanadas ",
+	" empanadas ",
 	" enchilada ",
 	" entrecote ",
 	" escabeche ",
-	" escaroles ",
-	" espressos ",
+	" escaroles ",
+	" espressos ",
 	" everclear ",
-	" falernums ",
-	" farfalles ",
+	" falernums ",
+	" farfalles ",
 	" fava bean ",
 	" fenugreek ",
-	" fenugreeks ",
 	" fettucine ",
-	" fiddlehead ",
 	" field pea ",
-	" fingerroot ",
 	" fish bone ",
 	" fish cake ",
-	" fish oils ",
+	" fish oils ",
 	" flatbread ",
 	" flavoring ",
 	" flax meal ",
 	" flax seed ",
-	" flaxseeds ",
-	" flounders ",
+	" flaxseeds ",
+	" flounders ",
 	" focaccium ",
-	" foie gras ",
+	" foie gras ",
 	" framboise ",
 	" fried egg ",
 	" frittatum ",
-	" frostings ",
-	" fructoses ",
+	" frostings ",
+	" fructoses ",
 	" fruit jam ",
-	" furikakes ",
-	" galangals ",
-	" gelatines ",
-	" gem squash ",
-	" giandujas ",
+	" furikakes ",
+	" galangals ",
+	" gelatines ",
+	" giandujas ",
 	" goat meat ",
 	" goat milk ",
 	" gochugaru ",
 	" gochujang ",
-	" goji berry ",
-	" gold rums ",
+	" gold rums ",
 	" goose fat ",
-	" gooseberry ",
-	" grapefruit ",
 	" grapeseed ",
-	" green bean ",
 	" green pea ",
 	" grenadine ",
 	" guacamole ",
-	" guajillos ",
+	" guajillos ",
 	" guanciale ",
-	" guar gums ",
-	" guinnesss ",
-	" habaneros ",
+	" guar gums ",
+	" guinnesss ",
+	" habaneros ",
 	" half half ",
-	" halloumis ",
-	" ham bones ",
-	" ham hocks ",
+	" halloumis ",
+	" ham bones ",
+	" ham hocks ",
 	" ham steak ",
 	" hamburger ",
-	" hazelnuts ",
 	" hazelnuts ",
 	" heath bar ",
 	" hemp seed ",
 	" herb salt ",
 	" herbsaint ",
 	" hero roll ",
-	" hoja santa ",
-	" holy basil ",
 	" honeycomb ",
-	" honeydews ",
+	" honeydews ",
 	" hot sauce ",
-	" irm tofus ",
+	" irm tofus ",
 	" jackfruit ",
-	" jackfruits ",
-	" jalapenos ",
+	" jalapenos ",
 	" jambalaya ",
 	" jumbo egg ",
-	" key limes ",
-	" kielbasas ",
-	" kinh giois ",
-	" kiwi fruit ",
+	" key limes ",
+	" kielbasas ",
+	" kinh gioi ",
 	" kiwifruit ",
 	" kochujang ",
 	" kochukaru ",
-	" kohlrabis ",
-	" kool aids ",
+	" kohlrabis ",
+	" kool aids ",
+	" korarimas ",
 	" lamb bone ",
 	" lamb meat ",
-	" lamb ribs ",
+	" lamb ribs ",
 	" lamb stew ",
-	" lavenders ",
-	" lecithins ",
-	" lemon balm ",
-	" lemon zes ",
-	" lemonades ",
+	" lavenders ",
+	" lecithins ",
+	" lemon zes ",
+	" lemonades ",
 	" lima bean ",
-	" lima beans ",
 	" lime half ",
 	" lime peel ",
-	" linguines ",
-	" linguinis ",
-	" liquorices ",
-	" lollipops ",
+	" linguines ",
+	" linguinis ",
+	" liquorice ",
+	" lollipops ",
 	" long bean ",
-	" macaronis ",
-	" macaroons ",
-	" mackerels ",
+	" macaronis ",
+	" macaroons ",
+	" mackerels ",
 	" mahi mahi ",
-	" mahimahis ",
-	" manchegos ",
-	" mandarins ",
-	" mandarines ",
-	" mangetouts ",
+	" mahimahis ",
+	" manchegos ",
+	" mandarine ",
+	" mandarins ",
+	" mangetout ",
 	" mango rum ",
 	" manicotti ",
 	" margarine ",
-	" marinades ",
-	" marjorams ",
+	" marinades ",
+	" marjorams ",
 	" marmalade ",
-	" marzipans ",
-	" meat cuts ",
+	" marzipans ",
+	" meat cuts ",
 	" meat loaf ",
-	" meatballs ",
-	" meatloafs ",
+	" meatballs ",
+	" meatloafs ",
 	" medallion ",
 	" membrillo ",
-	" meringues ",
-	" mirepoixs ",
-	" mirlitons ",
+	" meringues ",
+	" mirepoixs ",
+	" mirlitons ",
 	" mixed nut ",
-	" molassess ",
-	" monkfishs ",
-	" mulberrys ",
+	" molassess ",
+	" monkfishs ",
+	" mulberrys ",
 	" mung bean ",
-	" mung beans ",
-	" mung dals ",
-	" mushrooms ",
+	" mung dals ",
 	" mushrooms ",
 	" navy bean ",
-	" navy beans ",
 	" nectarine ",
-	" nectarines ",
 	" newspaper ",
-	" nopalitos ",
+	" nopalitos ",
 	" nuoc cham ",
-	" nuoc nams ",
-	" nut milks ",
-	" oat brans ",
+	" nuoc nams ",
+	" nut milks ",
+	" oat brans ",
 	" oat flour ",
 	" oil spray ",
-	" okra pods ",
+	" okra pods ",
 	" olive oil ",
-	" oz bacons ",
-	" oz ndujas ",
-	" paccheris ",
-	" pak chois ",
-	" palm oils ",
+	" oz bacons ",
+	" oz ndujas ",
+	" paccheris ",
+	" pak chois ",
+	" palm oils ",
 	" pan juice ",
 	" pan spray ",
 	" pancettum ",
 	" panettone ",
 	" parchment ",
 	" parma ham ",
-	" parmesans ",
+	" parmesans ",
 	" partridge ",
-	" passatums ",
-	" pastramis ",
-	" patty pans ",
+	" passatums ",
+	" pastramis ",
+	" patty pan ",
 	" peach jam ",
 	" pecan nut ",
-	" pecorinos ",
+	" pecorinos ",
 	" pepperoni ",
 	" persimmon ",
-	" persimmons ",
-	" pheasants ",
+	" pheasants ",
+	" physaliss ",
 	" pie crust ",
 	" pie dough ",
 	" pie shell ",
-	" pig tails ",
-	" piment ns ",
-	" pimentons ",
-	" pimientos ",
-	" pine nuts ",
+	" pig tails ",
+	" piment ns ",
+	" pimentons ",
+	" pimientos ",
 	" pine nuts ",
 	" pineapple ",
-	" pineapples ",
-	" pinto bean ",
 	" piri piri ",
 	" pistachio ",
-	" plantains ",
-	" plum jams ",
+	" plantains ",
+	" plum jams ",
 	" plum wine ",
 	" pole bean ",
-	" polentums ",
-	" poppy seed ",
-	" popsicles ",
+	" polentums ",
+	" popsicles ",
 	" pork butt ",
-	" pork fats ",
+	" pork fats ",
 	" pork lard ",
 	" pork meat ",
-	" pork ribs ",
+	" pork ribs ",
 	" port wine ",
 	" pot roast ",
-	" potatoess ",
-	" preserves ",
-	" proseccos ",
+	" potatoess ",
+	" preserves ",
+	" proseccos ",
 	" provolone ",
-	" purslanes ",
+	" purslanes ",
 	" quail egg ",
 	" quick oat ",
-	" raclettes ",
+	" raclettes ",
 	" radiatore ",
 	" radicchio ",
-	" radicchios ",
+	" rambutans ",
 	" raspberry ",
-	" raspberrys ",
 	" reblochon ",
 	" red onion ",
-	" red wines ",
-	" redcurrant ",
+	" red wines ",
 	" remoulade ",
 	" rib roast ",
 	" rib steak ",
 	" rice cake ",
 	" rice milk ",
-	" rice mixs ",
+	" rice mixs ",
 	" rice wine ",
-	" rieslings ",
-	" rigatonis ",
-	" rock melon ",
+	" rieslings ",
+	" rigatonis ",
 	" rock salt ",
 	" roquefort ",
 	" rose wine ",
-	" rosemarys ",
+	" rosemarys ",
 	" rosewater ",
 	" ruby port ",
-	" rutabagas ",
+	" rutabagas ",
 	" rye berry ",
 	" rye bread ",
 	" rye flour ",
 	" sablefish ",
 	" safflower ",
 	" salad oil ",
-	" salt cods ",
-	" salt plus ",
+	" salt cods ",
+	" salt plus ",
 	" salt pork ",
-	" sandwichs ",
-	" sangriums ",
-	" sassafras ",
-	" sassafrass ",
-	" sauternes ",
+	" sandwichs ",
+	" sangriums ",
+	" sassafras ",
+	" sauternes ",
 	" savoiardi ",
-	" scallions ",
 	" scallions ",
-	" schmaltzs ",
+	" schmaltzs ",
 	" schnitzel ",
-	" semolinas ",
-	" shallotss ",
-	" shaoxings ",
+	" semolinas ",
+	" shallotss ",
+	" shaoxings ",
 	" shellfish ",
-	" shiitakes ",
+	" shiitakes ",
 	" short rib ",
 	" shortcake ",
 	" skim milk ",
 	" sloppy jo ",
-	" smoothies ",
+	" smoothies ",
 	" snap bean ",
-	" snap peas ",
-	" snow peas ",
+	" snap peas ",
+	" snow peas ",
 	" soft herb ",
 	" soft roll ",
 	" soft tofu ",
-	" sou vides ",
-	" soup mixs ",
-	" sour mixs ",
+	" sou vides ",
+	" soup mixs ",
+	" sour mixs ",
 	" sourdough ",
+	" soy beans ",
 	" soy cream ",
 	" soy flour ",
-	" soy milks ",
+	" soy milks ",
 	" soy sauce ",
 	" soya milk ",
-	" spaetzles ",
+	" spaetzles ",
 	" spaghetti ",
 	" spare rib ",
-	" spareribs ",
+	" spareribs ",
 	" spearmint ",
-	" speculoos ",
+	" speculoos ",
 	" spice mix ",
 	" spice rub ",
 	" spirulina ",
 	" split pea ",
 	" squid ink ",
-	" squirrels ",
-	" srirachas ",
-	" star anise ",
-	" star fruit ",
+	" squirrels ",
+	" srirachas ",
 	" stew beef ",
 	" stew meat ",
-	" strawberry ",
-	" stuffings ",
-	" sturgeons ",
-	" sub rolls ",
+	" stuffings ",
+	" sturgeons ",
+	" sub rolls ",
 	" succotash ",
-	" sunchokes ",
+	" sunchokes ",
 	" sunflower ",
 	" sweetcorn ",
 	" swordfish ",
-	" taleggios ",
+	" taleggios ",
 	" tamarillo ",
-	" tamarillos ",
-	" tamarinds ",
+	" tamarinds ",
 	" tangerine ",
-	" tangerines ",
 	" tap water ",
-	" tapenades ",
-	" tarragons ",
+	" tapenades ",
+	" tarragons ",
 	" tater tot ",
-	" tentacles ",
-	" teriyakis ",
-	" thai basil ",
+	" tentacles ",
+	" teriyakis ",
 	" thai crab ",
-	" tilapiums ",
-	" tiny peas ",
+	" tilapiums ",
+	" tiny peas ",
 	" togarashi ",
 	" tomatillo ",
-	" tomatoess ",
-	" tonka bean ",
-	" topinambur ",
-	" tortillas ",
+	" tomatoess ",
+	" tortillas ",
 	" trail mix ",
 	" trout roe ",
 	" tuna fish ",
 	" turbinado ",
-	" turmerics ",
-	" tzatzikis ",
-	" ugli fruit ",
-	" umeboshis ",
-	" urad dals ",
+	" turmerics ",
+	" tzatzikis ",
+	" umeboshis ",
+	" urad dals ",
 	" veal bone ",
-	" vegemites ",
+	" vegemites ",
 	" vegenaise ",
 	" vegetable ",
-	" verjuices ",
-	" vermouths ",
-	" vidaliums ",
+	" verjuices ",
+	" vermouths ",
+	" vidaliums ",
 	" vin santo ",
-	" watercress ",
-	" watermelon ",
 	" wheat bun ",
 	" white rum ",
 	" whitefish ",
@@ -5914,162 +5776,144 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" wild duck ",
 	" wild rice ",
 	" wood chip ",
+	" woodruffs ",
 	" zinfandel ",
-	" zucchinis ",
+	" zucchinis ",
 	" absinthe ",
-	" acaciums ",
+	" acaciums ",
 	" advocaat ",
 	" aged rum ",
 	" ahi tuna ",
-	" alcohols ",
-	" alfalfas ",
+	" alcohols ",
+	" alfalfas ",
 	" allspice ",
-	" allspices ",
-	" almondss ",
+	" almondss ",
 	" amaranth ",
-	" amaranths ",
 	" amaretti ",
 	" amaretto ",
-	" anchovys ",
-	" angelicas ",
-	" aniseeds ",
+	" amchoors ",
+	" anchovys ",
+	" angelica ",
+	" aniseeds ",
 	" anisette ",
-	" annattos ",
-	" apricots ",
-	" aquavits ",
+	" annattos ",
+	" apricots ",
+	" aquavits ",
 	" armagnac ",
-	" artichoke ",
-	" arugulas ",
-	" asparagus ",
+	" arugulas ",
 	" assembly ",
-	" aubergine ",
-	" avocados ",
+	" avocados ",
 	" baby pea ",
 	" baguette ",
-	" baharats ",
+	" baharats ",
 	" balsamic ",
-	" bananass ",
+	" bananass ",
 	" barbecue ",
 	" barberry ",
 	" bay leaf ",
-	" bay leafs ",
 	" bechamel ",
 	" beef fat ",
 	" beef rib ",
 	" beetroot ",
-	" berberes ",
-	" bilberrys ",
+	" berberes ",
+	" bilberry ",
 	" biscotti ",
-	" biscuits ",
+	" biscuits ",
 	" bisquick ",
-	" blueberry ",
 	" bluefish ",
 	" bok choy ",
-	" bok choys ",
-	" bolognas ",
+	" bolognas ",
 	" bouillon ",
-	" bourbons ",
-	" boursins ",
+	" bourbons ",
+	" boursins ",
 	" branzino ",
 	" bresaola ",
-	" brioches ",
-	" briskets ",
-	" brittles ",
+	" brioches ",
+	" briskets ",
+	" brittles ",
 	" broccoli ",
-	" broccolis ",
 	" bucatini ",
-	" buffalos ",
-	" bulgogis ",
-	" burdocks ",
+	" buffalos ",
+	" bulgogis ",
+	" burdocks ",
 	" burratum ",
-	" burritos ",
-	" cabbages ",
-	" cachacas ",
+	" burritos ",
+	" cabbages ",
+	" cachacas ",
 	" cake mix ",
-	" calabrese ",
 	" calamari ",
 	" callaloo ",
-	" calvados ",
-	" camparis ",
+	" calvados ",
+	" camparis ",
+	" camphors ",
 	" capicola ",
 	" capsicum ",
-	" caramels ",
-	" caraways ",
+	" caramels ",
+	" caraways ",
 	" cardamom ",
-	" cardamoms ",
-	" cardoons ",
-	" carnitas ",
-	" carrotss ",
-	" cashewss ",
-	" cassavas ",
-	" cassiums ",
-	" catfishs ",
-	" cayennes ",
+	" cardoons ",
+	" carnitas ",
+	" carrotss ",
+	" cashewss ",
+	" cassavas ",
+	" cassiums ",
+	" catfishs ",
+	" cayennes ",
 	" celeriac ",
-	" celeriacs ",
-	" challahs ",
+	" challahs ",
 	" chambord ",
-	" chamomile ",
 	" char siu ",
-	" chayotes ",
-	" cheddars ",
-	" cherimoya ",
+	" charolis ",
+	" chayotes ",
+	" cheddars ",
 	" cherries ",
-	" chervils ",
+	" chervils ",
 	" chestnut ",
-	" chiantis ",
-	" chickens ",
+	" chiantis ",
+	" chickens ",
 	" chickpea ",
-	" chickpeas ",
-	" chicorys ",
+	" chicorys ",
 	" chipotle ",
-	" chorizos ",
-	" chowders ",
+	" chorizos ",
+	" chowders ",
 	" choy sum ",
-	" chutneys ",
+	" chutneys ",
 	" cilantro ",
-	" cilantros ",
 	" cinnamon ",
-	" cinnamons ",
-	" cobblers ",
+	" cobblers ",
 	" cocktail ",
-	" coconuts ",
-	" codfishs ",
+	" coconuts ",
+	" codfishs ",
 	" coleslaw ",
-	" collards ",
-	" compotes ",
-	" cordials ",
+	" collards ",
+	" compotes ",
+	" cordials ",
 	" corn cob ",
 	" corn oil ",
 	" cornmeal ",
-	" courgette ",
-	" couscous ",
+	" couscous ",
 	" crabmeat ",
-	" crackers ",
-	" craisins ",
-	" cranberry ",
+	" crackers ",
+	" craisins ",
 	" crawfish ",
-	" criminis ",
+	" criminis ",
 	" crostini ",
-	" croutons ",
+	" croutons ",
 	" cucumber ",
-	" cucumbers ",
-	" cucuzzas ",
+	" cucuzzas ",
 	" culantro ",
-	" culantros ",
-	" cupcakes ",
-	" cura aos ",
-	" curacaos ",
-	" currants ",
-	" curtidos ",
-	" custards ",
+	" cupcakes ",
+	" cura aos ",
+	" curacaos ",
+	" currants ",
+	" curtidos ",
+	" custards ",
 	" deli ham ",
-	" delicatas ",
+	" delicata ",
 	" demerara ",
-	" desserts ",
-	" dill seed ",
+	" desserts ",
 	" ditalini ",
-	" dogfishs ",
+	" dogfishs ",
 	" drambuie ",
 	" dressing ",
 	" dubonnet ",
@@ -6078,754 +5922,682 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" duckling ",
 	" dumpling ",
 	" ear corn ",
-	" edamames ",
+	" edamames ",
 	" egg roll ",
 	" egg wash ",
 	" egg yolk ",
 	" eggplant ",
-	" eggplants ",
 	" emmental ",
 	" empanada ",
-	" epazotes ",
+	" epazotes ",
 	" escarole ",
 	" espresso ",
-	" essences ",
-	" falafels ",
+	" essences ",
+	" falafels ",
 	" falernum ",
 	" farfalle ",
-	" fatbacks ",
-	" fenugreek ",
-	" fig jams ",
+	" fatbacks ",
+	" fig jams ",
 	" fish oil ",
 	" flaxseed ",
 	" flounder ",
 	" foie gra ",
-	" fondants ",
-	" fontinas ",
-	" freekehs ",
-	" fregolas ",
-	" fritters ",
+	" fondants ",
+	" fontinas ",
+	" freekehs ",
+	" fregolas ",
+	" fritters ",
 	" frosting ",
 	" fructose ",
 	" furikake ",
-	" fusillis ",
-	" gai lans ",
-	" galangas ",
+	" fusillis ",
+	" gai lans ",
 	" galangal ",
-	" ganaches ",
-	" garnishs ",
-	" gelatins ",
+	" galangas ",
+	" ganaches ",
+	" garnishs ",
 	" gelatine ",
-	" gemellis ",
-	" genevers ",
+	" gelatins ",
+	" gemellis ",
+	" genevers ",
 	" gianduja ",
-	" ginsengs ",
-	" glucoses ",
-	" gnocchis ",
+	" ginsengs ",
+	" glucoses ",
+	" gnocchis ",
 	" gold rum ",
-	" granolas ",
-	" groupers ",
-	" gruyeres ",
+	" granolas ",
+	" groupers ",
+	" gruyeres ",
 	" guajillo ",
 	" guar gum ",
 	" guinness ",
 	" habanero ",
-	" habaneros ",
-	" haddocks ",
-	" halibuts ",
+	" haddocks ",
+	" halibuts ",
 	" halloumi ",
 	" ham bone ",
 	" ham hock ",
-	" harissas ",
+	" harissas ",
 	" hazelnut ",
-	" hibiscus ",
+	" hibiscus ",
 	" honeydew ",
-	" honeydews ",
-	" icebergs ",
+	" icebergs ",
 	" irm tofu ",
-	" jackfruit ",
-	" jaggerys ",
+	" jaggerys ",
 	" jalapeno ",
-	" jalapenos ",
-	" jasmines ",
-	" ketchups ",
+	" jasmines ",
+	" ketchups ",
 	" key lime ",
 	" kielbasa ",
-	" kinh gioi ",
 	" kohlrabi ",
-	" kohlrabis ",
 	" kool aid ",
-	" korarimas ",
-	" kumquats ",
+	" korarima ",
+	" kumquats ",
 	" lamb rib ",
-	" lasagnas ",
-	" lasagnes ",
+	" lasagnas ",
+	" lasagnes ",
 	" lavender ",
-	" lavenders ",
 	" lecithin ",
 	" lemon ze ",
 	" lemonade ",
-	" lettuces ",
-	" lima bean ",
-	" limeades ",
+	" lentilss ",
+	" lettuces ",
+	" limeades ",
 	" linguine ",
 	" linguini ",
-	" liqueurs ",
-	" liquorice ",
-	" lobsters ",
+	" liqueurs ",
+	" lobsters ",
 	" lollipop ",
 	" macaroni ",
 	" macaroon ",
 	" mackerel ",
-	" madeiras ",
+	" madeiras ",
 	" mahimahi ",
 	" manchego ",
 	" mandarin ",
-	" mandarine ",
-	" mangetout ",
 	" marinade ",
 	" marjoram ",
-	" marjorams ",
-	" marsalas ",
+	" marsalas ",
 	" marzipan ",
 	" meat cut ",
 	" meatball ",
 	" meatloaf ",
 	" meringue ",
-	" mescluns ",
+	" mescluns ",
 	" mirepoix ",
 	" mirliton ",
-	" mochikos ",
+	" mitsubas ",
+	" mochikos ",
 	" molasses ",
 	" monkfish ",
+	" mugworts ",
 	" mulberry ",
-	" mulberrys ",
-	" mung bean ",
 	" mung dal ",
 	" mushroom ",
-	" mushrooms ",
-	" mustards ",
-	" nam plas ",
-	" navy bean ",
-	" nectarine ",
-	" ni oises ",
-	" nicoises ",
+	" mustards ",
+	" nam plas ",
+	" ni oises ",
+	" nicoises ",
+	" nigellas ",
+	" njangsas ",
 	" nopalito ",
 	" nuoc nam ",
 	" nut milk ",
-	" nutellas ",
+	" nutellas ",
 	" oat bran ",
-	" oatmeals ",
-	" octopuss ",
+	" oatmeals ",
+	" octopuss ",
 	" okra pod ",
-	" old bays ",
-	" orangess ",
-	" oreganos ",
-	" ostrichs ",
+	" old bays ",
+	" orangess ",
+	" oreganos ",
+	" ostrichs ",
 	" oz bacon ",
 	" oz nduja ",
 	" paccheri ",
 	" pak choi ",
 	" palm oil ",
-	" pancakes ",
-	" paprikas ",
+	" pancakes ",
+	" paprikas ",
 	" parmesan ",
-	" parsleys ",
-	" parsnips ",
+	" parsleys ",
+	" parsnips ",
 	" passatum ",
-	" pastinas ",
+	" pastinas ",
 	" pastrami ",
-	" patty pan ",
-	" pea pods ",
-	" peachess ",
-	" peanutss ",
+	" pea pods ",
+	" peachess ",
+	" peanutss ",
 	" pecorino ",
-	" persimmon ",
+	" perillas ",
 	" pheasant ",
-	" physaliss ",
-	" pierogis ",
+	" physalis ",
+	" pierogis ",
 	" pig tail ",
-	" pignolis ",
+	" pignolis ",
 	" piment n ",
-	" pimentos ",
 	" pimenton ",
+	" pimentos ",
 	" pimiento ",
 	" pine nut ",
-	" pineapple ",
-	" pinenuts ",
+	" pinenuts ",
 	" plantain ",
 	" plum jam ",
-	" poblanos ",
+	" poblanos ",
 	" polentum ",
-	" pollocks ",
-	" pompanos ",
-	" popcorns ",
+	" pollocks ",
+	" pompanos ",
+	" popcorns ",
 	" popsicle ",
-	" porcinis ",
+	" porcinis ",
 	" pork fat ",
 	" pork rib ",
 	" potatoes ",
-	" poultrys ",
-	" pralines ",
+	" poultrys ",
+	" pralines ",
 	" preserve ",
-	" pretzels ",
+	" pretzels ",
 	" prosecco ",
-	" puddings ",
-	" pumpkins ",
+	" puddings ",
+	" pumpkins ",
 	" purslane ",
 	" raclette ",
-	" radicchio ",
-	" raisinss ",
-	" rambutans ",
-	" raspberry ",
-	" raviolis ",
-	" recaitos ",
+	" radhunis ",
+	" raisinss ",
+	" rambutan ",
+	" raviolis ",
+	" recaitos ",
 	" red wine ",
-	" redfishs ",
-	" rhubarbs ",
+	" redfishs ",
+	" rhubarbs ",
 	" rice mix ",
 	" riesling ",
 	" rigatoni ",
-	" risottos ",
-	" ro wines ",
-	" romaines ",
-	" rosebuds ",
+	" risottos ",
+	" ro wines ",
+	" romaines ",
+	" rosebuds ",
 	" rosemary ",
-	" rosemarys ",
-	" rouilles ",
+	" rouilles ",
 	" rutabaga ",
-	" rutabagas ",
-	" saffrons ",
+	" saffrons ",
 	" salt cod ",
 	" salt plu ",
-	" saltines ",
-	" sambucas ",
+	" saltines ",
+	" sambucas ",
 	" sandwich ",
 	" sangrium ",
-	" sardines ",
+	" sardines ",
 	" sassafra ",
-	" sassafras ",
-	" sausages ",
+	" satsumas ",
+	" sausages ",
 	" sauterne ",
 	" scallion ",
-	" scallions ",
-	" scallops ",
+	" scallops ",
 	" schmaltz ",
-	" schnapps ",
-	" seafoods ",
-	" seaweeds ",
-	" sel gris ",
-	" seltzers ",
+	" schnapps ",
+	" seafoods ",
+	" seaweeds ",
+	" sel gris ",
+	" seltzers ",
 	" semolina ",
-	" serranos ",
-	" shallots ",
+	" serranos ",
 	" shallots ",
 	" shaoxing ",
 	" shiitake ",
-	" sirloins ",
+	" sirloins ",
+	" skirrets ",
 	" smoothie ",
 	" snap pea ",
-	" snap peas ",
-	" snappers ",
+	" snappers ",
 	" snow pea ",
-	" sofritos ",
-	" sorghums ",
+	" sofritos ",
+	" sorghums ",
 	" sou vide ",
-	" souffles ",
+	" souffles ",
 	" soup mix ",
 	" sour mix ",
-	" soy beans ",
+	" soy bean ",
 	" soy milk ",
-	" soybeans ",
-	" soymilks ",
+	" soybeans ",
+	" soymilks ",
 	" spaetzle ",
-	" spanishs ",
+	" spanishs ",
 	" sparerib ",
 	" speculoo ",
-	" spinachs ",
-	" splendas ",
+	" spinachs ",
+	" splendas ",
 	" squirrel ",
 	" sriracha ",
-	" steviums ",
-	" stiltons ",
+	" steviums ",
+	" stiltons ",
 	" stuffing ",
 	" sturgeon ",
 	" sub roll ",
-	" sucanats ",
-	" sultanas ",
+	" sucanats ",
+	" sultanas ",
 	" sunchoke ",
-	" tabascos ",
+	" tabascos ",
 	" taleggio ",
-	" tamarillo ",
 	" tamarind ",
-	" tamarinds ",
-	" tangerine ",
 	" tapenade ",
-	" tapiocas ",
+	" tapiocas ",
 	" tarragon ",
-	" tarragons ",
+	" tat sois ",
 	" tentacle ",
-	" tequilas ",
+	" tequilas ",
 	" teriyaki ",
 	" tilapium ",
 	" tiny pea ",
 	" tomatoes ",
 	" tortilla ",
-	" tostadas ",
-	" treacles ",
-	" trevisos ",
-	" tri tips ",
-	" trotters ",
-	" truffles ",
-	" truviums ",
-	" turkishs ",
+	" tostadas ",
+	" treacles ",
+	" trevisos ",
+	" tri tips ",
+	" trotters ",
+	" truffles ",
+	" truviums ",
+	" turkishs ",
 	" turmeric ",
-	" turmerics ",
 	" tzatziki ",
 	" umeboshi ",
 	" urad dal ",
-	" vanillas ",
+	" vanillas ",
 	" vegemite ",
-	" venisons ",
+	" venisons ",
 	" verjuice ",
 	" vermouth ",
 	" vidalium ",
-	" vinegars ",
-	" walleyes ",
-	" walnutss ",
-	" whiskeys ",
-	" whitings ",
-	" woodruffs ",
-	" yoghurts ",
-	" z vodkas ",
-	" za atars ",
+	" vinegars ",
+	" walleyes ",
+	" walnutss ",
+	" whiskeys ",
+	" whitings ",
+	" woodruff ",
+	" yoghurts ",
+	" z vodkas ",
+	" za atars ",
+	" zedoarys ",
+	" zereshks ",
 	" zucchini ",
-	" zucchinis ",
 	" acacium ",
-	" add ins ",
-	" ajwains ",
+	" add ins ",
+	" ajwains ",
 	" alcohol ",
 	" alfalfa ",
-	" allspice ",
-	" almonds ",
 	" almonds ",
-	" amaranth ",
-	" amchoors ",
-	" amchurs ",
+	" amchoor ",
+	" amchurs ",
 	" anchovy ",
-	" angelica ",
 	" aniseed ",
 	" annatto ",
-	" aperols ",
-	" appless ",
+	" aonoris ",
+	" aperols ",
+	" appless ",
 	" apricot ",
-	" apricots ",
 	" aquavit ",
 	" arugula ",
-	" arugulas ",
-	" asiagos ",
+	" asiagos ",
 	" avocado ",
-	" avocados ",
 	" baharat ",
-	" bananas ",
 	" bananas ",
-	" barleys ",
-	" barolos ",
-	" bay leaf ",
+	" barleys ",
+	" barolos ",
 	" berbere ",
-	" bilberry ",
 	" biscuit ",
-	" bisques ",
-	" bok choy ",
+	" bisques ",
 	" bologna ",
-	" bonitos ",
+	" bonitos ",
+	" borages ",
 	" bourbon ",
 	" boursin ",
-	" brandys ",
+	" brandys ",
 	" brioche ",
 	" brisket ",
 	" brittle ",
-	" broccoli ",
-	" brownys ",
+	" brownys ",
 	" buffalo ",
 	" bulgogi ",
-	" bulgurs ",
+	" bulgurs ",
 	" burdock ",
-	" burgers ",
+	" burgers ",
 	" burrito ",
-	" butters ",
+	" butters ",
 	" cabbage ",
-	" cabbages ",
 	" cachaca ",
 	" calvado ",
 	" campari ",
-	" camphors ",
-	" canolas ",
-	" cantals ",
-	" caperss ",
+	" camphor ",
+	" canolas ",
+	" cantals ",
+	" caperss ",
 	" caramel ",
 	" caraway ",
-	" caraways ",
-	" cardamom ",
 	" cardoon ",
 	" carnita ",
-	" carrots ",
 	" carrots ",
-	" cashews ",
 	" cashews ",
 	" cassava ",
+	" cassias ",
 	" cassium ",
 	" catfish ",
-	" catsups ",
-	" caviars ",
+	" catsups ",
+	" caviars ",
 	" cayenne ",
-	" celeriac ",
-	" celerys ",
-	" cereals ",
-	" ch vres ",
+	" celerys ",
+	" cereals ",
+	" ch vres ",
 	" challah ",
-	" charolis ",
+	" charoli ",
 	" chayote ",
-	" chayotes ",
 	" cheddar ",
-	" cheeses ",
-	" cherrys ",
+	" cheeses ",
+	" chenpis ",
+	" cherrys ",
 	" chervil ",
-	" chervils ",
 	" chianti ",
 	" chicken ",
-	" chickpea ",
 	" chicory ",
-	" chivess ",
+	" chivess ",
 	" chorizo ",
 	" chowder ",
 	" chutney ",
-	" cilantro ",
-	" cinnamon ",
-	" citrons ",
+	" cicelys ",
+	" citrons ",
 	" cobbler ",
-	" cockles ",
+	" cockles ",
 	" coconut ",
-	" coconuts ",
 	" codfish ",
-	" coffees ",
-	" cognacs ",
+	" coffees ",
+	" cognacs ",
 	" collard ",
-	" comices ",
+	" comices ",
 	" compote ",
-	" confits ",
-	" cookies ",
+	" confits ",
+	" cookies ",
 	" cordial ",
-	" cotijas ",
+	" cotijas ",
 	" couscou ",
 	" cracker ",
 	" craisin ",
-	" creamys ",
+	" creamys ",
 	" crimini ",
-	" criscos ",
+	" criscos ",
 	" crouton ",
-	" cucumber ",
 	" cucuzza ",
-	" culantro ",
 	" cupcake ",
 	" cura ao ",
 	" curacao ",
 	" currant ",
-	" currants ",
 	" curtido ",
 	" custard ",
-	" daikons ",
-	" delicata ",
+	" daikons ",
+	" damsons ",
 	" dessert ",
 	" dogfish ",
-	" dragees ",
-	" dukkahs ",
+	" dragees ",
+	" dukkahs ",
+	" durians ",
 	" edamame ",
-	" eggnogs ",
-	" eggplant ",
-	" endifes ",
-	" endives ",
+	" eggnogs ",
+	" endifes ",
+	" endives ",
 	" epazote ",
-	" epazotes ",
 	" essence ",
-	" fajitas ",
+	" fajitas ",
 	" falafel ",
-	" farinas ",
+	" farinas ",
 	" fatback ",
-	" fennels ",
+	" feijoas ",
+	" fennels ",
 	" fig jam ",
 	" fondant ",
-	" fondues ",
+	" fondues ",
 	" fontina ",
 	" freekeh ",
 	" fregola ",
-	" frenchs ",
-	" frescas ",
-	" frisees ",
+	" frenchs ",
+	" frescas ",
+	" frisees ",
 	" fritter ",
 	" fusilli ",
 	" gai lan ",
 	" galanga ",
 	" ganache ",
-	" garlics ",
+	" garlics ",
 	" garnish ",
 	" gelatin ",
-	" gelatos ",
+	" gelatos ",
 	" gemelli ",
 	" genever ",
-	" gingers ",
+	" gingers ",
 	" ginseng ",
 	" glucose ",
-	" glutens ",
+	" glutens ",
 	" gnocchi ",
+	" golpars ",
 	" granola ",
-	" grappas ",
-	" gratins ",
-	" greases ",
+	" grappas ",
+	" gratins ",
+	" greases ",
 	" grouper ",
 	" gruyere ",
-	" habanero ",
 	" haddock ",
 	" halibut ",
-	" halvahs ",
+	" halvahs ",
 	" harissa ",
 	" hibiscu ",
-	" hijikis ",
-	" hoisins ",
-	" hominys ",
-	" honeydew ",
+	" hijikis ",
+	" hoisins ",
+	" hominys ",
+	" hyssops ",
 	" iceberg ",
-	" injeras ",
+	" injeras ",
 	" jaggery ",
-	" jalapeno ",
+	" jambuls ",
 	" jasmine ",
-	" jicamas ",
-	" kahluas ",
-	" kaisers ",
-	" kernels ",
+	" jicamas ",
+	" jujubes ",
+	" kahluas ",
+	" kaisers ",
+	" kernels ",
 	" ketchup ",
-	" kimchis ",
-	" kirschs ",
-	" kohlrabi ",
-	" korarima ",
-	" kumaras ",
+	" kimchis ",
+	" kirschs ",
+	" kumaras ",
 	" kumquat ",
-	" kumquats ",
-	" labnehs ",
-	" lardons ",
+	" labnehs ",
+	" lardons ",
 	" lasagna ",
 	" lasagne ",
-	" laurels ",
-	" lavashs ",
-	" lavender ",
-	" lemonss ",
-	" lentils ",
-	" lentilss ",
+	" laurels ",
+	" lavashs ",
+	" legumes ",
+	" lemonss ",
+	" lentils ",
 	" lettuce ",
-	" lettuces ",
-	" lillets ",
+	" lillets ",
 	" limeade ",
-	" linguis ",
+	" linguis ",
 	" liqueur ",
-	" liquors ",
+	" liquors ",
 	" lobster ",
-	" loquats ",
-	" lovages ",
-	" lychees ",
+	" loquats ",
+	" lovages ",
+	" lychees ",
 	" madeira ",
-	" maldons ",
-	" marjoram ",
+	" mahlabs ",
+	" maldons ",
 	" marsala ",
-	" masalas ",
-	" mastics ",
-	" matchas ",
-	" matzohs ",
+	" masalas ",
+	" mastics ",
+	" matchas ",
+	" matzohs ",
 	" mesclun ",
-	" mezcals ",
-	" midoris ",
-	" millets ",
-	" mitsubas ",
-	" mizunas ",
+	" mezcals ",
+	" midoris ",
+	" millets ",
+	" mitsuba ",
+	" mizunas ",
 	" mochiko ",
-	" mousses ",
-	" mueslis ",
-	" muffins ",
-	" mugworts ",
-	" mulberry ",
-	" mushroom ",
-	" mussels ",
+	" mousses ",
+	" mueslis ",
+	" muffins ",
+	" mugwort ",
+	" mussels ",
 	" mustard ",
-	" muttons ",
-	" myrtles ",
+	" muttons ",
+	" myrtles ",
 	" nam pla ",
-	" nectars ",
+	" nectars ",
 	" ni oise ",
 	" nicoise ",
-	" nigellas ",
-	" njangsas ",
-	" noodles ",
-	" nopales ",
-	" nougats ",
-	" noyauxs ",
+	" nigella ",
+	" njangsa ",
+	" noodles ",
+	" nopales ",
+	" nougats ",
+	" noyauxs ",
 	" nutella ",
-	" nutmegs ",
+	" nutmegs ",
 	" oatmeal ",
 	" octopus ",
 	" old bay ",
-	" olivess ",
-	" onionss ",
-	" oranges ",
+	" olivess ",
+	" onionss ",
 	" oranges ",
-	" orchids ",
+	" orchids ",
 	" oregano ",
-	" oreganos ",
-	" orgeats ",
+	" orgeats ",
 	" ostrich ",
-	" oxtails ",
-	" oysters ",
+	" oxtails ",
+	" oysters ",
+	" pamelos ",
 	" pancake ",
-	" paneers ",
-	" panelas ",
-	" papayas ",
+	" paneers ",
+	" panelas ",
+	" papayas ",
 	" paprika ",
-	" paprikas ",
 	" parsley ",
-	" parsleys ",
 	" parsnip ",
-	" parsnips ",
 	" pastina ",
-	" pastrys ",
-	" pawpaws ",
+	" pastrys ",
+	" pawpaws ",
 	" pea pod ",
 	" peaches ",
-	" peanuts ",
 	" peanuts ",
-	" pecanss ",
-	" pectins ",
-	" pepitas ",
-	" peppers ",
-	" perillas ",
-	" pernods ",
-	" phyllos ",
-	" physalis ",
-	" pickles ",
+	" pecanss ",
+	" pectins ",
+	" pepitas ",
+	" peppers ",
+	" perilla ",
+	" pernods ",
+	" phyllos ",
+	" pickles ",
 	" pierogi ",
 	" pignoli ",
 	" pimento ",
 	" pinenut ",
-	" pistous ",
+	" pistous ",
 	" poblano ",
 	" pollock ",
-	" pomelos ",
+	" pomelos ",
 	" pompano ",
 	" popcorn ",
 	" porcini ",
-	" potatos ",
+	" potatos ",
 	" poultry ",
 	" praline ",
 	" pretzel ",
 	" pudding ",
 	" pumpkin ",
-	" pumpkins ",
-	" quahogs ",
-	" quiches ",
-	" quinces ",
-	" quinoas ",
-	" rabbits ",
-	" radhunis ",
-	" radishs ",
-	" raisins ",
+	" quahogs ",
+	" quiches ",
+	" quinces ",
+	" quinoas ",
+	" rabbits ",
+	" radhuni ",
+	" radishs ",
 	" raisins ",
-	" rambutan ",
-	" rapinis ",
+	" rapinis ",
 	" ravioli ",
 	" recaito ",
 	" redfish ",
-	" relishs ",
-	" rennets ",
+	" relishs ",
+	" rennets ",
 	" rhubarb ",
-	" rhubarbs ",
-	" ribeyes ",
+	" ribeyes ",
 	" risotto ",
 	" ro wine ",
-	" rockets ",
+	" rockets ",
 	" romaine ",
-	" rooibos ",
+	" rooibos ",
 	" rosebud ",
-	" rosemary ",
-	" rotinis ",
+	" rotinis ",
 	" rouille ",
-	" russets ",
-	" rutabaga ",
+	" russets ",
 	" saffron ",
-	" saffrons ",
-	" salamis ",
-	" salmons ",
+	" salamis ",
+	" salmons ",
 	" saltine ",
-	" sambals ",
+	" sambals ",
 	" sambuca ",
+	" sanshos ",
 	" sardine ",
-	" satsumas ",
+	" satsuma ",
 	" sausage ",
-	" savorys ",
-	" scallion ",
+	" savorys ",
 	" scallop ",
-	" scampis ",
+	" scampis ",
 	" schnapp ",
-	" scotchs ",
+	" scotchs ",
 	" seafood ",
 	" seaweed ",
-	" seitans ",
+	" seitans ",
 	" sel gri ",
 	" seltzer ",
 	" serrano ",
-	" sesames ",
+	" sesames ",
 	" shallot ",
-	" shallots ",
-	" sherrys ",
-	" shrimps ",
+	" sherrys ",
+	" shrimps ",
 	" sirloin ",
-	" skewers ",
-	" skirrets ",
-	" snap pea ",
+	" skewers ",
+	" skirret ",
 	" snapper ",
 	" sofrito ",
-	" sorbets ",
+	" sorbets ",
 	" sorghum ",
-	" sorrels ",
+	" sorrels ",
 	" souffle ",
-	" soy bean ",
 	" soybean ",
 	" soymilk ",
 	" spanish ",
 	" spinach ",
-	" spinachs ",
-	" spirits ",
+	" spirits ",
 	" splenda ",
-	" spreads ",
-	" sprites ",
-	" sprouts ",
-	" squashs ",
-	" squash s ",
-	" starchs ",
+	" spreads ",
+	" sprites ",
+	" sprouts ",
+	" squashs ",
+	" starchs ",
 	" stevium ",
 	" stilton ",
 	" sucanat ",
 	" sultana ",
 	" tabasco ",
-	" tahinis ",
-	" tamales ",
-	" tamaris ",
-	" tamarind ",
+	" tahinis ",
+	" tamales ",
+	" tamaris ",
 	" tapioca ",
-	" taramas ",
-	" tarragon ",
-	" tat sois ",
-	" tempehs ",
+	" taramas ",
+	" tat soi ",
+	" tempehs ",
 	" tequila ",
-	" tobikos ",
-	" toffees ",
-	" tomatos ",
+	" tobikos ",
+	" toffees ",
+	" tomatos ",
 	" tostada ",
 	" treacle ",
 	" treviso ",
@@ -6833,510 +6605,428 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" trotter ",
 	" truffle ",
 	" truvium ",
-	" turbots ",
-	" turkeys ",
+	" tuberss ",
+	" turbots ",
+	" turkeys ",
 	" turkish ",
-	" turmeric ",
-	" turnips ",
+	" turnips ",
 	" vanilla ",
-	" vanillas ",
 	" venison ",
 	" vinegar ",
-	" waffles ",
-	" wakames ",
+	" waffles ",
+	" wakames ",
 	" walleye ",
-	" walnuts ",
 	" walnuts ",
-	" wasabis ",
+	" wasabis ",
 	" whiskey ",
-	" whiskys ",
+	" whiskys ",
 	" whiting ",
-	" wontons ",
-	" woodruff ",
+	" wontons ",
 	" yoghurt ",
-	" yogurts ",
+	" yogurts ",
 	" z vodka ",
 	" za atar ",
-	" zedoarys ",
-	" zereshks ",
-	" zucchini ",
+	" zedoary ",
+	" zereshk ",
 	" add in ",
-	" adobos ",
-	" agaves ",
-	" aiolis ",
+	" adobos ",
+	" agaves ",
+	" aiolis ",
 	" ajwain ",
-	" ajwains ",
 	" almond ",
-	" amaros ",
-	" ambers ",
-	" amchoor ",
+	" amaros ",
+	" ambers ",
 	" amchur ",
-	" anchos ",
-	" anises ",
-	" aonoris ",
+	" anchos ",
+	" anises ",
+	" aonori ",
 	" aperol ",
-	" apples ",
 	" apples ",
-	" apricot ",
-	" arames ",
-	" arugula ",
+	" arames ",
 	" asiago ",
-	" avocado ",
-	" bacons ",
-	" bagels ",
+	" bacons ",
+	" bagels ",
 	" banana ",
-	" bananas ",
 	" barley ",
 	" barolo ",
-	" basils ",
-	" beanss ",
-	" beetss ",
-	" berrys ",
-	" bisons ",
+	" basils ",
+	" beanss ",
+	" beetss ",
+	" berrys ",
+	" bisons ",
 	" bisque ",
+	" boldos ",
 	" bonito ",
-	" borages ",
+	" borage ",
 	" brandy ",
-	" breads ",
-	" breams ",
-	" brines ",
-	" broths ",
+	" breads ",
+	" breams ",
+	" brines ",
+	" broths ",
 	" browny ",
-	" bugles ",
+	" bugles ",
 	" bulgur ",
 	" burger ",
 	" butter ",
-	" cabbage ",
-	" cacaos ",
-	" cachas ",
-	" cactus ",
-	" cajuns ",
-	" camphor ",
-	" candys ",
+	" cacaos ",
+	" cachas ",
+	" cactus ",
+	" cajuns ",
+	" candys ",
 	" canola ",
 	" cantal ",
-	" capers ",
 	" capers ",
-	" caraway ",
-	" carobs ",
+	" carobs ",
 	" carrot ",
-	" carrots ",
 	" cashew ",
-	" cassis ",
-	" cassias ",
+	" cassia ",
+	" cassis ",
 	" catsup ",
 	" caviar ",
-	" cedars ",
+	" cedars ",
 	" celery ",
-	" celerys ",
 	" cereal ",
 	" ch vre ",
-	" chards ",
-	" charoli ",
-	" chayote ",
+	" chards ",
 	" cheese ",
-	" chenpis ",
+	" chenpi ",
 	" cherry ",
-	" cherrys ",
-	" chervil ",
-	" chiles ",
-	" chilis ",
-	" chives ",
+	" chiles ",
+	" chilis ",
 	" chives ",
-	" chivess ",
-	" chucks ",
-	" cicelys ",
-	" ciders ",
+	" chucks ",
+	" cicely ",
+	" ciders ",
 	" citron ",
-	" citrus ",
-	" cloves ",
+	" citrus ",
+	" cloves ",
 	" cockle ",
-	" cocoas ",
-	" coconut ",
+	" cocoas ",
 	" coffee ",
 	" cognac ",
-	" colbys ",
+	" colbys ",
 	" comice ",
-	" conchs ",
+	" conchs ",
 	" confit ",
 	" cookie ",
-	" cophas ",
-	" coppas ",
+	" cophas ",
+	" coppas ",
 	" cotija ",
-	" creams ",
+	" creams ",
 	" creamy ",
-	" cremas ",
-	" crepes ",
+	" cremas ",
+	" crepes ",
+	" cresss ",
 	" crisco ",
-	" crisps ",
-	" crusts ",
-	" cumins ",
-	" currant ",
-	" currys ",
-	" cynars ",
+	" crisps ",
+	" crusts ",
+	" cubebs ",
+	" cumins ",
+	" currys ",
+	" cynars ",
 	" daikon ",
-	" daikons ",
-	" damsons ",
-	" dashis ",
-	" datess ",
-	" dijons ",
-	" donuts ",
-	" doughs ",
+	" damson ",
+	" dashis ",
+	" datess ",
+	" dijons ",
+	" donuts ",
+	" doughs ",
 	" dragee ",
-	" drinks ",
+	" drinks ",
 	" dukkah ",
-	" durians ",
+	" durian ",
 	" eggnog ",
 	" endife ",
 	" endive ",
-	" endives ",
-	" epazote ",
-	" equals ",
+	" equals ",
 	" fajita ",
 	" farina ",
-	" farros ",
-	" feijoas ",
+	" farros ",
+	" feijoa ",
 	" fennel ",
-	" fennels ",
-	" fetums ",
-	" fideos ",
-	" filets ",
-	" flours ",
-	" flukes ",
+	" fetums ",
+	" fideos ",
+	" filets ",
+	" flours ",
+	" flukes ",
 	" fondue ",
-	" franks ",
+	" franks ",
 	" french ",
 	" fresca ",
-	" fri es ",
+	" fri es ",
 	" frisee ",
-	" frisees ",
-	" fritos ",
-	" fruits ",
-	" fudges ",
+	" fritos ",
+	" fruits ",
+	" fudges ",
 	" garlic ",
-	" garlics ",
 	" gelato ",
 	" ginger ",
-	" gingers ",
 	" gluten ",
-	" golpars ",
-	" gooses ",
-	" goudas ",
-	" grapes ",
+	" golpar ",
+	" gooses ",
+	" goudas ",
+	" grapes ",
 	" grappa ",
-	" grasss ",
+	" grasss ",
 	" gratin ",
-	" gravys ",
+	" gravys ",
 	" grease ",
-	" greeks ",
-	" greens ",
-	" guavas ",
-	" gumbos ",
+	" greeks ",
+	" greens ",
+	" guavas ",
+	" gumbos ",
 	" halvah ",
-	" herbes ",
+	" herbes ",
 	" hijiki ",
 	" hoisin ",
 	" hominy ",
-	" honeys ",
-	" hummus ",
-	" hyssops ",
-	" icings ",
+	" honeys ",
+	" hummus ",
+	" hyssop ",
+	" icings ",
 	" injera ",
-	" jambuls ",
-	" jellos ",
-	" jellys ",
+	" jambul ",
+	" jellos ",
+	" jellys ",
 	" jicama ",
-	" jicamas ",
-	" juices ",
-	" jujubes ",
-	" kabobs ",
+	" jimbus ",
+	" juices ",
+	" jujube ",
+	" kabobs ",
 	" kahlua ",
 	" kaiser ",
-	" kamuts ",
-	" kashas ",
-	" kebabs ",
-	" kefirs ",
+	" kamuts ",
+	" kashas ",
+	" kebabs ",
+	" kefirs ",
 	" kernel ",
 	" kimchi ",
 	" kirsch ",
-	" kombus ",
-	" konbus ",
+	" kokums ",
+	" kombus ",
+	" konbus ",
 	" kumara ",
-	" kumquat ",
 	" labneh ",
-	" lagers ",
-	" lardos ",
+	" lagers ",
 	" lardon ",
+	" lardos ",
 	" laurel ",
 	" lavash ",
-	" leekss ",
-	" legumes ",
-	" lemons ",
+	" leekss ",
+	" legume ",
 	" lemons ",
 	" lentil ",
-	" lentils ",
-	" lettuce ",
-	" licors ",
+	" licors ",
 	" lillet ",
 	" lingui ",
 	" liquor ",
-	" livers ",
-	" loafes ",
+	" livers ",
+	" loafes ",
 	" loquat ",
-	" loquats ",
 	" lovage ",
-	" lovages ",
 	" lychee ",
-	" lychees ",
-	" m ches ",
-	" mahlabs ",
+	" m ches ",
+	" mahlab ",
 	" maldon ",
-	" mangos ",
-	" maples ",
+	" mameys ",
+	" mangos ",
+	" maples ",
 	" masala ",
 	" mastic ",
-	" mastics ",
 	" matcha ",
-	" matzos ",
 	" matzoh ",
-	" melons ",
+	" matzos ",
+	" melons ",
 	" mezcal ",
 	" midori ",
 	" millet ",
-	" mirins ",
-	" mitsuba ",
+	" mirins ",
 	" mizuna ",
-	" mooses ",
-	" morels ",
+	" mooses ",
+	" morels ",
 	" mousse ",
 	" muesli ",
 	" muffin ",
-	" mugwort ",
 	" mussel ",
 	" mutton ",
 	" myrtle ",
-	" nachos ",
-	" ndujas ",
+	" nachos ",
+	" ndujas ",
 	" nectar ",
-	" nigella ",
-	" njangsa ",
 	" noodle ",
-	" nopals ",
 	" nopale ",
-	" nopales ",
+	" nopals ",
 	" nougat ",
 	" noyaux ",
 	" nutmeg ",
-	" nutmegs ",
-	" olives ",
 	" olives ",
-	" onions ",
 	" onions ",
 	" orange ",
-	" oranges ",
 	" orchid ",
-	" oregano ",
 	" orgeat ",
 	" oxtail ",
 	" oyster ",
-	" pamelos ",
+	" pamelo ",
 	" paneer ",
 	" panela ",
-	" panirs ",
-	" pankos ",
-	" pansys ",
+	" panirs ",
+	" pankos ",
+	" pansys ",
 	" papaya ",
-	" papayas ",
-	" paprika ",
-	" parsley ",
-	" parsnip ",
-	" pastas ",
-	" pastis ",
+	" pastas ",
+	" pastis ",
 	" pastry ",
 	" pawpaw ",
-	" peachs ",
+	" peachs ",
 	" peanut ",
-	" pearss ",
-	" pecans ",
+	" pearss ",
 	" pecans ",
 	" pectin ",
-	" pennes ",
+	" pennes ",
 	" pepita ",
 	" pepper ",
-	" perchs ",
-	" perilla ",
+	" perchs ",
 	" pernod ",
-	" pestos ",
+	" pestos ",
 	" phyllo ",
 	" pickle ",
-	" pilafs ",
-	" piscos ",
+	" pilafs ",
+	" piscos ",
 	" pistou ",
-	" pitums ",
-	" pizzas ",
-	" pluots ",
+	" pitums ",
+	" pizzas ",
+	" pluots ",
 	" pomelo ",
-	" pomelos ",
-	" ponzus ",
+	" ponzus ",
 	" potato ",
-	" potatos ",
-	" prawns ",
-	" prunes ",
-	" pumpkin ",
+	" prawns ",
+	" prunes ",
 	" quahog ",
-	" quails ",
-	" quarks ",
-	" quesos ",
+	" quails ",
+	" quarks ",
+	" quesos ",
 	" quiche ",
 	" quince ",
-	" quinces ",
 	" quinoa ",
 	" rabbit ",
-	" radhuni ",
 	" radish ",
-	" radishs ",
 	" raisin ",
-	" raisins ",
-	" ramans ",
+	" ramans ",
 	" rapini ",
 	" relish ",
 	" rennet ",
-	" rhubarb ",
 	" ribeye ",
-	" roasts ",
+	" roasts ",
 	" rocket ",
 	" rooibo ",
-	" rotels ",
+	" rotels ",
 	" rotini ",
 	" russet ",
-	" saffron ",
-	" salads ",
+	" salads ",
 	" salami ",
 	" salmon ",
-	" salsas ",
+	" salsas ",
 	" sambal ",
-	" sanshos ",
-	" satsuma ",
-	" sauces ",
+	" sansho ",
+	" sauces ",
 	" savory ",
-	" savorys ",
 	" scampi ",
-	" scones ",
+	" scones ",
 	" scotch ",
-	" scrods ",
+	" scrods ",
 	" seitan ",
 	" sesame ",
-	" sesames ",
-	" shallot ",
-	" sharks ",
-	" sheeps ",
+	" sharks ",
+	" sheeps ",
 	" sherry ",
-	" shisos ",
-	" shoyus ",
+	" shisos ",
+	" shoyus ",
 	" shrimp ",
 	" skewer ",
-	" skirret ",
-	" smelts ",
-	" snails ",
+	" smelts ",
+	" snails ",
 	" sorbet ",
 	" sorrel ",
-	" sorrels ",
-	" specks ",
-	" spelts ",
-	" spinach ",
+	" specks ",
+	" spelts ",
 	" spirit ",
-	" sprays ",
+	" sprays ",
 	" spread ",
 	" sprite ",
 	" sprout ",
 	" squash ",
-	" squash ",
-	" squids ",
+	" squids ",
 	" starch ",
-	" steaks ",
-	" stouts ",
-	" sugars ",
-	" sumacs ",
-	" sumaqs ",
-	" swedes ",
-	" syrups ",
+	" steaks ",
+	" stouts ",
+	" sugars ",
+	" sumacs ",
+	" sumaqs ",
+	" swedes ",
+	" syrups ",
 	" tahini ",
 	" tamale ",
 	" tamari ",
 	" tarama ",
-	" tassos ",
-	" tat soi ",
+	" tassos ",
 	" tempeh ",
-	" thymes ",
-	" toasts ",
+	" thymes ",
+	" toasts ",
 	" tobiko ",
 	" toffee ",
 	" tomato ",
-	" tortes ",
-	" tripes ",
-	" trouts ",
-	" tuberss ",
+	" tortes ",
+	" tripes ",
+	" trouts ",
+	" tubers ",
 	" turbot ",
 	" turkey ",
 	" turnip ",
-	" turnips ",
-	" vanilla ",
-	" verjus ",
-	" vodkas ",
-	" wafers ",
+	" uzazis ",
+	" verjus ",
+	" vodkas ",
+	" wafers ",
 	" waffle ",
 	" wakame ",
 	" walnut ",
 	" wasabi ",
-	" wasabis ",
-	" waters ",
-	" wheats ",
+	" waters ",
+	" wheats ",
 	" whisky ",
 	" wonton ",
-	" yeasts ",
+	" yeasts ",
 	" yogurt ",
-	" yuccas ",
-	" zedoary ",
-	" zereshk ",
+	" yuccas ",
 	" adobo ",
-	" agars ",
+	" agars ",
 	" agave ",
 	" aioli ",
-	" ajwain ",
-	" alums ",
+	" alums ",
 	" amaro ",
 	" amber ",
 	" ancho ",
 	" anise ",
-	" anises ",
-	" aonori ",
 	" apple ",
-	" apples ",
 	" arame ",
 	" bacon ",
 	" bagel ",
-	" banana ",
-	" barks ",
+	" barks ",
 	" basil ",
-	" basils ",
-	" basss ",
-	" beans ",
+	" basss ",
 	" beans ",
-	" beefs ",
-	" beers ",
-	" beets ",
+	" beefs ",
+	" beers ",
 	" beets ",
 	" berry ",
-	" bings ",
+	" bings ",
 	" bison ",
-	" boars ",
-	" boldos ",
-	" bones ",
-	" borage ",
-	" brans ",
+	" boars ",
+	" boldo ",
+	" bones ",
+	" brans ",
 	" bread ",
 	" bream ",
-	" bries ",
+	" bries ",
 	" brine ",
 	" broth ",
 	" bugle ",
@@ -7344,477 +7034,381 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" cacha ",
 	" cactu ",
 	" cajun ",
-	" cakes ",
+	" cakes ",
 	" candy ",
 	" caper ",
 	" carob ",
-	" carps ",
-	" carrot ",
+	" carps ",
 	" cassi ",
-	" cassia ",
-	" cavas ",
+	" cavas ",
 	" cedar ",
-	" celery ",
-	" chais ",
+	" chais ",
 	" chard ",
-	" chards ",
-	" chees ",
-	" chenpi ",
-	" cherry ",
+	" chees ",
 	" chile ",
 	" chili ",
-	" chips ",
+	" chips ",
 	" chive ",
-	" chives ",
 	" chuck ",
-	" cicely ",
 	" cider ",
 	" citru ",
-	" clams ",
-	" clovs ",
+	" clams ",
 	" clove ",
-	" cloves ",
+	" clovs ",
 	" cocoa ",
-	" colas ",
+	" colas ",
 	" colby ",
 	" conch ",
 	" copha ",
 	" coppa ",
-	" corns ",
-	" cr ms ",
-	" crabs ",
+	" corns ",
+	" cr ms ",
+	" crabs ",
 	" cream ",
 	" crema ",
 	" crepe ",
-	" cresss ",
+	" cress ",
 	" crisp ",
 	" crust ",
-	" cubebs ",
+	" cubeb ",
 	" cumin ",
-	" cumins ",
-	" curds ",
+	" curds ",
 	" curry ",
 	" cynar ",
-	" daikon ",
-	" damson ",
 	" dashi ",
-	" dates ",
 	" dates ",
 	" dijon ",
-	" dills ",
+	" dills ",
 	" donut ",
 	" dough ",
 	" drink ",
-	" ducks ",
-	" durian ",
-	" edams ",
-	" eggss ",
-	" endive ",
+	" ducks ",
+	" edams ",
+	" eggss ",
 	" equal ",
 	" farro ",
-	" feijoa ",
-	" fennel ",
 	" fetum ",
 	" fideo ",
 	" filet ",
-	" fishs ",
-	" flaxs ",
+	" fishs ",
+	" flaxs ",
 	" flour ",
 	" fluke ",
 	" frank ",
 	" fri e ",
-	" frisee ",
 	" frito ",
 	" fruit ",
 	" fudge ",
-	" garlic ",
-	" ghees ",
-	" ginger ",
-	" goats ",
-	" golds ",
-	" golpar ",
+	" ghees ",
+	" goats ",
+	" golds ",
 	" goose ",
 	" gouda ",
 	" grape ",
-	" grapes ",
 	" grass ",
 	" gravy ",
 	" greek ",
 	" green ",
-	" grits ",
-	" gruys ",
+	" grits ",
+	" gruys ",
 	" guava ",
-	" guavas ",
 	" gumbo ",
-	" hakes ",
-	" hashs ",
-	" herbs ",
+	" hakes ",
+	" hashs ",
+	" hemps ",
 	" herbe ",
-	" hings ",
+	" herbs ",
+	" hings ",
 	" honey ",
 	" hummu ",
-	" hyssop ",
 	" icing ",
-	" jambul ",
 	" jello ",
 	" jelly ",
-	" jerks ",
-	" jicama ",
-	" jimbus ",
+	" jerks ",
+	" jimbu ",
 	" juice ",
-	" jujube ",
 	" kabob ",
-	" kahls ",
-	" kales ",
+	" kahls ",
+	" kales ",
 	" kamut ",
 	" kasha ",
 	" kebab ",
 	" kefir ",
-	" kelps ",
-	" kiwis ",
-	" kokums ",
+	" kelps ",
+	" kiwis ",
+	" kokum ",
 	" kombu ",
 	" konbu ",
 	" lager ",
-	" lambs ",
-	" lards ",
+	" lambs ",
 	" lardo ",
-	" leeks ",
-	" leek s ",
+	" lards ",
 	" leeks ",
-	" legume ",
 	" lemon ",
-	" lemons ",
 	" licor ",
-	" limes ",
+	" limes ",
 	" liver ",
 	" loafe ",
-	" loquat ",
-	" lotus ",
-	" lovage ",
-	" lychee ",
+	" lotus ",
 	" m che ",
-	" maces ",
-	" mahlab ",
-	" malts ",
-	" mameys ",
+	" maces ",
+	" malts ",
+	" mamey ",
 	" mango ",
-	" mangos ",
 	" maple ",
-	" masas ",
-	" mastic ",
-	" mates ",
+	" masas ",
+	" mates ",
 	" matzo ",
-	" meats ",
+	" meats ",
 	" melon ",
-	" milks ",
-	" mints ",
+	" milks ",
+	" mints ",
 	" mirin ",
-	" misos ",
+	" misos ",
 	" moose ",
 	" morel ",
-	" naans ",
+	" naans ",
 	" nacho ",
 	" nduja ",
 	" nopal ",
-	" nopale ",
-	" noris ",
-	" nutmeg ",
-	" nutss ",
-	" oatss ",
-	" okras ",
-	" oleos ",
+	" noris ",
+	" nutss ",
+	" oatss ",
+	" okras ",
+	" oleos ",
 	" olive ",
-	" olives ",
 	" onion ",
-	" onions ",
-	" orange ",
-	" oreos ",
-	" orzos ",
-	" ouzos ",
-	" palms ",
-	" pamelo ",
+	" oreos ",
+	" orzos ",
+	" ouzos ",
+	" palms ",
 	" panir ",
 	" panko ",
 	" pansy ",
-	" papaya ",
 	" pasta ",
 	" pasti ",
-	" pates ",
+	" pates ",
 	" peach ",
-	" peachs ",
-	" pears ",
 	" pears ",
-	" peass ",
+	" peass ",
 	" pecan ",
 	" penne ",
 	" perch ",
 	" pesto ",
 	" pilaf ",
-	" pimms ",
-	" pines ",
+	" pimms ",
+	" pines ",
 	" pisco ",
-	" pitas ",
+	" pitas ",
 	" pitum ",
 	" pizza ",
-	" plums ",
+	" plums ",
 	" pluot ",
-	" pomelo ",
 	" ponzu ",
-	" porks ",
-	" ports ",
-	" potato ",
+	" porks ",
+	" ports ",
 	" prawn ",
 	" prune ",
 	" quail ",
 	" quark ",
 	" queso ",
-	" quince ",
-	" radish ",
-	" ragus ",
-	" raisin ",
+	" ragus ",
 	" raman ",
-	" ramps ",
-	" rices ",
+	" ramps ",
+	" rices ",
 	" roast ",
-	" roses ",
+	" roses ",
 	" rotel ",
-	" rotis ",
-	" rumps ",
-	" sabas ",
-	" sages ",
-	" sagos ",
-	" sakes ",
+	" rotis ",
+	" rumps ",
+	" sabas ",
+	" sages ",
+	" sagos ",
+	" sakes ",
 	" salad ",
 	" salsa ",
-	" salts ",
-	" sansho ",
+	" salts ",
 	" sauce ",
-	" savory ",
 	" scone ",
 	" scrod ",
-	" seeds ",
-	" sesame ",
+	" seeds ",
 	" shark ",
 	" sheep ",
 	" shiso ",
-	" shisos ",
 	" shoyu ",
-	" skins ",
+	" skins ",
 	" smelt ",
 	" snail ",
-	" sobas ",
-	" sodas ",
-	" sojus ",
-	" soles ",
-	" sorrel ",
-	" soups ",
-	" spams ",
+	" sobas ",
+	" sodas ",
+	" sojus ",
+	" soles ",
+	" soups ",
+	" spams ",
 	" speck ",
 	" spelt ",
 	" spray ",
 	" squid ",
 	" steak ",
-	" stews ",
+	" stews ",
 	" stout ",
-	" suets ",
+	" suets ",
 	" sugar ",
 	" sumac ",
-	" sumacs ",
 	" sumaq ",
 	" swede ",
 	" syrup ",
-	" tacos ",
-	" taros ",
-	" tarts ",
+	" tacos ",
+	" taros ",
+	" tarts ",
 	" tasso ",
-	" teffs ",
-	" thrus ",
+	" teffs ",
+	" thrus ",
 	" thyme ",
-	" thymes ",
 	" toast ",
-	" tofus ",
+	" tofus ",
 	" torte ",
 	" tripe ",
 	" trout ",
-	" tubers ",
-	" tunas ",
-	" turnip ",
-	" udons ",
-	" urfas ",
-	" uzazis ",
-	" veals ",
+	" tunas ",
+	" udons ",
+	" urfas ",
+	" uzazi ",
+	" veals ",
 	" verju ",
 	" vodka ",
 	" wafer ",
-	" wasabi ",
 	" water ",
 	" wheat ",
-	" wheys ",
-	" wines ",
-	" wraps ",
+	" wheys ",
+	" wines ",
+	" wraps ",
 	" yeast ",
-	" yolks ",
-	" yucas ",
+	" yolks ",
+	" yucas ",
 	" yucca ",
-	" zitis ",
+	" yuzus ",
+	" zests ",
+	" zitis ",
 	" agar ",
-	" ahis ",
-	" ales ",
+	" ahis ",
+	" ales ",
 	" alum ",
-	" ames ",
-	" anise ",
-	" apple ",
+	" ames ",
 	" bark ",
-	" basil ",
 	" bass ",
-	" bays ",
+	" bays ",
 	" bean ",
 	" beef ",
 	" beer ",
 	" beet ",
-	" beets ",
 	" bing ",
 	" boar ",
-	" boldo ",
 	" bone ",
 	" bran ",
 	" brie ",
-	" buns ",
+	" buns ",
 	" cake ",
-	" cals ",
+	" cals ",
 	" carp ",
 	" cava ",
 	" chai ",
-	" chard ",
 	" chee ",
 	" chip ",
 	" clam ",
 	" clov ",
-	" clove ",
-	" cods ",
+	" cods ",
 	" cola ",
 	" corn ",
-	" corns ",
 	" cr m ",
 	" crab ",
-	" cress ",
-	" cubeb ",
-	" cumin ",
 	" curd ",
 	" date ",
-	" dates ",
 	" dill ",
-	" dills ",
 	" duck ",
 	" edam ",
-	" eels ",
-	" eggs ",
+	" eels ",
 	" eggs ",
-	" fats ",
-	" figs ",
+	" fats ",
+	" figs ",
 	" fish ",
 	" flax ",
 	" ghee ",
-	" gins ",
+	" gins ",
 	" goat ",
 	" gold ",
-	" grape ",
 	" grit ",
 	" gruy ",
-	" guava ",
 	" hake ",
-	" hams ",
+	" hams ",
 	" hash ",
-	" hemps ",
+	" hemp ",
 	" herb ",
 	" hing ",
-	" hops ",
-	" ices ",
-	" jams ",
+	" hops ",
+	" ices ",
+	" jams ",
 	" jerk ",
-	" jimbu ",
 	" kahl ",
 	" kale ",
-	" kales ",
 	" kelp ",
 	" kiwi ",
-	" kokum ",
 	" lamb ",
 	" lard ",
 	" leek ",
-	" leek ",
-	" lemon ",
 	" lime ",
-	" limes ",
 	" lotu ",
-	" loxs ",
-	" m ms ",
+	" loxs ",
+	" m ms ",
 	" mace ",
-	" maces ",
 	" malt ",
-	" mamey ",
-	" mango ",
 	" masa ",
 	" mate ",
 	" meat ",
 	" milk ",
 	" mint ",
-	" mints ",
 	" miso ",
-	" msgs ",
+	" msgs ",
 	" naan ",
 	" nori ",
-	" nuts ",
 	" nuts ",
-	" oats ",
 	" oats ",
-	" oils ",
+	" oils ",
 	" okra ",
-	" okras ",
 	" oleo ",
-	" olive ",
-	" onion ",
 	" oreo ",
 	" orzo ",
 	" ouzo ",
 	" palm ",
 	" pate ",
-	" peas ",
-	" peach ",
 	" pear ",
-	" pears ",
 	" peas ",
-	" pies ",
+	" pies ",
 	" pimm ",
 	" pine ",
 	" pita ",
-	" plus ",
 	" plum ",
-	" plums ",
+	" plus ",
 	" pork ",
 	" port ",
 	" ragu ",
 	" ramp ",
-	" ribs ",
+	" ribs ",
 	" rice ",
-	" roes ",
+	" roes ",
 	" rose ",
-	" roses ",
 	" roti ",
-	" rubs ",
-	" rums ",
+	" rubs ",
+	" rues ",
 	" rump ",
-	" ryes ",
+	" rums ",
+	" ryes ",
 	" saba ",
 	" sage ",
-	" sages ",
 	" sago ",
 	" sake ",
 	" salt ",
-	" salts ",
 	" seed ",
-	" shiso ",
 	" skin ",
 	" soba ",
 	" soda ",
@@ -7824,94 +7418,63 @@ var corpusIngredients = []string{" can cream of chicken soups ",
 	" spam ",
 	" stew ",
 	" suet ",
-	" sumac ",
 	" taco ",
 	" taro ",
-	" taros ",
 	" tart ",
 	" teff ",
 	" thru ",
-	" thyme ",
-	" tips ",
+	" tips ",
 	" tofu ",
 	" tuna ",
 	" udon ",
 	" urfa ",
-	" uzazi ",
 	" veal ",
 	" whey ",
 	" wine ",
 	" wrap ",
-	" yams ",
+	" yams ",
 	" yolk ",
 	" yuca ",
-	" yuzus ",
-	" zests ",
+	" yuzu ",
+	" zest ",
 	" ziti ",
 	" ahi ",
 	" ale ",
 	" ame ",
 	" bay ",
-	" beet ",
 	" bun ",
 	" cal ",
 	" cod ",
-	" corn ",
-	" date ",
-	" dill ",
 	" eel ",
 	" egg ",
 	" fat ",
 	" fig ",
-	" figs ",
 	" gin ",
 	" ham ",
-	" hemp ",
 	" hop ",
 	" ice ",
 	" jam ",
-	" kale ",
-	" lime ",
 	" lox ",
 	" m m ",
-	" mace ",
-	" mint ",
-	" mls ",
+	" mls ",
 	" msg ",
 	" nut ",
-	" nuts ",
 	" oat ",
 	" oil ",
-	" okra ",
 	" pea ",
-	" pear ",
-	" peas ",
 	" pie ",
 	" plu ",
-	" plum ",
 	" rib ",
-	" ros ",
 	" roe ",
-	" rose ",
+	" ros ",
 	" rub ",
-	" rues ",
+	" rue ",
 	" rum ",
 	" rye ",
-	" sage ",
-	" salt ",
-	" taro ",
 	" tip ",
 	" yam ",
-	" yams ",
-	" yuzu ",
-	" zest ",
-	" fig ",
 	" ml ",
-	" nut ",
-	" pea ",
-	" ro ",
-	" rue ",
-	" yam "}
+	" ro "}
 var corpusMeasures = []string{" tablespoons ",
 	" milliliter ",
 	" tablespoon ",
@@ -7976,15 +7539,15 @@ var corpusNumbers = []string{" 1/2 ",
 	" 18 ",
 	" 19 ",
 	" 20 ",
-	" ⅜ ",
-	" ⅞ ",
-	" ⅔ ",
+	" ½ ",
+	" ¾ ",
+	" ⅛ ",
 	" ⅝ ",
 	" ⅓ ",
-	" ½ ",
 	" ¼ ",
-	" ¾ ",
-	" ⅛ "}
+	" ⅜ ",
+	" ⅞ ",
+	" ⅔ "}
 var corpusDirections = []string{" 1 ",
 	" 10 ",
 	" 15 ",
