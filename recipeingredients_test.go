@@ -1,13 +1,16 @@
 package recipeingredients
 
 import (
+	"bytes"
 	"fmt"
+	"io/ioutil"
 	"path"
 	"strings"
 	"testing"
 
 	log "github.com/schollz/logger"
 	"github.com/stretchr/testify/assert"
+	"golang.org/x/net/html"
 )
 
 func BenchmarkParse(b *testing.B) {
@@ -256,4 +259,118 @@ func ExampleChocolateChip6() {
 	// 1/2 teaspoon salt
 	// 1 cup chocolate chips (semi sweet)
 	// 1 cup chocolate chips (milk)
+}
+
+func TestNew(t *testing.T) {
+	// urlToParse := "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/"
+
+	urlToParse := "https://laurenslatest.com/actually-perfect-chocolate-chip-cookies/"
+	fileToGet := urlToParse
+	fileToGet = strings.TrimPrefix(fileToGet, "https://")
+	if string(fileToGet[len(fileToGet)-1]) == "/" {
+		fileToGet += "index.html"
+	}
+	fileToGet = path.Join("testing", "sites", fileToGet)
+
+	b, _ := ioutil.ReadFile(fileToGet)
+	findIngredientsFromHTML(b)
+	assert.Nil(t, nil)
+}
+
+func findIngredientsFromHTML(b []byte) {
+	doc, err := html.Parse(bytes.NewReader(b))
+	if err != nil {
+		panic(err)
+	}
+	bestScore := 0
+	bestChildrenText := []string{}
+	var f func(*html.Node) (s string)
+	f = func(n *html.Node) (s string) {
+		childrenText := []string{}
+		// fmt.Printf("%+v\n", n)
+		score := 0
+		for c := n.FirstChild; c != nil; c = c.NextSibling {
+			childText := f(c)
+			if childText != "" {
+				childrenText = append(childrenText, childText)
+				score += scoreLine(childText)
+			}
+		}
+		if score > 5 && len(childrenText) < 15 {
+			bestScore = score
+			bestChildrenText = childrenText
+			fmt.Println(bestScore)
+			fmt.Println(bestChildrenText)
+			for _, child := range bestChildrenText {
+				fmt.Printf("[%s]\n", child)
+			}
+		}
+		if len(childrenText) > 0 {
+			// fmt.Println(childrenText)
+			s = strings.Join(childrenText, "")
+		} else if n.DataAtom == 0 && strings.TrimSpace(n.Data) != "" {
+			s = strings.TrimSpace(n.Data)
+		}
+		return
+	}
+	f(doc)
+}
+
+func scoreLine(line string) (score int) {
+	line = SanitizeLine(line)
+	i := 0
+	lineInfos := make([]LineInfo, 1)
+	lineInfos[i].Line = line
+	lineInfos[i].IngredientsInString = GetIngredientsInString(line)
+	if len(lineInfos[i].LineOriginal) > 50 {
+		return
+	}
+	if len(lineInfos[i].IngredientsInString) == 2 && len(lineInfos[i].IngredientsInString[1].Word) > len(lineInfos[i].IngredientsInString[0].Word) {
+		lineInfos[i].IngredientsInString[0] = lineInfos[i].IngredientsInString[1]
+	}
+	lineInfos[i].AmountInString = GetNumbersInString(line)
+	lineInfos[i].MeasureInString = GetMeasuresInString(line)
+
+	// does it contain an ingredient?
+	if len(lineInfos[i].IngredientsInString) > 0 {
+		score++
+	}
+	// does it contain an amount?
+	if len(lineInfos[i].AmountInString) > 0 {
+		score++
+	}
+	// does it contain a measure (cups, tsps)?
+	if len(lineInfos[i].MeasureInString) > 0 {
+		score++
+	}
+	// does the ingredient come after the measure?
+	if len(lineInfos[i].IngredientsInString) > 0 && len(lineInfos[i].MeasureInString) > 0 && lineInfos[i].IngredientsInString[0].Position > lineInfos[i].MeasureInString[0].Position {
+		score++
+	}
+	// does the ingredient come after the amount?
+	if len(lineInfos[i].IngredientsInString) > 0 && len(lineInfos[i].AmountInString) > 0 && lineInfos[i].IngredientsInString[0].Position > lineInfos[i].AmountInString[0].Position {
+		score++
+	}
+	// does the measure come after the amount?
+	if len(lineInfos[i].MeasureInString) > 0 && len(lineInfos[i].AmountInString) > 0 && lineInfos[i].MeasureInString[0].Position > lineInfos[i].AmountInString[0].Position {
+		score++
+	}
+
+	if strings.Count(lineInfos[i].LineOriginal, ".") > 1 {
+		score--
+	}
+	if len(line) > 15 {
+		score--
+	}
+
+	// does it start with a list indicator (* or -)?
+	fields := strings.Fields(line)
+	if len(fields) > 0 && (fields[0] == "*" || fields[0] == "-") {
+		score++
+	}
+	// if only one thing is right, its wrong
+	if score == 1 {
+		score = 0.0
+	}
+	return
 }
