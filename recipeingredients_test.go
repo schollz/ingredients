@@ -284,99 +284,104 @@ func findIngredientsFromHTML(b []byte) {
 	if err != nil {
 		panic(err)
 	}
-	var f func(n *html.Node, ingredientChildren *[]string) (s string)
-	f = func(n *html.Node, ingredientChildren *[]string) (s string) {
-		childrenText := []string{}
+	var f func(n *html.Node, lineInfos *[]LineInfo) (s string)
+	f = func(n *html.Node, lineInfos *[]LineInfo) (s string) {
+		childrenLineInfo := []LineInfo{}
 		// fmt.Printf("%+v\n", n)
 		score := 0
 		for c := n.FirstChild; c != nil; c = c.NextSibling {
 			var childText string
-			childText = f(c, ingredientChildren)
+			childText = f(c, lineInfos)
 			if childText != "" {
-				childrenText = append(childrenText, childText)
-				score += scoreLine(childText)
+				scoreOfLine, lineInfo := scoreLine(childText)
+				childrenLineInfo = append(childrenLineInfo, lineInfo)
+				score += scoreOfLine
 			}
 		}
-		if score > 5 && len(childrenText) < 15 && len(childrenText) > 1 {
-			*ingredientChildren = append(*ingredientChildren, childrenText...)
-			for _, child := range childrenText {
-				fmt.Printf("[%s]\n", child)
+		if score > 5 && len(childrenLineInfo) < 15 && len(childrenLineInfo) > 1 {
+			*lineInfos = append(*lineInfos, childrenLineInfo...)
+			for _, child := range childrenLineInfo {
+				fmt.Printf("[%s]\n", child.LineOriginal)
 			}
 		}
-		if len(childrenText) > 0 {
-			// fmt.Println(childrenText)
+		if len(childrenLineInfo) > 0 {
+			// fmt.Println(childrenLineInfo)
+			childrenText := make([]string, len(childrenLineInfo))
+			for i := range childrenLineInfo {
+				childrenText[i] = childrenLineInfo[i].LineOriginal
+			}
 			s = strings.Join(childrenText, " ")
 		} else if n.DataAtom == 0 && strings.TrimSpace(n.Data) != "" {
 			s = strings.TrimSpace(n.Data)
 		}
 		return s
 	}
-	var ingredientChildren []string
-	f(doc, &ingredientChildren)
-	fmt.Println(ingredientChildren)
+	var lineInfos []LineInfo
+	f(doc, &lineInfos)
+	fmt.Println(lineInfos)
 }
 
-func scoreLine(line string) (score int) {
-	line = SanitizeLine(line)
-	i := 0
-	lineInfos := make([]LineInfo, 1)
-	lineInfos[i].Line = line
-	lineInfos[i].IngredientsInString = GetIngredientsInString(line)
-	if len(lineInfos[i].LineOriginal) > 50 {
+func scoreLine(line string) (score int, lineInfo LineInfo) {
+	lineInfo = LineInfo{}
+	lineInfo.LineOriginal = line
+	lineInfo.Line = SanitizeLine(line)
+
+	lineInfo.IngredientsInString = GetIngredientsInString(lineInfo.Line)
+	if len(lineInfo.LineOriginal) > 50 {
 		return
 	}
-	if len(lineInfos[i].IngredientsInString) == 2 && len(lineInfos[i].IngredientsInString[1].Word) > len(lineInfos[i].IngredientsInString[0].Word) {
-		lineInfos[i].IngredientsInString[0] = lineInfos[i].IngredientsInString[1]
+	if len(lineInfo.IngredientsInString) == 2 && len(lineInfo.IngredientsInString[1].Word) > len(lineInfo.IngredientsInString[0].Word) {
+		lineInfo.IngredientsInString[0] = lineInfo.IngredientsInString[1]
 	}
-	lineInfos[i].AmountInString = GetNumbersInString(line)
-	lineInfos[i].MeasureInString = GetMeasuresInString(line)
+	lineInfo.AmountInString = GetNumbersInString(lineInfo.Line)
+	lineInfo.MeasureInString = GetMeasuresInString(lineInfo.Line)
 
 	// does it contain an ingredient?
-	if len(lineInfos[i].IngredientsInString) > 0 {
+	if len(lineInfo.IngredientsInString) > 0 {
 		score++
 	}
 
 	// disfavor containing multiple ingredients
-	if len(lineInfos[i].IngredientsInString) > 1 {
-		score = score - len(lineInfos[i].IngredientsInString) + 1
+	if len(lineInfo.IngredientsInString) > 1 {
+		score = score - len(lineInfo.IngredientsInString) + 1
 	}
 
 	// does it contain an amount?
-	if len(lineInfos[i].AmountInString) > 0 {
+	if len(lineInfo.AmountInString) > 0 {
 		score++
 	}
 	// does it contain a measure (cups, tsps)?
-	if len(lineInfos[i].MeasureInString) > 0 {
+	if len(lineInfo.MeasureInString) > 0 {
 		score++
 	}
 	// does the ingredient come after the measure?
-	if len(lineInfos[i].IngredientsInString) > 0 && len(lineInfos[i].MeasureInString) > 0 && lineInfos[i].IngredientsInString[0].Position > lineInfos[i].MeasureInString[0].Position {
+	if len(lineInfo.IngredientsInString) > 0 && len(lineInfo.MeasureInString) > 0 && lineInfo.IngredientsInString[0].Position > lineInfo.MeasureInString[0].Position {
 		score++
 	}
 	// does the ingredient come after the amount?
-	if len(lineInfos[i].IngredientsInString) > 0 && len(lineInfos[i].AmountInString) > 0 && lineInfos[i].IngredientsInString[0].Position > lineInfos[i].AmountInString[0].Position {
+	if len(lineInfo.IngredientsInString) > 0 && len(lineInfo.AmountInString) > 0 && lineInfo.IngredientsInString[0].Position > lineInfo.AmountInString[0].Position {
 		score++
 	}
 	// does the measure come after the amount?
-	if len(lineInfos[i].MeasureInString) > 0 && len(lineInfos[i].AmountInString) > 0 && lineInfos[i].MeasureInString[0].Position > lineInfos[i].AmountInString[0].Position {
+	if len(lineInfo.MeasureInString) > 0 && len(lineInfo.AmountInString) > 0 && lineInfo.MeasureInString[0].Position > lineInfo.AmountInString[0].Position {
 		score++
 	}
 
 	// disfavor lots of puncuation
 	puncuation := []string{".", ",", "!", "?"}
 	for _, punc := range puncuation {
-		if strings.Count(lineInfos[i].LineOriginal, punc) > 1 {
+		if strings.Count(lineInfo.LineOriginal, punc) > 1 {
 			score--
 		}
 	}
 
 	// disfavor long lines
-	if len(line) > 50 {
-		score = score - (len(line) - 50)
+	if len(lineInfo.Line) > 50 {
+		score = score - (len(lineInfo.Line) - 50)
 	}
 
 	// does it start with a list indicator (* or -)?
-	fields := strings.Fields(line)
+	fields := strings.Fields(lineInfo.Line)
 	if len(fields) > 0 && (fields[0] == "*" || fields[0] == "-") {
 		score++
 	}
