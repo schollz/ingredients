@@ -231,8 +231,6 @@ espelette pepper
 german chocolate
 ginger marmalade
 gorgonzola dolce
-granulated onion
-granulated sugar
 grapefruit juice
 green chartreuse
 green peppercorn
@@ -445,7 +443,6 @@ muscovado sugar
 nonpareil caper
 oyster mushroom
 pancettum bacon
-parchment paper
 parmesan cheese
 parmesan shaved
 parsley chervil
@@ -1195,7 +1192,6 @@ bacon grease
 baked potato
 bakery bread
 baking apple
-baking sheet
 baking spray
 banana bread
 banana puree
@@ -1207,6 +1203,7 @@ beef consomm
 beef sirloin
 beurre blanc
 bibb lettuce
+coconut crystals
 blood orange
 blue curacao
 bone removed
