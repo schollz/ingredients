@@ -262,9 +262,9 @@ func ExampleChocolateChip6() {
 }
 
 func TestNew(t *testing.T) {
-
-	urlToParse := "https://laurenslatest.com/actually-perfect-chocolate-chip-cookies/"
+	var urlToParse string
 	urlToParse = "https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies"
+	urlToParse = "https://laurenslatest.com/actually-perfect-chocolate-chip-cookies/"
 	urlToParse = "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/"
 	fileToGet := urlToParse
 	fileToGet = strings.TrimPrefix(fileToGet, "https://")
@@ -308,7 +308,7 @@ func findIngredientsFromHTML(b []byte) {
 		}
 		if len(childrenText) > 0 {
 			// fmt.Println(childrenText)
-			s = strings.Join(childrenText, "")
+			s = strings.Join(childrenText, " ")
 		} else if n.DataAtom == 0 && strings.TrimSpace(n.Data) != "" {
 			s = strings.TrimSpace(n.Data)
 		}
