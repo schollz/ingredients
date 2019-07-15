@@ -263,6 +263,8 @@ import (
 func TestNew(t *testing.T) {
 	var urlToParse string
 	urlToParse = "https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies"
+	urlToParse = "https://thesaltymarshmallow.com/best-banana-bread-recipe/"
+	urlToParse = "https://pinchofyum.com/the-best-soft-chocolate-chip-cookies"
 	urlToParse = "https://laurenslatest.com/actually-perfect-chocolate-chip-cookies/"
 	urlToParse = "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/"
 	fileToGet := urlToParse
@@ -282,26 +284,22 @@ func findIngredientsFromHTML(b []byte) {
 	if err != nil {
 		panic(err)
 	}
-	bestScore := 0
-	bestChildrenText := []string{}
-	var f func(*html.Node) (s string)
-	f = func(n *html.Node) (s string) {
+	var f func(n *html.Node, ingredientChildren *[]string) (s string)
+	f = func(n *html.Node, ingredientChildren *[]string) (s string) {
 		childrenText := []string{}
 		// fmt.Printf("%+v\n", n)
 		score := 0
 		for c := n.FirstChild; c != nil; c = c.NextSibling {
-			childText := f(c)
+			var childText string
+			childText = f(c, ingredientChildren)
 			if childText != "" {
 				childrenText = append(childrenText, childText)
 				score += scoreLine(childText)
 			}
 		}
 		if score > 5 && len(childrenText) < 15 && len(childrenText) > 1 {
-			bestScore = score
-			bestChildrenText = childrenText
-			fmt.Println(bestScore)
-			fmt.Println(bestChildrenText)
-			for _, child := range bestChildrenText {
+			*ingredientChildren = append(*ingredientChildren, childrenText...)
+			for _, child := range childrenText {
 				fmt.Printf("[%s]\n", child)
 			}
 		}
@@ -311,9 +309,11 @@ func findIngredientsFromHTML(b []byte) {
 		} else if n.DataAtom == 0 && strings.TrimSpace(n.Data) != "" {
 			s = strings.TrimSpace(n.Data)
 		}
-		return
+		return s
 	}
-	f(doc)
+	var ingredientChildren []string
+	f(doc, &ingredientChildren)
+	fmt.Println(ingredientChildren)
 }
 
 func scoreLine(line string) (score int) {
@@ -335,6 +335,12 @@ func scoreLine(line string) (score int) {
 	if len(lineInfos[i].IngredientsInString) > 0 {
 		score++
 	}
+
+	// disfavor containing multiple ingredients
+	if len(lineInfos[i].IngredientsInString) > 1 {
+		score = score - len(lineInfos[i].IngredientsInString) + 1
+	}
+
 	// does it contain an amount?
 	if len(lineInfos[i].AmountInString) > 0 {
 		score++
@@ -356,9 +362,15 @@ func scoreLine(line string) (score int) {
 		score++
 	}
 
-	if strings.Count(lineInfos[i].LineOriginal, ".") > 1 {
-		score--
+	// disfavor lots of puncuation
+	puncuation := []string{".", ",", "!", "?"}
+	for _, punc := range puncuation {
+		if strings.Count(lineInfos[i].LineOriginal, punc) > 1 {
+			score--
+		}
 	}
+
+	// disfavor long lines
 	if len(line) > 50 {
 		score = score - (len(line) - 50)
 	}
