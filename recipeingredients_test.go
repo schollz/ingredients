@@ -262,9 +262,10 @@ func ExampleChocolateChip6() {
 }
 
 func TestNew(t *testing.T) {
-	// urlToParse := "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/"
 
 	urlToParse := "https://laurenslatest.com/actually-perfect-chocolate-chip-cookies/"
+	urlToParse = "https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies"
+	urlToParse = "https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/"
 	fileToGet := urlToParse
 	fileToGet = strings.TrimPrefix(fileToGet, "https://")
 	if string(fileToGet[len(fileToGet)-1]) == "/" {
@@ -296,7 +297,7 @@ func findIngredientsFromHTML(b []byte) {
 				score += scoreLine(childText)
 			}
 		}
-		if score > 5 && len(childrenText) < 15 {
+		if score > 5 && len(childrenText) < 15 && len(childrenText) > 1 {
 			bestScore = score
 			bestChildrenText = childrenText
 			fmt.Println(bestScore)
@@ -359,8 +360,8 @@ func scoreLine(line string) (score int) {
 	if strings.Count(lineInfos[i].LineOriginal, ".") > 1 {
 		score--
 	}
-	if len(line) > 15 {
-		score--
+	if len(line) > 50 {
+		score = score - (len(line) - 50)
 	}
 
 	// does it start with a list indicator (* or -)?
