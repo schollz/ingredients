@@ -2,12 +2,12 @@ package recipeingredients
 
 import (
 	"bytes"
-	"fmt"
 	"io/ioutil"
 	"path"
 	"strings"
 	"testing"
 
+	log "github.com/schollz/logger"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/html"
 )
@@ -275,14 +275,14 @@ func TestNew(t *testing.T) {
 	fileToGet = path.Join("testing", "sites", fileToGet)
 
 	b, _ := ioutil.ReadFile(fileToGet)
-	findIngredientsFromHTML(b)
-	assert.Nil(t, nil)
+	_, err := GetIngredientLinesInHTML(b)
+	assert.Nil(t, err)
 }
 
-func findIngredientsFromHTML(b []byte) {
+func GetIngredientLinesInHTML(b []byte) (lineInfos []LineInfo, err error) {
 	doc, err := html.Parse(bytes.NewReader(b))
 	if err != nil {
-		panic(err)
+		return
 	}
 	var f func(n *html.Node, lineInfos *[]LineInfo) (s string)
 	f = func(n *html.Node, lineInfos *[]LineInfo) (s string) {
@@ -301,7 +301,7 @@ func findIngredientsFromHTML(b []byte) {
 		if score > 5 && len(childrenLineInfo) < 15 && len(childrenLineInfo) > 1 {
 			*lineInfos = append(*lineInfos, childrenLineInfo...)
 			for _, child := range childrenLineInfo {
-				fmt.Printf("[%s]\n", child.LineOriginal)
+				log.Debugf("[%s]", child.LineOriginal)
 			}
 		}
 		if len(childrenLineInfo) > 0 {
@@ -316,9 +316,8 @@ func findIngredientsFromHTML(b []byte) {
 		}
 		return s
 	}
-	var lineInfos []LineInfo
 	f(doc, &lineInfos)
-	fmt.Println(lineInfos)
+	return
 }
 
 func scoreLine(line string) (score int, lineInfo LineInfo) {
