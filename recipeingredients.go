@@ -247,7 +247,6 @@ func (r *Recipe) parseRecipe() (rerr error) {
 						Cups:   ingredients[line.Ingredient.Name].Measure.Cups + line.Ingredient.Measure.Cups,
 					},
 				}
-				log.Debugf("different measure!")
 			}
 		} else {
 			ingredientList = append(ingredientList, line.Ingredient.Name)
@@ -335,6 +334,10 @@ func extractLinesFromJavascript(jsString string) (lineInfo []LineInfo, err error
 		if err != nil {
 			return
 		}
+		if len(arrayMap) == 0 {
+			err = fmt.Errorf("nothing to parse")
+			return
+		}
 		parseMap(arrayMap[0], &lineInfo)
 		err = nil
 	} else {
@@ -367,7 +370,10 @@ func parseArray(anArray []interface{}, lineInfo *[]LineInfo) {
 		case []interface{}:
 			parseArray(val.([]interface{}), lineInfo)
 		default:
-			concreteLines = append(concreteLines, concreteVal.(string))
+			switch v := concreteVal.(type) {
+			case string:
+				concreteLines = append(concreteLines, v)
+			}
 		}
 	}
 
