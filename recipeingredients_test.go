@@ -28,6 +28,23 @@ func BenchmarkParse(b *testing.B) {
 	}
 }
 
+func ExampleReadme() {
+	r, _ := NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
+	r.Parse()
+	fmt.Println(r.PrintIngredientList())
+	// Output:
+	// 1 cup butter
+	// 1 cup sugar
+	// 1 cup brown sugar
+	// 2 tsp vanilla
+	// 2 whole eggs
+	// 3 cups flour
+	// 1 tsp baking soda
+	// 1/2 tsp baking powder
+	// 1 tsp salt
+	// 2 cups chocolate chips
+}
+
 type URLIngredients struct {
 	URL         string
 	Ingredients []string

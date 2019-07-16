@@ -20,8 +20,9 @@ Pick a random website, like [JoyFoodSunshine](https://joyfoodsunshine.com/the-mo
 r, _ := NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
 r.Parse()
 fmt.Println(r.PrintIngredientList())
+// Output:
 // 1 cup butter
-// 1 cup white sugar
+// 1 cup sugar
 // 1 cup brown sugar
 // 2 tsp vanilla
 // 2 whole eggs
