@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	log.SetLevel("debug")
+	log.SetLevel("trace")
 	if len(os.Args) < 2 {
 		log.Error("need to have argument")
 		os.Exit(1)

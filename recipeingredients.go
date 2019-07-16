@@ -91,7 +91,8 @@ func Load(fname string) (r *Recipe, err error) {
 	return
 }
 
-// NewFromLines
+// ParseTextIngredients parses a list of ingredients and
+// returns an ingredient list back
 func ParseTextIngredients(text string) (ingredientList IngredientList, err error) {
 	r := &Recipe{FileName: "lines"}
 	r.FileContent = text
@@ -116,18 +117,20 @@ func ParseTextIngredients(text string) (ingredientList IngredientList, err error
 	return
 }
 
-// NewFromFile generates a new parser from a file
+// NewFromFile generates a new parser from a HTML file
 func NewFromFile(fname string) (r *Recipe, err error) {
 	r = &Recipe{FileName: fname}
 	b, err := ioutil.ReadFile(fname)
 	r.FileContent = string(b)
+	err = r.parseHTML()
 	return
 }
 
-// NewFromString generates a new parser from a string
+// NewFromString generates a new parser from a HTML string
 func NewFromString(htmlString string) (r *Recipe, err error) {
 	r = &Recipe{FileName: "string"}
 	r.FileContent = htmlString
+	err = r.parseHTML()
 	return
 }
 
@@ -145,11 +148,12 @@ func NewFromURL(url string) (r *Recipe, err error) {
 
 	r = &Recipe{FileName: url}
 	r.FileContent = string(html)
+	err = r.parseHTML()
 	return
 }
 
 // Parse is the main parser for a given recipe.
-func (r *Recipe) Parse() (rerr error) {
+func (r *Recipe) parseHTML() (rerr error) {
 	if r == nil {
 		r = &Recipe{}
 	}
@@ -158,7 +162,7 @@ func (r *Recipe) Parse() (rerr error) {
 		return
 	}
 
-	r.Lines, rerr = GetIngredientLinesInHTML(r.FileContent)
+	r.Lines, rerr = getIngredientLinesInHTML(r.FileContent)
 	return r.parseRecipe()
 
 }
@@ -268,7 +272,7 @@ func (r *Recipe) parseRecipe() (rerr error) {
 	return
 }
 
-func GetIngredientLinesInHTML(htmlS string) (lineInfos []LineInfo, err error) {
+func getIngredientLinesInHTML(htmlS string) (lineInfos []LineInfo, err error) {
 	doc, err := html.Parse(bytes.NewReader([]byte(htmlS)))
 	if err != nil {
 		return

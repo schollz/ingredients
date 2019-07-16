@@ -18,19 +18,14 @@ func BenchmarkParse(b *testing.B) {
 		fileToGet += "index.html"
 	}
 	fileToGet = path.Join("testing", "sites", fileToGet)
-	r, err := NewFromFile(fileToGet)
-	if err != nil {
-		panic(err)
-	}
 	b.ResetTimer()
 	for n := 0; n < b.N; n++ {
-		r.Parse()
+		NewFromFile(fileToGet)
 	}
 }
 
 func ExampleReadme() {
 	r, _ := NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
-	r.Parse()
 	fmt.Println(r.PrintIngredientList())
 	// Output:
 	// 1 cup butter
@@ -100,8 +95,6 @@ func TestTable(t *testing.T) {
 		fileToGet = path.Join("testing", "sites", fileToGet)
 		r, err := NewFromFile(fileToGet)
 		assert.Nil(t, err)
-		err = r.Parse()
-		assert.Nil(t, err)
 		ingredients := make([]string, len(r.IngredientList().Ingredients))
 		for i, ing := range r.IngredientList().Ingredients {
 			ingredients[i] = fmt.Sprintf("%s %s %s", AmountToString(ing.Measure.Amount), ing.Measure.Name, ing.Name)
@@ -127,10 +120,6 @@ func ExampleExtractJSON() {
 `
 
 	r, err := NewFromString(htmlString)
-	if err != nil {
-		fmt.Println(err)
-	}
-	err = r.Parse()
 	if err != nil {
 		fmt.Println(err)
 	}
@@ -296,10 +285,6 @@ func ExampleExtractJSON2() {
 </html>
 `
 	r, err := NewFromString(htmlString)
-	if err != nil {
-		fmt.Println(err)
-	}
-	err = r.Parse()
 	if err != nil {
 		fmt.Println(err)
 	}
