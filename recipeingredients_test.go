@@ -28,15 +28,15 @@ func ExampleReadme() {
 	r, _ := NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
 	fmt.Println(r.IngredientList())
 	// Output:
-	// 1 cup butter
-	// 1 cup sugar
-	// 1 cup brown sugar
-	// 2 tsp vanilla
+	// 1 cup butter (salted)
+	// 1 cup sugar (white)
+	// 1 cup brown sugar (light)
+	// 2 tsp vanilla (pure)
 	// 2 whole eggs
-	// 3 cups flour
+	// 3 cups flour (all purpose)
 	// 1 tsp baking soda
 	// 1/2 tsp baking powder
-	// 1 tsp salt
+	// 1 tsp salt (sea)
 	// 2 cups chocolate chips
 }
 
