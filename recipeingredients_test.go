@@ -57,7 +57,7 @@ var ts = []URLIngredients{
 	},
 	{
 		"https://pinchofyum.com/the-best-soft-chocolate-chip-cookies",
-		[]string{"8 tablespoon butter", "1/2 cup sugar", "1/4 cup brown sugar", "1 teaspoon vanilla", "1 whole egg", "1 1/2 cup flour", "1/2 teaspoon baking soda", "1/4 teaspoon salt", "3/4 cup chocolate chips"},
+		[]string{"8 tablespoons butter", "1/2 cup sugar", "1/4 cup brown sugar", "1 teaspoon vanilla", "1 whole egg", "1 1/2 cups flour", "1/2 teaspoon baking soda", "1/4 teaspoon salt", "3/4 cup chocolate chips"},
 	},
 	{
 		"https://www.modernhoney.com/the-best-chocolate-chip-cookies/",
