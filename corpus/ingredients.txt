@@ -430,7 +430,6 @@ macaroni noodle
 macintosh apple
 manchego cheese
 mandarin orange
-margaritum salt
 merguez sausage
 mexican chorizo
 mexican oregano
@@ -666,7 +665,6 @@ fat mayonnaise
 fennel sausage
 fenugreek seed
 filtered water
-finishing salt
 flageolet bean
 flatiron steak
 flavorless oil
@@ -1065,7 +1063,6 @@ picante sauce
 pickle relish
 pickled onion
 pickling lime
-pickling salt
 pineapple rum
 pistachio nut
 pistachio oil
@@ -1221,7 +1218,6 @@ butterscotch
 calrose rice
 can chickpea
 candied peel
-canning salt
 caraway seed
 cardamom pod
 carrot juice
@@ -1317,7 +1313,6 @@ hickory chip
 hoisin sauce
 instant grit
 instant milk
-iodized salt
 italian herb
 italian plum
 italian tuna
@@ -1411,7 +1406,6 @@ porridge oat
 potato bread
 potato flour
 potato salad
-pretzel salt
 prickly pear
 pumpernickel
 pumpkin seed
@@ -1485,7 +1479,6 @@ tomato pesto
 tomato puree
 tomato salsa
 tomato sauce
-truffle salt
 turkey bacon
 turkey broth
 turkey gravy
@@ -1591,7 +1584,6 @@ carrot curl
 cashew half
 cashew milk
 cauliflower
-celery salt
 celery seed
 chanterelle
 chat masala
@@ -1633,7 +1625,6 @@ crisp apple
 crisp bacon
 crme frache
 crusty roll
-curing salt
 custard mix
 cut chicken
 deli turkey
@@ -1697,7 +1688,6 @@ kernel corn
 ketjap mani
 kidney bean
 king salmon
-kosher salt
 langoustine
 leafy green
 lemon aioli
@@ -1713,7 +1703,6 @@ lingonberry
 live mussel
 lowfat milk
 madra curry
-maldon salt
 mango puree
 mango salsa
 manila clam
@@ -1802,10 +1791,8 @@ rye whiskey
 salad green
 salmon skin
 salsa verde
-salt pepper
 san marzano
 satay sauce
-season salt
 seckel pear
 serrano ham
 sesame seed
@@ -1817,7 +1804,6 @@ sirloin tip
 skirt steak
 smith apple
 smoked fish
-smoked salt
 smoked tofu
 smoky bacon
 soba noodle
@@ -1990,7 +1976,6 @@ fettuccine
 fish broth
 fish sauce
 fish steak
-flaky salt
 flat bread
 frangelico
 french fry
@@ -2142,8 +2127,6 @@ sugar cane
 sugar cone
 sushi rice
 sweetbread
-table salt
-tart apple
 tart crust
 tawny port
 teff flour
@@ -2314,7 +2297,6 @@ ham steak
 hamburger
 heath bar
 hemp seed
-herb salt
 herbsaint
 hero roll
 honeycomb
@@ -2383,7 +2365,6 @@ rib steak
 rice cake
 rice milk
 rice wine
-rock salt
 roquefort
 rose wine
 rosewater
@@ -3648,7 +3629,6 @@ tomato juice
 evaporated milk
 parmesan cheese
 yellow cornmeal
-seasoning salt
 garam masala
 lamb
 evaporated milk
