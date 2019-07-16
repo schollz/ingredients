@@ -48,7 +48,7 @@ type URLIngredients struct {
 var ts = []URLIngredients{
 	{
 		"https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies",
-		[]string{"1 1/4 tsp kosher salt", "3/4 tsp baking soda", "3/4 cup butter", "1 cup brown sugar", "1/4 cup sugar", "1 whole egg", "2 whole egg yolks", "2 tsp vanilla", "6 oz chocolate chips"},
+		[]string{"1 1/4 tsp salt", "3/4 tsp baking soda", "3/4 cup butter", "1 cup brown sugar", "1/4 cup sugar", "1 whole egg", "2 whole egg yolks", "2 tsp vanilla", "6 oz chocolate chips"},
 	},
 	{
 		"https://pinchofyum.com/the-best-soft-chocolate-chip-cookies",
@@ -80,7 +80,7 @@ var ts = []URLIngredients{
 	},
 	{
 		"https://cooking.nytimes.com/recipes/12320-apple-pie",
-		[]string{"2 tablespoons butter", "2 1/2 pounds apples", "1/4 teaspoon allspice", "1/2 teaspoon cinnamon", "1/4 teaspoon kosher salt", "3/4 cup sugar", "2 tablespoons flour", "2 teaspoons cornstarch", "1 tablespoon apple cider vinegar", "1 whole pie dough", "1 whole egg"},
+		[]string{"2 tablespoons butter", "2 1/2 pounds apples", "1/4 teaspoon allspice", "1/2 teaspoon cinnamon", "1/4 teaspoon salt", "3/4 cup sugar", "2 tablespoons flour", "2 teaspoons cornstarch", "1 tablespoon apple cider vinegar", "1 whole pie dough", "1 whole egg"},
 	},
 }
 
