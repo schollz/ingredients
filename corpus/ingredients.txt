@@ -1661,7 +1661,6 @@ gem lettuce
 ginger beer
 ginger snap
 gingerbread
-gluten free
 goat cheese
 golden beet
 granola bar
@@ -1943,7 +1942,6 @@ cake yeast
 calf liver
 campanelle
 candy cane
-cane sugar
 cane syrup
 cannellini
 cannelloni
@@ -2354,7 +2352,6 @@ pan juice
 pan spray
 pancettum
 panettone
-parchment
 parma ham
 partridge
 peach jam
