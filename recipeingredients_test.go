@@ -26,7 +26,7 @@ func BenchmarkParse(b *testing.B) {
 
 func ExampleReadme() {
 	r, _ := NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
-	fmt.Println(r.PrintIngredientList())
+	fmt.Println(r.IngredientList())
 	// Output:
 	// 1 cup butter
 	// 1 cup sugar

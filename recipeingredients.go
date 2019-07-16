@@ -19,12 +19,10 @@ import (
 
 // Recipe contains the info for the file and the lines
 type Recipe struct {
-	FileName    string                        `json:"filename"`
-	FileContent string                        `json:"file_content"`
-	Lines       []LineInfo                    `json:"lines"`
-	Directions  []string                      `json:"directions"`
-	Ingredients []Ingredient                  `json:"ingredients"`
-	Ratios      map[string]map[string]float64 `json:"ratios"`
+	FileName    string       `json:"filename"`
+	FileContent string       `json:"file_content"`
+	Lines       []LineInfo   `json:"lines"`
+	Ingredients []Ingredient `json:"ingredients"`
 }
 
 // LineInfo has all the information for the parsing of a given line
@@ -470,22 +468,6 @@ func scoreLine(line string) (score int, lineInfo LineInfo) {
 func (r *Recipe) ConvertIngredients() (err error) {
 
 	return
-}
-
-func (r *Recipe) PrintIngredientList() string {
-	s := ""
-	for _, ing := range r.Ingredients {
-		s += fmt.Sprintf("%s %s %s\n", AmountToString(ing.Measure.Amount), ing.Measure.Name, ing.Name)
-	}
-	return s
-}
-
-func (r *Recipe) PrintDirections() string {
-	s := ""
-	for i, d := range r.Directions {
-		s += fmt.Sprintf("%d) %s\n", i+1, d)
-	}
-	return s
 }
 
 // IngredientList will return a string containing the ingredient list
