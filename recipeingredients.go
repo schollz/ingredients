@@ -4,16 +4,16 @@ package recipeingredients
 //go:generate gofmt -s -w corpus.go
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"math"
 	"net/http"
-	"os"
 	"strings"
 
-	"github.com/jaytaylor/html2text"
 	log "github.com/schollz/logger"
+	"golang.org/x/net/html"
 )
 
 // Recipe contains the info for the file and the lines
@@ -93,7 +93,8 @@ func Load(fname string) (r *Recipe, err error) {
 // NewFromFile generates a new parser from a file
 func NewFromFile(fname string) (r *Recipe, err error) {
 	r = &Recipe{FileName: fname}
-	_, err = os.Stat(fname)
+	b, err := ioutil.ReadFile(fname)
+	r.FileContent = string(b)
 	return
 }
 
@@ -110,117 +111,25 @@ func NewFromURL(url string) (r *Recipe, err error) {
 	}
 
 	r = &Recipe{FileName: url}
-	r.FileContent, err = html2text.FromString(string(html), html2text.Options{PrettyTables: false, OmitLinks: true})
-
+	r.FileContent = string(html)
 	return
 }
 
 // Parse is the main parser for a given recipe.
-// It looks for the following
-// - Contains number
-// - Contains mass/volume
-// - Contains ingredient
-// - Number occurs before ingredient
-// - Number occurs before mass/volume
-// - Number of ingredients is 1
-// - Percent of other words is less than 50%
-// - Part of list (contains - or *)
 func (r *Recipe) Parse() (rerr error) {
 	if r == nil {
 		r = &Recipe{}
 	}
-	if r.FileContent == "" && r.FileName != "" {
-		var bFile []byte
-		bFile, rerr = ioutil.ReadFile(r.FileName)
-		if rerr != nil {
-			return
-		}
-		r.FileContent, rerr = html2text.FromString(string(bFile), html2text.Options{PrettyTables: false, OmitLinks: true})
-		if rerr != nil {
-			return
-		}
-	}
-
-	lines := strings.Split(r.FileContent, "\n")
-	scores := make([]float64, len(lines))
-	lineInfos := make([]LineInfo, len(lines))
-	i := -1
-	for _, line := range lines {
-		if strings.TrimSpace(line) == "" {
-			continue
-		}
-		i++
-		lineInfos[i].LineOriginal = line
-		line = SanitizeLine(line)
-		lineInfos[i].Line = line
-		lineInfos[i].IngredientsInString = GetIngredientsInString(line)
-		if len(lineInfos[i].IngredientsInString) ==2 && len(lineInfos[i].IngredientsInString[1].Word) > len(lineInfos[i].IngredientsInString[0].Word) {
-			lineInfos[i].IngredientsInString[0] = lineInfos[i].IngredientsInString[1]
-		}
-		lineInfos[i].AmountInString = GetNumbersInString(line)
-		lineInfos[i].MeasureInString = GetMeasuresInString(line)
-
-		score := 0.0
-		// does it contain an ingredient?
-		if len(lineInfos[i].IngredientsInString) > 0 {
-			score++
-		}
-		// does it contain an amount?
-		if len(lineInfos[i].AmountInString) > 0 {
-			score++
-		}
-		// does it contain a measure (cups, tsps)?
-		if len(lineInfos[i].MeasureInString) > 0 {
-			score++
-		}
-		// does the ingredient come after the measure?
-		if len(lineInfos[i].IngredientsInString) > 0 && len(lineInfos[i].MeasureInString) > 0 && lineInfos[i].IngredientsInString[0].Position > lineInfos[i].MeasureInString[0].Position {
-			score++
-		}
-		// does the ingredient come after the amount?
-		if len(lineInfos[i].IngredientsInString) > 0 && len(lineInfos[i].AmountInString) > 0 && lineInfos[i].IngredientsInString[0].Position > lineInfos[i].AmountInString[0].Position {
-			score++
-		}
-		// does the measure come after the amount?
-		if len(lineInfos[i].MeasureInString) > 0 && len(lineInfos[i].AmountInString) > 0 && lineInfos[i].MeasureInString[0].Position > lineInfos[i].AmountInString[0].Position {
-			score++
-		}
-		// is the line really long? (ingredient lines are short)
-		if score > 0 && len(lineInfos[i].LineOriginal) > 100 {
-			score--
-		}
-		// does it start with a list indicator (* or -)?
-		fields := strings.Fields(line)
-		if len(fields) > 0 && (fields[0] == "*" || fields[0] == "-") {
-			score++
-		}
-		// if only one thing is right, its wrong
-		if score == 1 {
-			score = 0.0
-		}
-		// log.Debugf("'%s' (%2.1f)", line, score)
-		scores[i] = score
-	}
-	scores = scores[:i+1]
-	lineInfos = lineInfos[:i+1]
-
-	// //debugging purposes
-	// lines = make([]string, len(lineInfos))
-	// for i, li := range lineInfos {
-	// 	lines[i] = li.Line
-	// }
-	// ioutil.WriteFile("out", []byte(strings.Join(lines, "\n")), 0644)
-
-	// get the most likely location
-	start, end := GetBestTopHatPositions(scores)
-
-	log.Debugf("got %d line infos, %d - %d", len(lineInfos), start, end)
-	if start < 3 || (end <= start) {
-		rerr = fmt.Errorf("no recipe to parse")
+	if r.FileContent == "" || r.FileName == "" {
+		rerr = fmt.Errorf("no file loaded")
 		return
 	}
-	r.Lines = []LineInfo{}
-	for _, lineInfo := range lineInfos[start-3 : end+3] {
+
+	r.Lines, rerr = GetIngredientLinesInHTML(r.FileContent)
+
+	goodLines := make([]LineInfo,len(r.Lines))
+	j := 0
+	for _,lineInfo := range r.Lines {
 		if len(strings.TrimSpace(lineInfo.Line)) < 3 {
 			continue
 		}
@@ -230,21 +139,21 @@ func (r *Recipe) Parse() (rerr error) {
 		// get amount, continue if there is an error
 		err := lineInfo.getTotalAmount()
 		if err != nil {
-			log.Debugf("[%s]: %s", lineInfo.LineOriginal, err.Error())
+			log.Tracef("[%s]: %s (%+v)", lineInfo.Line, err.Error(),lineInfo.AmountInString)
 			continue
 		}
 
 		// get ingredient, continue if its not found
 		err = lineInfo.getIngredient()
 		if err != nil {
-			log.Debugf("[%s]: %s", lineInfo.LineOriginal, err.Error())
+			log.Tracef("[%s]: %s", lineInfo.Line, err.Error())
 			continue
 		}
 
 		// get measure
 		err = lineInfo.getMeasure()
 		if err != nil {
-			log.Debugf("[%s]: %s", lineInfo.LineOriginal, err.Error())
+			log.Tracef("[%s]: %s", lineInfo.Line, err.Error())
 		}
 
 		// get comment
@@ -259,13 +168,16 @@ func (r *Recipe) Parse() (rerr error) {
 			lineInfo.Ingredient.Measure.Amount,
 		)
 		if err != nil {
-			log.Debugf("[%s]: %s", lineInfo.LineOriginal, err.Error())
+			log.Tracef("[%s]: %s", lineInfo.LineOriginal, err.Error())
 		} else {
-			log.Debugf("[%s]: %+v", lineInfo.LineOriginal, lineInfo)
+			log.Tracef("[%s]: %+v", lineInfo.LineOriginal, lineInfo)
 		}
 
-		r.Lines = append(r.Lines, lineInfo)
+	goodLines[j] = lineInfo
+	j++
 	}
+	r.Lines = goodLines[:j]
+
 	rerr = r.ConvertIngredients()
 	if rerr != nil {
 		return
@@ -316,6 +228,119 @@ func (r *Recipe) Parse() (rerr error) {
 		r.Ingredients[i] = ingredients[ing]
 	}
 
+	return
+}
+
+func GetIngredientLinesInHTML(htmlS string) (lineInfos []LineInfo, err error) {
+	doc, err := html.Parse(bytes.NewReader([]byte(htmlS)))
+	if err != nil {
+		return
+	}
+	var f func(n *html.Node, lineInfos *[]LineInfo) (s string)
+	f = func(n *html.Node, lineInfos *[]LineInfo) (s string) {
+		childrenLineInfo := []LineInfo{}
+		// fmt.Printf("%+v\n", n)
+		score := 0
+		for c := n.FirstChild; c != nil; c = c.NextSibling {
+			var childText string
+			childText = f(c, lineInfos)
+			if childText != "" {
+				scoreOfLine, lineInfo := scoreLine(childText)
+				childrenLineInfo = append(childrenLineInfo, lineInfo)
+				score += scoreOfLine
+			}
+		}
+		if score > 5 && len(childrenLineInfo) < 15 && len(childrenLineInfo) > 1 {
+			*lineInfos = append(*lineInfos, childrenLineInfo...)
+			for _, child := range childrenLineInfo {
+				log.Tracef("[%s]", child.LineOriginal)
+			}
+		}
+		if len(childrenLineInfo) > 0 {
+			// fmt.Println(childrenLineInfo)
+			childrenText := make([]string, len(childrenLineInfo))
+			for i := range childrenLineInfo {
+				childrenText[i] = childrenLineInfo[i].LineOriginal
+			}
+			s = strings.Join(childrenText, " ")
+		} else if n.DataAtom == 0 && strings.TrimSpace(n.Data) != "" {
+			s = strings.TrimSpace(n.Data)
+		}
+		return s
+	}
+	f(doc, &lineInfos)
+	return
+}
+
+func scoreLine(line string) (score int, lineInfo LineInfo) {
+	lineInfo = LineInfo{}
+	lineInfo.LineOriginal = line
+	lineInfo.Line = SanitizeLine(line)
+
+	lineInfo.IngredientsInString = GetIngredientsInString(lineInfo.Line)
+	lineInfo.AmountInString = GetNumbersInString(lineInfo.Line)
+	lineInfo.MeasureInString = GetMeasuresInString(lineInfo.Line)
+	if len(lineInfo.IngredientsInString) == 2 && len(lineInfo.IngredientsInString[1].Word) > len(lineInfo.IngredientsInString[0].Word) {
+		lineInfo.IngredientsInString[0] = lineInfo.IngredientsInString[1]
+	}
+
+	if len(lineInfo.LineOriginal) > 50 {
+		return
+	}
+
+	// does it contain an ingredient?
+	if len(lineInfo.IngredientsInString) > 0 {
+		score++
+	}
+
+	// disfavor containing multiple ingredients
+	if len(lineInfo.IngredientsInString) > 1 {
+		score = score - len(lineInfo.IngredientsInString) + 1
+	}
+
+	// does it contain an amount?
+	if len(lineInfo.AmountInString) > 0 {
+		score++
+	}
+	// does it contain a measure (cups, tsps)?
+	if len(lineInfo.MeasureInString) > 0 {
+		score++
+	}
+	// does the ingredient come after the measure?
+	if len(lineInfo.IngredientsInString) > 0 && len(lineInfo.MeasureInString) > 0 && lineInfo.IngredientsInString[0].Position > lineInfo.MeasureInString[0].Position {
+		score++
+	}
+	// does the ingredient come after the amount?
+	if len(lineInfo.IngredientsInString) > 0 && len(lineInfo.AmountInString) > 0 && lineInfo.IngredientsInString[0].Position > lineInfo.AmountInString[0].Position {
+		score++
+	}
+	// does the measure come after the amount?
+	if len(lineInfo.MeasureInString) > 0 && len(lineInfo.AmountInString) > 0 && lineInfo.MeasureInString[0].Position > lineInfo.AmountInString[0].Position {
+		score++
+	}
+
+	// disfavor lots of puncuation
+	puncuation := []string{".", ",", "!", "?"}
+	for _, punc := range puncuation {
+		if strings.Count(lineInfo.LineOriginal, punc) > 1 {
+			score--
+		}
+	}
+
+	// disfavor long lines
+	if len(lineInfo.Line) > 50 {
+		score = score - (len(lineInfo.Line) - 50)
+	}
+
+	// does it start with a list indicator (* or -)?
+	fields := strings.Fields(lineInfo.Line)
+	if len(fields) > 0 && (fields[0] == "*" || fields[0] == "-") {
+		score++
+	}
+	// if only one thing is right, its wrong
+	if score == 1 {
+		score = 0.0
+	}
 	return
 }
 

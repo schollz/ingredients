@@ -117,7 +117,6 @@ gingerbread spice
 gingersnap cookie
 gorgonzola cheese
 granular fructose
-granulated garlic
 hardwood charcoal
 horseradish sauce
 hothouse cucumber
@@ -1881,7 +1880,6 @@ white grape
 white onion
 white peach
 white sauce
-white sugar
 white wheat
 wild salmon
 wonton skin
@@ -2890,7 +2888,6 @@ coffee
 cognac
 comice
 confit
-cookie
 cotija
 creamy
 crisco

@@ -13,57 +13,6 @@ import (
 	log "github.com/schollz/logger"
 )
 
-// GetBestTopHatPositions finds the start and the end of the longest
-// and highest vector.
-func GetBestTopHatPositions(vectorFloat []float64) (start, end int) {
-	bestTopHatResidual := 1e9
-	for i, v := range vectorFloat {
-		if v < 2 {
-			continue
-		}
-		for j, w := range vectorFloat {
-			if j <= i || w < 1 {
-				continue
-			}
-			hat := generateHat(len(vectorFloat), i, j, averageFloats(vectorFloat[i:j]))
-			res := calculateResidual(vectorFloat, hat) / float64(len(vectorFloat))
-			if res < bestTopHatResidual {
-				bestTopHatResidual = res
-				start = i
-				end = j
-			}
-		}
-	}
-	return
-}
-
-func calculateResidual(fs1, fs2 []float64) float64 {
-	res := 0.0
-	if len(fs1) != len(fs2) {
-		return -1
-	}
-	for i := range fs1 {
-		res += math.Pow(fs1[i]-fs2[i], 2)
-	}
-	return res
-}
-
-func generateHat(length, start, stop int, value float64) []float64 {
-	f := make([]float64, length)
-	for i := start; i < stop; i++ {
-		f[i] = value
-	}
-	return f
-}
-
-func averageFloats(fs []float64) float64 {
-	f := 0.0
-	for _, v := range fs {
-		f += v
-	}
-	return f / float64(len(fs))
-}
-
 // ConvertStringToNumber
 func ConvertStringToNumber(s string) float64 {
 	switch s {
