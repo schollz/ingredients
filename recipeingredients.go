@@ -14,6 +14,7 @@ import (
 
 	log "github.com/schollz/logger"
 	"golang.org/x/net/html"
+	"golang.org/x/net/html/atom"
 )
 
 // Recipe contains the info for the file and the lines
@@ -98,6 +99,13 @@ func NewFromFile(fname string) (r *Recipe, err error) {
 	return
 }
 
+// NewFromString generates a new parser from a string
+func NewFromString(htmlString string) (r *Recipe, err error) {
+	r = &Recipe{FileName: "string"}
+	r.FileContent = htmlString
+	return
+}
+
 // NewFromURL generates a new parser from a url
 func NewFromURL(url string) (r *Recipe, err error) {
 	resp, err := http.Get(url)
@@ -127,9 +135,9 @@ func (r *Recipe) Parse() (rerr error) {
 
 	r.Lines, rerr = GetIngredientLinesInHTML(r.FileContent)
 
-	goodLines := make([]LineInfo,len(r.Lines))
+	goodLines := make([]LineInfo, len(r.Lines))
 	j := 0
-	for _,lineInfo := range r.Lines {
+	for _, lineInfo := range r.Lines {
 		if len(strings.TrimSpace(lineInfo.Line)) < 3 {
 			continue
 		}
@@ -139,7 +147,7 @@ func (r *Recipe) Parse() (rerr error) {
 		// get amount, continue if there is an error
 		err := lineInfo.getTotalAmount()
 		if err != nil {
-			log.Tracef("[%s]: %s (%+v)", lineInfo.Line, err.Error(),lineInfo.AmountInString)
+			log.Tracef("[%s]: %s (%+v)", lineInfo.Line, err.Error(), lineInfo.AmountInString)
 			continue
 		}
 
@@ -173,8 +181,8 @@ func (r *Recipe) Parse() (rerr error) {
 			log.Tracef("[%s]: %+v", lineInfo.LineOriginal, lineInfo)
 		}
 
-	goodLines[j] = lineInfo
-	j++
+		goodLines[j] = lineInfo
+		j++
 	}
 	r.Lines = goodLines[:j]
 
@@ -236,14 +244,30 @@ func GetIngredientLinesInHTML(htmlS string) (lineInfos []LineInfo, err error) {
 	if err != nil {
 		return
 	}
-	var f func(n *html.Node, lineInfos *[]LineInfo) (s string)
-	f = func(n *html.Node, lineInfos *[]LineInfo) (s string) {
+	var f func(n *html.Node, lineInfos *[]LineInfo) (s string, done bool)
+	f = func(n *html.Node, lineInfos *[]LineInfo) (s string, done bool) {
 		childrenLineInfo := []LineInfo{}
-		// fmt.Printf("%+v\n", n)
+		log.Tracef("%+v", n)
 		score := 0
+		isScript := n.DataAtom == atom.Script
+		log.Trace(isScript)
 		for c := n.FirstChild; c != nil; c = c.NextSibling {
+			if isScript {
+				// try to capture JSON and if successful, do a hard exit
+				log.Trace(c.Data)
+				lis, errJSON := extractLinesFromJavascript(c.Data)
+				if errJSON == nil {
+					log.Tracef("got ingredients from JSON")
+					*lineInfos = lis
+					done = true
+					return
+				}
+			}
 			var childText string
-			childText = f(c, lineInfos)
+			childText, done = f(c, lineInfos)
+			if done {
+				return
+			}
 			if childText != "" {
 				scoreOfLine, lineInfo := scoreLine(childText)
 				childrenLineInfo = append(childrenLineInfo, lineInfo)
@@ -266,9 +290,77 @@ func GetIngredientLinesInHTML(htmlS string) (lineInfos []LineInfo, err error) {
 		} else if n.DataAtom == 0 && strings.TrimSpace(n.Data) != "" {
 			s = strings.TrimSpace(n.Data)
 		}
-		return s
+		return
 	}
 	f(doc, &lineInfos)
+	return
+}
+
+func extractLinesFromJavascript(jsString string) (lineInfo []LineInfo, err error) {
+
+	var arrayMap = []map[string]interface{}{}
+	var regMap = make(map[string]interface{})
+	err = json.Unmarshal([]byte(jsString), &regMap)
+	if err != nil {
+		err = json.Unmarshal([]byte(jsString), &arrayMap)
+		if err != nil {
+			return
+		}
+		parseMap(arrayMap[0], &lineInfo)
+		err = nil
+	} else {
+		parseMap(regMap, &lineInfo)
+		err = nil
+	}
+
+	return
+}
+
+func parseMap(aMap map[string]interface{}, lineInfo *[]LineInfo) {
+	for _, val := range aMap {
+		switch val.(type) {
+		case map[string]interface{}:
+			parseMap(val.(map[string]interface{}), lineInfo)
+		case []interface{}:
+			parseArray(val.([]interface{}), lineInfo)
+		default:
+			// fmt.Println(key, ":", concreteVal)
+		}
+	}
+}
+
+func parseArray(anArray []interface{}, lineInfo *[]LineInfo) {
+	concreteLines := []string{}
+	for _, val := range anArray {
+		switch concreteVal := val.(type) {
+		case map[string]interface{}:
+			parseMap(val.(map[string]interface{}), lineInfo)
+		case []interface{}:
+			parseArray(val.([]interface{}), lineInfo)
+		default:
+			concreteLines = append(concreteLines, concreteVal.(string))
+		}
+	}
+
+	score, li := scoreLines(concreteLines)
+	log.Trace(score, li)
+	if score > 20 {
+		*lineInfo = li
+	}
+
+	return
+}
+
+func scoreLines(lines []string) (score int, lineInfo []LineInfo) {
+	if len(lines) < 2 {
+		return
+	}
+	lineInfo = make([]LineInfo, len(lines))
+	for i, line := range lines {
+		var scored int
+		scored, lineInfo[i] = scoreLine(line)
+		score += scored
+	}
 	return
 }
 
