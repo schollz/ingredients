@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"os"
 
@@ -26,5 +27,6 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println(r.PrintIngredientList())
+	b, _ := json.MarshalIndent(r.IngredientList().Ingredients, "", "    ")
+	fmt.Println(string(b))
 }

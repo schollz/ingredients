@@ -39,10 +39,10 @@ type LineInfo struct {
 
 // Ingredient is the basic struct for ingredients
 type Ingredient struct {
-	Name      string  `json:"name,omitempty"`
-	Comment   string  `json:"comment,omitempty"`
-	Measure   Measure `json:"measure,omitempty"`
-	Frequency float64 `json:"frequency,omitempty`
+	Name    string  `json:"name,omitempty"`
+	Comment string  `json:"comment,omitempty"`
+	Measure Measure `json:"measure,omitempty"`
+	Line    string  `json:"line,omitempty"`
 }
 
 // Measure includes the amount, name and the cups for conversions
@@ -50,7 +50,7 @@ type Measure struct {
 	Amount float64 `json:"amount"`
 	Name   string  `json:"name"`
 	Cups   float64 `json:"cups"`
-	Weight float64 `json:"weight"`
+	Weight float64 `json:"weight,omitempty"`
 }
 
 // IngredientList is a list of ingredients
@@ -442,11 +442,7 @@ func (r *Recipe) ConvertIngredients() (err error) {
 func (r *Recipe) PrintIngredientList() string {
 	s := ""
 	for _, ing := range r.Ingredients {
-		if ing.Frequency > 0 {
-			s += fmt.Sprintf("%s %s %s (%2.1f%%)\n", AmountToString(ing.Measure.Amount), ing.Measure.Name, ing.Name, 100*ing.Frequency)
-		} else {
-			s += fmt.Sprintf("%s %s %s\n", AmountToString(ing.Measure.Amount), ing.Measure.Name, ing.Name)
-		}
+		s += fmt.Sprintf("%s %s %s\n", AmountToString(ing.Measure.Amount), ing.Measure.Name, ing.Name)
 	}
 	return s
 }
@@ -464,6 +460,7 @@ func (r *Recipe) IngredientList() (ingredientList IngredientList) {
 	ingredientList = IngredientList{make([]Ingredient, len(r.Lines))}
 	for i, li := range r.Lines {
 		ingredientList.Ingredients[i] = li.Ingredient
+		ingredientList.Ingredients[i].Line = li.LineOriginal
 	}
 	return
 }
