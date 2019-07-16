@@ -247,16 +247,14 @@ func GetIngredientLinesInHTML(htmlS string) (lineInfos []LineInfo, err error) {
 	var f func(n *html.Node, lineInfos *[]LineInfo) (s string, done bool)
 	f = func(n *html.Node, lineInfos *[]LineInfo) (s string, done bool) {
 		childrenLineInfo := []LineInfo{}
-		log.Tracef("%+v", n)
+		// log.Tracef("%+v", n)
 		score := 0
 		isScript := n.DataAtom == atom.Script
-		log.Trace(isScript)
 		for c := n.FirstChild; c != nil; c = c.NextSibling {
 			if isScript {
 				// try to capture JSON and if successful, do a hard exit
-				log.Trace(c.Data)
 				lis, errJSON := extractLinesFromJavascript(c.Data)
-				if errJSON == nil {
+				if errJSON == nil && len(lis) > 1 {
 					log.Tracef("got ingredients from JSON")
 					*lineInfos = lis
 					done = true
