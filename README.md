@@ -17,7 +17,7 @@ go get github.com/schollz/recipeingredients
 Pick a random website, like [JoyFoodSunshine](https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/), and you can extract the ingredients:
 
 ```go
-r, _ := NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
+r, _ := recipeingredients.NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
 r.Parse()
 fmt.Println(r.PrintIngredientList())
 // Output:
