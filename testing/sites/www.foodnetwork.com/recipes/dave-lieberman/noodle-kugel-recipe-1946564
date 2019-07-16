@@ -1,0 +1,4481 @@
+<!DOCTYPE HTML>
+<html  lang="no">
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+
+
+
+   
+
+  
+
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<!-- perftest_asyncCSS: 0 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="preload" href="//food.fnr.sndimg.com/etc/clientlibs/assets/v2/css/food/templates/recipePage.desktop.md5-0d2ba6aab678bfe56884cf995e982a26.css" as="style">
+
+
+
+
+
+
+  
+  
+
+
+
+
+  <!-- critical styles -->
+  <style type="text/css" data-sni-css-critical>
+@charset "UTF-8";
+
+.is-Hidden,[data-logged-in],[data-logged-out]{display:none!important}.u-LoadMoreSrc{display:none}html.js-support:not(.core-js) [data-truncate]{display:none}.has-LazyLoadedBackground{display:block;width:100%;height:100%;background-size:cover;background-position:50%}.has-LazyLoadedBackground img{opacity:0}html{-moz-box-sizing:border-box;box-sizing:border-box}html *{-moz-box-sizing:inherit;box-sizing:inherit}body{max-width:960px;margin-left:auto;margin-right:auto}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}img{height:auto}*{box-sizing:border-box}:after,:before{box-sizing:border-box}#CQ *{box-sizing:content-box}#CQ :after,#CQ :before{box-sizing:content-box}html{-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:subpixel-antialiased}button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}input::-ms-clear{display:none}img{vertical-align:middle}body{max-width:none;min-width:1024px;line-height:1.35;color:#1c1c1c;background:#f5f5f5;font-size:15px;font-family:FranklinGothicURW-Boo,Helvetica,Arial,sans-serif}@media print{body{font-size:13pt;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}}.container-site{max-width:994px;margin:0 auto}.container-site:after,.container-site:before{content:"";display:table;clear:both}.container-site{position:relative;background:#f5f5f5;box-shadow:none}@media (min-width:1024px){.container-site{max-width:none;width:994px}.container-site.is-Fluid{width:auto;min-width:994px;max-width:1280px;background:transparent;box-shadow:none}.votePage .container-site.is-Fluid{background-color:#fff}.votePage .container-site.is-Fluid .col-md-18{width:70.5%}.votePage .container-site.is-Fluid .col-md-10{width:29.5%}}.container-site{padding:14px;width:994px}body{margin:0 auto;width:auto}.container{position:relative}.container:after,.container:before{content:"";display:table;clear:both}.container{width:994px}.container.is-Fluid{width:auto;min-width:994px;max-width:1280px}.container--wide{width:100%;min-width:994px;max-width:1280px}.container,.container-fluid{margin-right:auto;margin-left:auto}.rightRail{float:left;width:336px;margin-left:14px}a{background:transparent;color:#e6003d;text-decoration:none}a:hover{color:red;text-decoration:underline}a:active,a:focus,a:hover{outline:0}b,strong{font-weight:400;font-family:FranklinGothicURW-Dem,Helvetica,Arial,sans-serif}em,i{font-style:italic}p{margin-bottom:10.5px}#bigbox-rr-ad,.bigbox-height-enforced{box-sizing:content-box;min-height:250px}#dfp_leaderboard{min-height:90px}#bigbox-rr-ad.is-AdCollapsed,#dfp_leaderboard.is-AdCollapsed,.is-AdCollapsed,.o-Leaderboard.is-AdCollapsed{min-height:inherit}.bigbox-ad{position:relative;margin:0 0 14px;padding:0;text-align:center}.bigbox-ad .ad-text{margin-top:7px;text-transform:capitalize;font-size:12px;font-family:FranklinGothicURW-Boo,Helvetica,Arial,sans-serif;color:#999}.bigbox-ad{display:table-cell;vertical-align:middle}.bigbox-ad.rr-ad{display:block;clear:both}.o-ArticleStream div[data-has-ad=dfp_leaderboard_body]{margin-top:56px;margin-bottom:49px}#_fw_container_900x650slot{display:none}#photo-gallery.interstitial-show .rsArrow.force-show,.pv-content-wrapper.interstitial-show .rsArrow.force-show{display:block!important}.a-Icon{width:30px;height:30px}.a-LazyImage{display:none}.js-support .a-LazyImage{display:block}.a-Loader{width:65px;height:10px;margin:auto;position:absolute;top:0;left:0;bottom:0;right:0}.a-Loader div{float:left;height:10px;width:10px;margin-left:3.5px;opacity:0;animation-name:bounce_loadingdot;animation-duration:2s;animation-iteration-count:infinite;animation-direction:linear;border-radius:5px}.a-Loader div:nth-child(1n){background:#faa}.a-Loader div:nth-child(2n){background:#f55;animation-delay:.25s}.a-Loader div:nth-child(3n){background:red;animation-delay:.5s}.a-Loader div:nth-child(4n){background:#dd0101;animation-delay:.75s}@-moz-keyframes bounce_loadingdot{50%{opacity:1}}@-webkit-keyframes bounce_loadingdot{50%{opacity:1}}@-o-keyframes bounce_loadingdot{50%{opacity:1}}@keyframes bounce_loadingdot{50%{opacity:1}}.is-Subtle .a-Loader div:nth-child(1n){background:#d2d1d1}.is-Subtle .a-Loader div:nth-child(2n){background:#d2d1d1}.is-Subtle .a-Loader div:nth-child(3n){background:#d2d1d1}.is-Subtle .a-Loader div:nth-child(4n){background:#d2d1d1}.rsPreloader{width:100%;height:100%}.m-ScheduleDropdown{position:relative;flex:0 0 auto;margin-left:3px;margin-right:10px}.m-ScheduleDropdown:after{content:" ";display:block;width:20px;position:absolute;left:0;height:50px;top:-5px;background-image:linear-gradient(-90deg,#fff 62%,hsla(0,0%,100%,0));pointer-events:none;z-index:0}html:not(.core-js) .m-ScheduleDropdown{display:none}html:not(.js-support) .m-ScheduleDropdown{display:none}.m-ScheduleDropdown a{padding:0}.m-ScheduleDropdown .m-ScheduleDropdown__m-CtaLinks{font-size:0;width:100%}.m-ScheduleDropdown .m-ScheduleDropdown__m-CtaLinks a,.m-ScheduleDropdown .m-ScheduleDropdown__m-CtaLinks a:visited{display:inline-block;width:50%;font-weight:700;text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;letter-spacing:-.03em;color:#fff;padding:10.5px 10.5px 7px}.m-ScheduleDropdown .m-ScheduleDropdown__m-CtaLinks a:active,.m-ScheduleDropdown .m-ScheduleDropdown__m-CtaLinks a:hover{text-decoration:none;color:#fff!important}.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a,.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a:visited{font-family:Helvetica,Arial,sans-serif;font-size:18px;padding:8px 16px 6px;border-radius:0;background:#333;background-image:linear-gradient(-180deg,hsla(0,0%,100%,.1),rgba(0,0,0,.1));text-transform:uppercase}.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a:before,.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a:visited:before{display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:"";font-size:10px;color:red;padding-right:3.5px;vertical-align:middle}.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a:before:hover,.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a:visited:before:hover{text-decoration:none}.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a:hover,.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a:visited:hover{background-image:linear-gradient(-180deg,hsla(0,0%,100%,.3),rgba(0,0,0,.1));text-decoration:none}.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a:visited[disabled],.m-ScheduleDropdown .m-ScheduleDropdown__a-WatchLiveLink a[disabled]{pointer-events:none}.m-ScheduleDropdown .m-ScheduleDropdown__a-ScheduleLink a,.m-ScheduleDropdown .m-ScheduleDropdown__a-ScheduleLink a:visited{font-family:Helvetica,Arial,sans-serif;font-size:18px;padding:8px 16px 6px;border-radius:0;background:red;background-image:linear-gradient(-180deg,hsla(0,0%,100%,.1),rgba(0,0,0,.1));text-transform:uppercase}.m-ScheduleDropdown .m-ScheduleDropdown__a-ScheduleLink a:hover,.m-ScheduleDropdown .m-ScheduleDropdown__a-ScheduleLink a:visited:hover{background-image:linear-gradient(-180deg,hsla(0,0%,100%,.1),rgba(0,0,0,.2))}.m-ScheduleDropdown .m-ScheduleDropdown__a-ScheduleLink a:visited[disabled],.m-ScheduleDropdown .m-ScheduleDropdown__a-ScheduleLink a[disabled]{pointer-events:none}.m-ScheduleDropdown__m-ButtonWrap{z-index:1;position:relative}.m-ScheduleDropdown.is-Active a.m-ScheduleDropdown__a-Button{opacity:1}.m-ScheduleDropdown a.m-ScheduleDropdown__a-Button{display:inline-block;cursor:pointer;opacity:0;transition:opacity .5s;color:#fff;font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif;background:red;padding:11px 16px 6px;border-radius:3px;background-image:linear-gradient(-180deg,hsla(0,0%,100%,.1),rgba(0,0,0,.1));font-size:15px;text-transform:uppercase}.m-ScheduleDropdown a.m-ScheduleDropdown__a-Button:hover{text-decoration:none;color:#fff;background-image:linear-gradient(-180deg,hsla(0,0%,100%,.1),rgba(0,0,0,.2))}.m-ScheduleDropdown a.m-ScheduleDropdown__a-Button[disabled]{pointer-events:none}.m-ScheduleDropdown a.m-ScheduleDropdown__a-Button{margin-left:15px}.m-ScheduleDropdown .m-ScheduleDropdown__m-ButtonWrap.is-Toggle a.m-ScheduleDropdown__a-Button:after{display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:"";margin-left:9px;font-size:15px;-webkit-font-smoothing:antialiased;color:#fff}.m-ScheduleDropdown .m-ScheduleDropdown__m-ButtonWrap.is-Toggle a.m-ScheduleDropdown__a-Button:after:hover{text-decoration:none}.m-ScheduleDropdown.is-Open .m-ScheduleDropdown__m-ButtonWrap.is-Toggle a.m-ScheduleDropdown__a-Button:after{content:""}.m-ScheduleDropdown__m-Menu{background:#f6f5f2;width:400px;top:34px;right:0;position:absolute;z-index:1;border-radius:3px;box-shadow:0 5px 10px 0 rgba(0,0,0,.35);display:none}.is-Open .m-ScheduleDropdown__m-Menu{display:block}.m-ScheduleDropdown__m-ShowInfo{display:flex;align-items:center}.m-ScheduleDropdown .m-ShowInfo__a-Headline{color:#1c1c1c;font-size:20px;font-weight:400;line-height:1.1;font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif}.m-ScheduleDropdown .m-ShowInfo__a-Description{display:block;font-size:15px}.m-ScheduleDropdown .m-ShowInfo__m-TextWrap{display:inline-block}.m-ScheduleDropdown .m-ScheduleDropdown__m-Listing .m-MediaBlock--recipe .m-MediaBlock{margin:10.5px;padding:10.5px;background:#fff;width:auto;display:flex;flex-direction:row-reverse;justify-content:space-between}.m-ScheduleDropdown .m-ScheduleDropdown__m-Listing .m-MediaBlock--recipe .m-MediaBlock:last-child{border-bottom:none}.m-ScheduleDropdown .m-Rating__a-StarsLink .gig-rating-stars{display:inline-block}.m-ScheduleDropdown .m-Rating__a-StarsLink .gig-rating-ratingsum{display:inline-block;color:red;vertical-align:top;font-family:FranklinGothicURW-Boo,Helvetica,Arial,sans-serif;font-weight:400}.m-ScheduleDropdown__m-Listing .m-MediaBlock--recipe .m-MediaBlock{margin:10.5px;padding:10.5px;background:#fff;width:auto;display:flex;flex-direction:row-reverse;justify-content:space-between}.m-ScheduleDropdown__m-Listing .m-MediaBlock--recipe .m-MediaBlock:last-child{border-bottom:none}.m-ScheduleDropdown__m-Listing .m-MediaBlock--recipe .m-MediaBlock__m-MediaWrap{width:100px;padding-right:0;padding-left:14px;box-sizing:content-box;height:75px;flex:0 0 100px}.m-ScheduleDropdown__m-Listing .m-MediaBlock--recipe .m-MediaBlock__m-MediaWrap a,.m-ScheduleDropdown__m-Listing .m-MediaBlock--recipe .m-MediaBlock__m-MediaWrap a:visited{padding:0}.m-ScheduleDropdown__m-Listing .m-MediaBlock--recipe .m-MediaBlock__m-TextWrap{white-space:normal}.m-ScheduleDropdown__m-Listing .m-MediaBlock--recipe .m-MediaBlock__a-HeadlineText{font-weight:400;font-size:20px}.m-ScheduleDropdown__m-ShowInfo{margin:24.5px 7px 14px 10.5px}.m-ScheduleDropdown .m-ShowInfo__a-Image{z-index:1;position:relative;height:100%;width:100%}.m-ScheduleDropdown .m-ShowInfo__a-Headline{font-size:24px!important}.m-ScheduleDropdown .m-ShowInfo__a-Description{font-weight:300;font-family:FranklinGothicURW-Boo,Helvetica,Arial,sans-serif;color:#1c1c1c}.m-ScheduleDropdown .m-ShowInfo__a-ImageWrap{display:inline-block;position:relative;height:84px;width:149px;margin:9px 21px 9px 9px}.m-ScheduleDropdown .m-ShowInfo__a-ImageWrap:after{content:" ";width:100%;height:100%;display:block;box-sizing:content-box;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:0;background:transparent;border:5px solid #efece3;padding:4px}.m-ScheduleDropdown .m-ShowInfo__m-TextWrap{width:194px;overflow:hidden;white-space:normal}.m-ScheduleDropdown .m-Rating__a-StarsLink{display:block;cursor:pointer}.m-ScheduleDropdown .m-Rating__a-StarsLink .gig-rating-ratingsum-label{display:none}.m-ScheduleDropdown__m-Listing{max-height:376px;overflow-y:scroll}.m-ScheduleDropdown a.m-ScheduleDropdown__m-ShowInfo:hover{text-decoration:none}.m-SearchFresh{position:relative;margin:0}.m-SearchFresh__a-Input{line-height:1.35;color:#1c1c1c;outline:none;height:37px;background-color:#fff;box-shadow:none;transition:border-color .15s ease-in-out;width:100%;-webkit-appearance:none;padding:11px 32px 6px 14px;z-index:2;border:none;border-radius:30px;font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif;font-size:16px}.m-SearchFresh__a-Input:-ms-input-placeholder,.m-SearchFresh__a-Input::placeholder{color:#bebdbc;-webkit-font-smoothing:antialiased}.m-SearchFresh__a-Button--SearchFixture{position:absolute;right:12px;top:50%;transform:translateY(-50%);margin-top:-1px;width:18px;height:auto;z-index:2;pointer-events:none;fill:#1c1c1c}.m-SearchFresh__a-Button--Clear{padding:10px;box-sizing:content-box;width:14px;height:14px;z-index:2;position:absolute;right:1px;top:2px;cursor:pointer;fill:#bebdbc}.m-SearchFresh__a-Button--Clear:hover{fill:#1c1c1c}.m-SearchFresh__m-TypeAheadMenu{width:100%;position:absolute;top:0;left:0;z-index:0;pointer-events:none}.m-SearchFresh__m-TypeAheadMenu a,.m-SearchFresh__m-TypeAheadMenu a:visited{display:inline-block;padding:14px 7px;text-decoration:none;color:#ababaa}.m-SearchFresh__m-TypeAheadMenu a:visited b,.m-SearchFresh__m-TypeAheadMenu a:visited strong,.m-SearchFresh__m-TypeAheadMenu a b,.m-SearchFresh__m-TypeAheadMenu a strong{color:#1c1c1c}.m-SearchFresh__m-TypeAheadMenu a:hover,.m-SearchFresh__m-TypeAheadMenu a:visited:hover{color:#1c1c1c}.m-SearchFresh__m-TypeAheadMenu li{padding:0 7px;line-height:1}.m-SearchFresh__m-TypeAheadMenu ul{pointer-events:auto;background:#fff;box-shadow:0 2px 4px rgba(0,0,0,.05)}.m-SearchFresh__m-TypeAheadMenu .active-typeahead a,.m-SearchFresh__m-TypeAheadMenu .active-typeahead a:visited{color:#1c1c1c}.m-SearchFresh__a-Button--Clear{right:25px}.m-SearchFresh__m-TypeAheadMenu{padding:27px 0 7px}.m-SearchFresh__m-TypeAheadMenu ul{padding:20px 0 10px;border:1px solid #d2d1d1;border-top:none;border-bottom-right-radius:4px;border-bottom-left-radius:4px}.m-SearchFresh__m-TypeAheadMenu:before{position:absolute;top:34px;left:14px;display:block;width:calc(100% - 28px);height:0;content:" ";border-bottom:1px solid #d2d1d1}.m-SearchFresh__m-TypeAheadWrap.has-Hints .m-SearchFresh__a-Input{border-bottom-right-radius:0;border-bottom-left-radius:0;border-top-left-radius:17px;border-top-right-radius:17px}.m-SearchFresh .m-SearchFresh__m-TypeAheadMenu ul{margin:0}.m-SearchFresh .m-SearchFresh__m-TypeAheadField:not(.is-Populated) .m-SearchFresh__a-Button--Clear{display:none}.m-SocialLinksFresh{position:relative;left:-14px}.m-SocialLinksFresh li{display:inline-block}.m-SocialLinksFresh__a-Button--facebook{margin:0;padding:0}.m-SocialLinksFresh__a-Icon--facebook{width:26px;height:26px;padding:7px 9px;display:inline-block;box-sizing:content-box;fill:#fff!important;fill:#40559d}.m-SocialLinksFresh__a-Button--twitter{margin:0;padding:0}.m-SocialLinksFresh__a-Icon--twitter{width:26px;height:26px;padding:7px 9px;display:inline-block;box-sizing:content-box;fill:#fff!important;fill:#00aaf0}.m-SocialLinksFresh__a-Button--instagram{margin:0;padding:0}.m-SocialLinksFresh__a-Icon--instagram{width:26px;height:26px;padding:7px 9px;display:inline-block;box-sizing:content-box;fill:#fff!important;fill:#000}.m-SocialLinksFresh__a-Button--pinterest{margin:0;padding:0}.m-SocialLinksFresh__a-Icon--pinterest{width:26px;height:26px;padding:7px 9px;display:inline-block;box-sizing:content-box;fill:#fff!important;position:relative;top:3px;fill:#d3122a;width:30px;height:30px}.m-SocialLinksFresh__a-Button--googleplus{margin:0;padding:0}.m-SocialLinksFresh__a-Icon--googleplus{width:26px;height:26px;padding:7px 9px;display:inline-block;box-sizing:content-box;fill:#fff!important;position:relative;top:6px;width:38px;height:38px;fill:#dc4a38}.m-SocialLinksFresh__a-Button--snapchat{margin:0;padding:0}.m-SocialLinksFresh__a-Icon--snapchat{width:26px;height:26px;padding:7px 9px;display:inline-block;box-sizing:content-box;fill:#fff!important;fill:#000}.m-SocialLinksFresh__a-Button--youtube{margin:0;padding:0}.m-SocialLinksFresh__a-Icon--youtube{width:26px;height:26px;padding:7px 9px;display:inline-block;box-sizing:content-box;fill:#fff!important;fill:#b00}.o-AssetTitle{clear:both}.o-AssetTitle__a-Headline{margin:7px 0;font-size:48px;font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif;line-height:1;color:#1c1c1c}.videoPlaylistPage .o-AssetTitle__a-Headline{margin-top:0;margin-bottom:28px;font-size:28px;font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif;line-height:1;font-weight:400}.videoPlaylistPage .o-AssetTitle__a-HeadlineText{position:relative;top:21px}.o-FooterFresh{position:relative;margin:21px 0 0;background:#292929;text-align:center}.o-FooterFresh li{display:inline-block;position:relative}.o-FooterFresh{padding:42px 14px}.o-FooterFresh__m-Body{max-width:1280px;margin:0 auto}.o-FooterFresh__m-Info a,.o-FooterFresh__m-Info a:visited{font-size:12px;color:#ababaa}.o-FooterFresh__m-Info .m-DropdownMenu{font-size:15px}.o-FooterFresh__m-Info .m-DropdownMenu a,.o-FooterFresh__m-Info .m-DropdownMenu a:visited{display:block;padding:3.5px 0}.o-FooterFresh__m-Info .m-DropdownMenu li{position:relative}.o-FooterFresh__m-Info .m-DropdownMenu{background:#fff;min-width:180px;max-height:300px;overflow-x:auto;padding:7px 14px;border-radius:3px}.o-FooterFresh__m-Info .m-DropdownMenu li{border-bottom:1px dotted #333;padding:7px 0 3.5px}.o-FooterFresh__m-Info .m-DropdownMenu li a,.o-FooterFresh__m-Info .m-DropdownMenu li a:visited{color:#1c1c1c}.o-FooterFresh__m-Info .m-DropdownMenu li a:active,.o-FooterFresh__m-Info .m-DropdownMenu li a:hover{color:#1c1c1c}.o-FooterFresh__m-Info .m-DropdownMenu li:last-child{border-bottom:none}.o-FooterFresh__m-Info .m-DropdownMenu{display:none;position:absolute;z-index:10000;max-height:none;margin-top:0;overflow-x:visible;left:50%;bottom:100%;text-align:left;box-shadow:0 -1px 6px rgba(0,0,0,.25)}.o-FooterFresh__m-Info.is-Open .m-DropdownMenu,.o-FooterFresh__m-Info.is-Open .o-FooterFresh__m-Info li.is-Expanded .m-DropdownMenu,.o-FooterFresh__m-Info .m-DropdownMenu li,.o-FooterFresh__m-Info li.is-Expanded .m-DropdownMenu,.o-FooterFresh__m-Info li.is-Expanded .o-FooterFresh__m-Info.is-Open .m-DropdownMenu{display:block}html:not(.core-js) .o-FooterFresh__m-Info:hover .m-DropdownMenu,html:not(.core-js) .o-FooterFresh__m-Info:hover .o-FooterFresh__m-Info li:hover .m-DropdownMenu,html:not(.core-js) .o-FooterFresh__m-Info li:hover .m-DropdownMenu,html:not(.core-js) .o-FooterFresh__m-Info li:hover .o-FooterFresh__m-Info:hover .m-DropdownMenu{display:block}.o-FooterFresh__m-Info .has-DropdownMenu{margin-right:14px;padding-right:14px;border-right:1px solid #333}.o-FooterFresh__m-Info .has-DropdownMenu:after{display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:"";color:#999;font-size:10px}.o-FooterFresh__m-Info .has-DropdownMenu:after:hover{text-decoration:none}.o-FooterFresh__m-Info .has-DropdownMenu:hover{color:#fff}.o-FooterFresh .m-Body__m-PromoList{font-size:15px}.o-FooterFresh .m-Body__m-PromoList a,.o-FooterFresh .m-Body__m-PromoList a:visited{padding:4px;color:#fff}.o-FooterFresh .m-Body__m-PromoList a:hover,.o-FooterFresh .m-Body__m-PromoList a:visited:hover{color:#fff}.o-FooterFresh .m-Body__m-PromoList li{padding:0 7px;margin-bottom:7px}.o-FooterFresh .o-FooterFresh__m-Brands{position:relative}.o-FooterFresh .o-FooterFresh__m-Brands a:active,.o-FooterFresh .o-FooterFresh__m-Brands a:hover{cursor:pointer}.o-FooterFresh .o-FooterFresh__m-Brands>a{cursor:default;font-size:12px;color:#999}.o-FooterFresh .has-DropdownMenu{margin-right:14px;padding-right:14px;border-right:1px solid #333}.o-FooterFresh .has-DropdownMenu:after{display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:"";color:#999;font-size:10px}.o-FooterFresh .has-DropdownMenu:after:hover{text-decoration:none}.o-FooterFresh .has-DropdownMenu:hover{color:#fff}.o-FooterFresh .o-FooterFresh__a-Copyright{font-size:12px;color:#999}.o-FooterFresh .m-Body__m-PromoList{margin-bottom:14px}.o-Leaderboard{background:#666}.o-HeaderFresh{position:relative;z-index:10;height:116px;background:#292929;height:141px}.o-HeaderFresh:before{display:block;width:100%;height:61px;background:#fff;position:absolute;bottom:0;left:0;content:" "}.o-HeaderFresh__m-Inner{height:100%;max-width:1280px;margin:0 auto;position:relative}.o-HeaderFresh__a-Logo svg{position:absolute;left:50%;transform:translate(-50%);top:7px;width:86px;height:86px}html:not(.core-js) .o-HeaderFresh__a-Icon--menu{display:none}html:not(.js-support) .o-HeaderFresh__a-Icon--menu{display:none}.o-HeaderFresh__a-Icon--menu{position:absolute;left:28px;width:30px;height:25px;padding:0;box-sizing:content-box;cursor:pointer;fill:#c9c7c7;top:28px;left:30px}.o-HeaderFresh__a-Icon--menu:hover{fill:#fff}html:not(.core-js) .o-HeaderFresh__a-Icon--search{display:none}html:not(.js-support) .o-HeaderFresh__a-Icon--search{display:none}.o-HeaderFresh__a-Icon--search{right:28px;top:50%;transform:translateY(-50%);width:20px;height:20px;padding:10px;fill:#1c1c1c}.o-HeaderFresh__a-Icon--close,.o-HeaderFresh__a-Icon--search{position:absolute;box-sizing:content-box;cursor:pointer;display:none}.o-HeaderFresh__a-Icon--close{left:30px;top:28px;width:30px;height:30px;padding:0;z-index:12;fill:#c9c7c7}.o-HeaderFresh__a-Icon--close:hover{fill:#fff}.o-HeaderFresh .o-HeaderFresh{position:relative;z-index:10;height:116px;background:#292929;height:141px}.o-HeaderFresh .o-HeaderFresh:before{display:block;width:100%;height:61px;background:#fff;position:absolute;bottom:0;left:0;content:" "}.o-HeaderFresh__m-SocialLinks{color:#fff;font-size:18px}.o-HeaderFresh__m-SocialLinks li{margin-right:2px}.o-HeaderFresh__m-SocialLinks li:last-child{margin-right:14px}.o-HeaderFresh__m-SocialLinks{top:28px;left:90px;position:absolute}.o-HeaderFresh__m-SocialLinks li{display:inline-block}.o-HeaderFresh .m-SocialLinks{color:#fff;font-size:18px}.o-HeaderFresh .m-SocialLinks li{margin-right:2px}.o-HeaderFresh .m-SocialLinks li:last-child{margin-right:14px}.o-HeaderFresh .m-SocialLinks__a-Icon--facebook{text-indent:-9999px;width:100%;height:100%;display:block;z-index:1;position:relative}.o-HeaderFresh .m-SocialLinks__a-Button--facebook{width:25px;height:25px;overflow:hidden;position:relative;color:#fff}.o-HeaderFresh .m-SocialLinks__a-Button--facebook:after{font-size:24px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:""}.o-HeaderFresh .m-SocialLinks__a-Button--facebook:after:hover{text-decoration:none}.o-HeaderFresh .m-SocialLinks__a-Icon--twitter{text-indent:-9999px;width:100%;height:100%;display:block;z-index:1;position:relative}.o-HeaderFresh .m-SocialLinks__a-Button--twitter{width:25px;height:25px;overflow:hidden;position:relative;color:#fff}.o-HeaderFresh .m-SocialLinks__a-Button--twitter:after{font-size:24px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:""}.o-HeaderFresh .m-SocialLinks__a-Button--twitter:after:hover{text-decoration:none}.o-HeaderFresh .m-SocialLinks__a-Icon--pinterest{text-indent:-9999px;width:100%;height:100%;display:block;z-index:1;position:relative}.o-HeaderFresh .m-SocialLinks__a-Button--pinterest{width:25px;height:25px;overflow:hidden;position:relative;color:#fff}.o-HeaderFresh .m-SocialLinks__a-Button--pinterest:after{font-size:24px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:""}.o-HeaderFresh .m-SocialLinks__a-Button--pinterest:after:hover{text-decoration:none}.o-HeaderFresh .m-SocialLinks__a-Icon--google{text-indent:-9999px;width:100%;height:100%;display:block;z-index:1;position:relative}.o-HeaderFresh .m-SocialLinks__a-Button--google{width:25px;height:25px;overflow:hidden;position:relative;color:#fff}.o-HeaderFresh .m-SocialLinks__a-Button--google:after{font-size:24px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:"G"}.o-HeaderFresh .m-SocialLinks__a-Button--google:after:hover{text-decoration:none}.o-HeaderFresh .m-SocialLinks__a-Icon--instagram{text-indent:-9999px;width:100%;height:100%;display:block;z-index:1;position:relative}.o-HeaderFresh .m-SocialLinks__a-Button--instagram{width:25px;height:25px;overflow:hidden;position:relative;color:#fff}.o-HeaderFresh .m-SocialLinks__a-Button--instagram:after{font-size:24px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:""}.o-HeaderFresh .m-SocialLinks__a-Button--instagram:after:hover{text-decoration:none}.o-HeaderFresh .m-SocialLinks__a-Icon--snapchat{text-indent:-9999px;width:100%;height:100%;display:block;z-index:1;position:relative}.o-HeaderFresh .m-SocialLinks__a-Button--snapchat{width:25px;height:25px;overflow:hidden;position:relative;color:#fff}.o-HeaderFresh .m-SocialLinks__a-Button--snapchat:after{font-size:24px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:""}.o-HeaderFresh .m-SocialLinks__a-Button--snapchat:after:hover{text-decoration:none}.o-HeaderFresh .m-SocialLinks__a-Icon--youtube{text-indent:-9999px;width:100%;height:100%;display:block;z-index:1;position:relative}.o-HeaderFresh .m-SocialLinks__a-Button--youtube{width:25px;height:25px;overflow:hidden;position:relative;color:#fff}.o-HeaderFresh .m-SocialLinks__a-Button--youtube:after{font-size:24px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:inline-block;font-style:normal;font-weight:400;line-height:1;text-transform:none;-webkit-font-feature-settings:"liga";-moz-font-feature-settings:"liga";-ms-font-feature-settings:"liga" 1;-o-font-feature-settings:"liga";font-feature-settings:"liga";font-family:fn-icons;content:""}.o-HeaderFresh .m-SocialLinks__a-Button--youtube:after:hover{text-decoration:none}.o-HeaderFresh .m-SocialLinks{top:28px;left:90px;position:absolute}.o-HeaderFresh .m-SocialLinks li{display:inline-block}.o-HeaderFresh__m-NavigationSecondaryFresh{font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif;top:28px;left:28%;position:absolute}.o-HeaderFresh__m-NavigationSecondaryFresh li{display:inline-block;padding:5px 10.5px}.o-HeaderFresh__m-NavigationSecondaryFresh li a,.o-HeaderFresh__m-NavigationSecondaryFresh li a:visited{font-size:15px;line-height:1.5;color:#fff}.Win32 .o-HeaderFresh__m-NavigationSecondaryFresh,.Win64 .o-HeaderFresh__m-NavigationSecondaryFresh{top:25px}.o-HeaderFresh__m-NavigationMenu{position:absolute;top:0;left:0;z-index:11;display:none;background:#1c1c1c;padding:0;-webkit-font-smoothing:antialiased}.o-HeaderFresh__m-NavigationMenu a,.o-HeaderFresh__m-NavigationMenu a:visited{color:#fff;font-size:16px}.o-HeaderFresh__m-NavigationMenu a:hover,.o-HeaderFresh__m-NavigationMenu a:visited:hover{color:#fff}.o-HeaderFresh__m-NavigationMenu li{margin-bottom:7px}.o-HeaderFresh__m-NavigationMenu{min-width:300px;width:350px}.o-HeaderFresh__m-NavigationMenu.is-Open{display:block}html:not(.core-js) .o-HeaderFresh__m-NavigationMenu:hover{display:block}.o-HeaderFresh__m-NavigationMenu .m-ProfileInfo{font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif;text-transform:uppercase}.o-HeaderFresh__m-NavigationMenu .m-ProfileInfo a,.o-HeaderFresh__m-NavigationMenu .m-ProfileInfo a:visited{display:inline-block;padding:3.5px;margin:0 -3.5px;font-size:15px}.o-HeaderFresh__m-NavigationMenu .m-ProfileInfo span:before{content:"|";color:#fff;margin-left:4px;margin-right:8px}.o-HeaderFresh__m-NavigationMenu .m-ProfileInfo span:first-child:before{display:none}.o-HeaderFresh__m-NavigationMenu .m-ProfileInfo li{display:inline-block;margin:21px 0}.o-HeaderFresh__m-NavigationMenu .m-ProfileInfo{margin:21px 30px 7px;border-bottom:1px dotted #999;border-top:1px dotted #999}.o-HeaderFresh__m-NavigationMenu .m-SocialLinksFresh{position:relative;left:0}.o-HeaderFresh__m-NavigationMenu .m-SocialLinksFresh li{display:inline-block;margin-top:-14px;margin-bottom:0}.o-HeaderFresh__m-NavigationMenu .m-SocialLinksFresh{padding:28px 30px 56px 21px;border-right:1px solid #979797;border-left:1px solid #979797}.o-HeaderFresh__m-PromoList{text-align:left;width:auto;flex:0 1 auto;position:relative;overflow:hidden;align-content:flex-start;font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif;font-size:20px}.o-HeaderFresh__m-PromoList a,.o-HeaderFresh__m-PromoList a:visited{padding:4px;font-size:17px;color:#1c1c1c}.o-HeaderFresh__m-PromoList a:hover,.o-HeaderFresh__m-PromoList a:visited:hover{color:#e6003d;text-decoration:none}.o-HeaderFresh__m-PromoList li{display:block;margin:0 15px;float:left;flex:none}.o-HeaderFresh__m-PromoList ul{width:auto;margin:auto;overflow:hidden;position:relative;display:flex;justify-content:flex-start;align-items:flex-start;flex-flow:row nowrap;height:20px;max-width:1090px}.o-HeaderFresh__m-PromoList,.o-HeaderFresh__m-PromoList ul{overflow:visible}.o-HeaderFresh__m-PromoList .is-WatchSite:before{position:relative;top:-2px;left:5px;content:" ";background:red;border-radius:50%;width:6px;height:6px;display:inline-block}.o-HeaderFresh__m-PromoList .o-HeaderFresh__IconLink a,.o-HeaderFresh__m-PromoList .o-HeaderFresh__IconLink a:visited{color:red}.o-HeaderFresh__m-PromoList .o-HeaderFresh__IconLink a:hover,.o-HeaderFresh__m-PromoList .o-HeaderFresh__IconLink a:visited:hover{color:#f94747}.o-HeaderFresh__m-PromoList .o-HeaderFresh__IconLink a:hover svg,.o-HeaderFresh__m-PromoList .o-HeaderFresh__IconLink a:visited:hover svg{fill:#f94747}.o-HeaderFresh__m-PromoList .o-HeaderFresh__IconLink a:visited svg,.o-HeaderFresh__m-PromoList .o-HeaderFresh__IconLink a svg{fill:red;width:24px;height:19px;position:relative;top:1px}.o-HeaderFresh__m-PromoList .o-HeaderFresh__IconLink span{position:relative;top:-3px;margin-left:4px}.Win32 .o-HeaderFresh__m-PromoList ul,.Win64 .o-HeaderFresh__m-PromoList ul{height:25px}.o-HeaderFresh__m-PromoWrap{position:absolute;bottom:0;display:flex;justify-content:center;text-align:left;width:100%;margin:auto;align-items:center;flex-flow:row nowrap;max-width:1280px;z-index:0;height:60px}.o-HeaderFresh__m-NavigationPrimary{font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif}.o-HeaderFresh__m-NavigationPrimary a,.o-HeaderFresh__m-NavigationPrimary a:visited{font-size:28px;line-height:1.5;color:#fff}.o-HeaderFresh__m-NavigationPrimary a:hover,.o-HeaderFresh__m-NavigationPrimary a:visited:hover{color:#fff}.o-HeaderFresh__m-NavigationPrimary{margin:100px 30px 0;padding-bottom:10.5px}.o-HeaderFresh__m-NavigationSecondary{border-top:1px dotted #999;font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif}.o-HeaderFresh__m-NavigationSecondary a,.o-HeaderFresh__m-NavigationSecondary a:visited{font-size:18px;line-height:1.5;color:#fff}.o-HeaderFresh__m-NavigationSecondary a:hover,.o-HeaderFresh__m-NavigationSecondary a:visited:hover{color:#fff}.o-HeaderFresh__m-NavigationSecondary li{margin-bottom:10.5px}.o-HeaderFresh__m-NavigationSecondary{margin:0 30px 21px;padding-top:28px}.o-HeaderFresh__m-NavigationSecondary .o-HeaderFresh__IconLink a:hover,.o-HeaderFresh__m-NavigationSecondary .o-HeaderFresh__IconLink a:visited:hover{text-decoration:none}.o-HeaderFresh__m-NavigationSecondary .o-HeaderFresh__IconLink a:hover span,.o-HeaderFresh__m-NavigationSecondary .o-HeaderFresh__IconLink a:visited:hover span{text-decoration:underline}.o-HeaderFresh__m-NavigationSecondary .o-HeaderFresh__IconLink a:visited svg,.o-HeaderFresh__m-NavigationSecondary .o-HeaderFresh__IconLink a svg{fill:#fff;width:24px;height:19px;position:relative;top:1px;margin-right:4px}.o-HeaderFresh__m-NavigationSecondary .o-HeaderFresh__IconLink span{position:relative;top:-3px}.o-HeaderFresh__m-ProfileInfo{font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif;text-transform:uppercase}.o-HeaderFresh__m-ProfileInfo a,.o-HeaderFresh__m-ProfileInfo a:visited{display:inline-block;padding:3.5px;margin:0 -3.5px;font-size:15px}.o-HeaderFresh__m-ProfileInfo span:before{content:"|";color:#fff;margin-left:4px;margin-right:8px}.o-HeaderFresh__m-ProfileInfo span:first-child:before{display:none}.o-HeaderFresh__m-ProfileInfo li{display:inline-block;margin:21px 0}.o-HeaderFresh__m-ProfileInfo{margin:21px 30px 7px;border-bottom:1px dotted #999;border-top:1px dotted #999}.o-HeaderFresh__a-Button--RecipeBox{display:flex;padding:8px 0 2px;line-height:1.5;width:100%;font-family:Franklin Gothic URW Cond Medium,Helvetica,Arial,sans-serif;font-size:15px;color:#fff}.o-HeaderFresh__a-Button--RecipeBox:hover{color:#fff;text-decoration:underline}.Win32 .o-HeaderFresh__a-Button--RecipeBox,.Win64 .o-HeaderFresh__a-Button--RecipeBox{padding:5px 0}.Win32 .o-HeaderFresh__a-Icon--bookmark-filled,.Win64 .o-HeaderFresh__a-Icon--bookmark-filled{margin-top:3px}.o-HeaderFresh__m-RecipeBoxMenu{position:absolute;right:33%;top:25px}.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu{font-size:15px}.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu a,.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu a:visited{display:block;padding:3.5px 0}.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu li{position:relative}.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu{background:#fff;min-width:180px;max-height:300px;overflow-x:auto;padding:7px 14px;border-radius:3px}.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu li{border-bottom:1px dotted #333;padding:7px 0 3.5px}.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu li a,.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu li a:visited{color:#1c1c1c}.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu li a:active,.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu li a:hover{color:#1c1c1c}.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu li:last-child{border-bottom:none}.o-HeaderFresh__m-RecipeBoxMenu .m-DropdownMenu{display:none;position:absolute;z-index:10000;max-height:none;margin-top:0;overflow-x:visible}.o-HeaderFresh__m-RecipeBoxMenu.is-Open .m-DropdownMenu,.o-HeaderFresh__m-RecipeBoxMenu.is-Open .o-HeaderFresh__m-RecipeBoxMenu li.is-Expanded .m-DropdownMenu,.o-HeaderFresh__m-RecipeBoxMenu li.is-Expanded .m-DropdownMenu,.o-HeaderFresh__m-RecipeBoxMenu li.is-Expanded .o-HeaderFresh__m-RecipeBoxMenu.is-Open .m-DropdownMenu{display:block}html:not(.core-js) .o-HeaderFresh__m-RecipeBoxMenu:hover .m-DropdownMenu,html:not(.core-js) .o-HeaderFresh__m-RecipeBoxMenu:hover .o-HeaderFresh__m-RecipeBoxMenu li:hover .m-DropdownMenu,html:not(.core-js) .o-HeaderFresh__m-RecipeBoxMenu li:hover .m-DropdownMenu,html:not(.core-js) .o-HeaderFresh__m-RecipeBoxMenu li:hover .o-HeaderFresh__m-RecipeBoxMenu:hover .m-DropdownMenu{display:block}.o-HeaderFresh__a-Icon--bookmark-filled{height:17px;fill:#fff}.o-HeaderFresh__a-Copyright{font-size:12px;color:#999;padding:21px 30px 14px;margin-top:-1px}.o-HeaderFresh .m-SearchFresh{display:none}html:not(.core-js) .o-HeaderFresh .m-SearchFresh{display:none}html:not(.js-support) .o-HeaderFresh .m-SearchFresh{display:none}.o-HeaderFresh .m-SearchFresh.is-Open{display:block}.o-HeaderFresh .m-SearchFresh{position:absolute;z-index:11;width:230px;top:22px;right:28px;height:36px}.Win32 .o-HeaderFresh .m-SearchFresh__a-Input,.Win64 .o-HeaderFresh .m-SearchFresh__a-Input{padding-top:8px;padding-bottom:9px}@media (-ms-high-contrast:active),(-ms-high-contrast:none){html[class*=Win] .o-HeaderFresh .m-SearchFresh__a-Input{padding-top:7px;padding-bottom:10px}}
+
+</style>
+  <!-- end critical styles -->
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<link rel="stylesheet" type="text/css" href="//food.fnr.sndimg.com/etc/clientlibs/assets/v2/css/food/templates/recipePage.desktop.md5-0d2ba6aab678bfe56884cf995e982a26.css"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  <!-- New Relic Browser snippet , should be before everything else -->
+
+  <script type="text/javascript">
+    (function (){
+      var percentEnabled = parseInt("25") || 5;//Default value is set to 5% if the config value is not set
+      var rand = 0;
+      var enableForAutomation = false;
+      var urlParams;
+      var observer, entries, entry, metric, time;
+      if ("URLSearchParams" in window){//This may not be present in IE
+        urlParams = new URLSearchParams(window.location.search);
+        enableForAutomation = urlParams.get("enableForAutomation") || false;
+      }
+
+      if (percentEnabled < 100)
+        rand = Math.floor(Math.random() * 100); // assign the user into a bucket between 0 and 99
+
+      if (percentEnabled == 100 || rand < percentEnabled || enableForAutomation) {
+        window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),c.xhrWrappable&&t(14),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){M++,N=y.hash,this[u]=g.now()}function o(){M--,y.hash!==N&&i(0,!0);var t=g.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+y,e])}function a(t,e){t.on(e,function(){this[e]=g.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,y=w.location,g=t("loader");if(w[v]&&g.xhrWrappable){var b=t(10),x=t(11),E=t(8),O=t(6),P=t(13),R=t(7),T=t(14),L=t(9),j=t("ee"),S=j.get("tracer");t(15),g.features.spa=!0;var N,M=0;j.on(u,r),j.on(p,r),j.on(d,o),j.on(l,o),j.buffer([u,d,"xhr-done","xhr-resolved"]),O.buffer([u]),P.buffer(["setTimeout"+c,"clearTimeout"+s,u]),T.buffer([u,"new-xhr","send-xhr"+s]),R.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),b.buffer([u]),x.buffer(["propagate",p,l,"executor-err","resolve"+s]),S.buffer([u,"no-"+u]),L.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,"send-xhr"+s),a(j,"xhr-resolved"),a(j,"xhr-done"),a(R,m+s),a(R,m+"-done"),a(L,"new-jsonp"),a(L,"jsonp-end"),a(L,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,M>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),s=t(12),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(8);var b=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof b&&(this.bstStart=g.now())}),o.on(v,function(t,e){var n=t[0];n instanceof b&&i("bst",[n,e,this.bstStart,g.now()])}),a.on(m,function(t,e,n){this.bstStart=g.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(v,function(t,e){i(w,[e,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+l,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t(24)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=r.apply(this,arguments);return o.emit(n+"start",arguments,t),t.then(function(e){return o.emit(n+"end",[null,e],t),e},function(e){throw o.emit(n+"end",[e],t),e})})}var o=t("ee").get("fetch"),i=t(21);e.exports=o;var a=window,s="fetch-",c=s+"body-",f=["arrayBuffer","blob","json","text","formData"],u=a.Request,d=a.Response,p=a.fetch,l="prototype";u&&d&&p&&(i(f,function(t,e){r(u[l],e,c),r(d[l],e,c)}),r(a,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t(24)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){c.emit("jsonp-error",[],p),c.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=s(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),c.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t("ee").get("jsonp"),f=t(24)(c);if(e.exports=c,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-"),c.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t(24)(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=s(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t(24),a=t("ee").get("promise"),s=i(a),c=t(21),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),s=f.resolve(i);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this),t[1]=s(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),s.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=s(t[0],"cb-",this),t[1]=s(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t(24)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(24)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):v?v(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t(24)(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(l,b),b.prototype=l.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!v&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=a.now()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(e.cat=c.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=c(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(16),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,p=t("id"),l=t(19),h=t(18),m=window.XMLHttpRequest;a.features.xhr=!0,t(14),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,l&&(l>34||l<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<d;s++)e.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)})}},{}],16:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],17:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(s(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],20:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],21:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],22:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],23:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],24:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],s])}u(e+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],s),d}finally{u(e+"end",[r,a,c],s)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<e.length;c++)s=e[c],a=t[s],r(a)||(t[s]=n(a,f?s+o:o,i,s))}function u(n,r,o){if(!c||e){var i=c;c=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}c=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)s.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),s=m(n),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[g[n]];return d&&d.push([b,n,r,a]),a}}function l(t,e){y[t]=m(t).concat(e)}function h(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",g[n]=e,e in u||(u[e]=[])})}var y={},g={},b={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!E++){var t=x.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(g,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()+x.offset],null,"api");var n=l.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-x.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),p=window,l=p.document,h="addEventListener",m="attachEvent",v=p.XMLHttpRequest,w=v&&v.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:v,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1118.min.js"},b=v&&w&&w[h]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:s,now:a,origin:y,features:{},xhrWrappable:b,userAgent:d};t(17),l[h]?(l[h]("DOMContentLoaded",i,!1),p[h]("load",r,!1)):(l[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}]},{},["loader",2,15,5,3,4]);
+        ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"7ce026ff1f",applicationID:"18918664",sa:1}
+
+        if ("PerformanceObserver" in window) { //Check if API is supported by the browser
+          observer = new PerformanceObserver(function (list) {
+            entries = list.getEntries();
+            for (var i=0; i < entries.length; i++){
+              entry = entries[i];
+              metric = entry.name;
+              time = Math.round(entry.startTime + entry.duration);
+              newrelic.setCustomAttribute(metric, time);
+            }
+          });
+          observer.observe({entryTypes: ['paint']});
+        }
+      }
+    })();
+
+  </script>
+
+
+
+    
+
+
+
+  
+  
+
+
+
+
+  <link rel="preconnect" href="https://ib.3lift.com">
+  <link rel="preconnect" href="https://tlx.3lift.com">
+
+  <link rel="preconnect" href="https://tagan.adlightning.com">
+  <link rel="preconnect" href="https://sharethrough.adnxs.com">
+  <link rel="preconnect" href="https://adserver-us.adtech.advertising.com">
+  <link rel="preconnect" href="https://lightboxapi1.azurewebsites.net">
+  <link rel="preconnect" href="https://as-sec.casalemedia.com">
+  <link rel="preconnect" href="https://ads.celtra.com">
+
+  <link rel="preconnect" href="https://cdns1.gigya.com">
+  <link rel="preconnect" href="https://cdns2.gigya.com">
+
+  <link rel="preconnect" href="https://bidder.criteo.com">
+  <link rel="preconnect" href="https://gum.criteo.com">
+
+  <link rel="preconnect" href="https://ad.doubleclick.net">
+  <link rel="preconnect" href="https://bid.g.doubleclick.net">
+  <link rel="preconnect" href="https://pubads.g.doubleclick.net">
+  <link rel="preconnect" href="https://securepubads.g.doubleclick.net">
+
+  <link rel="preconnect" href="https://an.facebook.com">
+
+  <link rel="preconnect" href="https://api.foodnetwork.com">
+  <link rel="preconnect" href="https://gigya.foodnetwork.com">
+  <link rel="preconnect" href="https://ssa.foodnetwork.com">
+
+  <link rel="preconnect" href="https://tpc.googlesyndication.com">
+  <link rel="preconnect" href="https://www.googletagservices.com">
+
+  <link rel="preconnect" href="https://krk.kargo.com">
+  <link rel="preconnect" href="https://storage.cloud.kargo.com">
+
+  <link rel="preconnect" href="https://www.lightboxcdn.com">
+
+  <link rel="preconnect" href="https://geo.moatads.com">
+  <link rel="preconnect" href="https://px.moatads.com">
+  <link rel="preconnect" href="https://s-jsonp.moatads.com">
+  <link rel="preconnect" href="https://z.moatads.com">
+
+  <link rel="preconnect" href="https://discovery-d.openx.net">
+  <link rel="preconnect" href="https://link.theplatform.com">
+  <link rel="preconnect" href="https://fastlane.rubiconproject.com">
+  <link rel="preconnect" href="https://bs.serving-sys.com">
+
+  <link rel="preconnect" href="https://analytics.snidigital.com">
+  <link rel="preconnect" href="https://code.adsales.snidigital.com">
+  <link rel="preconnect" href="https://www.pdk.video.snidigital.com">
+
+  <link rel="preconnect" href="https://apex.go.sonobi.com">
+
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="/etc/clientlibs/assets/images/food/apple-touch-icon-57x57.png"> <link rel="apple-touch-icon" sizes="114x114" href="/etc/clientlibs/assets/images/food/apple-touch-icon-114x114.png"> <link rel="apple-touch-icon" sizes="72x72" href="/etc/clientlibs/assets/images/food/apple-touch-icon-72x72.png"> <link rel="apple-touch-icon" sizes="144x144" href="/etc/clientlibs/assets/images/food/apple-touch-icon-144x144.png"> <link rel="apple-touch-icon" sizes="60x60" href="/etc/clientlibs/assets/images/food/apple-touch-icon-60x60.png"> <link rel="apple-touch-icon" sizes="120x120" href="/etc/clientlibs/assets/images/food/apple-touch-icon-120x120.png"> <link rel="apple-touch-icon" sizes="76x76" href="/etc/clientlibs/assets/images/food/apple-touch-icon-76x76.png"> <link rel="apple-touch-icon" sizes="152x152" href="/etc/clientlibs/assets/images/food/apple-touch-icon-152x152.png"> <link rel="apple-touch-icon" sizes="180x180" href="/etc/clientlibs/assets/images/food/apple-touch-icon-180x180.png"> <link rel="icon" type="image/png" href="/etc/clientlibs/assets/images/food/favicon-192x192.png" sizes="192x192"> <link rel="icon" type="image/png" href="/etc/clientlibs/assets/images/food/favicon-160x160.png" sizes="160x160"> <link rel="icon" type="image/png" href="/etc/clientlibs/assets/images/food/favicon-96x96.png" sizes="96x96"> <link rel="icon" type="image/png" href="/etc/clientlibs/assets/images/food/favicon-16x16.png" sizes="16x16"> <link rel="icon" type="image/png" href="/etc/clientlibs/assets/images/food/favicon-32x32.png" sizes="32x32"> <meta name="msapplication-TileColor" content="#0fadc4"> <meta name="msapplication-TileImage" content="/etc/clientlibs/assets/images/food/mstile-144x144.png">
+
+    
+      
+      
+        <meta name="viewport" content="width=1024">
+      
+    
+
+    <meta name="keywords" content="">
+    <meta name="author"  content="">
+    
+
+
+
+
+
+ 
+   <link rel="canonical" href="https://www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564"/>
+   
+ 
+ 
+
+
+
+    
+    
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+    
+        
+        
+        
+        
+        
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Noodle Kugel Recipe | Dave Lieberman | Food Network</title>
+
+
+
+  
+  
+    
+
+
+
+  
+  
+
+
+
+
+  
+  
+    
+  
+
+
+    <meta name="description" content="Get Noodle Kugel Recipe from Food Network">
+  
+
+
+
+
+  <meta property="og:title" content="Noodle Kugel">
+
+
+
+
+  
+  
+    <meta property="og:description" content="Get Noodle Kugel Recipe from Food Network">
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta property="og:url" content="https://www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564"/>
+
+<meta property="og:image" content="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/11/23/0/FN_noodle-kugel-011_s4x3.jpg.rend.hgtvcom.616.462.suffix/1382540988172.jpeg"/>
+
+<meta property="twitter:card" content="summary"/>
+<meta property="og:site_name" content="Food Network"/>
+
+      
+
+
+    
+
+
+
+    
+
+    
+
+
+
+
+  
+  
+
+
+  
+  <script>
+    document.getElementsByTagName('html')[0].className += ' js-support ' + navigator.platform;
+    var SNI = window.SNI || {};
+    SNI.JS_RESOURCE_PATH="//food.fnr.sndimg.com/etc/clientlibs/assets/v2/js/"
+  </script>
+
+  
+
+  <script>
+(function () { 
+  if ( typeof window.CustomEvent === "function" ) return false;
+  function CustomEvent ( event, params ) {
+    params = params || { bubbles: false, cancelable: false, detail: undefined };
+    var evt = document.createEvent( 'CustomEvent' );
+    evt.initCustomEvent( event, params.bubbles, params.cancelable, params.detail );
+    return evt;
+   }
+  CustomEvent.prototype = window.Event.prototype;
+  window.CustomEvent = CustomEvent;
+})();
+var SNILoadEvents = {
+  listen: function(names) {
+    var evtObj = SNILoadEvents.events = {};
+    for (var i=0; i < names.length; i++) {
+      var name = 'SNILoadEvent_' + names[i];
+      if (window.CustomEvent) {
+        evtObj[names[i]] = new CustomEvent(name);
+      } else {
+        evtObj[names[i]] = document.createEvent('CustomEvent');
+        evtObj[names[i]].initCustomEvent(name, true, true);
+      }
+    }
+  },
+  trigger: function(names) {
+    var names = (typeof names === 'string') ? [ names ] : names;
+    for (var i=0; i < names.length; i++) {
+      try {
+        window.dispatchEvent(window.SNILoadEvents.events[names[i]]);
+        window.removeEventListener('SNILoadEvent_' + names[i], window.SNILoadEvents.events[names[i]].function);
+        window.SNILoadEvents.events[names[i]] = { firedAlready: true };
+      } catch(e) {
+        if (window.console) {
+          console.warn('SNILoadEvents event "' + names[i] + '" already triggered.');
+        }
+      }
+    }
+  },
+  mdmLoaded: function(fn) {
+    SNILoadEvents.on('mdm', function(e) {
+      if (window.MetaDataManager !== 'undefined') {
+        fn();
+      } else {
+        if (window.console) {
+          console.error('MetaDataManager is not defined!');
+        }
+      }
+    });
+  },
+  on: function(name, fn) {
+    if (window.SNILoadEvents.events[name].firedAlready) {
+      fn();
+    } else {
+      window.SNILoadEvents.events[name].function = fn;
+      window.addEventListener('SNILoadEvent_' + name, fn);
+    }
+  }
+};
+
+SNILoadEvents.listen([
+  'sni-all',
+  'core',
+  'mdm',
+  'ads',
+  'analytics'
+]);
+
+(function() {
+  var jqMethods = 'css|hide|addClass|removeClass|find|remove|html|height|offset|animate|closest|appendTo|insertAfter|load|attr|append|on'.split('|');
+  function makePlugin(parent, name, operand) {
+    return function() {
+      var params = arguments;
+      SNILoadEvents.on('core', function() {
+        var $el = window.$.apply(window.$.fn, operand);
+        $el[name].apply($el, params);
+      });
+      return parent;
+    };
+  }
+  window.updateJqMethods = function (name) {
+    jqMethods.push(name);
+  };
+  window.jQuery = window.$ = function() {
+    var operand = arguments;
+    if (typeof arguments[0] === 'function') {
+      SNILoadEvents.on('core', function() {
+        window.$.apply(window.$.fn, operand);
+      });
+    }
+    var jqMethodsObj = {};
+    for (var i=0; i < jqMethods.length; i++) {
+      jqMethodsObj[jqMethods[i]] = makePlugin(jqMethodsObj, jqMethods[i], operand);
+    }
+    return jqMethodsObj;
+  };
+})();
+</script>
+
+
+  <script>
+    (function() {
+      
+      /*   */
+      sessionStorage.setItem('countryCode', "US");
+      /*   */
+    })();
+  </script>
+
+    
+
+
+
+  
+  
+
+
+
+    
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<script type="text/javascript">
+SNILoadEvents.mdmLoaded(function() {
+  var mdManager = window.mdManager = new MetaDataManager(),
+    origPubDate = '2015-05-23T12:22:02.950-04:00'.replace(/T.*$/, ''),
+    lastReplicationDate = '2018-11-06T05:42:57.340-05:00'.replace(/T.*$/, '');
+    mdManager.addParameter("Url", "/recipes/dave-lieberman/noodle-kugel-recipe-1946564");
+    mdManager.addParameter("Title", "noodle kugel");
+    mdManager.addParameter("Site", "food");
+    mdManager.addParameter("CategoryDspName", "recipes");
+    mdManager.addParameter("SctnDspName", "dave-lieberman");
+    mdManager.addParameter("SubSection", "n");
+    mdManager.addParameter("Classification", "n,dave-lieberman,recipes,food");
+    mdManager.addParameter("DetailID", "119f989e-20f6-4032-a895-e3e92f6310a8");
+    mdManager.addParameter("PageNumber", "1");
+    mdManager.addParameter("behavioralInteraction", "1-1-1");
+    mdManager.addParameter("Type", "recipe");
+    mdManager.addParameter("UniqueID", "food|recipepage|119f989e-20f6-4032-a895-e3e92f6310a8|1");
+    mdManager.addParameter("AdKey1", "holidays-and-parties");
+    mdManager.addParameter("AdKey2", "");
+    mdManager.addParameter("ContentTag1", "");
+    mdManager.addParameter("ContentTag2", "");
+
+    mdManager.addParameter("Sponsorship", "FN_HC_HANUKKAH");
+
+    mdManager.addParameter("Show_Abbr", "");
+    mdManager.addParameter("Source", "");
+    mdManager.addParameter("Delivery_Channel", "web");
+    mdManager.addParameter("EditorialTracking", "");
+    mdManager.addParameter("Difficulty", "easy");
+    mdManager.addParameter("Preptime", "");
+    mdManager.addParameter("Cuisine", "jewish-cooking");
+    mdManager.addParameter("Technique", "baking");
+    mdManager.addParameter("Dish", "pasta-dishes");
+    mdManager.addParameter("Taste", "");
+    mdManager.addParameter("Nutrition", "");
+    mdManager.addParameter("Occasions", "holiday");
+    mdManager.addParameter("MainIngredient", "");
+    mdManager.addParameter("MealPart", "side-dish");
+    mdManager.addParameter("MealType", "");
+    mdManager.addParameter("Region", "");
+    mdManager.addParameter("Country", "");
+    mdManager.addParameter("State", "");
+    mdManager.addParameter("City", "");
+    mdManager.addParameter("TargetedTerms", "strain;eggs;butter;cinnamon;egg;noodles;sour cream;cream;brown;cottage cheese;sour;cheese;baking;bake;custard;baking dish;raisins;sugar;boil;egg noodles;cup");
+    mdManager.addParameter("OrigPubDate", origPubDate + '|' + lastReplicationDate);
+});
+
+</script>
+
+
+<link rel="amphtml" href="https://www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564.amp"/>
+    <link rel="amppackage" href="https://www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564.amppkg"/>
+    <meta name="apple-itunes-app" content="app-id=399072152,app-argument=foodnetworkitk://itk/v4/recipes/119f989e-20f6-4032-a895-e3e92f6310a8">
+
+
+    
+    
+    <meta name="tp:initialize" content="false">
+    <meta name="tp:PreferredRuntimes" content="Flash,HTML5" />
+    
+
+
+<script>
+  var SNI = window.SNI || {};
+  SNI.Config = SNI.Config || {};
+
+  SNI.Config.brand = "food";
+  SNI.Config.useGigyaLogin = true;
+  if ("null" !== "null") {
+    SNI.Config.socialCommentsCmbUri = "null";
+  }
+  if ("null" !== "null") {
+    SNI.Config.userRegisterCmbUri = "null";
+  }
+
+  SNILoadEvents.on('core', function() {
+    SNI.Config.VPC.setUri('//www.player.video.snidigital.com/vpc/1/12/');
+  });
+  SNI.Config.Video = {
+    fallbackSiteSectionId: '1152909',
+    networkId: '191701'
+  };
+</script>
+
+    
+
+    
+    <script>
+        var cqMobile = false,
+            cqBasePage = '//www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564',
+            cqWCMDisabled = true,
+            cqIncludeVideo = true;
+    </script>
+
+  
+
+
+
+  
+  
+
+
+  
+  
+
+  
+    <meta property="fb:app_id" content="582148248497951"/>
+  
+
+
+  
+
+  
+
+
+
+  
+  
+
+
+
+
+
+<script async="true" src="https://cdn.whisk.com/sdk/shopping-list.js" type="text/javascript"></script>
+<script>
+  var whisk = whisk || {};
+  whisk.queue = whisk.queue || [];
+  whisk.queue.push(function () {
+    whisk.shoppingList.defineWidget("CCKU-VPLO-TYHX-LNGN", {
+      // hidden: true, //widget hidden. View using ?whisk-enable=1 in URL. Remove line to make Whisk visible to everyone. 
+      whiteLabel: "foodnetwork-com",
+      styles: {
+        size: "large"
+      }
+    });
+  });
+</script>
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false"}]);</script>
+<script>!function(){function o(n,i){if(n&&i)for(var r in i)i.hasOwnProperty(r)&&(void 0===n[r]?n[r]=i[r]:n[r].constructor===Object&&i[r].constructor===Object?o(n[r],i[r]):n[r]=i[r])}try{var n=decodeURIComponent("");if(n.length>0&&window.JSON&&"function"==typeof window.JSON.parse){var i=JSON.parse(n);void 0!==window.BOOMR_config?o(window.BOOMR_config,i):window.BOOMR_config=i}}catch(r){window.console&&"function"==typeof window.console.error&&console.error("mPulse: Could not parse configuration",r)}}();</script>
+<script>!function(a){var e="https://s.go-mpulse.net/boomerang/",t="addEventListener";if("False"=="True")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e="https://s2.go-mpulse.net/boomerang/";if(function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,o,r,O=document.createElement("iframe");if(a[t])a[t]("load",n,!1);else if(a.attachEvent)a.attachEvent("onload",n);O.src="javascript:void(0)",O.title="",O.role="presentation",(O.frameElement||O).style.cssText="width:0;height:0;border:0;display:none;",r=document.getElementsByTagName("script")[0],r.parentNode.insertBefore(O,r);try{o=O.contentWindow.document}catch(_){i=document.domain,O.src="javascript:var d=document.open();d.domain='"+i+"';void(0);",o=O.contentWindow.document}o.open()._l=function(){var a=this.createElement("script");if(i)this.domain=i;a.id="boomr-if-as",a.src=e+"RWSLQ-RA5BZ-XHZBZ-4H2G2-ME7FC",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},o.write("<bo"+'dy onload="document._l();">'),o.close()}}(),"".length>0)if(a&&"performance"in a&&a.performance&&"function"==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e="false"=="true"?1:0,t="",n="i7kj2vnydjihexjn3hsq-f-809fe94a7-clientnsv4-s.akamaihd.net",i={"ak.v":20,"ak.cp":"535731","ak.ai":parseInt("325785",10),"ak.ol":"0","ak.cr":3,"ak.ipv":4,"ak.proto":"","ak.rid":"855dbea","ak.r":33978,"ak.a2":e,"ak.m":"g","ak.n":"essl","ak.bpcip":"71.212.157.0","ak.cport":60862,"ak.gh":"23.221.236.100","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1563285989"};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(e){var t="http.initiator";if(e&&(!e[t]||"spa_hard"===e[t]))i["ak.feo"]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var a=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a("before_beacon",o.av,null,null),a("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script>
+                    <script>var w=window;if(w.performance||w.mozPerformance||w.msPerformance||w.webkitPerformance){var d=document;AKSB=w.AKSB||{},AKSB.q=AKSB.q||[],AKSB.mark=AKSB.mark||function(e,_){AKSB.q.push(["mark",e,_||(new Date).getTime()])},AKSB.measure=AKSB.measure||function(e,_,t){AKSB.q.push(["measure",e,_,t||(new Date).getTime()])},AKSB.done=AKSB.done||function(e){AKSB.q.push(["done",e])},AKSB.mark("firstbyte",(new Date).getTime()),AKSB.prof={custid:"535731",ustr:"",originlat:"0",clientrtt:"3",ghostip:"23.221.236.100",ipv6:false,pct:"10",clientip:"71.212.157.85",requestid:"855dbea",region:"33978",protocol:"",blver:14,akM:"g",akN:"ae",akTT:"O",akTX:"1",akTI:"855dbea",ai:"325785",ra:"false",pmgn:"prodfoodnetwork",pmgi:"",pmp:"",qc:""},function(e){var _=d.createElement("script");_.async="async",_.src=e;var t=d.getElementsByTagName("script"),t=t[t.length-1];t.parentNode.insertBefore(_,t)}(("https:"===d.location.protocol?"https:":"http:")+"//ds-aksb-a.akamaihd.net/aksb.min.js")}</script>
+                    </head>
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+  
+  
+    
+  
+
+
+<body class="recipePage" data-shorten-url="//www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564" data-module="page" data-page-path="/content/food-com/en/recipes/dave-lieberman/n/no/noo/nood/noodle-kugel-recipe">
+  
+
+  <section id="site" class="flush-top">
+    <div class="header"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/header"></span>
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="o-Leaderboard">
+  
+    <div id="leaderboard-wrap">
+      <div id="leaderboard"><div id='dfp_leaderboard'></div></div>
+    </div>
+  
+  
+</section>
+
+<header class="o-HeaderFresh has-OpenSearch" data-module="header-mobile">
+  <div class="o-HeaderFresh__m-Inner">
+    <script type="text/x-config">
+    {
+      "setNavTop": false,
+      "searchExposed": true
+    }
+    </script>
+
+    <a class="o-HeaderFresh__a-Logo" href="//www.foodnetwork.com">
+      <svg id="LOGO" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 187 187"><style>.st0{fill:#fff}.st1{fill:#e6003d}</style><path class="st0" d="M93.6 0C42-.1 0 41.8 0 93.4c0 49.9 40 93 93.4 93.6 51.6.1 93.6-41.8 93.6-93.4C187 39.6 142.8.9 93.6 0z"/><path class="st1" d="M113.7 79.3c-.3-.4-.6-.7-.9-.9-.3-.3-.7-.5-1.1-.7-.4-.2-.9-.3-1.3-.4-.5-.1-1-.1-1.6-.1-.6 0-1.1 0-1.6.1s-1 .2-1.4.4c-.4.2-.9.4-1.3.7-.4.3-.8.6-1.2 1-.7.7-1.3 1.4-1.9 2.3-.5.9-1 1.8-1.4 2.8-.4 1-.7 2.2-1 3.3-.3 1.2-.5 2.4-.8 3.8-.3 1.3-.5 2.6-.7 3.8-.2 1.2-.3 2.3-.3 3.4s0 2 .2 2.9c.2.9.5 1.6.9 2.3.3.4.6.7.9 1 .3.3.7.5 1.1.7.4.2.9.3 1.3.4.5.1 1 .1 1.6.1.6 0 1.1-.1 1.6-.2s1-.3 1.5-.4c.5-.2.9-.4 1.3-.7a10.6 10.6 0 0 0 3-3.3c.5-.9 1-1.9 1.3-2.9l.6-1.8c.1-.5.3-1 .4-1.6.3-1.2.5-2.4.8-3.7l.3-1.8c.1-.7.2-1.3.3-1.9.2-1.2.3-2.3.3-3.3s0-2-.2-2.8c0-1.1-.3-1.8-.7-2.5zM72.2 79.3c-.3-.4-.6-.7-.9-.9-.3-.3-.7-.5-1.1-.7-.4-.2-.9-.3-1.3-.4-.5-.1-1-.1-1.6-.1-.6 0-1.1 0-1.6.1s-1 .2-1.4.4c-.5.2-.9.4-1.3.7l-1.2.9c-.7.7-1.3 1.4-1.9 2.3-.5.9-1 1.8-1.4 2.8-.4 1-.7 2.2-1 3.3-.3 1.2-.6 2.4-.8 3.8-.3 1.3-.5 2.6-.7 3.8-.2 1.2-.3 2.3-.3 3.4s0 2 .2 2.9c.2.9.5 1.6.9 2.3.3.4.6.7.9 1a4.95 4.95 0 0 0 2.4 1.1c.5.1 1 .1 1.6.1.6 0 1.1-.1 1.6-.2s1-.3 1.5-.4c.5-.2.9-.4 1.3-.7a10.6 10.6 0 0 0 3-3.3c.5-.9 1-1.8 1.3-2.9l.6-1.8c.1-.5.3-1 .4-1.6.3-1.2.5-2.4.8-3.7l.3-1.8.3-2c.2-1.2.3-2.3.3-3.3s0-2-.2-2.8c0-.9-.3-1.6-.7-2.3zM154 78.3c-.3-.3-.7-.5-1.1-.7-.4-.2-.9-.3-1.3-.4-.5-.1-1-.1-1.6-.1-.6 0-1.1 0-1.6.1s-1 .2-1.4.4c-.5.2-.9.4-1.3.7-.4.3-.8.6-1.2 1-.7.7-1.4 1.4-1.9 2.3-.5.9-1 1.8-1.4 2.9-.4 1-.7 2.2-1 3.4-.3 1.2-.6 2.5-.8 3.8-.3 1.3-.5 2.6-.7 3.8-.2 1.2-.3 2.4-.3 3.4 0 1.1 0 2 .2 2.9.2.9.5 1.7.9 2.3.3.4.6.7.9 1 .3.3.7.5 1.1.7.4.2.9.3 1.3.4.5.1 1 .1 1.6.1.6 0 1.1-.1 1.6-.2s1-.3 1.5-.4c.5-.2.9-.4 1.4-.7.4-.3.8-.6 1.2-1 .7-.7 1.3-1.5 1.9-2.3.5-.9 1-1.9 1.3-2.9l.6-1.8c.2-.7.4-1.4.6-2.2.2-1.1.5-2.2.7-3.3.1-.6.2-1.2.3-1.7l.3-2c.2-1.2.3-2.3.3-3.3s0-2-.2-2.8c-.2-.9-.5-1.6-.9-2.3-.4-.5-.7-.9-1-1.1z"/><path class="st1" d="M179.4 56.3c-.5.1-1 .2-1.5.4s-.9.4-1.4.7c-.4.3-.9.6-1.3 1-.8.7-1.4 1.5-2 2.4-.6.9-1 1.9-1.4 3-.4 1.1-.7 2.3-1.1 3.5-.3 1.2-.6 2.6-.8 4-.2.8-1.5 8.8-2.6 15.2l-1.5 8.4s0 .2-.1.5c0 .2-.1.3-.1.5-.1.7-.2 1.3-.3 1.9 0 .3-.1.5-.1.7V99.3a6.79 6.79 0 0 0 .8 3.8c.2.3.5.6.7.8l.9.6c.3.2.7.3 1.1.4h.2l-3 9.5h-.9c-1.1 0-2.1-.2-3.1-.4-.9-.2-1.8-.5-2.6-.9-.1-.1-.3-.2-.4-.3-.5-.3-1.1-.6-1.6-.9-.7-.5-1.4-1.1-1.9-1.8-.8-1.1-1.4-2.3-1.8-3.6-.5.8-1.1 1.7-1.7 2.5-.3.3-.6.7-.9 1l-.2.2c-.2.1-.3.3-.5.4-.2.1-.3.3-.5.4a14.3 14.3 0 0 1-7.2 3.2c-1 .1-2.1.2-3.3.1-1.1 0-2.1-.2-3.1-.4s-1.9-.5-2.8-.9c-.9-.4-1.6-.9-2.3-1.4-.7-.5-1.3-1.1-1.8-1.8-.9-1.2-1.4-2.6-1.8-4.1-.3-1.5-.4-3.1-.4-4.8.1-1.7.3-3.4.5-5.2.3-1.7.6-3.5 1-5.2.3-1.7.7-3.4 1.2-5.1.4-1.7.9-3.4 1.6-5.1.6-1.6 1.4-3.2 2.3-4.6.9-1.4 2-2.7 3.3-3.7.7-.6 1.5-1.1 2.4-1.6.9-.4 1.8-.8 2.8-1.1 1-.3 2-.5 3-.6 1-.1 2.1-.2 3.1-.1 1.1.1 2.1.2 3 .4.9.2 1.8.5 2.6.9s1.5.9 2.2 1.5c.6.5 1.1 1.2 1.6 1.9l.3-1.9c.3-1.6.7-3.3 1.1-5.1.4-1.8.8-3.5 1.3-5.1.5-1.6 1-3.1 1.5-4.5.2-.5.4-.9.6-1.4.1-.1.1-.3.3-.6 0 0 0-.1.1-.1.1-.2.2-.3.3-.5.2-.4.5-.8.7-1.2.5-.7 1-1.4 1.6-2 1.9-2 4.6-4.2 8.5-4.9A92.9 92.9 0 0 0 93.6 0C42-.1 0 41.8 0 93.4c0 15 3.5 29.2 9.8 41.8a9.6 9.6 0 0 0 4.6-4.1l.1-.1.1-.1c.5-.9 1-1.8 1.4-2.8.4-1 .7-2.1 1-3.3 0-.2 7.1-38.8 7.6-41.1h-6.2l3-10.3h4.9l.5-2.7c.1-.4.1-.7.2-1.1l.2-.9c.3-1.6.6-3.5.9-4.8.3-1.1.5-2 .8-2.8a22 22 0 0 1 1.3-3.4c.7-1.6 1.5-3 2.5-4.3 1-1.4 2.1-2.6 3.4-3.7.9-.8 2-1.6 3.1-2.3 1.2-.7 2.4-1.4 3.7-1.9 1.4-.6 2.9-1 4.4-1.3 1.6-.3 3.3-.5 5-.5h.2c1.7 0 3.3.2 4.7.5.6.1 1.1.3 1.6.4h.1l-3.4 10.9-.1-.1c-.1 0-.1-.1-.2-.1-.5-.2-1.1-.4-1.7-.6-.6-.1-1.3-.2-2-.2h-.1c-.7 0-1.5.1-2.2.2-.6.1-1.2.3-1.9.6h-.1-.1c-.5.2-.9.4-1.4.7-.4.3-.9.6-1.3.9-.7.6-1.4 1.3-1.9 2.2-.5.8-1 1.7-1.3 2.8-.3.9-.7 2-.9 3.3 0 .1-.2 1.1-.3 1.9-.1.7-.2 1.3-.3 1.4l-.7 4.9h7.4l-3.1 10.3h-6.1l-5.6 31.1-1.4 7.6c-.3 1.8-.6 3.3-1.1 4.8-.5 2-1.1 3.7-1.8 5.2-.7 1.6-1.6 3.1-2.6 4.4-1 1.4-2.2 2.6-3.5 3.8-1 .9-2 1.7-3.1 2.3-.9.6-1.9 1.1-3 1.6A93.3 93.3 0 0 0 93.4 187c51.6.1 93.6-41.8 93.6-93.4.1-13.2-2.7-25.8-7.6-37.3zM84.1 85.9c-.1 1.6-.4 3.4-.7 5.4-.3 2-.7 3.8-1.1 5.5-.4 1.7-.9 3.2-1.6 4.6-.6 1.4-1.3 2.7-2.2 3.9-.9 1.2-1.9 2.3-3 3.4-.8.7-1.7 1.4-2.8 2.1a23.43 23.43 0 0 1-7.4 3.1c-1.5.3-3 .5-4.7.5-1.7 0-3.2-.1-4.5-.4-1.3-.3-2.6-.7-3.6-1.2-1.1-.5-2-1.1-2.8-1.7-.8-.7-1.5-1.4-2-2.1-.8-1.1-1.4-2.2-1.9-3.4-.4-1.2-.7-2.5-.8-3.9-.1-1.4-.1-3 .1-4.6.2-1.7.4-3.5.8-5.6.4-2 .8-3.9 1.3-5.5.5-1.7 1-3.2 1.7-4.6.6-1.4 1.4-2.7 2.3-3.8.9-1.2 1.9-2.3 3.1-3.3.8-.7 1.7-1.4 2.8-2 1-.6 2.1-1.2 3.4-1.7a21.9 21.9 0 0 1 8.6-1.6c1.6 0 3.1.2 4.4.5 1.3.3 2.5.7 3.5 1.2s1.9 1.1 2.7 1.7c.8.6 1.4 1.3 2 2 .8 1 1.4 2.1 1.9 3.3.4 1.2.7 2.4.8 3.8-.2 1.3-.2 2.8-.3 4.4zm41.5 0c-.1 1.6-.4 3.4-.7 5.4-.3 2-.7 3.8-1.1 5.5-.4 1.7-1 3.2-1.6 4.6-.6 1.4-1.3 2.7-2.2 3.9-.9 1.2-1.9 2.3-3 3.4-.8.7-1.7 1.4-2.8 2.1a23.43 23.43 0 0 1-7.4 3.1c-1.5.3-3 .5-4.7.5-1.7 0-3.2-.1-4.5-.4-1.4-.3-2.6-.7-3.6-1.2-1.1-.5-2-1.1-2.8-1.7-.8-.7-1.5-1.4-2-2.1-.8-1.1-1.4-2.2-1.9-3.4-.4-1.2-.7-2.5-.8-3.9-.1-1.4-.1-3 .1-4.7.2-1.7.4-3.5.8-5.6.4-2 .8-3.9 1.3-5.5.5-1.7 1-3.2 1.7-4.6.7-1.4 1.4-2.7 2.3-3.8.9-1.2 1.9-2.3 3.1-3.3.8-.7 1.7-1.4 2.8-2 1-.6 2.1-1.2 3.4-1.7 1.2-.5 2.5-.9 4-1.1 1.4-.3 2.9-.4 4.6-.4 1.6 0 3.1.2 4.4.5 1.3.3 2.5.7 3.5 1.2s1.9 1.1 2.7 1.7c.8.6 1.4 1.3 2 2 .8 1 1.4 2.1 1.9 3.3.4 1.2.7 2.4.8 3.8-.2 1.3-.2 2.8-.3 4.4z"/><g><path class="st0" d="M59.5 137.9v-6.7c0-1.5-.9-2-1.8-2s-1.8.5-1.8 2v6.7h-2.8v-11h2.7v1c.7-.8 1.7-1.1 2.8-1.1 1.1 0 2 .4 2.6 1 .9.9 1.1 1.9 1.1 3.1v7h-2.8zM69.9 133.2c0 1.4.9 2.5 2.4 2.5 1.2 0 1.8-.3 2.5-1l1.7 1.6a5.27 5.27 0 0 1-4.2 1.7c-2.6 0-5.1-1.2-5.1-5.6 0-3.6 1.9-5.6 4.8-5.6 3.1 0 4.8 2.2 4.8 5.3v1.2h-6.9zm3.9-3c-.3-.7-.9-1.1-1.8-1.1s-1.5.5-1.8 1.1c-.2.4-.2.7-.3 1.2h4.2c0-.5-.1-.8-.3-1.2zM85.3 137.9c-2.2 0-3.2-1.6-3.2-3.2v-5.5h-1.2v-2.1h1.2v-3.3h2.8v3.3h1.9v2.1h-1.9v5.3c0 .6.3 1 1 1h1v2.3h-1.6zM103.6 137.9h-2.3L99 131l-2.3 6.9h-2.3l-3.4-11h3l1.8 6.8 2.2-6.8h2l2.3 6.8 1.8-6.8h2.9l-3.4 11zM119 136.7c-.7.7-1.8 1.4-3.4 1.4-1.6 0-2.7-.6-3.4-1.4-1-1-1.2-2.3-1.2-4.3s.3-3.2 1.2-4.3c.7-.7 1.8-1.4 3.4-1.4 1.6 0 2.7.6 3.4 1.4 1 1 1.2 2.3 1.2 4.3s-.2 3.2-1.2 4.3zm-2.1-7c-.3-.3-.7-.5-1.3-.5-.6 0-1 .2-1.3.5-.6.6-.6 1.5-.6 2.7 0 1.1.1 2.1.6 2.7.3.3.7.5 1.3.5.5 0 1-.2 1.3-.5.6-.6.6-1.5.6-2.7 0-1.2-.1-2.1-.6-2.7zM130.9 129.9c-.4-.4-.8-.7-1.5-.7-.8 0-1.8.6-1.8 2v6.6h-2.7v-11h2.7v1.1c.5-.6 1.6-1.2 2.8-1.2 1.1 0 1.8.3 2.6 1l-2.1 2.2zM143.9 137.9l-2.7-4.6-1.2 1.3v3.3h-2.8v-15.1h2.8v8.5l3.7-4.5h3.3l-3.9 4.4 4.2 6.6h-3.4z"/></g></svg>
+
+    </a>
+
+    
+
+    <svg class="a-Icon a-Icon--menu o-HeaderFresh__a-Icon o-HeaderFresh__a-Icon--menu" role="img" data-type="button-header-nav"><symbol id="icon-menu">
+    <rect height="20%" rx="1.5" width="100%" x="0" y="0"/>
+    <rect height="20%" rx="1.5" width="100%" x="0" y="40%"/>
+    <rect height="20%" rx="1.5" width="100%" x="0" y="80%"/>
+</symbol>
+<use xlink:href="#icon-menu"></use></svg>
+    <svg class="a-Icon a-Icon--close o-HeaderFresh__a-Icon o-HeaderFresh__a-Icon--close" role="img" data-type="button-close"><symbol id="icon-close" viewBox="0 0 32 32">
+    <rect height="5" rx="1.5" transform="translate(14.000000, 14.500000) rotate(-45.000000) translate(-14.000000, -14.500000) " width="34" x="-3" y="12"/>
+    <rect height="5" rx="1.5" transform="translate(14.000000, 14.500000) rotate(-135.000000) translate(-14.000000, -14.500000) " width="34" x="-3" y="12"/>
+</symbol>
+<use xlink:href="#icon-close"></use></svg>
+    <svg class="a-Icon a-Icon--search o-HeaderFresh__a-Icon o-HeaderFresh__a-Icon--search" role="img" data-type="button-search-open"><symbol id="icon-search" viewBox="0 0 30 30">
+    <path d="M20.5625,12.5625 C20.5625,10.3541556 19.7916744,8.47917437 18.25,6.9375 C16.6666587,5.35415875 14.7708444,4.5625 12.5625,4.5625 C10.3541556,4.5625 8.47917437,5.35415875 6.9375,6.9375 C5.35415875,8.47917437 4.5625,10.3541556 4.5625,12.5625 C4.5625,14.7708444 5.35415875,16.6666587 6.9375,18.25 C8.47917437,19.7916744 10.3541556,20.5625 12.5625,20.5625 C14.7708444,20.5625 16.6666587,19.7916744 18.25,18.25 C19.7916744,16.6666587 20.5625,14.7708444 20.5625,12.5625 Z M29.6875,27.4375 C29.6875,28.0625031 29.4791687,28.6041644 29.0625,29.0625 C28.6041644,29.5208356 28.0625031,29.75 27.4375,29.75 C26.77083,29.75 26.2291687,29.5208356 25.8125,29.0625 L19.6875,22.9375 C17.5624894,24.3958406 15.1875131,25.125 12.5625,25.125 C10.8541581,25.125 9.22917437,24.8125031 7.6875,24.1875 C6.14582563,23.52083 4.81250563,22.6250056 3.6875,21.5 C2.56249437,20.3749944 1.66667,19.0208413 1,17.4375 C0.33333,15.8958256 0,14.2708419 0,12.5625 C0,10.8541581 0.33333,9.22917437 1,7.6875 C1.66667,6.14582563 2.56249437,4.81250563 3.6875,3.6875 C4.81250563,2.56249437 6.14582563,1.66667 7.6875,1 C9.22917437,0.33333 10.8541581,0 12.5625,0 C14.2708419,0 15.8958256,0.33333 17.4375,1 C19.0208413,1.66667 20.3749944,2.56249437 21.5,3.6875 C22.6250056,4.81250563 23.4999969,6.14582563 24.125,7.6875 C24.79167,9.22917437 25.125,10.8541581 25.125,12.5625 C25.125,15.1875131 24.3958406,17.5624894 22.9375,19.6875 L29.0625,25.8125 C29.4791687,26.2708356 29.6875,26.8124969 29.6875,27.4375 Z"/>
+</symbol>
+<use xlink:href="#icon-search"></use></svg>
+
+    
+      
+      <div class="o-HeaderFresh__m-SocialLinks">
+        <ul>
+  <li class="m-SocialLinks__a-Button--facebook">
+    <a class="m-SocialLinks__a-Icon--facebook" href="https://www.facebook.com/FoodNetwork" target="_blank">f</a>
+  </li>
+  <li class="m-SocialLinks__a-Button--twitter">
+    <a class="m-SocialLinks__a-Icon--twitter" href="https://twitter.com/FoodNetwork" target="_blank">t</a>
+  </li>
+  <li class="m-SocialLinks__a-Button--pinterest">
+    <a class="m-SocialLinks__a-Icon--pinterest" href="https://www.pinterest.com/FoodNetwork" target="_blank">p</a>
+  </li>
+  <li class="m-SocialLinks__a-Button--snapchat">
+    <a class="m-SocialLinks__a-Icon--snapchat" href="//www.foodnetwork.com/site/snapchat-discover.html" target="_blank">s</a>
+  </li>
+  <li class="m-SocialLinks__a-Button--instagram">
+    <a class="m-SocialLinks__a-Icon--instagram" href="https://instagram.com/FoodNetwork" target="_blank">i</a>
+  </li>
+  <li class="m-SocialLinks__a-Button--youtube">
+    <a class="m-SocialLinks__a-Icon--youtube" href="https://www.youtube.com/FoodNetwork" target="_blank">y</a>
+  </li>
+</ul>
+
+      </div>
+
+      
+      
+      <div class="o-HeaderFresh__m-NavigationSecondaryFresh">
+        <ul>
+          
+            
+               
+                 <li class="m-NavigationSecondary__a-ListItem ">
+                   <a href="//www.foodnetwork.com/magazine">Magazine</a>
+                 </li>
+               
+               
+               
+            
+          
+            
+               
+               
+                 <li class="m-NavigationSecondary__a-ListItem ">
+                   <a href="http://mynewsletters.scrippsnetworks.com/?mode=subscribe&nlbrand=foodnet&source=FN_SiteHeader">Newsletters</a>
+                 </li>
+               
+               
+            
+          
+            
+               
+               
+               
+            
+          
+            
+               
+               
+               
+            
+          
+            
+               
+               
+               
+            
+          
+            
+               
+               
+               
+            
+          
+            
+               
+               
+               
+            
+          
+            
+               
+               
+               
+            
+          
+            
+               
+               
+               
+            
+          
+            
+               
+               
+               
+            
+          
+        </ul>
+      </div>
+    
+
+    
+
+    
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form action="/search" method="get" data-module="search-form" class="m-SearchFresh is-Open" data-mobile-search-box>
+  <script type="text/x-config">
+    {
+      "searchSite": "food",
+      "searchType": "global header search",
+      "selectorPrefix" : "m-SearchFresh",
+      "typeAhead": "on"
+      
+    }
+  </script>
+
+  <div class="m-SearchFresh__m-Inner">
+    <div class="m-SearchFresh__m-InputWrap">
+      <div class="m-SearchFresh__m-TypeAheadWrap" data-search-form-wrapper>
+        <div class="m-SearchFresh__m-TypeAheadField" data-search-form-field>
+          <div class="m-SearchFresh__m-TypeAheadQuery">
+            <div class="m-SearchFresh__m-InputWrapInner">
+              <input id="searchHeader" class="m-SearchFresh__a-Input" type="text" placeholder="Find Recipes, Videos and More" value="" autocomplete="off"  data-type="search-input">
+              <svg class="a-Icon a-Icon--close m-SearchFresh__a-Button--Clear" role="img" data-type="reset-btn" title="Clear Search"><use xlink:href="#icon-close"></use></svg>
+            </div>
+          </div>
+        </div>
+        <div data-typeahead-hints></div>
+      </div>
+    </div>
+    
+    
+      <svg class="a-Icon a-Icon--search m-SearchFresh__a-Button--SearchFixture" role="img"><use xlink:href="#icon-search"></use></svg>
+    
+  </div>
+</form>
+
+    
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul class="o-HeaderFresh__m-RecipeBoxMenu">
+    <li>
+      <a href="//www.foodnetwork.com/saves" class="o-HeaderFresh__a-Button--RecipeBox">
+        <svg class="a-Icon a-Icon--bookmark-filled o-HeaderFresh__a-Icon o-HeaderFresh__a-Icon--bookmark-filled" role="img"><symbol id="icon-bookmark-filled" viewBox="0 0 12 17">
+    <path d="M.5 0h11c.3 0 .5.2.5.5v15.4a.5.5 0 0 1-.8.4l-5-3.1a.5.5 0 0 0-.5 0l-5 3.1a.5.5 0 0 1-.7-.4V.5C0 .2.2 0 .5 0z" fill-rule="evenodd"/>
+</symbol>
+<use xlink:href="#icon-bookmark-filled"></use></svg>
+        Saves
+      </a>
+    </li>
+  </ul>
+
+
+
+
+
+
+
+
+
+
+  <div class="o-HeaderFresh__m-PromoWrap">
+    <div class="o-HeaderFresh__m-PromoList">
+      <ul>
+        
+          <li class="">
+            <a href="//www.foodnetwork.com/recipes">Recipes</a>
+         </li>
+        
+          <li class="">
+            <a href="//www.foodnetwork.com/healthy">Healthy</a>
+         </li>
+        
+          <li class="">
+            <a href="//www.foodnetwork.com/holidays-and-parties">Party Food</a>
+         </li>
+        
+          <li class="">
+            <a href="//www.foodnetwork.com/grilling">Grilling</a>
+         </li>
+        
+          <li class="">
+            <a href="//www.foodnetwork.com/how-to/packages/shopping">Shop</a>
+         </li>
+        
+          <li class="">
+            <a href="//www.foodnetwork.com/shows/chopped">Chopped</a>
+         </li>
+        
+          <li class="">
+            <a href="//www.foodnetwork.com/shows/the-great-food-truck-race">The Great Food Truck Race</a>
+         </li>
+        
+          <li class="">
+            <a href="//www.foodnetwork.com/shows">Shows</a>
+         </li>
+        
+        
+          <li class="o-HeaderFresh__IconLink">
+            <a href="https://watch.foodnetwork.com/?utm_source=marketingsite&utm_medium=trendingline_watchfullseasons_text" target="_blank">
+              <svg class="a-Icon a-Icon--play-box" role="img"><symbol id="icon-play-box" viewBox="0 0 23 19">
+    <g fill-rule="evenodd">
+    <path d="M2 1.5a.5.5 0 0 0-.5.5v12c0 .28.22.5.5.5h19a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5H2zM2 0h19a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2C0 .9.9 0 2 0zm2.17 18.96a.75.75 0 1 1 0-1.5h14.4a.75.75 0 0 1 0 1.5H4.17z" fill-rule="nonzero"/>
+    <path d="M10 5v6l4-3.23z"/>
+  </g>
+</symbol>
+<use xlink:href="#icon-play-box"></use></svg>
+              <span>Watch Full Seasons</span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+<nav class="o-HeaderFresh__m-NavigationMenu" data-module="mobile-nav">
+  <script type="text/x-config">
+  {
+    "gigyaScreensets": {
+      "login": "CoreFn-RegistrationLogin"
+    },
+    "moderationURL": "https://core-moderation.sniaws.com/moderateUserProfile.html",
+    "regPromoText": "Sign up to save your favorite recipes#o#44#c# videos#o#44#c# Food Network collections or create your own boards."
+  }
+  </script>
+
+
+  
+  
+
+  <div class="o-HeaderFresh__m-NavigationPrimary">
+    <ul>
+      
+      
+        <li class="is-Active">
+           <a href="//www.foodnetwork.com/recipes">Recipes</a>
+        </li>
+      
+        <li class="">
+           <a href="//www.foodnetwork.com/shows">Shows</a>
+        </li>
+      
+        <li class="">
+           <a href="//www.foodnetwork.com/profiles">Chefs</a>
+        </li>
+      
+        <li class="">
+           <a href="//www.foodnetwork.com/restaurants">Restaurants</a>
+        </li>
+      
+        <li class="">
+           <a href="//www.foodnetwork.com/videos">Videos</a>
+        </li>
+      
+    </ul>
+  </div>
+
+  
+
+  <div class="o-HeaderFresh__m-NavigationSecondary">
+    <ul>
+      
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+          <li class="m-NavigationSecondary__a-ListItem ">
+            <a href="//www.foodnetwork.com/features/articles/sweepstakes-and-contests">Sweeps</a>
+          </li>
+        
+        
+      
+        
+        
+          <li class="m-NavigationSecondary__a-ListItem ">
+            <a href="//www.foodnetwork.com/shows/tv-schedule">TV Schedule</a>
+          </li>
+        
+        
+      
+        
+        
+          <li class="m-NavigationSecondary__a-ListItem ">
+            <a href="//www.foodnetwork.com/fn-dish">Blog</a>
+          </li>
+        
+        
+      
+        
+        
+          <li class="m-NavigationSecondary__a-ListItem ">
+            <a href="//www.foodnetwork.com/site/apps">Apps</a>
+          </li>
+        
+        
+      
+        
+        
+          <li class="m-NavigationSecondary__a-ListItem ">
+            <a href="http://www.kohls.com/foodnetwork">Shop</a>
+          </li>
+        
+        
+      
+        
+        
+          <li class="m-NavigationSecondary__a-ListItem ">
+            <a href="//www.foodnetwork.com/shows/a-z">Shows A-Z</a>
+          </li>
+        
+        
+      
+        
+        
+          <li class="m-NavigationSecondary__a-ListItem ">
+            <a href="//www.foodnetwork.com/profiles/talent">Chefs A-Z</a>
+          </li>
+        
+        
+      
+        
+        
+          <li class="m-NavigationSecondary__a-ListItem ">
+            <a href="https://foodnetwork.custhelp.com/app/home">Contact Us</a>
+          </li>
+        
+        
+      
+    </ul>
+  </div>
+  
+    <ul class="o-HeaderFresh__m-ProfileInfo">
+      <li data-logged-in>
+        <span><a class="m-ProfileInfo__a-Nickname" data-social-nickname href="//www.foodnetwork.com/user-profile-page"></a></span>
+        <span><a class="m-ProfileInfo__a-Button--Logout" href="#" data-type="gigya-logout">Log Out</a></span>
+      </li>
+      <li data-logged-out>
+        <span><a class="m-ProfileInfo__a-Button--Login" href="#" data-type="gigya-login">Log In</a></span>
+        <span><a class="m-ProfileInfo__a-Button--Register" href="#" data-type="gigya-register">Sign Up</a></span>
+      </li>
+    </ul>
+  
+
+  
+
+  
+
+  <div class="o-HeaderFresh__a-Copyright">
+    © 2019  Television Food Network, G.P. All rights reserved.
+  </div>
+
+</nav>
+
+
+  </div>
+</header>
+
+  
+  
+
+
+
+</div>
+
+
+    
+    
+        
+            <div id="pushdown_adtag" class="iax_outer">
+              <div id="brandscape"></div>
+              <div class="iax_inner">
+                <div id='dfp_pushdown_brandscape'></div>
+              </div>
+             </div>
+        
+        
+    
+
+
+    
+    
+
+
+
+  
+  
+
+
+
+
+
+<div class="area" data-sni-area="content">
+
+  
+
+<div class="container ">
+	<div class="breadcrumb"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/general/breadcrumb"></span>
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+
+    
+        
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+    <ul class="o-Breadcrumb o-Breadcrumb--Dark has-Banner">
+        
+            
+        
+            
+                
+                <li>
+                    <a href="//www.foodnetwork.com">
+                        <span>Home</span>
+                    </a>
+                </li>
+            
+        
+            
+                
+                <li>
+                    <a href="//www.foodnetwork.com/recipes">
+                        <span>Recipes</span>
+                    </a>
+                </li>
+            
+        
+            
+                
+                <li>
+                    <a href="//www.foodnetwork.com/recipes/dave-lieberman">
+                        <span>Dave Lieberman</span>
+                    </a>
+                </li>
+            
+        
+    </ul>
+
+</div>
+
+    <div class="topParsys parsys">
+
+
+
+</div>
+
+</div>
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+ 
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="o-Hub">
+
+    
+    
+    
+
+    
+
+    <div class="container ">
+        
+            <div class="subNavigation"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/hidden/subNavigation"></span>
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+        
+    </div>
+</div>
+
+
+  
+  
+  
+  
+  
+  
+  <div class="container-site is-Fluid ">
+    <div class="container-fluid">
+
+      
+<div class="row">
+    <div class="col-md-28">
+        <div class="top parsys">
+
+
+
+</div>
+
+    </div>
+</div>
+
+
+    <div class="row">
+
+      <div class="col-md-18">
+        <div role="contentWell">
+          
+
+
+
+
+  
+  
+
+
+<div class="assetNavigation"><span style="display: none" class="clicktracking" data-resource-type="/apps/foodcom/components/general/assetNavigation"></span>
+  <section class="o-AssetNavigation" data-module="asset-navigation">
+    <script type="text/x-config">
+      {
+        "endAffix": ".recipe-body",
+        "urls":     ["//www.foodnetwork.com/recipes/noodle-kugel-recipe-1937787","//www.foodnetwork.com/recipes/food-network-kitchen/chard-and-caramelized-shallot-noodle-kugel-recipe-2043527"],
+        "path":     "//www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564"
+      }
+    </script>
+
+    <div class="o-AssetNavigation__m-Body prev-next-wrapper">
+      <div class="l-Columns l-Columns--2up">
+        <a href="#" data-type="previous" class="o-AssetNavigation__a-Button">Prev Recipe</a>
+        <a href="#" data-type="next" class="o-AssetNavigation__a-Button">Next Recipe</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<section class="o-Recipe">
+    
+
+
+
+  
+  
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="recipe-lead" data-module="recipe-lead">
+  <script type="text/x-config">
+      {
+          "suffixString" : "More",
+          "suffixStringLess" : "Less",
+          "moreLessLinks" : true
+       }
+  </script>
+  
+    
+    
+        <div class="recipeLead"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/recipe/recipeLead"></span>
+     <section class="o-RecipeLead o-RecipeLead--HasVideo" data-video-scroll-anchor>
+     <div class="o-RecipeLead__m-RecipeMedia">
+      
+
+      <div class="m-RecipeMedia__m-MediaBlock m-MediaBlock">
+        <div class="m-MediaBlock__m-MediaWrap">
+            <button class="m-MediaBlock__VideoButton">
+              
+    <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2011/11/23/0/FN_noodle-kugel-011_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382540988172.jpeg"/>
+    
+    
+    
+
+              <span data-type="watch-button" class="m-MediaWrap__a-Button m-MediaBlock__a-Button--Watch a-Button a-Button--Watch" tabindex="-1">
+                
+    
+    <span class="a-Button__a-ButtonText">WATCH</span>
+    
+  
+    
+  
+  
+    
+  <svg class="a-Button__a-Icon--Watch a-Button__a-Icon a-Icon--Watch a-Icon" role="img">
+    
+    <symbol id="icon-watch" viewBox="0 0 21 21">
+    <path d="M10.5 19a8.5 8.5 0 1 0 0-17 8.5 8.5 0 0 0 0 17zm0 2a10.5 10.5 0 1 1 0-21 10.5 10.5 0 0 1 0 21z"/>
+    <path d="M15.4 10.9l-8.1 4v-8z"/>
+</symbol>
+
+    <use xlink:href="#icon-watch"></use>
+  </svg>
+
+  
+
+
+    
+    
+    
+    
+  
+
+    <span class="a-Button__a-Loader a-Loader"></span>
+
+               <span class="a-Button__a-Loader a-Loader"></span>
+              </span>
+            </button>
+            
+
+        </div>
+      </div>
+    </div>
+    
+      
+  
+    <section class="o-VideoPlaylist " data-module="video-playlist">
+      <script type="text/x-config">
+      {
+        "isOverlay": true,
+        "player": {
+            "autoplay": false,
+            "logLevel": "warn",
+            "containerId": "video-player_",
+            "controlHoverColor": "0xffffff",
+            "controlSelectedColor": "0xffffff",
+            "playProgressColor": "0xffffff"
+        },
+        "channels": [{
+            "id": "393939393",
+            "start": 0,
+            "end": 0,
+            "total": 1,
+            "title": "",
+            "description": "",
+            "videos": [{"id":"http://data.media.theplatform.com/media/data/Media/276759107842","title":"Noodle Kugel","description":"Dave shares his grandmother's recipe for noodle kugel, a creamy dessert.","releaseUrl":"http://link.theplatform.com/s/ip77QC/QmKQRe53aQdq?&format=SMIL&MBR=true","thumbnailUrl":"/content/dam/images/food/video/0/01/012/0128/0128633.jpg","length":"229","duration":"03:49","publisherId":"Food Network","nlvid":"0128633","scrid":"624455","cmsid":"441030ff-0357-4cd4-a6c6-a9bb550c2caa","sniGUID":"","sponsor":"","mdm":"{\"Type\":\"videoPlaylistOverlay\",\"UniqueID\":\"441030ff-0357-4cd4-a6c6-a9bb550c2caa\"}"}]
+        }]
+      }
+      </script>
+      <template class="watch-button-template" style="display: none">
+        
+  
+
+
+
+  
+  
+
+
+
+  <div data-type="watch-button">
+    
+      
+        
+  
+  <a class="a-Button a-Button m-VideoPlayer__a-Button">
+    
+    <span class="a-Button__a-ButtonText">WATCH</span>
+    
+  
+    
+  
+  
+    
+  <svg class="a-Button__a-Icon--Watch a-Button__a-Icon a-Icon--Watch a-Icon" role="img">
+    
+    
+    <use xlink:href="#icon-watch"></use>
+  </svg>
+
+  
+
+
+    
+    
+    
+    
+  
+
+  </a>
+
+      
+      
+    
+  </div>
+
+      </template>
+      
+  
+
+      <div class="container container--wide">
+        <div class="o-VideoPlaylist__m-Body">
+          <div class="o-VideoPlaylist__VideoContainer">
+            <div class="o-VideoPlaylist__VideoDragContainer">
+              <div class="o-VideoPlaylist__VideoContentContainer">
+                <div class="o-VideoPlaylist__m-closeContainer">
+                  <a class="o-VideoPlaylist__a-Button--Close m-ButtonWrap" data-type="modal-close" aria-label="Close inline video" title="Close inline video"></a>
+                </div>
+                <button class="o-VideoPlaylist__VideoDragHandle">
+                  
+  <svg class="o-VideoPlaylist__a-Icon--drag o-VideoPlaylist__a-Icon a-Icon--drag a-Icon" role="img">
+    
+    <symbol id="icon-drag" viewBox="0 0 23.7 23.7">
+    <path d="M23.6 11.6l-4.1-4.1c-.2-.2-.6-.1-.6.3v2.6h-5.5V4.9H16c.3 0 .5-.4.3-.6L12.2.2c-.2-.2-.4-.2-.6-.1L7.5 4.2c-.2.3-.1.7.3.7h2.6v5.5H4.9V7.8c0-.3-.4-.5-.6-.3L.2 11.6c-.2.1-.2.4-.1.5l4.1 4.1c.2.2.6.1.6-.3v-2.6h5.5v5.5H7.8c-.3 0-.5.4-.3.6l4.1 4.1c.1.1.4.1.5 0l4.1-4.1c.2-.2.1-.6-.3-.6h-2.6v-5.5h5.5V16c0 .3.4.5.6.3l4.1-4.1c.3-.2.3-.5.1-.6z" fill="#ffffff"/>
+</symbol>
+
+    <use xlink:href="#icon-drag"></use>
+  </svg>
+
+                </button>
+                <div class="o-VideoPlaylist__m-VideoPlayer m-VideoPlayer" data-video-player>
+                  <div class="m-VideoPlayer__a-Container" data-video-container>
+                    <div id="video-player_" class="m-VideoPlayer__a-ContainerInner"></div>
+                  </div>
+                  <div class="a-DotLoader a-DotLoader--Loading">
+                    <div class="a-DotLoader__Container">
+                      <span class="a-DotLoader__Label">Loading Video...</span>
+                      <div class="a-DotLoader__CircleContainer a-DotLoader__CircleContainer--Loading loading-screen__load-icon">
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--1"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--2"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--3"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--4"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--5"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--6"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--7"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--8"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--9"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--10"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--11"></div>
+                        <div class="a-DotLoader__Circle a-DotLoader__Circle--12"></div>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="o-VideoPlaylist__VideoContainerOverlay"></div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+
+      
+        <div class="o-VideoPlaylist__m-Footer m-Footer" style="display: none" data-cta-area>
+          <a class="o-VideoPlaylist__a-Button" data-cta>See more</a>
+          
+  <div class="o-ReviewSummary" style="display: none" data-reviews>
+    <div id="rating-stars-link" class="m-Rating">
+      <a class="m-Rating__a-StarsLink" href="#reviewsTop" data-reviews-link>
+        <span class="gig-rating-stars" title="5 of 5 stars" data-stars-container>
+          <div class="gig-rating-star gig-rating-star-full"></div>
+          <div class="gig-rating-star gig-rating-star-full"></div>
+          <div class="gig-rating-star gig-rating-star-full"></div>
+          <div class="gig-rating-star gig-rating-star-full"></div>
+          <div class="gig-rating-star gig-rating-star-full"></div>
+        </span>
+        <span class="gig-rating-ratingsum" data-reviews-text>(12)</span>
+      </a>
+    </div>
+  </div>
+
+        </div>
+      
+
+    </section>
+
+  
+
+    
+  </section>
+
+</div>
+
+        
+
+
+
+  
+  
+
+
+<!-- Recipe Info (Summary) Section -->
+<div class="m-RecipeSummary" data-module="recipe-summary">
+  <script type="text/x-config">
+        {
+            "suffixString" : "More",
+            "suffixStringLess" : "Less",
+            "moreLessLinks" : true
+         }
+  </script>
+  
+   
+   
+        <div class="attribution"><span style="display: none" class="clicktracking" data-resource-type="/apps/foodcom/components/recipe/attribution"></span>
+
+
+
+  
+  
+
+
+
+ 
+ 
+    
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+    <div class="o-Attribution">
+      <div class="o-Attribution__m-Body">
+      
+        
+          
+          <div class="o-Attribution__m-MediaWrap">
+            
+              
+                
+                  <a href="//www.foodnetwork.com/profiles/talent/dave-lieberman">
+                    <img class="o-Attribution__a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/editorial/talent/dave-lieberman/av-dave-lieberman.jpg.rend.hgtvcom.126.126.suffix/1371587225318.jpeg"/>
+                  </a>
+                
+                
+              
+            
+          </div>
+        
+        <div class="o-Attribution__m-TextWrap">
+          
+          
+            <div class="o-Attribution__m-Author">
+              <span class="o-Attribution__a-Author--Prefix">
+                
+                
+                  
+                  <span class="o-Attribution__a-Name">
+                    
+                      
+                          <a href="//www.foodnetwork.com/profiles/talent/dave-lieberman">Recipe courtesy of Dave Lieberman</a>
+                      
+                      
+                    
+                  </span>
+                
+                
+                
+                
+                
+              </span>
+            </div>
+          
+          
+
+          
+      	</div>
+      		
+      </div>
+    	
+    </div>
+  
+
+  
+ 
+  
+
+
+ 
+
+</div>
+
+         
+            <div class="assetTitle"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/article/assetTitle"></span>
+<section class="o-AssetTitle">
+  <h1 class="o-AssetTitle__a-Headline">
+    <span class="o-AssetTitle__a-HeadlineText">Noodle Kugel</span>
+  </h1>
+</section>
+</div>
+
+          
+        <div class="review reviewSummary"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/hidden/reviewSummary"></span>
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+    
+      
+      
+      
+    
+    
+    
+  
+
+  <div class="o-ReviewSummary" data-module="gigya/ratings">
+    <script type="text/x-config">
+        {
+          "streamID": "119f989e-20f6-4032-a895-e3e92f6310a8",
+          "categoryID": "recipe",
+          "widgetType":"stars-link",
+          "containerID":"rating-stars-link",
+          "setName": "reviewSummary",
+          "setCount": 1
+        }
+    </script>
+    <div id="rating-stars-link" class="m-Rating">
+      <a class="m-Rating__a-StarsLink" href="#reviewsTop">
+        <span class="gig-rating-stars " title="pending rating">
+          <div class="gig-rating-star gig-rating-star-empty"></div>
+          <div class="gig-rating-star gig-rating-star-empty"></div>
+          <div class="gig-rating-star gig-rating-star-empty"></div>
+          <div class="gig-rating-star gig-rating-star-empty"></div>
+          <div class="gig-rating-star gig-rating-star-empty"></div>
+        </span>
+        <span class="gig-rating-ratingsum is-Disabled">Getting reviews...</span>
+       </a>
+    </div>
+  </div>
+
+</div>
+
+   
+  
+</div>
+
+    
+  
+
+
+
+  <div class="assetDescription"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/article/assetDescription"></span>
+
+</div>
+
+  <div class="o-AssetActions o-AssetActions--saves">
+      
+         <div class="assetSave"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/general/assetSave"></span>
+
+  
+  
+
+  <div class="o-AssetSave" data-module="asset-save">
+    <script type="text/x-config">{"savesEndpointUrl": "https://api.foodnetwork.com/fn-web/v1"}</script>
+
+    <a class="o-AssetActions__a-Button o-AssetSave__a-Button--Save a-Button--Save" data-type="save-asset" data-asset-type="Recipe">
+      
+  
+    
+  <svg class="a-Button__a-Icon--Bookmark a-Button__a-Icon a-Icon--Bookmark a-Icon" role="img">
+    
+    <symbol id="icon-bookmark" viewBox="0 0 14 19">
+    <path d="M12.5 16.9V1.5h-11v15.4l5.06-3.2a.75.75 0 0 1 .8 0l5.14 3.2zm-5.54-1.67l-5.81 3.65A.75.75 0 0 1 0 18.25V.75C0 .34.34 0 .75 0h12.5c.41 0 .75.34.75.75v17.5c0 .59-.65.95-1.15.64l-5.89-3.66z"/>
+</symbol>
+
+    <use xlink:href="#icon-bookmark"></use>
+  </svg>
+
+  
+
+      <span class="a-Button__a-ButtonText">Save Recipe</span>
+    </a>
+
+  </div>
+
+</div>
+
+         <div class="assetPrint"><span style="display: none" class="clicktracking" data-resource-type="/apps/foodcom/components/general/assetPrint"></span>
+
+  <div class="o-AssetPrint" data-module="asset-print">
+    <a class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--print" href="//www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564.recipePrint" title="Print Recipe" data-type="print-asset">
+      
+  
+    
+  <svg class="a-Button__a-Icon--Print a-Button__a-Icon a-Icon--Print a-Icon" role="img">
+    
+    <symbol id="icon-print" viewBox="0 0 21 19">
+    <path d="M5.3 13v6H16v-6H5.3zm1.3 2.3h8v-1.2h-8v1.2zm0 2.5h8v-1.3h-8v1.3zM5.3 0v6H16V0z"/>
+    <path d="M18.3 3.7H17v3.9H4v-4H2.5C1.3 3.7 0 5 0 6.4v6.4c0 1.3 1.3 2.6 2.6 2.6H4v-3.9H17v3.9h1.3c1.3 0 2.6-1.3 2.6-2.6V6.3c0-1.3-1.3-2.6-2.6-2.6"/>
+</symbol>
+
+    <use xlink:href="#icon-print"></use>
+  </svg>
+
+  
+
+    </a>
+  </div>
+
+
+</div>
+
+      
+  </div>
+
+<div class="categories"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/recipe/categories"></span>
+  
+
+</div>
+
+
+<div class="recipeInfo"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/recipe/recipeInfo"></span>
+
+  
+
+  
+    <div class="o-RecipeInfo">
+      
+  
+
+  
+    
+    
+      <ul class="o-RecipeInfo__m-Level">
+        
+  <li>
+    <span class="o-RecipeInfo__a-Headline">Level:</span>
+    <span class="o-RecipeInfo__a-Description">Easy</span>
+  </li>
+
+
+        <li>
+          <span class="o-RecipeInfo__a-Headline m-RecipeInfo__a-Headline--Total">Total:</span>
+          <span class="o-RecipeInfo__a-Description m-RecipeInfo__a-Description--Total">50 min</span>
+          
+        </li>
+      </ul>
+      <ul class="o-RecipeInfo__m-Time">
+        <li>
+          <span class="o-RecipeInfo__a-Headline">Prep:</span>
+          <span class="o-RecipeInfo__a-Description">5 min</span>
+        </li>
+        
+        <li>
+          <span class="o-RecipeInfo__a-Headline">Cook:</span>
+          <span class="o-RecipeInfo__a-Description">45 min</span>
+        </li>
+      </ul>
+    
+  
+  
+
+
+      <ul class="o-RecipeInfo__m-Yield">
+        <span style="display: none" class="clicktracking" data-resource-type="sni-foundation/components/recipe/yield"></span>
+  <li>
+    <span class="o-RecipeInfo__a-Headline">Yield:</span>
+    <span class="o-RecipeInfo__a-Description">6-8 servings</span>
+  </li>
+
+
+        <span style="display: none" class="clicktracking" data-resource-type="sni-foundation/components/recipe/nutritionInfo"></span>
+  
+
+
+      </ul>
+    </div>
+  
+
+</div>
+
+ 
+     <div class="wallOfText"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/recipe/wallOfText"></span>
+  
+</div>
+
+ 
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<!-- Asset Actions == save + print + social in beta -->
+  <div class="o-AssetActions">
+    
+    <div class="o-AssetActions__o-SocialShare o-SocialShare" id="vote-modal">
+      
+        <span class="o-SocialShare__a-Title">Share This Recipe</span>
+      
+      <div class="socialToolbar socialSharing"><span style="display: none" class="clicktracking" data-resource-type="/apps/foodcom/components/general/socialSharing"></span>
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+	<div class="o-SocialShare" data-module="social-share">
+  <script type="text/x-config">
+    {
+      "socialShare": {
+        "shareSource": false
+      }
+    }
+  </script>
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<ul class="m-SocialIcons " data-social-share-wrap >
+  <li>
+    <a href="http://pinterest.com/pin/create/button/?url=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564" target="_blank" title="Share on Pinterest" class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--pinterest" data-social-share-network="pinterest" data-pin-custom="true">
+      
+      <span class="o-SocialShare__m-IconWrap">
+        <svg class="a-Icon a-Icon--pinterest o-SocialShare__a-Icon o-SocialShare__a-Icon--pinterest" role="img"><symbol id="icon-pinterest" viewBox="0 0 23 29">
+    <path d="M9.30200913,19.1876287 C8.88664247,21.1889408 8.38632195,23.0769427 7.80103257,24.8516912 C7.21574318,26.6264396 6.22454216,28.0235611 4.82739976,29.0430974 C4.4120331,26.022249 4.55363324,23.3035262 5.25220444,20.8868474 C5.95077565,18.4701687 6.54549626,16.0535262 7.03638413,13.6368474 C6.20565081,12.239705 6.17733078,10.5405033 6.95142319,8.53919117 C7.72551561,6.53787908 8.99991692,5.89595841 10.7746654,6.61340992 C11.8319623,7.02877658 12.2662028,7.81229739 12.0773998,8.96399586 C11.8885967,10.1156943 11.5959564,11.3240156 11.1994701,12.5889959 C10.8029837,13.8539761 10.5669835,15.0150973 10.4914623,16.0723943 C10.415941,17.1296912 11.0578617,17.8093719 12.4172435,18.1114568 C13.8521465,18.375781 15.0510278,17.9981806 16.0139232,16.9786443 C16.9768186,15.9591079 17.6659393,14.6941466 18.081306,13.1837224 C18.4966727,11.6732982 18.6193928,10.1156966 18.4494701,8.51087086 C18.2795473,6.90604512 17.7603468,5.65052382 16.8918529,4.74426929 C15.6079923,3.46040871 14.1259108,2.77128799 12.4455638,2.67688648 C10.7652169,2.58248497 9.20761526,2.92232532 7.77271226,3.69641773 C6.33780925,4.47051014 5.16724804,5.5844313 4.26099351,7.03821461 C3.35473898,8.49199792 3.05265866,10.1439996 3.35474351,11.9942693 C3.50578593,12.8627632 3.84562628,13.570764 4.37427476,14.1182927 C4.90292323,14.6658215 4.80852314,15.5626224 4.09107163,16.8087224 C2.4673656,16.4311164 1.36288445,15.6475956 0.777595069,14.4581365 C0.192305684,13.2686774 -0.0625745792,11.8243559 0.0129466317,10.1251287 C0.126228448,7.33084386 1.19294955,5.02748148 3.21314194,3.21497242 C5.23333434,1.40246336 7.43285661,0.364062282 9.81177476,0.0997380433 C12.8703838,-0.240107406 15.6363067,0.288533141 18.1096263,1.68567554 C20.582946,3.08281795 22.0272675,5.21626015 22.4426341,8.08606617 C22.6691978,9.7097722 22.6125577,11.3240139 22.2727123,12.9288396 C21.9328668,14.5336653 21.3664662,15.9591068 20.5734935,17.2052068 C19.7805208,18.4513068 18.7515597,19.4330678 17.4865794,20.1505193 C16.2215992,20.8679708 14.7772777,21.1700511 13.1535716,21.0567693 C12.2850777,20.9812481 11.595957,20.7546878 11.0861888,20.3770818 C10.5764206,19.9994757 9.98170003,19.6029953 9.30200913,19.1876287 Z"/>
+</symbol>
+<use xlink:href="#icon-pinterest"></use></svg>
+      </span>
+      <span class="o-SocialShare__a-Label">Pinterest</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.facebook.com/sharer.php?u=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564" target="_blank" title="Share on Facebook" class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--facebook" data-social-share-network="facebook">
+      <span class="o-SocialShare__m-IconWrap">
+        <svg class="a-Icon a-Icon--facebook o-SocialShare__a-Icon o-SocialShare__a-Icon--facebook" role="img"><symbol id="icon-facebook" viewBox="0 0 12 27">
+    <path d="M8.26953125,8.72265625 L12.4042969,8.72265625 L11.9511719,13.3671875 L8.26953125,13.3671875 L8.26953125,26.6777344 L2.77539062,26.6777344 L2.77539062,13.3671875 L0,13.3671875 L0,8.72265625 L2.77539062,8.72265625 L2.77539062,6.00390625 C2.77539062,4.04035477 3.22851109,2.54883322 4.13476562,1.52929688 C5.07878076,0.509760527 6.60806234,0 8.72265625,0 L12.4042969,0 L12.4042969,4.58789062 L10.0820312,4.58789062 C9.66666459,4.58789062 9.32682424,4.62565066 9.0625,4.70117188 C8.83593637,4.77669309 8.66601619,4.90885322 8.55273438,5.09765625 C8.43945256,5.28645928 8.36393248,5.47525947 8.32617188,5.6640625 C8.28841127,5.85286553 8.26953125,6.1171858 8.26953125,6.45703125 L8.26953125,8.72265625 Z"/>
+</symbol>
+<use xlink:href="#icon-facebook"></use></svg>
+      </span>
+      <span class="o-SocialShare__a-Label">Facebook</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/intent/tweet?text=Noodle+Kugel&url=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564&original_referer=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564" target="_blank" title="Share on Twitter" class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--twitter" data-social-share-network="twitter">
+      <span class="o-SocialShare__m-IconWrap">
+        <svg class="a-Icon a-Icon--twitter o-SocialShare__a-Icon o-SocialShare__a-Icon--twitter" role="img"><symbol id="icon-twitter" viewBox="0 0 25 21">
+    <path d="M25.4882812,2.43554688 C24.7708297,3.49284383 23.9023488,4.39908477 22.8828125,5.15429688 L22.8828125,5.83398438 C22.8828125,7.23112678 22.6751323,8.62824822 22.2597656,10.0253906 C21.844399,11.422533 21.2213583,12.7630144 20.390625,14.046875 C19.5598917,15.3307356 18.5592506,16.4635368 17.3886719,17.4453125 C16.2558537,18.4270882 14.8776123,19.2200491 13.2539062,19.8242188 C11.5924396,20.3906278 9.83659779,20.6738281 7.98632813,20.6738281 C5.0787615,20.6738281 2.41667875,19.8997473 0,18.3515625 C0.377606055,18.3893231 0.792966484,18.4082031 1.24609375,18.4082031 C3.6627725,18.4082031 5.81509473,17.6718824 7.703125,16.1992188 C6.57030684,16.1614581 5.5696658,15.8027378 4.70117188,15.1230469 C3.79491734,14.443356 3.1718767,13.5937551 2.83203125,12.5742188 C3.2096373,12.6119794 3.54947766,12.6308594 3.8515625,12.6308594 C4.30468977,12.6308594 4.75781023,12.5742193 5.2109375,12.4609375 C4.00259812,12.1966133 3.00195709,11.5924526 2.20898438,10.6484375 C1.41601166,9.70442236 1.01953125,8.59050121 1.01953125,7.30664062 L1.01953125,7.25 C1.73698275,7.66536666 2.52994357,7.89192689 3.3984375,7.9296875 C2.680986,7.43879963 2.11458541,6.81575898 1.69921875,6.06054688 C1.24609148,5.30533477 1.01953125,4.47461391 1.01953125,3.56835938 C1.01953125,2.62434424 1.2649715,1.75586334 1.75585938,0.962890625 C3.07748057,2.54883605 4.66340221,3.83267738 6.51367187,4.81445312 C8.40170215,5.75846826 10.4029842,6.28710881 12.5175781,6.40039062 C12.4420569,5.98502396 12.4042969,5.58854355 12.4042969,5.2109375 C12.4042969,3.77603449 12.9140574,2.54883322 13.9335938,1.52929688 C14.9531301,0.509760527 16.1803314,0 17.6152344,0 C19.1256586,0 20.4094999,0.547520566 21.4667969,1.64257813 C22.6373756,1.41601449 23.7324168,1.00065406 24.7519531,0.396484375 C24.3743471,1.60482375 23.6191463,2.54882473 22.4863281,3.22851562 C23.4681039,3.15299441 24.4687449,2.88867414 25.4882812,2.43554688 Z"/>
+</symbol>
+<use xlink:href="#icon-twitter"></use></svg>
+      </span>
+      <span class="o-SocialShare__a-Label">Twitter</span>
+    </a>
+  </li>
+  <li>
+    <a href="mailto:?body=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564&subject=Shared%20from%20Food Network" title="Share by Email" class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--email" data-social-share-network="email">
+      <span class="o-SocialShare__m-IconWrap">
+        <svg class="a-Icon a-Icon--email o-SocialShare__a-Icon o-SocialShare__a-Icon--email" role="img"><symbol id="icon-email" viewBox="0 0 18 14">
+    <path d="M18 1.1L9 7.9 0 1.1C0 0.8 0.1 0.5 0.3 0.3 0.5 0.1 0.8 0 1.1 0L16.9 0C17.2 0 17.5 0.1 17.7 0.3 17.9 0.5 18 0.8 18 1.1ZM0 3.2L9 9.9 18 3.2 18 12.4C18 12.7 17.9 13 17.7 13.2 17.5 13.4 17.2 13.5 16.9 13.5L1.1 13.5C0.8 13.5 0.5 13.4 0.3 13.2 0.1 13 0 12.7 0 12.4L0 3.2Z"/>
+</symbol>
+<use xlink:href="#icon-email"></use></svg>
+      </span>
+      <span class="o-SocialShare__a-Label">Email</span>
+    </a>
+  </li>
+</ul>
+
+  <div class="m-GigyaShareWrap"></div>
+</div>
+
+</div>
+
+      
+      
+      
+      <a class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--facebookMessenger" href="http://facebook.com/dialog/send?link=https://www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564&redirect_uri=https://www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564&app_id=582148248497951">
+        <svg class="a-Icon a-Icon--messenger a-Button__a-Icon a-Button__a-Icon--messenger" role="img"><symbol id="icon-messenger" viewBox="0 0 28 13">
+    <path d="M16.3 12.5l-5.6-5.8L0 12.6 11.7.1 17.3 6 28 0z"/>
+</symbol>
+<use xlink:href="#icon-messenger"></use></svg>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+
+    
+
+
+
+  
+  
+
+
+
+  
+
+  <div class="recipe-body">
+
+    
+
+    <div class="bodyLeft">
+      <section>
+  <section class="o-Ingredients">
+    
+    <header class="o-Ingredients__m-Header">
+      <div class="o-Ingredients__m-TextWrap">
+        
+  <h3 class="o-Ingredients__a-Headline">
+    
+      <span class="o-Ingredients__a-HeadlineText">Ingredients</span>
+      
+    
+  </h3>
+
+      </div>
+    </header>
+
+    <div class="o-Ingredients__m-Body">
+      
+      
+        
+        
+
+        
+        
+          <p class="o-Ingredients__a-Ingredient">1/2 pound wide kosher for Passover egg noodles</p>
+        
+          <p class="o-Ingredients__a-Ingredient">1/2 stick butter, melted</p>
+        
+          <p class="o-Ingredients__a-Ingredient">1 pound cottage cheese</p>
+        
+          <p class="o-Ingredients__a-Ingredient">2 cups sour cream</p>
+        
+          <p class="o-Ingredients__a-Ingredient">1/2 cup sugar</p>
+        
+          <p class="o-Ingredients__a-Ingredient">6 eggs</p>
+        
+          <p class="o-Ingredients__a-Ingredient">1 teaspoon ground cinnamon</p>
+        
+          <p class="o-Ingredients__a-Ingredient">1/2 cup raisins</p>
+        
+      
+    </div>
+    <div class="o-Ingredients__m-Footer">
+      
+      <div id="dfp_native_ingredient"></div>
+    </div>
+    <div id="CCKU-VPLO-TYHX-LNGN" class="whisk-container">
+      <script>
+        whisk.queue.push(function () {
+          whisk.display("CCKU-VPLO-TYHX-LNGN");
+        });
+      </script>
+    </div>
+  </section>
+
+</section>
+    </div>
+
+    <div class="bodyRight">
+
+      
+      
+        <header class="o-Method__m-Header">
+          <div class="o-Method__m-TextWrap">
+            
+  <h3 class="o-Method__a-Headline">
+    
+      <span class="o-Method__a-HeadlineText">Directions</span>
+      
+    
+  </h3>
+
+          </div>
+        </header>
+      
+
+      
+        
+  <div class="o-VideoPromo" data-module="launch-lead-video">
+    <div class="l-List">
+      <div class="m-MediaBlock">
+        <div class="m-MediaBlock__m-MediaWrap">
+          
+  <a href="#launch-lead-video" data-type="launch-lead-video">
+    <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2011/11/23/0/FN_noodle-kugel-011_s4x3.jpg.rend.hgtvcom.126.95.suffix/1382540988172.jpeg"/>
+    
+    
+    
+  </a>
+
+          
+  
+    
+      
+  <a href="#launch-lead-video" data-type="launch-lead-video" class="m-MediaBlock__a-Button m-MediaBlock__a-Button--Watch a-Button a-Button--Watch">
+    
+    WATCH
+    
+  
+    
+  
+  
+    
+  <svg class="a-Button__a-Icon--Watch a-Button__a-Icon a-Icon--Watch a-Icon" role="img">
+    
+    
+    <use xlink:href="#icon-watch"></use>
+  </svg>
+
+  
+
+
+    
+    
+    
+    
+  
+
+  </a>
+
+    
+    
+  
+
+        </div>
+        <div class="m-MediaBlock__m-TextWrap">
+          
+  <a class="m-MediaBlock__a-Cta" href="#launch-lead-video" data-type="launch-lead-video">Watch how to make this recipe.</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      
+      
+
+      
+  <section class="o-Method" data-module="recipe-method" data-read-more-target>
+
+    
+
+    
+    <div class="o-Method__m-Body">
+
+      
+      
+        
+        
+        <ol>
+          
+          
+            <li class="o-Method__m-Step">
+              Preheat oven to 375 degrees F.
+            </li>
+          
+            <li class="o-Method__m-Step">
+              Boil the noodles in salted water for about 4 minutes. Strain noodles from water. In a large mixing bowl, combine noodles with remaining ingredients and pour into a greased, approximately 9-by-13-inch baking dish.
+            </li>
+          
+            <li class="o-Method__m-Step">
+              Bake until custard is set and top is golden brown, about 30 to 45 minutes.
+            </li>
+          
+        </ol>
+      
+    </div>
+  </section>
+
+
+      
+
+      <section class="bodyRight-footer">
+        
+
+        
+
+        
+
+      </section>
+    </div>
+  </div>
+
+  <div class="recipe-body-footer">
+    
+      
+  <div class='private-notes' data-module="recipe-private-notes">
+    <script type="text/x-config">{
+          "recipeBoxUrl": "https://api.foodnetwork.com/fn-web/v1"
+        }
+    </script>
+    <header class="o-Capsule__m-Header">
+      <div class="o-Capsule__m-TextWrap">
+        <h3 class="o-Capsule__a-Headline">
+          <span class="o-Capsule__a-HeadlineText">My Private Notes</span>
+        </h3>
+      </div>
+    </header>
+
+    <div class="private-notes-body">
+      <section class="add-note" data-type="add-note">
+        
+  
+    
+  <svg class="a-Button__a-Icon--Add a-Button__a-Icon a-Icon--Add a-Icon" role="img">
+    
+    <symbol id="icon-add" viewBox="0 0 20 20">
+    <path d="M8.3 8.3V1.7C8.3.7 9.1 0 10 0c.9 0 1.7.7 1.7 1.7v6.7h6.7c.9 0 1.7.7 1.7 1.7 0 .9-.7 1.7-1.7 1.7h-6.7v6.7c0 .9-.7 1.7-1.7 1.7-.9 0-1.7-.7-1.7-1.7v-6.7H1.7C.7 11.7 0 10.9 0 10s.7-1.7 1.7-1.7h6.6z"/>
+</symbol>
+
+    <use xlink:href="#icon-add"></use>
+  </svg>
+
+  
+
+        <span class="add-note__title">Add a Note</span>
+      </section>
+    </div>
+  </div>
+
+
+    
+    <!-- More Related Component -->
+    
+  
+
+
+
+    <!-- Video Promo Component -->
+    
+      
+  <div class="o-VideoPromo" data-module="launch-lead-video">
+    <div class="l-List">
+      <div class="m-MediaBlock">
+        <div class="m-MediaBlock__m-MediaWrap">
+          
+  <a href="#launch-lead-video" data-type="launch-lead-video">
+    <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2011/11/23/0/FN_noodle-kugel-011_s4x3.jpg.rend.hgtvcom.126.95.suffix/1382540988172.jpeg"/>
+    
+    
+    
+  </a>
+
+          
+  
+    
+      
+  <a href="#launch-lead-video" data-type="launch-lead-video" class="m-MediaBlock__a-Button m-MediaBlock__a-Button--Watch a-Button a-Button--Watch">
+    
+    WATCH
+    
+  
+    
+  
+  
+    
+  <svg class="a-Button__a-Icon--Watch a-Button__a-Icon a-Icon--Watch a-Icon" role="img">
+    
+    
+    <use xlink:href="#icon-watch"></use>
+  </svg>
+
+  
+
+
+    
+    
+    
+    
+  
+
+  </a>
+
+    
+    
+  
+
+        </div>
+        <div class="m-MediaBlock__m-TextWrap">
+          
+
+
+
+  
+  
+
+
+
+ 
+ 
+    
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+  
+
+  
+ 
+    
+    
+    
+        
+            <div class="m-MediaBlock__a-Source">
+              <span class="m-MediaBlock__a-Source--Prefix">Show:</span>
+              
+                
+                
+                <span class="m-MediaBlock__a-Source--Name">
+                  
+                    
+                        <a href="//www.foodnetwork.com/shows/good-deal-with-dave-lieberman">Good Deal with Dave Lieberman</a>
+                    
+                    
+                  
+                </span>
+              
+            </div>
+            
+              <div class="m-MediaBlock__a-Source">
+                  <span class="m-MediaBlock__a-Source--Prefix">Episode:</span>
+                    
+                        
+                        
+                        <span class="m-MediaBlock__a-Source--Name">
+                            
+                                
+                                    <a href="//www.foodnetwork.com/shows/good-deal-with-dave-lieberman/episodes/grandmas-visit">Grandma's Visit</a>
+                                
+                                
+                            
+                        </span>
+                    
+                </div>
+            
+      
+      
+    
+  
+  
+
+
+ 
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+    <!-- Categories Component -->
+    
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+  
+    
+  
+  
+
+
+
+  
+    
+  
+  
+
+
+
+
+
+  <section class="o-Capsule o-Tags">
+    <div class="o-Capsule__m-Body">
+      <h5 class="o-Capsule__a-Subheadline a-Subheadline">Categories:</h5>
+      <div class="o-Capsule__m-TagList m-TagList">
+        
+          <a href="//www.foodnetwork.com/topics/easy-pasta" class="o-Capsule__a-Tag a-Tag" title="Easy Pasta Recipes">Easy Pasta Recipes</a>
+        
+          <a href="//www.foodnetwork.com/topics/easy" class="o-Capsule__a-Tag a-Tag" title="Easy">Easy</a>
+        
+          <a href="//www.foodnetwork.com/topics/pasta" class="o-Capsule__a-Tag a-Tag" title="Pasta Recipes">Pasta Recipes</a>
+        
+          <a href="//www.foodnetwork.com/topics/easy-side-dish" class="o-Capsule__a-Tag a-Tag" title="Easy Side Dish Recipes">Easy Side Dish Recipes</a>
+        
+          <a href="//www.foodnetwork.com/topics/side-dish" class="o-Capsule__a-Tag a-Tag" title="Side Dish">Side Dish</a>
+        
+          <a href="//www.foodnetwork.com/topics/easy-baking" class="o-Capsule__a-Tag a-Tag" title="Easy Baking">Easy Baking</a>
+        
+          <a href="//www.foodnetwork.com/topics/jewish-cooking" class="o-Capsule__a-Tag a-Tag" title="Jewish Cooking">Jewish Cooking</a>
+        
+          <a href="//www.foodnetwork.com/topics/holiday" class="o-Capsule__a-Tag a-Tag" title="Holiday">Holiday</a>
+        
+          <a href="//www.foodnetwork.com/topics/dairy" class="o-Capsule__a-Tag a-Tag" title="Dairy Recipes">Dairy Recipes</a>
+        
+          <a href="//www.foodnetwork.com/topics/noodles" class="o-Capsule__a-Tag a-Tag" title="Noodles">Noodles</a>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- More From Component -->
+    
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+
+  <section class="o-Capsule o-PackagePromo">
+      <header class="o-Capsule__m-Header"></header>
+      <div class="o-Capsule__m-Body">
+          
+          
+          
+              
+              
+                  <div class="o-PackagePromo__a-SubHeadline">More from: </div>
+              
+              
+          
+          
+              
+              
+                  <h3 class="o-PackagePromo__a-Headline"><a class="o-PackagePromo__a-HeadlineText" href="//www.foodnetwork.com/holidays-and-parties/packages/holidays/holiday-central-hanukkah">The Best Hanukkah Recipes</a></h3>
+              
+              
+          
+      </div>
+  </section>
+
+
+
+  </div>   
+
+  
+    <div id="dfp_cartridge"></div>
+    
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <div class="asyncVideoEmbedLoader"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/recipe/asyncVideoEmbedLoader"></span><section class="o-AsyncVideoEmbedLoader" data-module="async-video-embed-loader">
+  <script type="text/x-config">
+    {
+      "syncUrl": "/content/food-com/en/recipes/recipe-reference/jcr:content/articleBody/videoplaylistembed.html"
+    }
+  </script>
+</section>
+</div>
+
+    <div class="lookingForSomethingElse"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/recipe/lookingForSomethingElse"></span>
+  <section class="o-Recommendations">
+    <header class="o-Recommendations__m-Header m-Header">
+  <div class="o-Recommendations__m-TextWrap m-TextWrap">
+    <h3 class="o-Recommendations__a-Headline a-Headline">
+      <span class="o-Recommendations__a-HeadlineText a-HeadlineText">Looking for Something Else?</span>
+    </h3>
+  </div>
+</header>
+
+    <div class="o-Recommendations__m-Body m-Body" data-module="looking-for-something">
+        <div class="m-Tabs">
+          <div class="m-ScrollContainer">
+            
+              <a class="a-Tab" href="#" data-type="healthy">Healthy</a>
+            
+              <a class="a-Tab" href="#" data-type="highlyRated">Highly Rated</a>
+            
+              <a class="a-Tab" href="#" data-type="fiveIngredientsOrLess">5 Ingredients or Less</a>
+            
+              <a class="a-Tab" href="#" data-type="surpriseMe">Surprise Me</a>
+            
+          </div>
+        </div>
+        <div class="m-Content">
+        
+  <div class="m-ScrollContainer" data-module="multi-content-stream">
+    <div class="o-Recommendations__TileContainer o-Recommendations__TileContainer--general l-Columns l-Columns--4up">
+    
+  
+  <div class="m-MediaBlock o-Recommendations__m-MediaBlock">
+    <div class="m-MediaBlock__m-MediaWrap">
+      
+  <a href="//www.foodnetwork.com/recipes/ina-garten/noodle-kugel-recipe-1920887" title="Noodle Kugel">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/video/0/01/014/0146/0146918.jpg.rend.hgtvcom.406.305.suffix/1479177429872.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/video/0/01/014/0146/0146918.jpg.rend.hgtvcom.406.305.suffix/1479177429872.jpeg"/>
+    </noscript>
+    
+  </a>
+
+      
+      
+  
+
+      
+    </div>
+    <div class="m-MediaBlock__m-TextWrap">
+      
+      
+  
+
+
+      
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/recipes/ina-garten/noodle-kugel-recipe-1920887">
+      <span class="m-MediaBlock__a-HeadlineText">Noodle Kugel</span>
+      
+    </a>
+  </h4>
+
+
+      
+  
+
+
+      
+  
+
+
+      
+  
+
+
+      
+
+      
+
+    </div>
+    
+  <section class="m-RatingStars" data-type="rating/atom" data-module="gigya/ratings">
+    <script type="text/x-config">
+      {
+        "streamID": "e6a434ad-905d-4b43-8315-a89e99222f1a",
+        "categoryID": "recipe",
+        "widgetType": "summary",
+        "containerID": "9b0943f8-8310-45a7-b06f-71df27ef1926",
+        "ratingLink": "//www.foodnetwork.com/recipes/ina-garten/noodle-kugel-recipe-1920887",
+        "setName": "e6a434ad-905d-4b43-8315-a89e99222f1a",
+        "isRatingAtom": true,
+        "setCount": 1,
+        "useRatingSum": true,
+        "summaryType": "reviews"
+      }
+    </script>
+    <div id="9b0943f8-8310-45a7-b06f-71df27ef1926" class="m-Rating"></div>
+  </section>
+
+  </div>
+
+    
+    
+  
+  <div class="m-MediaBlock o-Recommendations__m-MediaBlock">
+    <div class="m-MediaBlock__m-MediaWrap">
+      
+  <a href="//www.foodnetwork.com/recipes/noodle-kugel-recipe-1937787" title="Noodle Kugel">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2003/1/10/9/mp1a28_noodle_kugel.jpg.rend.hgtvcom.406.305.suffix/1386351894225.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2003/1/10/9/mp1a28_noodle_kugel.jpg.rend.hgtvcom.406.305.suffix/1386351894225.jpeg"/>
+    </noscript>
+    
+  </a>
+
+      
+      
+  
+
+      
+    </div>
+    <div class="m-MediaBlock__m-TextWrap">
+      
+      
+  
+
+
+      
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/recipes/noodle-kugel-recipe-1937787">
+      <span class="m-MediaBlock__a-HeadlineText">Noodle Kugel</span>
+      
+    </a>
+  </h4>
+
+
+      
+  
+
+
+      
+  
+
+
+      
+  
+
+
+      
+
+      
+
+    </div>
+    
+  <section class="m-RatingStars" data-type="rating/atom" data-module="gigya/ratings">
+    <script type="text/x-config">
+      {
+        "streamID": "7da17b4a-2c17-4014-8d41-9c6570ec6270",
+        "categoryID": "recipe",
+        "widgetType": "summary",
+        "containerID": "29897855-1afa-4d6e-9794-fd5c7f29fa4b",
+        "ratingLink": "//www.foodnetwork.com/recipes/noodle-kugel-recipe-1937787",
+        "setName": "7da17b4a-2c17-4014-8d41-9c6570ec6270",
+        "isRatingAtom": true,
+        "setCount": 1,
+        "useRatingSum": true,
+        "summaryType": "reviews"
+      }
+    </script>
+    <div id="29897855-1afa-4d6e-9794-fd5c7f29fa4b" class="m-Rating"></div>
+  </section>
+
+  </div>
+
+    
+    
+  
+  <div class="m-MediaBlock o-Recommendations__m-MediaBlock">
+    <div class="m-MediaBlock__m-MediaWrap">
+      
+  <a href="//www.foodnetwork.com/recipes/food-network-kitchen/noodle-kugel-recipe-1972770" title="Noodle Kugel">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2010/3/3/1/FNM_040110-Mac-And-Cheese-019_s4x3.jpg.rend.hgtvcom.406.305.suffix/1371591002812.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2010/3/3/1/FNM_040110-Mac-And-Cheese-019_s4x3.jpg.rend.hgtvcom.406.305.suffix/1371591002812.jpeg"/>
+    </noscript>
+    
+  </a>
+
+      
+      
+  
+
+      
+    </div>
+    <div class="m-MediaBlock__m-TextWrap">
+      
+      
+  
+
+
+      
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/recipes/food-network-kitchen/noodle-kugel-recipe-1972770">
+      <span class="m-MediaBlock__a-HeadlineText">Noodle Kugel</span>
+      
+    </a>
+  </h4>
+
+
+      
+  
+
+
+      
+  
+
+
+      
+  
+
+
+      
+
+      
+
+    </div>
+    
+  <section class="m-RatingStars" data-type="rating/atom" data-module="gigya/ratings">
+    <script type="text/x-config">
+      {
+        "streamID": "cafc2a5c-82cb-48df-93ed-0d163d6fe921",
+        "categoryID": "recipe",
+        "widgetType": "summary",
+        "containerID": "a7b3f7ac-5e40-41e8-baad-7bc32a33ef13",
+        "ratingLink": "//www.foodnetwork.com/recipes/food-network-kitchen/noodle-kugel-recipe-1972770",
+        "setName": "cafc2a5c-82cb-48df-93ed-0d163d6fe921",
+        "isRatingAtom": true,
+        "setCount": 1,
+        "useRatingSum": true,
+        "summaryType": "reviews"
+      }
+    </script>
+    <div id="a7b3f7ac-5e40-41e8-baad-7bc32a33ef13" class="m-Rating"></div>
+  </section>
+
+  </div>
+
+    
+    
+  
+  <div class="m-MediaBlock o-Recommendations__m-MediaBlock">
+    <div class="m-MediaBlock__m-MediaWrap">
+      
+  <a href="//www.foodnetwork.com/recipes/marc-silverstein-noodle-kugel-recipe-1965132" title="Marc Silverstein Noodle Kugel">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.406.305.suffix/1474463768097.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.406.305.suffix/1474463768097.jpeg"/>
+    </noscript>
+    
+  </a>
+
+      
+      
+  
+
+      
+    </div>
+    <div class="m-MediaBlock__m-TextWrap">
+      
+      
+  
+
+
+      
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/recipes/marc-silverstein-noodle-kugel-recipe-1965132">
+      <span class="m-MediaBlock__a-HeadlineText">Marc Silverstein Noodle Kugel</span>
+      
+    </a>
+  </h4>
+
+
+      
+  
+
+
+      
+  
+
+
+      
+  
+
+
+      
+
+      
+
+    </div>
+    
+  <section class="m-RatingStars" data-type="rating/atom" data-module="gigya/ratings">
+    <script type="text/x-config">
+      {
+        "streamID": "7ebca171-4de3-4494-aaa6-16bcabef0ff9",
+        "categoryID": "recipe",
+        "widgetType": "summary",
+        "containerID": "76ca5b3d-6a7c-457e-9212-69bb46e53099",
+        "ratingLink": "//www.foodnetwork.com/recipes/marc-silverstein-noodle-kugel-recipe-1965132",
+        "setName": "7ebca171-4de3-4494-aaa6-16bcabef0ff9",
+        "isRatingAtom": true,
+        "setCount": 1,
+        "useRatingSum": true,
+        "summaryType": "reviews"
+      }
+    </script>
+    <div id="76ca5b3d-6a7c-457e-9212-69bb46e53099" class="m-Rating"></div>
+  </section>
+
+  </div>
+
+    
+    
+  
+  <div class="m-MediaBlock o-Recommendations__m-MediaBlock">
+    <div class="m-MediaBlock__m-MediaWrap">
+      
+  <a href="//www.foodnetwork.com/recipes/orange-currant-noodle-kugel-1908173" title="Orange Currant Noodle Kugel">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.406.305.suffix/1474463768097.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.406.305.suffix/1474463768097.jpeg"/>
+    </noscript>
+    
+  </a>
+
+      
+      
+  
+
+      
+    </div>
+    <div class="m-MediaBlock__m-TextWrap">
+      
+      
+  
+
+
+      
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/recipes/orange-currant-noodle-kugel-1908173">
+      <span class="m-MediaBlock__a-HeadlineText">Orange Currant Noodle Kugel</span>
+      
+    </a>
+  </h4>
+
+
+      
+  
+
+
+      
+  
+
+
+      
+  
+
+
+      
+
+      
+
+    </div>
+    
+  <section class="m-RatingStars" data-type="rating/atom" data-module="gigya/ratings">
+    <script type="text/x-config">
+      {
+        "streamID": "26a5e50a35404e4274d397745f58a1a5",
+        "categoryID": "recipe",
+        "widgetType": "summary",
+        "containerID": "22d0cf49-7562-457c-b2de-20a608822329",
+        "ratingLink": "//www.foodnetwork.com/recipes/orange-currant-noodle-kugel-1908173",
+        "setName": "26a5e50a35404e4274d397745f58a1a5",
+        "isRatingAtom": true,
+        "setCount": 1,
+        "useRatingSum": true,
+        "summaryType": "reviews"
+      }
+    </script>
+    <div id="22d0cf49-7562-457c-b2de-20a608822329" class="m-Rating"></div>
+  </section>
+
+  </div>
+
+    
+    
+  
+  <div class="m-MediaBlock o-Recommendations__m-MediaBlock">
+    <div class="m-MediaBlock__m-MediaWrap">
+      
+  <a href="//www.foodnetwork.com/recipes/food-network-kitchen/chard-and-caramelized-shallot-noodle-kugel-recipe-2043527" title="Chard and Caramelized Shallot Noodle Kugel">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2012/10/11/0/FN_Savory-Kugel-with-Swiss-Chard-and-Caramelized-Shallots_s4x3.jpg.rend.hgtvcom.406.305.suffix/1382542078867.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2012/10/11/0/FN_Savory-Kugel-with-Swiss-Chard-and-Caramelized-Shallots_s4x3.jpg.rend.hgtvcom.406.305.suffix/1382542078867.jpeg"/>
+    </noscript>
+    
+  </a>
+
+      
+      
+  
+
+      
+    </div>
+    <div class="m-MediaBlock__m-TextWrap">
+      
+      
+  
+
+
+      
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/recipes/food-network-kitchen/chard-and-caramelized-shallot-noodle-kugel-recipe-2043527">
+      <span class="m-MediaBlock__a-HeadlineText">Chard and Caramelized Shallot Noodle Kugel</span>
+      
+    </a>
+  </h4>
+
+
+      
+  
+
+
+      
+  
+
+
+      
+  
+
+
+      
+
+      
+
+    </div>
+    
+  <section class="m-RatingStars" data-type="rating/atom" data-module="gigya/ratings">
+    <script type="text/x-config">
+      {
+        "streamID": "57f3ad94-6914-45a6-a840-4dedce1c38bc",
+        "categoryID": "recipe",
+        "widgetType": "summary",
+        "containerID": "0355ad90-16b2-454a-9f6b-ef2bc7a1a9dd",
+        "ratingLink": "//www.foodnetwork.com/recipes/food-network-kitchen/chard-and-caramelized-shallot-noodle-kugel-recipe-2043527",
+        "setName": "57f3ad94-6914-45a6-a840-4dedce1c38bc",
+        "isRatingAtom": true,
+        "setCount": 1,
+        "useRatingSum": true,
+        "summaryType": "reviews"
+      }
+    </script>
+    <div id="0355ad90-16b2-454a-9f6b-ef2bc7a1a9dd" class="m-Rating"></div>
+  </section>
+
+  </div>
+
+    
+    
+  
+  <div class="m-MediaBlock o-Recommendations__m-MediaBlock">
+    <div class="m-MediaBlock__m-MediaWrap">
+      
+  <a href="//www.foodnetwork.com/recipes/creamy-matzo-apple-kugel-recipe-2102707" title="Creamy Matzo-Apple Kugel">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.406.305.suffix/1474463768097.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.406.305.suffix/1474463768097.jpeg"/>
+    </noscript>
+    
+  </a>
+
+      
+      
+  
+
+      
+    </div>
+    <div class="m-MediaBlock__m-TextWrap">
+      
+      
+  
+
+
+      
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/recipes/creamy-matzo-apple-kugel-recipe-2102707">
+      <span class="m-MediaBlock__a-HeadlineText">Creamy Matzo-Apple Kugel</span>
+      
+    </a>
+  </h4>
+
+
+      
+  
+
+
+      
+  
+
+
+      
+  
+
+
+      
+
+      
+
+    </div>
+    
+  <section class="m-RatingStars" data-type="rating/atom" data-module="gigya/ratings">
+    <script type="text/x-config">
+      {
+        "streamID": "b44f0520-0a4b-46ca-85bf-d4f88f4eed83",
+        "categoryID": "recipe",
+        "widgetType": "summary",
+        "containerID": "cc99bffe-1d17-4ed0-af49-78202b8a4ec0",
+        "ratingLink": "//www.foodnetwork.com/recipes/creamy-matzo-apple-kugel-recipe-2102707",
+        "setName": "b44f0520-0a4b-46ca-85bf-d4f88f4eed83",
+        "isRatingAtom": true,
+        "setCount": 1,
+        "useRatingSum": true,
+        "summaryType": "reviews"
+      }
+    </script>
+    <div id="cc99bffe-1d17-4ed0-af49-78202b8a4ec0" class="m-Rating"></div>
+  </section>
+
+  </div>
+
+    
+    
+  
+  <div class="m-MediaBlock o-Recommendations__m-MediaBlock">
+    <div class="m-MediaBlock__m-MediaWrap">
+      
+  <a href="//www.foodnetwork.com/recipes/noodle-pudding-recipe-1927092" title="Noodle Pudding">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.406.305.suffix/1474463768097.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/editorial/homepage/fn-feature.jpg.rend.hgtvcom.406.305.suffix/1474463768097.jpeg"/>
+    </noscript>
+    
+  </a>
+
+      
+      
+  
+
+      
+    </div>
+    <div class="m-MediaBlock__m-TextWrap">
+      
+      
+  
+
+
+      
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/recipes/noodle-pudding-recipe-1927092">
+      <span class="m-MediaBlock__a-HeadlineText">Noodle Pudding</span>
+      
+    </a>
+  </h4>
+
+
+      
+  
+
+
+      
+  
+
+
+      
+  
+
+
+      
+
+      
+
+    </div>
+    
+  <section class="m-RatingStars" data-type="rating/atom" data-module="gigya/ratings">
+    <script type="text/x-config">
+      {
+        "streamID": "e90e27fc-d061-4e65-b103-c7e71081ee3e",
+        "categoryID": "recipe",
+        "widgetType": "summary",
+        "containerID": "ad1c269d-cc19-403a-8c8b-0a5999c2a784",
+        "ratingLink": "//www.foodnetwork.com/recipes/noodle-pudding-recipe-1927092",
+        "setName": "e90e27fc-d061-4e65-b103-c7e71081ee3e",
+        "isRatingAtom": true,
+        "setCount": 1,
+        "useRatingSum": true,
+        "summaryType": "reviews"
+      }
+    </script>
+    <div id="ad1c269d-cc19-403a-8c8b-0a5999c2a784" class="m-Rating"></div>
+  </section>
+
+  </div>
+
+    </div>
+  </div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+  
+
+</div>
+
+  
+
+  
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+      
+      
+      
+    
+    
+    
+  
+
+<section class="o-RatingsAndReviews o-RatingsAndReviews--NoReviews o-Capsule" data-module="gigya/ratings">
+  <script type="text/x-config">
+      {
+        "streamID": "119f989e-20f6-4032-a895-e3e92f6310a8",
+        "widgetType":"summary",
+        "containerID":"rating-stars",
+        "useRatingSum": false,
+        "noReviewsClassName": "o-RatingsAndReviews--NoReviews"
+      }
+  </script>
+  <header class="o-Capsule__m-Header" id="reviewsTop">
+    <div class="o-Capsule__m-TextWrap">
+      <h3 class="o-Capsule__a-Headline">
+        <span class="o-Capsule__a-HeadlineText" id="rating-stars"></span>
+      </h3>
+      <span class="o-Capsule__m-Rating m-Rating" data-review-summary></span>
+    </div>
+  </header>
+
+  <section id="communityReviews">
+    <div data-module="gigya/comments">
+      <script type="text/x-config">
+        {
+          "streamID": "119f989e-20f6-4032-a895-e3e92f6310a8",
+          "categoryID": "recipe",
+          "containerID": "r-reviews",
+          "useTemplate": "reviews",
+          "type": "ratings",
+          "modURL": "https://core-moderation.sniaws.com/moderateComment.html"
+        }
+      </script>
+      
+      <div class="m-Comments">
+        <div id="r-reviews"></div>
+      </div>
+
+    </div>
+  </section>
+</section>
+
+
+
+
+
+
+</section>
+
+        </div>
+      </div>
+
+        <div class="col-md-10">
+          
+
+
+
+  
+  
+
+
+
+   
+     
+     
+        
+
+
+
+  
+  
+
+
+<div class="container-aside">
+    <div class="module text-center">
+      <div id="dfp_bigbox_recipe_top"></div>
+    </div>
+    <div class="rightRail">
+      <div class="reference_rightRailTop reference"><div class="cq-dd-paragraph"><div class="rightRailTop parsys">
+
+
+<div class="editorialPromo capsule section"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/promotion/editorialPromo"></span>
+
+  
+
+
+
+
+   <section class="o-Capsule o-EditorialPromo  ">
+
+    
+    
+
+
+  <header class="o-Capsule__m-Header">
+    <div class="o-Capsule__m-TextWrap">
+      
+  <h3 class="o-Capsule__a-Headline">
+    
+      <span class="o-Capsule__a-HeadlineText">👩‍🍳 What's Cooking</span>
+      
+    
+  </h3>
+
+      
+    </div>
+    
+  
+
+  </header>
+
+
+
+    
+    <div class="o-Capsule__m-Body">
+        
+
+  
+
+  
+  
+
+    
+    
+    
+    <div class="l-List   " data-module="editorial-promo">
+
+      
+      
+      
+      
+    
+    <div class="m-MediaBlock o-Capsule__m-MediaBlock m-MediaBlock--gallery">
+        <div class="m-MediaBlock__m-MediaWrap">
+            
+  <a href="//www.foodnetwork.com/recipes/photos/summer-weeknight-dinners" title="Summer Weeknights">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2009/2/1/0/AI0212-1_Fish-Tacos_s4x3.jpg.rend.hgtvcom.161.121.suffix/1382538828216.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2009/2/1/0/AI0212-1_Fish-Tacos_s4x3.jpg.rend.hgtvcom.161.121.suffix/1382538828216.jpeg"/>
+    </noscript>
+    
+  </a>
+
+            
+            
+  
+
+            
+        </div>
+
+        <div class="m-MediaBlock__m-TextWrap">
+            
+            
+  
+
+
+            
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/recipes/photos/summer-weeknight-dinners">
+      <span class="m-MediaBlock__a-HeadlineText">Summer Weeknights</span>
+      <span class="m-MediaBlock__a-AssetInfo">
+            
+            
+  <svg class="m-MediaBlock__a-Icon--gallery m-MediaBlock__a-Icon a-Icon--gallery a-Icon" role="img">
+    
+    <symbol id="icon-gallery" viewBox="0 0 32 32">
+    <path d="M21.333 25.333h-14.667v-12h14.667v12zM24 10.667h2.667v10.667h-2.667v-10.667zM10.667 8h16v2.667h-16v-2.667z"/>
+</symbol>
+
+    <use xlink:href="#icon-gallery"></use>
+  </svg>
+
+      </span>
+    </a>
+  </h4>
+
+
+            
+  
+
+
+            
+  
+
+
+            
+
+            
+  
+
+
+            
+
+            
+
+        </div>
+
+    </div>
+
+
+    
+
+      
+      
+      
+      
+    
+    <div class="m-MediaBlock o-Capsule__m-MediaBlock m-MediaBlock--gallery">
+        <div class="m-MediaBlock__m-MediaWrap">
+            
+  <a href="//www.foodnetwork.com/healthy/packages/healthy-every-week/quick-and-simple/healthy-dinners-in-40-minutes-or-less#item-15" title="Healthy Food, Fast">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2018/2/16/0/FN_Ellie-Krieger-Fettuccini-Walnuts-Parsley-H-107_s4x3.jpg.rend.hgtvcom.161.121.suffix/1518807192836.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2018/2/16/0/FN_Ellie-Krieger-Fettuccini-Walnuts-Parsley-H-107_s4x3.jpg.rend.hgtvcom.161.121.suffix/1518807192836.jpeg"/>
+    </noscript>
+    
+  </a>
+
+            
+            
+  
+
+            
+        </div>
+
+        <div class="m-MediaBlock__m-TextWrap">
+            
+            
+  
+
+
+            
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/healthy/packages/healthy-every-week/quick-and-simple/healthy-dinners-in-40-minutes-or-less#item-15">
+      <span class="m-MediaBlock__a-HeadlineText">Healthy Food, Fast</span>
+      <span class="m-MediaBlock__a-AssetInfo">
+            
+            
+  <svg class="m-MediaBlock__a-Icon--gallery m-MediaBlock__a-Icon a-Icon--gallery a-Icon" role="img">
+    
+    
+    <use xlink:href="#icon-gallery"></use>
+  </svg>
+
+      </span>
+    </a>
+  </h4>
+
+
+            
+  
+
+
+            
+  
+
+
+            
+
+            
+  
+
+
+            
+
+            
+
+        </div>
+
+    </div>
+
+
+    
+
+      
+      
+      
+      
+    
+    <div class="m-MediaBlock o-Capsule__m-MediaBlock m-MediaBlock--gallery">
+        <div class="m-MediaBlock__m-MediaWrap">
+            
+  <a href="//www.foodnetwork.com/holidays-and-parties/packages/summer-entertaining-guide/photos/simple-summer-party-recipes#item-2" title="Summer Entertaining">
+    
+    <img class="m-MediaBlock__a-Image a-Image" data-src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2011/6/7/2/FNM_070111-WE-Dinners-009_s4x3.jpg.rend.hgtvcom.161.121.suffix/1371597728948.jpeg"/>
+    <noscript>
+      <img class="m-MediaBlock__a-Image a-Image" src="//food.fnr.sndimg.com/content/dam/images/food/fullset/2011/6/7/2/FNM_070111-WE-Dinners-009_s4x3.jpg.rend.hgtvcom.161.121.suffix/1371597728948.jpeg"/>
+    </noscript>
+    
+  </a>
+
+            
+            
+  
+
+            
+        </div>
+
+        <div class="m-MediaBlock__m-TextWrap">
+            
+            
+  
+
+
+            
+  <h4 class="m-MediaBlock__a-Headline">
+    <a href="//www.foodnetwork.com/holidays-and-parties/packages/summer-entertaining-guide/photos/simple-summer-party-recipes#item-2">
+      <span class="m-MediaBlock__a-HeadlineText">Summer Entertaining</span>
+      <span class="m-MediaBlock__a-AssetInfo">
+            
+            
+  <svg class="m-MediaBlock__a-Icon--gallery m-MediaBlock__a-Icon a-Icon--gallery a-Icon" role="img">
+    
+    
+    <use xlink:href="#icon-gallery"></use>
+  </svg>
+
+      </span>
+    </a>
+  </h4>
+
+
+            
+  
+
+
+            
+  
+
+
+            
+
+            
+  
+
+
+            
+
+            
+
+        </div>
+
+    </div>
+
+
+    </div>
+  
+  
+  
+
+
+    </div>
+
+    
+    
+
+
+  <footer class="o-Capsule__m-Footer">
+
+      
+  <a class="o-Capsule__a-Cta" href="//www.foodnetwork.com/recipes" data-type="EditorialPromo">Discover More Recipes...</a>
+
+
+  </footer>
+
+
+
+  </section>
+
+</div>
+
+</div>
+</div>
+</div>
+
+    </div>
+    <div class="module text-center">
+      <div id="dfp_bigbox_2"></div>
+    </div>
+    <div class="reference_rightRail reference"><div class="cq-dd-paragraph"><div class="rightRail parsys">
+
+
+<div class="freeFormHTMLArea section"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/general/freeFormHTMLArea"></span>
+
+<section class="o-Capsule o-FreeFormHTMLArea">
+  <div id="dfp_bigbox_extra"></div>
+</section>
+
+</div>
+<div class="newsletter capsule section"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/general/newsletter"></span>
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+  
+  <div class="o-Capsule o-Newsletter" data-module="newsletter">
+    <script type="text/x-config">
+    {
+	  "newsletterSource": "2019_FOODNET_NOODLE-KUGEL-RECIPE_RIGHTRAIL", 
+      "newsletterId": "fn_rotd",
+      "newsletterName": "Recipe of the Day",
+      "newsletterSite": "Easy Recipes, Healthy Eating Ideas and Chef Recipe Videos",
+      "newsletterShowMore": "",
+      "newsletterBrand": "foodnet",
+      "newsletterCategory": "",
+      "subscriptionEndpoint": "https://mynewsletters.discovery.com/webservice_json.php",
+      "selectors": {
+        "state1": ".o-Newsletter__m-State1",
+        "state2": ".o-Newsletter__m-State2",
+        "state3": ".o-Newsletter__m-State3",
+        "statePrefix": ".o-Newsletter__m-State",
+        "stateNamePrefix": "o-Newsletter__m-State",
+        "errors": ".m-Form__a-Errors",
+        "description": ".o-Newsletter__a-Description"
+      }
+    }
+    </script>
+
+    <header class="o-Capsule__m-Header">
+      <div class="o-Capsule__m-TextWrap">
+        <h3 class="o-Capsule__a-Headline">
+            <span class="o-Capsule__a-HeadlineText">Let's Get Cooking!</span>
+        </h3>
+      </div>
+    </header>
+
+    <div class="o-Capsule__m-Body">
+      <noscript class="o-Newsletter__a-Description m-Form__a-Errors">
+        <strong>To sign up, please enable JavaScript.</strong>
+      </noscript>
+      <div class="o-Newsletter__m-State1">
+        <p class="o-Newsletter__a-Description">Sign up for the <b>Recipe of the Day</b> newsletter to receive editor-picked recipes, tips and videos delivered to your inbox daily. <a href="http://www.scrippsnetworksinteractive.com/privacy-policy/" target="_blank"> Privacy Policy</a></p>
+
+        <form class="m-Form__m-InputWrap" method="POST">
+          <input type="text" name="email" class="o-Capsule__a-Input a-Input" placeholder="Enter email address" />
+          <button name="submit" type="submit" class="o-Capsule__a-Button a-Button" data-type="subscribe-initial">Sign Up</button>
+        </form>
+        <div class="m-Form__a-Errors"></div>
+      </div>
+
+      <div class="o-Newsletter__m-State2">
+        <p class="o-Newsletter__a-Description"></p>
+        
+
+      </div>
+
+      <div class="o-Newsletter__m-State3">
+        <p class="o-Newsletter__a-Description a-Description"></p>
+      </div>
+
+      <!--/*include the loader area*/-->
+      
+
+    <div class="a-LoaderWrap" data-ui-loader>
+  <div class="a-Loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+
+
+
+
+    </div> 
+
+  </div> 
+
+ 
+</div>
+
+</div>
+</div>
+</div>
+
+
+    <div class="module">
+      <div id="dfp_prog_bigbox" class="bigbox-ad rr-ad"></div>
+    </div>
+</div>
+
+     
+   
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+    
+    <div id='dfp_utility1'></div>
+    <div id='dfp_utility2'></div>
+
+    <div class="footer"><span style="display: none" class="clicktracking" data-resource-type="foodcom/components/footer"></span>
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+<footer class="o-FooterFresh" data-module="footer">
+  <div class="o-FooterFresh__m-BodyWrap">
+    <div class="o-FooterFresh__m-Body">
+      <div class="m-Body__m-PromoList">
+        <ul>
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="//www.foodnetwork.com/site/site-map">Site Map</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="http://www.scrippsnetworksinteractive.com/terms-of-use/">Terms of Use</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="is-AdChoices">
+                    <a href="http://info.evidon.com/pub_info/1212?v=1&nt=0&nw=false">AdChoices</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="http://www.scrippsnetworksinteractive.com/privacy-policy/">Privacy Policy</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="//www.foodnetwork.com/site/about-foodnetwork-com">About</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="http://newsroom.scrippsnetworksinteractive.com/">Newsroom</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="http://www.scrippsnetworksdigital.com/">Advertise</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="http://foodnetwork.custhelp.com/">Help</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="http://foodnetwork.custhelp.com/">Contact Us</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="https://corporate.discovery.com/online-closed-captioning/">Online Closed Captioning</a>
+                  </li>
+                
+              
+          
+              
+              
+                
+                
+                  <li class="">
+                    <a href="https://corporate.discovery.com/">Discovery, Inc.</a>
+                  </li>
+                
+              
+          
+        </ul>
+      </div>
+      <ul class="o-FooterFresh__m-Info">
+        
+          
+            <li class="o-FooterFresh__m-International has-DropdownMenu" data-type="menu-action">
+              <a href="javascript:void(0);">International Editions</a>
+              <ul class="m-DropdownMenu">
+                <li><a href="http://www.foodnetwork.com">United States</a></li>
+                <li><a href="http://www.foodnetworkasia.com">Asia</a></li>
+                <li><a href="http://www.foodnetwork.com.br">Brazil</a></li>
+                <li><a href="http://www.foodnetwork.ca">Canada</a></li>
+                <li><a href="http://www.foodnetworktv.com">Europe, Middle East &amp; Africa</a></li>
+                <li><a href="http://www.foodnetwork.co.uk">United Kingdom</a></li>
+                <li><a href="http://foodnetworklatam.com">Latin America</a></li>
+              </ul>
+            </li>
+          
+          <li class="o-FooterFresh__m-Brands has-DropdownMenu" data-type="menu-action">
+            <a href="javascript:void(0);">See all Scripps Networks Digital</a>
+            <ul class="m-DropdownMenu">
+              
+                
+                <li><a href="http://www.cookingchanneltv.com">Cooking Channel</a></li>
+              
+                
+                <li><a href="https://www.food.com/">Food.com</a></li>
+              
+                
+                <li><a href="http://www.hgtv.com">HGTV</a></li>
+              
+                
+                <li><a href="http://www.diynetwork.com">DIY Network</a></li>
+              
+                
+                <li><a href="http://www.travelchannel.com">Travel Channel</a></li>
+              
+                
+                <li><a href="http://www.gactv.com">Great American Country</a></li>
+              
+                
+                <li><a href="http://www.spoonuniversity.com">SpoonUniversity.com</a></li>
+              
+            </ul>
+          </li>
+        
+        <li class="o-FooterFresh__a-Copyright">
+          © 2019  Television Food Network, G.P. All rights reserved.
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</footer>
+
+  
+  
+
+</div>
+
+
+  </section>
+
+  
+
+  
+
+
+
+  
+  
+
+
+
+
+
+<template style="display: none;" data-ui-loader-clone><div class="a-LoaderWrap" data-ui-loader>
+  <div class="a-Loader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+</template>
+<template style="display: none;" data-sharebar-clone>
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<ul class="m-SocialIcons " data-social-share-wrap >
+  <li>
+    <a href="http://pinterest.com/pin/create/button/?url=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564" target="_blank" title="Share on Pinterest" class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--pinterest" data-social-share-network="pinterest" data-pin-custom="true">
+      
+      <span class="o-SocialShare__m-IconWrap">
+        <svg class="a-Icon a-Icon--pinterest o-SocialShare__a-Icon o-SocialShare__a-Icon--pinterest" role="img"><use xlink:href="#icon-pinterest"></use></svg>
+      </span>
+      <span class="o-SocialShare__a-Label">Pinterest</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.facebook.com/sharer.php?u=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564" target="_blank" title="Share on Facebook" class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--facebook" data-social-share-network="facebook">
+      <span class="o-SocialShare__m-IconWrap">
+        <svg class="a-Icon a-Icon--facebook o-SocialShare__a-Icon o-SocialShare__a-Icon--facebook" role="img"><use xlink:href="#icon-facebook"></use></svg>
+      </span>
+      <span class="o-SocialShare__a-Label">Facebook</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://twitter.com/intent/tweet?text=Noodle+Kugel&url=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564&original_referer=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564" target="_blank" title="Share on Twitter" class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--twitter" data-social-share-network="twitter">
+      <span class="o-SocialShare__m-IconWrap">
+        <svg class="a-Icon a-Icon--twitter o-SocialShare__a-Icon o-SocialShare__a-Icon--twitter" role="img"><use xlink:href="#icon-twitter"></use></svg>
+      </span>
+      <span class="o-SocialShare__a-Label">Twitter</span>
+    </a>
+  </li>
+  <li>
+    <a href="mailto:?body=%2f%2fwww.foodnetwork.com%2frecipes%2fdave-lieberman%2fnoodle-kugel-recipe-1946564&subject=Shared%20from%20Food Network" title="Share by Email" class="o-SocialShare__m-ShareButton o-SocialShare__m-ShareButton--email" data-social-share-network="email">
+      <span class="o-SocialShare__m-IconWrap">
+        <svg class="a-Icon a-Icon--email o-SocialShare__a-Icon o-SocialShare__a-Icon--email" role="img"><use xlink:href="#icon-email"></use></svg>
+      </span>
+      <span class="o-SocialShare__a-Label">Email</span>
+    </a>
+  </li>
+</ul>
+</template>
+
+<script src="//food.fnr.sndimg.com/etc/clientlibs/assets/v2/js/core.md5-010b9a052e5f06546628afc0cd12e6b1.js"></script>
+
+
+
+  <script defer src="https://cdns.gigya.com/JS/socialize.js?apikey=3_ClDcX23A7tU8pcydnKyENXSYP5kxCbwH4ZO741ZOujPRY8Ksj2UBnj8Zopb0OX0K"></script>
+
+
+
+<script src="//analytics.snidigital.com/scripps-core/076e416a6caa07234c15d9bd371ee9e19eef88d3/satelliteLib-d1a6afdf0b905e704ff380889db911917e31f306.js"></script>
+
+<script src="//code.adsales.snidigital.com/conf/ads-config.js?hash=1483471279"></script>
+<script src="//code.adsales.snidigital.com/datmcp/mcp-loader.js"></script>
+
+<script>SNILoadEvents.trigger(['mdm', 'core', 'analytics', 'ads', 'sni-all']);</script>
+<script async src="//assets.sni-dat.com/raven/raven.js"></script>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-981304516"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-981304516');
+</script>
+<script>gtag('event', 'conversion', {'send_to': 'AW-981304516/s5z-CPuv7IgBEMSJ9tMD'});</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  (function(mdManager){
+    if (typeof enableForAutomation !== "undefined"){
+      if (typeof newrelic === "object"){
+        console.log("Automation: New Relic object is valid");
+      }
+      else {
+        console.log("Automation: New Relic object is NOT valid");
+      }
+    }
+
+    if (typeof newrelic === "object"){//If new relic agent is enabled
+      if (typeof newrelic.setCustomAttribute === "function"){
+        newrelic.setCustomAttribute("platform", "CORE");//send page type to new relic
+        if (typeof mdManager  === "object"){
+          if (typeof mdManager.getPageType === "function"){
+            newrelic.setCustomAttribute("pageType", mdManager.getPageType());//send page type to new relic
+          }
+          if (typeof mdManager.getParameter  === "function"){
+            newrelic.setCustomAttribute("deliveryChannel", mdManager.getParameter("Delivery_Channel"));//send device type to new relic
+          }
+          if (typeof mdManager.getSite  === "function"){
+            newrelic.setCustomAttribute("site", mdManager.getSite().split('-')[0] );//send site/brand to new relic
+          }
+        }
+      }
+    }
+  })(mdManager);
+
+</script>
+
+
+
+  <script type="text/javascript">
+    if (typeof _satellite !== 'undefined') {
+      _satellite.pageBottom();
+    } else {
+      if (typeof window.console !== 'undefined' && typeof window.console.error !== 'undefined') {
+        console.error('_satellite is not defined!');
+      }
+    }
+
+    $(function(){
+      if( typeof SniAds === "object" ) {
+        var adConfig = {
+          breakpoints: {
+            small: [0,0],
+            medium: [600,0],
+            large: [800,0],
+            xlarge:[1920,0]
+          },
+          enableRepeatBigbox: {
+            adClass: 'rr-ad bigbox-ad',
+            mobile: {
+              disable: ($('body.articlePage').length === 0)
+            }
+          }
+          
+        };
+
+        SniAds.init( adConfig );
+      }
+    });
+  </script>
+
+  
+  
+
+
+  <script>
+   if (window.cqIncludeVideo && window.cqWCMDisabled) {
+    SNI.Config.VPC.insertJs();
+    SNI.Config.VPC.insertCss();
+   }
+  </script>
+  
+
+  
+
+  
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Recipe","mainEntityOfPage":true,"name":"Noodle Kugel","url":"https://www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564","headline":"Noodle Kugel","author":[{"@type":"Person","name":"Dave Lieberman","url":"https://www.foodnetwork.com/profiles/talent/dave-lieberman"}],"image":{"@type":"ImageObject","url":"https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/11/23/0/FN_noodle-kugel-011_s4x3.jpg.rend.hgtvcom.406.305.suffix/1382540988172.jpeg","height":"406","width":"305","description":"Noodle Kugel"},"datePublished":"2015-05-23T12:22:02.950-04:00","dateModified":"2014-09-05T14:40:12.116-04:00","publisher":{"@type":"Organization","name":"Food Network","url":"https://www.foodnetwork.com","logo":{"@type":"ImageObject","url":"https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png","height":"60","width":"60"}},"keywords":"Easy Pasta Recipes,Easy,Pasta Recipes,Easy Side Dish Recipes,Side Dish,Easy Baking,Jewish Cooking,Holiday,Dairy Recipes,Noodles,Egg Recipes,Fruit,Raisin Recipes","cookTime":"P0Y0M0DT0H45M0.000S","prepTime":"P0Y0M0DT0H5M0.000S","totalTime":"P0Y0M0DT0H50M0.000S","recipeIngredient":["1/2 pound wide kosher for Passover egg noodles","1/2 stick butter, melted","1 pound cottage cheese","2 cups sour cream","1/2 cup sugar","6 eggs","1 teaspoon ground cinnamon","1/2 cup raisins"],"recipeInstructions":[{"@type":"HowToStep","text":"Preheat oven to 375 degrees F."},{"@type":"HowToStep","text":"Boil the noodles in salted water for about 4 minutes. Strain noodles from water. In a large mixing bowl, combine noodles with remaining ingredients and pour into a greased, approximately 9-by-13-inch baking dish."},{"@type":"HowToStep","text":"Bake until custard is set and top is golden brown, about 30 to 45 minutes."}],"aggregateRating":{"@type":"AggregateRating","ratingValue":4.7,"reviewCount":67},"recipeYield":"6-8 servings","review":[{"@type":"Review","author":{"@type":"Person","name":"Anonymous"},"reviewBody":"Absolutely  delicious!! I made two changes - I used gluten free pasta (a little less than a full box) and I used about 1 cup of craisins that had been soaked in cran-grape juice for a couple of hours. Everything  else was the same. Baked until golden brown about 45 mins. Everyone loved this and I couldn't stop eating. So good.","datePublished":"2015-12-08"},{"@type":"Review","author":{"@type":"Person","name":"suzn_s"},"reviewRating":{"@type":"Rating","ratingValue":5,"worstRating":"1","bestRating":"5"},"reviewBody":"Oh my, I'm not Jewish but was doing a potluck with a Jewish friend who was making the latkes.  Wow...2 of us had brought Noodles Kugel but mine truly was the best.  Hers was definitely good, but liked mine better, as did many of the guests.  (tastes a lot like bread pudding) I agree with the one reviewer who commented about the video having some discrepancy's when matched up with the recipe.  I looked everywhere for the Passover noodles and ending up buying No Yolk egg noodles, which I cooked for 8 minutes.  And I used a heaping 1/2 cup full of raisins. Other than that, all matched up to the recipe.  DELISH!","datePublished":"2018-12-06"},{"@type":"Review","author":{"@type":"Person","name":"Anonymous"},"reviewRating":{"@type":"Rating","ratingValue":4,"worstRating":"1","bestRating":"5"},"reviewBody":"I'm just about to start making it, but I wished the video matched the recipe exactly.  The video says use 2 c. (volume) of cottage cheese, 1/2 c. raisins, and bake for an hour.  The printed recipes says to use 1 lb (weight) of cottage cheese, 3/4 c. raisins, and bake for as little as 30 minutes.  I'm sure I can muddle through.","datePublished":"2018-12-02"},{"@type":"Review","author":{"@type":"Person","name":"Anonymous"},"reviewRating":{"@type":"Rating","ratingValue":5,"worstRating":"1","bestRating":"5"},"reviewBody":"I make this every year for my family during the holidays. It's really creamy and above all, it's absolutely delicious! The only thing I changed is that I'm not a big fan of raisins and neither is most of my family. I replaced them with McIntosh Baking Apples, sliced thin and incorporated it in the mixture. When I placed all the ingredients in a baking dish, I sprinkled cinnamon and nutmeg diagonally both ways to resemble an \"x\" shape. It looks professionally catered when family comes over. Thank you so much for this wonderful recipe!!! :) ","datePublished":"2017-09-16"},{"@type":"Review","author":{"@type":"Person","name":"Amy G."},"reviewRating":{"@type":"Rating","ratingValue":5,"worstRating":"1","bestRating":"5"},"reviewBody":"This is WONDERFUL.  I've made it twice in the last four months.  I can't believe how easy it is...it should be illegal, haha!  I used golden raisins instead of black.  Just delicious all around!","datePublished":"2017-04-12"},{"@type":"Review","author":{"@type":"Person","name":"out2lunch"},"reviewRating":{"@type":"Rating","ratingValue":5,"worstRating":"1","bestRating":"5"},"reviewBody":"I made your grandma's noodle kugel today for Passover.  It was absolutely wonderful!  Everyone loved it.  It came out of the oven picture perfect and no one realized how easy it was to prepare.","datePublished":"2017-04-10"},{"@type":"Review","author":{"@type":"Person","name":"Anonymous"},"reviewRating":{"@type":"Rating","ratingValue":5,"worstRating":"1","bestRating":"5"},"reviewBody":"I'm making this as a thank-you gift for my neighbor. He cleaned out my gutters for me after a recent thunderstorm.","datePublished":"2016-05-20"},{"@type":"Review","author":{"@type":"Person","name":"Julie B."},"reviewRating":{"@type":"Rating","ratingValue":5,"worstRating":"1","bestRating":"5"},"reviewBody":"Best kugel ever! Made it the day before due to baking timing &amp; cooked it after the meat: creamy like custard! I used golden raisins because I believed that was the kugel law.  And sprinkled cinnamon-sugar on top.  It's gone in two households!","datePublished":"2015-12-28"},{"@type":"Review","author":{"@type":"Person","name":"Victoria A. A."},"reviewRating":{"@type":"Rating","ratingValue":5,"worstRating":"1","bestRating":"5"},"reviewBody":"i remember eating this delicious dish at the Goetz's house.","datePublished":"2015-11-03"},{"@type":"Review","author":{"@type":"Person","name":"Rose L."},"reviewRating":{"@type":"Rating","ratingValue":5,"worstRating":"1","bestRating":"5"},"reviewBody":"This is just like my late Jewish Mother-in-law made. Thanks for the recipe! I wouldn't change a thing.","datePublished":"2015-01-17"}],"video":{"@type":"VideoObject","name":"Noodle Kugel","description":"Dave shares his grandmother's recipe for noodle kugel, a creamy dessert.","duration":"PT0H3M49S","thumbnailUrl":"https://food.fnr.sndimg.com/content/dam/images/food/video/0/01/012/0128/0128633.jpg.rend.hgtvcom.406.305.suffix/1479433179378.jpeg","contentUrl":"https://www.foodnetwork.com/videos/noodle-kugel-0128633","embedUrl":"http://link.theplatform.com/s/ip77QC/QmKQRe53aQdq?&format=SMIL&MBR=true","uploadDate":"2018-11-06T16:49:23.863-05:00"},"recipeCuisine":"jewish-cooking","recipeCategory":"side-dish"}, {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.foodnetwork.com","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.foodnetwork.com/recipes","name":"Recipes"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.foodnetwork.com/recipes/dave-lieberman","name":"Dave Lieberman"}}]}, {"@context":"http://schema.org","@type":"ItemList","itemListElement":[{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/recipes","position":1,"name":"Recipes"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/shows","position":2,"name":"Shows"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/profiles","position":3,"name":"Chefs"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/restaurants","position":4,"name":"Restaurants"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/videos","position":5,"name":"Videos"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/magazine","position":6,"name":"Magazine"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/features/articles/sweepstakes-and-contests","position":7,"name":"Sweeps"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/shows/tv-schedule","position":8,"name":"TV Schedule"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/fn-dish","position":9,"name":"Blog"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/site/apps","position":10,"name":"Apps"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/shows/a-z","position":11,"name":"Shows A-Z"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/profiles/talent","position":12,"name":"Chefs A-Z"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/healthy","position":13,"name":"Healthy"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/holidays-and-parties","position":14,"name":"Party Food"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/grilling","position":15,"name":"Grilling"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/how-to/packages/shopping","position":16,"name":"Shop"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/shows/chopped","position":17,"name":"Chopped"},{"@type":"SiteNavigationElement","url":"https://www.foodnetwork.com/shows/the-great-food-truck-race","position":18,"name":"The Great Food Truck Race"}]}]</script>
+
+
+
+
+
+  
+  
+
+</body>
+
+</html>

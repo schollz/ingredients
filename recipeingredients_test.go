@@ -79,9 +79,17 @@ var ts = []URLIngredients{
 		"https://cakebycourtney.com/soft-chewy-chocolate-chip-cookies/",
 		[]string{"1 cup butter", "1 cup sugar", "1 cup brown sugar", "2 whole eggs", "1 teaspoon vanilla", "3 1/2 cups flour", "1 teaspoon baking soda", "1 teaspoon baking powder", "1 teaspoon salt", "2 cups chocolate chips"},
 	},
+	{
+		"https://www.foodnetwork.com/recipes/dave-lieberman/noodle-kugel-recipe-1946564",
+		[]string{"1/2 pound egg noodles", "1/2 whole butter", "1 pound cottage cheese", "2 cups sour cream", "1/2 cup sugar", "6 whole eggs", "1 teaspoon cinnamon", "1/2 cup raisins"},
+	},
+	{
+		"https://cooking.nytimes.com/recipes/12320-apple-pie",
+		[]string{"2 tablespoons butter", "2 1/2 pounds apples", "1/4 teaspoon allspice", "1/2 teaspoon cinnamon", "1/4 teaspoon kosher salt", "3/4 cup sugar", "2 tablespoons flour", "2 teaspoons cornstarch", "1 tablespoon apple cider vinegar", "1 whole pie dough", "1 whole egg"},
+	},
 }
 
-func TestTableChocolateChipCookies(t *testing.T) {
+func TestTable(t *testing.T) {
 	log.SetLevel("trace")
 	for _, t0 := range ts {
 		fileToGet := t0.URL
