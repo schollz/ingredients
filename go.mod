@@ -1,4 +1,4 @@
-module github.com/schollz/recipeingredients
+module github.com/schollz/ingredients
 
 go 1.12
 
