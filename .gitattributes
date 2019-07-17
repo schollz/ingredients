@@ -1,2 +1,2 @@
-*corpus* linguist-vendored
-*testing* linguist-vendored
+corpus/* linguist-vendored
+testing/* linguist-vendored
