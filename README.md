@@ -1,6 +1,6 @@
-# recipeingredients
+# ingredients
 
-<img src="https://img.shields.io/badge/coverage-75%25-brightgreen.svg?style=flat-square" alt="Code coverage">&nbsp;<a href="https://travis-ci.org/schollz/recipeingredients"><img src="https://img.shields.io/travis/schollz/recipeingredients.svg?style=flat-square" alt="Build Status"></a>&nbsp;<a href="https://godoc.org/github.com/schollz/recipeingredients"><img src="http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square" alt="Go Doc"></a> 
+<img src="https://img.shields.io/badge/coverage-75%25-brightgreen.svg?style=flat-square" alt="Code coverage">&nbsp;<a href="https://travis-ci.org/schollz/ingredients"><img src="https://img.shields.io/travis/schollz/ingredients.svg?style=flat-square" alt="Build Status"></a>&nbsp;<a href="https://godoc.org/github.com/schollz/ingredients"><img src="http://img.shields.io/badge/godoc-reference-5272B4.svg?style=flat-square" alt="Go Doc"></a> 
 
 This is a Golang library for *ingredient tagging* and *extraction* for **any recipe on the internet**. This library compartmentalizes and improves aspects of recipe extraction that I did previously with [schollz/meanrecipe](https://github.com/schollz/meanrecipe) and [schollz/extract_recipe](https://github.com/schollz/extract_recipe).
 
@@ -9,13 +9,13 @@ This is a Golang library for *ingredient tagging* and *extraction* for **any rec
 You can use as a library.
 
 ```
-$ go get github.com/schollz/recipeingredients
+$ go get github.com/schollz/ingredients
 ```
 
 Pick a random website, like [JoyFoodSunshine](https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/), and you can extract the ingredients:
 
 ```go
-r, _ := recipeingredients.NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
+r, _ := ingredients.NewFromURL("https://joyfoodsunshine.com/the-most-amazing-chocolate-chip-cookies/")
 fmt.Println(r.IngredientList())
 // Output:
 // 1 cup butter (salted)
