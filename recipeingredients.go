@@ -1,4 +1,4 @@
-package recipeingredients
+package ingredients
 
 //go:generate go run corpus/main.go
 //go:generate gofmt -s -w corpus.go

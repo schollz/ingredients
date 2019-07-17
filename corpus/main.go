@@ -20,7 +20,7 @@ func main() {
 	check(err)
 	defer f.Close()
 
-	f.WriteString("package recipeingredients\n")
+	f.WriteString("package ingredients\n")
 
 	var b []byte
 	var pl pairList

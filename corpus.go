@@ -1,4 +1,4 @@
-package recipeingredients
+package ingredients
 
 var herbMap = map[string]struct{}{
 	"ajwain":               {},

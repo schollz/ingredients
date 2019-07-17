@@ -7,7 +7,7 @@ import (
 	"os"
 
 	log "github.com/schollz/logger"
-	"github.com/schollz/recipeingredients"
+	"github.com/schollz/ingredients"
 )
 
 func main() {
@@ -18,7 +18,7 @@ func main() {
 	}
 
 	b, _ := ioutil.ReadFile(os.Args[1])
-	ing, err := recipeingredients.ParseTextIngredients(string(b))
+	ing, err := ingredients.ParseTextIngredients(string(b))
 	if err != nil {
 		log.Error(err)
 		os.Exit(1)
@@ -26,7 +26,7 @@ func main() {
 	b, _ = json.MarshalIndent(ing, "", "    ")
 	fmt.Println(string(b))
 
-	// r, err := recipeingredients.NewFromFile(os.Args[1])
+	// r, err := ingredients.NewFromFile(os.Args[1])
 	// if err != nil {
 	// 	log.Error(err)
 	// 	os.Exit(1)
