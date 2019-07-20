@@ -4,6 +4,8 @@
 
 This is a Golang library for *ingredient tagging* and *extraction* for **any recipe on the internet**. This library compartmentalizes and improves aspects of recipe extraction that I did previously with [schollz/meanrecipe](https://github.com/schollz/meanrecipe) and [schollz/extract_recipe](https://github.com/schollz/extract_recipe).
 
+Try it online: https://schollz.com/blog/ingredients/#try
+
 ## Usage
 
 You can use as a library.
