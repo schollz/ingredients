@@ -32,6 +32,15 @@ fmt.Println(r.IngredientList())
 
 Please make an issue if you find a problem.
 
+## Command-line
+
+If you [download a release](https://github.com/schollz/ingredients/releases/latest), you can also use it from the command line:
+
+```
+$ ingredients https://www.tasteofhome.com/recipes/banana-chocolate-chip-cookies/
+```
+
+
 ## How does it work?
 
 See my blog post about it: [schollz.com/blog/ingredients](https://schollz.com/blog/ingredients).

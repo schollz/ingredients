@@ -3,40 +3,31 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"os"
 
-	log "github.com/schollz/logger"
 	"github.com/schollz/ingredients"
+	log "github.com/schollz/logger"
 )
 
 func main() {
-	log.SetLevel("trace")
+	log.SetLevel("error")
 	if len(os.Args) < 2 {
-		log.Error("need to have argument")
+		log.Error("usage: ingredients [file/url]")
 		os.Exit(1)
 	}
 
-	b, _ := ioutil.ReadFile(os.Args[1])
-	ing, err := ingredients.ParseTextIngredients(string(b))
+	var r *ingredients.Recipe
+	var err error
+
+	r, err = ingredients.NewFromFile(os.Args[1])
 	if err != nil {
-		log.Error(err)
-		os.Exit(1)
+		r, err = ingredients.NewFromURL(os.Args[1])
+		if err != nil {
+			log.Error("usage: ingredients [file/url]")
+			os.Exit(1)
+		}
 	}
-	b, _ = json.MarshalIndent(ing, "", "    ")
+	ing := r.IngredientList()
+	b, _ := json.MarshalIndent(ing, "", "    ")
 	fmt.Println(string(b))
-
-	// r, err := ingredients.NewFromFile(os.Args[1])
-	// if err != nil {
-	// 	log.Error(err)
-	// 	os.Exit(1)
-	// }
-	// err = r.Parse()
-	// if err != nil {
-	// 	log.Error(err)
-	// 	os.Exit(1)
-	// }
-
-	// b, _ := json.MarshalIndent(r.IngredientList().Ingredients, "", "    ")
-	// fmt.Println(string(b))
 }
