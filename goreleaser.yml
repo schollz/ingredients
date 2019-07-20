@@ -1,6 +1,6 @@
 project_name: ingredients
 build:
-  main: main.go
+  main: cmd/ingredients/main.go
   binary: ingredients
   ldflags: -s -w -X main.Version="v{{.Version}}-{{.Date}}"
   env:
@@ -26,7 +26,7 @@ nfpm:
   vendor: "schollz.com"
   homepage: "https://schollz.com/blog/ingredients/"
   maintainer: "Zack Scholl <zack.scholl@gmail.com>"
-  description: "A simple, secure, and fast way to transfer data."
+  description: "AExtract recipe ingredients from any URL or file."
   license: "MIT"
   name_template: "{{.ProjectName}}_{{.Version}}_{{.Os}}-{{.Arch}}"
   replacements:
