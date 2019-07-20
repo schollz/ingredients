@@ -8,6 +8,25 @@ Try it online: https://schollz.com/blog/ingredients/#try
 
 ## Usage
 
+### Online API
+
+You can use it online, just do `GET https://ingredients.schollz.now.sh/?url=X` where `X` is a URL to a recipe website.
+
+```
+$ curl https://ingredients.schollz.now.sh/?url=https://cooking.nytimes.com/recipes/12320-apple-pie
+```
+
+### Command line
+
+You can use it from the command line! If you [download a release](https://github.com/schollz/ingredients/releases/latest), you can also use it from the command line:
+
+```
+$ ingredients https://www.tasteofhome.com/recipes/banana-chocolate-chip-cookies/
+```
+
+### Go library
+
+
 You can use as a library.
 
 ```
@@ -33,14 +52,6 @@ fmt.Println(r.IngredientList())
 ```
 
 Please make an issue if you find a problem.
-
-## Command-line
-
-If you [download a release](https://github.com/schollz/ingredients/releases/latest), you can also use it from the command line:
-
-```
-$ ingredients https://www.tasteofhome.com/recipes/banana-chocolate-chip-cookies/
-```
 
 
 ## How does it work?
