@@ -2,6 +2,7 @@ package ingredients
 
 import (
 	"fmt"
+	"os"
 	"path"
 	"strings"
 	"testing"
@@ -9,6 +10,14 @@ import (
 	log "github.com/schollz/logger"
 	"github.com/stretchr/testify/assert"
 )
+
+func init() {
+	if os.Getenv("DEBUG") != "" {
+		log.SetLevel("trace")
+	} else {
+		log.SetLevel("info")
+	}
+}
 
 func BenchmarkParse(b *testing.B) {
 	log.SetLevel("error")
@@ -89,7 +98,6 @@ var ts = []URLIngredients{
 }
 
 func TestTable(t *testing.T) {
-	log.SetLevel("trace")
 	for i, t0 := range ts {
 		log.Info(i, t0.URL)
 		fileToGet := t0.URL
