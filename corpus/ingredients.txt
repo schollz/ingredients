@@ -2274,7 +2274,6 @@ field pea
 fish bone
 fish cake
 flatbread
-flavoring
 flax meal
 flax seed
 focaccium
