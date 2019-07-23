@@ -82,11 +82,16 @@ var ts = []URLIngredients{
 		"https://cooking.nytimes.com/recipes/12320-apple-pie",
 		[]string{"2 tablespoons butter", "2 1/2 pounds apples", "1/4 teaspoon allspice", "1/2 teaspoon cinnamon", "1/4 teaspoon salt", "3/4 cup sugar", "2 tablespoons flour", "2 teaspoons cornstarch", "1 tablespoon apple cider vinegar", "1 whole pie dough", "1 whole egg"},
 	},
+	{
+		"www.cooksillustrated.com/recipes/11519-indian-butter-chicken-murgh-makhani",
+		[]string{"2 tablespoons butter", "1/2 whole onion", "3 whole garlic", "2 teaspoons ginger", "2 teaspoons serrano chile", "1 1/2 teaspoons garam masala", "1/2 teaspoon coriander", "1/4 teaspoon cumin", "1/4 teaspoon pepper", "3/4 cup water", "1/4 cup tomato paste", "1 1/2 teaspoons sugar", "1 teaspoon salt", "1/2 cup heavy cream", "1 pound chicken thighs", "1/4 cup greek yogurt", "1 1/2 tablespoons cilantro", "11 g sugar"},
+	},
 }
 
 func TestTable(t *testing.T) {
 	log.SetLevel("trace")
-	for _, t0 := range ts {
+	for i, t0 := range ts {
+		log.Info(i, t0.URL)
 		fileToGet := t0.URL
 		fileToGet = strings.TrimPrefix(fileToGet, "https://")
 		if string(fileToGet[len(fileToGet)-1]) == "/" {
