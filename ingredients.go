@@ -150,6 +150,15 @@ func NewFromURL(url string) (r *Recipe, err error) {
 	return
 }
 
+func IngredientsFromURL(url string) (ingredients []Ingredient, err error) {
+	r, err := NewFromURL(url)
+	if err != nil {
+		return
+	}
+	ingredients = r.Ingredients
+	return
+}
+
 // Parse is the main parser for a given recipe.
 func (r *Recipe) parseHTML() (rerr error) {
 	if r == nil {
