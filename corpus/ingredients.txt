@@ -18,7 +18,6 @@ vegetable shortening
 vinaigrette dressing
 worcestershire sauce
 apple cider vinegar
-assorted decoration
 benedictine liqueur
 chipotle mayonnaise
 crystallized ginger
@@ -1961,7 +1960,6 @@ curly kale
 cuttlefish
 date sugar
 date syrup
-decoration
 demi glace
 dill chive
 dill frond
@@ -3397,6 +3395,8 @@ shortening
 red pepper flakes
 shallots
 tomato paste
+paste
+pods
 red bell pepper
 lime
 shrimp
@@ -3559,6 +3559,14 @@ peppermint
 banana
 hamburger
 cardamom
+pandan
+leaf
+tumeric
+chili
+powder
+coconut
+coconut milk
+green chillies
 catsup
 brandy
 salad

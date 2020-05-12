@@ -329,6 +329,7 @@ var corpusMeasuresMap = map[string]string{
 	"tablespoons": "tbl",
 	"tbl":         "tbl",
 	"tbsp":        "tbl",
+	"tblsp":       "tbl",
 	"tbsps":       "tbl",
 	"teaspoons":   "tsp",
 	"teaspoon":    "tsp",
