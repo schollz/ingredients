@@ -144,8 +144,13 @@ func NewFromURL(url string) (r *Recipe, err error) {
 		return
 	}
 
-	r = &Recipe{FileName: url}
-	r.FileContent = string(html)
+	return NewFromHTML(url, string(html))
+}
+
+// NewFromHTML generates a new parser from a HTML text
+func NewFromHTML(name, htmlstring string) (r *Recipe, err error) {
+	r = &Recipe{FileName: name}
+	r.FileContent = htmlstring
 	err = r.parseHTML()
 	return
 }
