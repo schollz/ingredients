@@ -2,6 +2,7 @@ nonhydrogenated margarine
 pomegranate concentrate
 cocktail pumpernickel
 miniature marshmallow
+coconut nectar
 raspberry vinaigrette
 balsamic vinaigrette
 blueberry blackberry
@@ -165,7 +166,6 @@ sourdough starter
 strawberry yogurt
 sweetened coconut
 turkey tenderloin
-unblanched almond
 vanilla flavoring
 vermicelli noodle
 watermelon radish
@@ -180,7 +180,6 @@ amaro montenegro
 artichoke bottom
 assorted filling
 assorted topping
-baking chocolate
 balsamic vinegar
 beefsteak tomato
 berry strawberry
@@ -315,7 +314,6 @@ artichoke heart
 atlantic salmon
 bacon pancettum
 beef tenderloin
-blanched almond
 bloody mary mix
 blueberry juice
 bourbon whiskey
@@ -505,7 +503,6 @@ unrefined sugar
 unripe plantain
 unseasoned rice
 vanilla custard
-vanilla essence
 vanilla pudding
 veal scallopini
 veal scaloppine
@@ -649,8 +646,6 @@ english muffin
 english walnut
 enoki mushroom
 enriched flour
-fat buttermilk
-fat mayonnaise
 fennel sausage
 fenugreek seed
 filtered water
@@ -917,7 +912,6 @@ chicken thigh
 chilled water
 chinese chili
 chive blossom
-chocolate bar
 chocolate egg
 cider vinegar
 cilantro mint
@@ -1211,7 +1205,6 @@ caraway seed
 cardamom pod
 carrot juice
 cashew cream
-caster sugar
 celery heart
 chaat masala
 cheese sauce
@@ -1767,7 +1760,6 @@ pumpkinseed
 purple plum
 quatre pice
 quick bread
-real butter
 rice cereal
 rice krispy
 rice noodle
@@ -2287,7 +2279,6 @@ hero roll
 honeycomb
 jackfruit
 jambalaya
-jumbo egg
 kiwifruit
 kochujang
 kochukaru
@@ -3273,7 +3264,6 @@ cal
 cod
 eel
 egg
-fat
 fig
 gin
 ham
@@ -3501,7 +3491,6 @@ applesauce
 asparagus
 thyme leaves
 salmon
-cooking oil
 cayenne
 flour tortillas
 dates

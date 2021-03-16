@@ -198,6 +198,10 @@ func SanitizeLine(s string) string {
 	s = strings.Replace(s, "⁄", "/", -1)
 	s = strings.Replace(s, " / ", "/", -1)
 
+	// special cases
+	s = strings.Replace(s, "butter milk", "buttermilk", -1)
+	s = strings.Replace(s+" ", " egg ", " eggs ", -1)
+
 	// remove parentheses
 	re := regexp.MustCompile(`(?s)\((.*)\)`)
 	for _, m := range re.FindAllStringSubmatch(s, -1) {
@@ -243,6 +247,7 @@ var conversionToCup = map[string]float64{
 }
 var ingredientToCups = map[string]float64{
 	"eggs":    0.25,
+	"egg":     0.25,
 	"garlic":  0.0280833,
 	"chicken": 3,
 	"celery":  0.5,
