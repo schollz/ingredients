@@ -1,7 +1,7 @@
 package ingredients
 
 //go:generate go run corpus/main.go
-//go:generate gofmt -s -w corpus.go
+//go:generate gofmt -w corpus.go
 
 import (
 	"bytes"
