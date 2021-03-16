@@ -248,6 +248,7 @@ var ingredientToCups = map[string]float64{
 	"celery":  0.5,
 	"onion":   1,
 	"carrot":  1,
+	"butter":  0.5,
 }
 
 func cupsToOther(cups float64, ingredient string) (amount float64, measure string) {

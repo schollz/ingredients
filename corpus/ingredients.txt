@@ -1242,6 +1242,7 @@ chunky salsa
 clam chowder
 clover honey
 cocoa butter
+cocoa powder
 coconut chip
 coconut meat
 coconut milk
@@ -3426,7 +3427,6 @@ cabbage
 bay leaves
 broccoli
 chicken breast
-cocoa
 carrot
 basil leaves
 onion powder
