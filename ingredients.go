@@ -12,6 +12,7 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/jinzhu/inflection"
 	log "github.com/schollz/logger"
 	"golang.org/x/net/html"
 	"golang.org/x/net/html/atom"
@@ -187,6 +188,7 @@ func (r *Recipe) parseRecipe() (rerr error) {
 			continue
 		}
 
+		// singularlize
 		lineInfo.Ingredient.Measure = Measure{}
 
 		// get amount, continue if there is an error
@@ -469,8 +471,11 @@ func scoreLine(line string) (score int, lineInfo LineInfo) {
 	}
 
 	// disfavor long lines
-	if len(lineInfo.Line) > 50 {
-		score = score - (len(lineInfo.Line) - 50)
+	if len(lineInfo.Line) > 30 {
+		score = score - (len(lineInfo.Line) - 30)
+	}
+	if len(lineInfo.Line) > 250 {
+		score = 0
 	}
 
 	// does it start with a list indicator (* or -)?
@@ -529,7 +534,7 @@ func (lineInfo *LineInfo) getIngredient() (err error) {
 		err = fmt.Errorf("no ingredient found")
 		return
 	}
-	lineInfo.Ingredient.Name = lineInfo.IngredientsInString[0].Word
+	lineInfo.Ingredient.Name = inflection.Singular(lineInfo.IngredientsInString[0].Word)
 	return
 }
 

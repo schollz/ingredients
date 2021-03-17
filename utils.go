@@ -200,7 +200,8 @@ func SanitizeLine(s string) string {
 
 	// special cases
 	s = strings.Replace(s, "butter milk", "buttermilk", -1)
-	s = strings.Replace(s+" ", " egg ", " eggs ", -1)
+	s = strings.Replace(s, "bicarbonate of soda", "baking soda", -1)
+	s = strings.Replace(s, "soda bicarbonate", "baking soda", -1)
 
 	// remove parentheses
 	re := regexp.MustCompile(`(?s)\((.*)\)`)
