@@ -60,7 +60,11 @@ type IngredientList struct {
 func (il IngredientList) String() string {
 	s := ""
 	for _, ing := range il.Ingredients {
-		s += fmt.Sprintf("%s %s %s", AmountToString(ing.Measure.Amount), ing.Measure.Name, ing.Name)
+		name := ing.Name
+		if ing.Measure.Amount > 1 && ing.Measure.Name == "whole" {
+			name = inflection.Plural(name)
+		}
+		s += fmt.Sprintf("%s %s %s", AmountToString(ing.Measure.Amount), ing.Measure.Name, name)
 		if ing.Comment != "" {
 			s += " (" + ing.Comment + ")"
 		}
