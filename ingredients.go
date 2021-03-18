@@ -188,7 +188,7 @@ func (r *Recipe) parseRecipe() (rerr error) {
 	goodLines := make([]LineInfo, len(r.Lines))
 	j := 0
 	for _, lineInfo := range r.Lines {
-		if len(strings.TrimSpace(lineInfo.Line)) < 3 {
+		if len(strings.TrimSpace(lineInfo.Line)) < 3 || len(strings.TrimSpace(lineInfo.Line)) > 150 {
 			continue
 		}
 
