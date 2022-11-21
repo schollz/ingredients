@@ -41,6 +41,18 @@ type URLIngredients struct {
 var ts = []URLIngredients{
 	//
 	{
+		"https://www.truvia.com/recipes/chocolate-chip-banana-cookies",
+		[]string{"1/3 cup butter", "1/4 cup sugar", "1 whole egg", "1/2 cup banana", "1/2 teaspoon vanilla", "1 cup flour", "1 teaspoon baking powder", "1/4 teaspoon salt", "1/8 teaspoon baking soda", "1 cup chocolate chip", "1/3 cup butter", "1/4 cup sugar", "1 whole egg", "1/2 cup banana", "1/2 teaspoon vanilla", "1 cup flour", "1 teaspoon baking powder", "1/4 teaspoon salt", "1/8 teaspoon baking soda", "1 cup chocolate chip"},
+	},
+	{
+		"https://cooking.nytimes.com/recipes/1012904-banana-everything-cookies",
+		[]string{"1 whole banana", "1/3 cup canola oil", "2/3 cup sugar", "1 teaspoon vanilla", "3/4 cup flour", "1/2 teaspoon baking soda", "1/4 teaspoon salt", "1/4 teaspoon cinnamon", "2 cups oatmeal", "1/2 cup walnut", "1/2 cup chocolate chip"},
+	},
+	{
+		"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/index.html",
+		[]string{"3 whole banana", "2 whole egg", "1/2 cup canola oil", "1/2 cup applesauce", "3/4 cup brown sugar", "1 1/2 cups pastry flour", "1 teaspoon baking soda", "1/2 teaspoon salt", "1/4 teaspoon cinnamon", "1/4 teaspoon baking powder", "1/2 cup chocolate chip"},
+	},
+	{
 		"https://lifemadesimplebakes.com/banana-chocolate-chip-cookies/",
 		[]string{"1/2 c. butter", "1/4 c. brown sugar", "1/4 c. sugar", "1/2 c. banana", "1 whole egg", "1 tsp. vanilla", "1 1/3 c. flour", "1 tsp. baking powder", "1/2 tsp. salt", "1 c. chocolate chip"},
 	},

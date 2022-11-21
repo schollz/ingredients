@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Whole Wheat Banana Bread With Chocolate Chips" />
+<meta property="og:description" content="This moist, rich banana bread with chocolate chips is made using whole wheat pastry flour. Perfect for breakfast, lunch boxes, and snacks." />
+<meta property="og:url" content="https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/" />
+<meta property="og:site_name" content="Real Mom Nutrition" />
+<meta property="og:updated_time" content="2021-01-29T13:47:48+00:00" />
+<meta property="article:published_time" content="2019-05-13T12:36:13+00:00" />
+<meta property="article:modified_time" content="2021-01-29T13:47:48+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Whole Wheat Banana Bread With Chocolate Chips" />
+<meta name="twitter:description" content="This moist, rich banana bread with chocolate chips is made using whole wheat pastry flour. Perfect for breakfast, lunch boxes, and snacks." />
+<meta property="og:image" content="https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1.jpg" />
+<meta name="twitter:image" content="https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1.jpg" />
+<meta property="og:image:width" content="780" />
+<meta property="og:image:height" content="522" />
+
+
+<title>Whole Wheat Banana Bread With Chocolate Chips</title><style id="rocket-critical-css">.wp-block-image{margin-bottom:1em}.wp-block-image img{max-width:100%}.wp-block-image:not(.is-style-rounded) img{border-radius:inherit}.has-text-align-center{text-align:center}.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute!important;width:1px;word-wrap:normal!important}.gb-block-pricing-table:nth-child(1){-ms-grid-row:1;-ms-grid-column:1;grid-area:col1}.gb-block-pricing-table:nth-child(2){-ms-grid-row:1;-ms-grid-column:2;grid-area:col2}.gb-block-pricing-table:nth-child(3){-ms-grid-row:1;-ms-grid-column:3;grid-area:col3}.gb-block-pricing-table:nth-child(4){-ms-grid-row:1;-ms-grid-column:4;grid-area:col4}.gb-block-layout-column:nth-child(1){-ms-grid-row:1;-ms-grid-column:1;grid-area:col1}.gb-block-layout-column:nth-child(1){-ms-grid-row:1;-ms-grid-column:1;grid-area:col1}.gb-block-layout-column:nth-child(2){-ms-grid-row:1;-ms-grid-column:2;grid-area:col2}.gb-block-layout-column:nth-child(3){-ms-grid-row:1;-ms-grid-column:3;grid-area:col3}.gb-block-layout-column:nth-child(4){-ms-grid-row:1;-ms-grid-column:4;grid-area:col4}.gb-block-layout-column:nth-child(5){-ms-grid-row:1;-ms-grid-column:5;grid-area:col5}.gb-block-layout-column:nth-child(6){-ms-grid-row:1;-ms-grid-column:6;grid-area:col6}@media only screen and (max-width:600px){.gpb-grid-mobile-reorder .gb-is-responsive-column .gb-block-layout-column:nth-of-type(1){grid-area:col2}.gpb-grid-mobile-reorder .gb-is-responsive-column .gb-block-layout-column:nth-of-type(2){grid-area:col1}}.wp-block-image{margin-bottom:1.2em}.dpsp-networks-btns-wrapper .dpsp-network-btn .dpsp-network-icon{align-self:start;display:block;font-size:14px;line-height:36px;width:40px;height:40px;position:relative;top:-2px;left:-2px;text-align:center;border:2px solid;flex:0 0 auto;-moz-box-sizing:border-box;box-sizing:border-box}.dpsp-network-icon .dpsp-network-icon-inner svg{position:relative;top:.1em;max-height:14px;width:auto;overflow:visible}.dpsp-network-icon-inner{display:flex;align-items:center;justify-content:center}.dpsp-network-icon-inner{height:36px}#dpsp-content-top{margin-bottom:1.2em}.dpsp-networks-btns-wrapper{list-style:none!important;padding:0!important;margin:0!important}.dpsp-networks-btns-wrapper:after{content:"";display:block;height:0;clear:both}.dpsp-networks-btns-wrapper li{float:left;margin:0;padding:0;border:0;list-style-type:none!important}.dpsp-networks-btns-wrapper li:before{display:none!important}.dpsp-networks-btns-wrapper li:first-child{margin-left:0!important}.dpsp-networks-btns-wrapper .dpsp-network-btn{position:relative;text-align:center;display:inline-flex;text-decoration:none!important;text-transform:unset!important;height:40px;min-width:40px;font-family:Arial,sans-serif;font-weight:700;font-size:14px;line-height:36px;vertical-align:middle;padding:0;border:2px solid;max-height:40px;width:100%;-moz-box-sizing:border-box;box-sizing:border-box;box-shadow:none;border-radius:0}.dpsp-networks-btns-wrapper .dpsp-network-btn .dpsp-network-label{padding-left:.5em;padding-right:.5em}.dpsp-networks-btns-wrapper .dpsp-network-btn:after{content:"";display:block;height:0;clear:both}.dpsp-networks-btns-wrapper.dpsp-column-3 li{width:33.3333%}.dpsp-has-spacing .dpsp-networks-btns-wrapper.dpsp-column-3 li{width:32%}.dpsp-networks-btns-wrapper.dpsp-column-3 li:nth-child(3n){margin-right:0}.dpsp-facebook{--networkColor:rgba(58,87,154,0.4);--networkHover:rgba(51,77,135,0.4)}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-facebook,.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-facebook .dpsp-network-icon{border-color:#3a579a;background:#3a579a;color:#3a579a}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-facebook .dpsp-network-icon svg{fill:#3a579a}.dpsp-twitter{--networkColor:rgba(0,171,240,0.4);--networkHover:rgba(0,153,215,0.4)}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-twitter,.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-twitter .dpsp-network-icon{border-color:#00abf0;background:#00abf0;color:#00abf0}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-twitter .dpsp-network-icon svg{fill:#00abf0}.dpsp-pinterest{--networkColor:rgba(201,34,40,0.4);--networkHover:rgba(179,30,36,0.4)}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-pinterest,.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-pinterest .dpsp-network-icon{border-color:#c92228;background:#c92228;color:#c92228}.dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-pinterest .dpsp-network-icon svg{fill:#c92228}.dpsp-has-spacing .dpsp-networks-btns-wrapper li{margin-bottom:10px;margin-right:2%;margin-left:0!important}.dpsp-size-small .dpsp-networks-btns-wrapper:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn{height:32px;min-width:32px;line-height:28px;max-height:32px}.dpsp-size-small .dpsp-networks-btns-wrapper:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn .dpsp-network-icon{line-height:28px;width:32px;height:32px}.dpsp-size-small .dpsp-networks-btns-wrapper:not(.dpsp-networks-btns-sidebar):not(.dpsp-networks-btns-sticky-bar) .dpsp-network-btn .dpsp-network-icon-inner{height:28px}.dpsp-button-style-1 .dpsp-network-btn{color:#fff!important}.dpsp-button-style-1 .dpsp-network-btn .dpsp-network-icon svg{fill:#fff!important}.dpsp-top-shared-post{margin-bottom:2em}.dpsp-top-shared-post-thumbnail{display:block;margin-bottom:1.2em}.dpsp-top-shared-post-thumbnail img{max-width:100%;height:auto}article{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%}@media screen and (max-device-width:480px){body{-webkit-text-size-adjust:none}}html{text-rendering:auto!important}html body{text-rendering:auto!important}p{font-size:1em}@media only screen and (-webkit-min-device-pixel-ratio:0) and (min-width:900px){::i-block-chrome{min-width:250px}}:root{--color-success:#32cd32;--color-danger:#ff4500;--color-warning:gold;--color-info:#1e90ff;--color-border:rgba(10,20,30,.05);--color-shadow:rgba(10,20,30,.1);--font-scale:1.25;--font-scale-responsive:0.15vw;--font-size-base:16px;--font-size-xs:calc(var(--font-size-sm) / var(--font-scale));--font-size-sm:calc(var(--font-size-md) / var(--font-scale));--font-size-md:calc(var(--font-size-base) + var(--font-scale-responsive));--font-size-lg:calc(var(--font-size-md) * var(--font-scale));--font-size-xl:calc(var(--font-size-lg) * var(--font-scale));--font-size-xxl:calc(var(--font-size-xl) * var(--font-scale));--font-size-xxxl:calc(var(--font-size-xxl) * var(--font-scale));--font-size-xxxxl:calc(var(--font-size-xxxl) * var(--font-scale));--system-font-family:-apple-system,blinkmacsystemfont,"Segoe UI",roboto,oxygen-sans,ubuntu,cantarell,"Helvetica Neue",sans-serif;--code-font-family:consolas,monaco,monospace;--spacing-base:16px;--spacing-scale:1.5;--spacing-xxxxs:calc(var(--spacing-xxxs) / var(--spacing-scale));--spacing-xxxs:calc(var(--spacing-xxs) / var(--spacing-scale));--spacing-xxs:calc(var(--spacing-xs) / var(--spacing-scale));--spacing-xs:calc(var(--spacing-sm) / var(--spacing-scale));--spacing-sm:calc(var(--spacing-md) / var(--spacing-scale));--spacing-md:var(--spacing-base);--spacing-lg:calc(var(--spacing-md) * var(--spacing-scale));--spacing-xl:calc(var(--spacing-lg) * var(--spacing-scale));--spacing-xxl:calc(var(--spacing-xl) * var(--spacing-scale));--spacing-xxxl:calc(var(--spacing-xxl) * var(--spacing-scale));--spacing-xxxxl:calc(var(--spacing-xxxl) * var(--spacing-scale));--side-spacing:calc(var(--spacing-md) + 2vw);--row-gap:var(--spacing-md);--column-gap:var(--spacing-md);--wrap-max-width:var(--breakpoint-xl);--sidebar-width:300px;--content-max-width:var(--breakpoint-xl);--viewport-width:calc(100vw - var(--scrollbar-width, 0px));--border-radius:4px;--border-width:1px;--border:var(--border-width) solid var(--color-border);--shadow:0 0.25em 1em 0 var(--color-shadow);--content-sidebar-wrap-margin-top:var(--spacing-xxl);--content-sidebar-wrap-margin-bottom:var(--spacing-xxxl);--content-sidebar-gap:calc(var(--column-gap) * 3)}*,:after,:before{box-sizing:border-box}html{line-height:1.15;-webkit-text-size-adjust:100%;max-width:var(--viewport-width);font-size:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}body{margin:0;--body-top:0px;--scroll-margin-top:calc(var(--body-top) + var(--spacing-lg));display:flex;flex-direction:column;min-height:var(--body-min-height,calc(100vh - var(--body-top)));min-height:-webkit-fill-available;overflow-x:hidden;color:var(--body-color,var(--color-body));font-weight:var(--body-font-weight,unset);font-size:var(--body-font-size,var(--font-size-md));font-family:var(--body-font-family,unset);font-style:var(--body-font-style,normal);line-height:var(--body-line-height,1.625);background:var(--body-background-color,var(--color-background))}main{display:block}a{background-color:transparent;color:var(--link-color,var(--color-link));-webkit-text-decoration:var(--link-text-decoration,none);text-decoration:var(--link-text-decoration,none);text-underline-offset:var(--link-text-decoration-offset,var(--spacing-xxs));word-break:var(--link-word-break,break-word)}img{border-style:none;max-width:100%;height:auto;vertical-align:top;border-radius:var(--image-border-radius,0)}button,input{font-size:100%;font-family:inherit}button,input{overflow:visible}button{text-transform:none}[type=submit],button{-webkit-appearance:button}[type=submit]::-moz-focus-inner,button::-moz-focus-inner{padding:0;border-style:none}[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}:target{scroll-margin-top:var(--scroll-margin-top)}p{width:var(--paragraph-width,auto);margin:var(--paragraph-margin,0 0 var(--paragraph-margin-bottom,var(--spacing-md)));padding:var(--paragraph-padding,0);color:var(--body-color,var(--color-body))}em{font-style:var(--emphasis-font-style,italic)}h1,h2,h3{margin-top:var(--heading-margin-top,0);margin-bottom:var(--heading-margin-bottom,var(--spacing-md));color:var(--heading-color,var(--color-heading));font-weight:var(--heading-font-weight,unset);font-family:var(--heading-font-family,unset);font-style:var(--heading-font-style,normal);line-height:var(--heading-line-height,1.219);letter-spacing:var(--heading-letter-spacing,normal);text-transform:var(--heading-text-transform,none)}h1{font-size:var(--h1-font-size,var(--font-size-xxxxl))}h2{font-size:var(--h2-font-size,var(--font-size-xxl))}h3{font-size:var(--h3-font-size,var(--font-size-xl))}ul{list-style-type:var(--list-style-type,var(--unordered-list-style-type,disc))}ul{margin:var(--list-margin,var(--list-margin-top,0) var(--list-margin-right,0) var(--list-margin-bottom,var(--spacing-sm)) var(--list-margin-left,0));padding:var(--list-padding,0);list-style-position:var(--list-style-position,inside)}ul ul{margin:var(--sub-list-margin,var(--spacing-md) var(--spacing-md))}li{margin:var(--list-item-margin,var(--list-item-margin-top,0) var(--list-item-margin-right,0) var(--list-item-margin-bottom,0) var(--list-item-margin-left,0))}.entry-content,.sidebar{--list-style-position:outside;--list-margin-left:var(--spacing-xl);--list-margin-bottom:var(--spacing-lg);--list-item-margin-bottom:var(--spacing-xs)}.button,.button:visited,[type=submit],button{position:relative;display:var(--button-display,inline-flex);align-items:center;justify-content:center;width:var(--button-width,auto);margin:var(--button-margin,0);padding:var(--button-padding,.9em 2em);color:var(--button-color);font-weight:var(--button-font-weight,var(--body-font-weight));font-size:var(--button-font-size,var(--font-size-base));font-family:var(--button-font-family,var(--body-font-family));line-height:var(--button-line-height,1.1);letter-spacing:var(--button-letter-spacing,normal);white-space:var(--button-white-space,normal);text-align:var(--button-text-align,center);text-transform:var(--button-text-transform,none);-webkit-text-decoration:var(--button-text-decoration,none);text-decoration:var(--button-text-decoration,none);word-break:var(--button-word-break,normal);overflow-wrap:var(--button-overflow-wrap,break-word);background:var(--button-background,var(--color-primary));border:var(--button-border,0);border-radius:var(--button-border-radius,var(--border-radius));outline:var(--button-outline,none);box-shadow:var(--button-box-shadow,none);-webkit-transform:var(--button-transform,none);transform:var(--button-transform,none);opacity:var(--button-opacity,1)}.button-secondary,.button-secondary:visited{--button-color:var(--button-secondary-color);--button-color-hover:var(--button-secondary-color-hover,var(--button-secondary-color));--button-background:var(--button-secondary-background,var(--color-secondary));--button-background-hover:var(--button-secondary-background-hover,var(--color-secondary-dark,var(--color-secondary)))}label{display:inline-block;margin:var(--label-margin,0 0 var(--spacing-xs));font-weight:var(--label-font-weight,var(--heading-font-weight));font-size:var(--label-font-size,smaller);--input-font-size:smaller;--input-font-weight:var(--body-font-weight)}[type=search]{display:var(--input-display,block);width:var(--input-width,100%);margin:var(--input-margin,0);padding:var(--input-padding,.9em);color:var(--input-color,var(--color-body));font-size:var(--input-font-size,var(--font-size-base));font-family:var(--input-font-family,inherit);line-height:var(--input-line-height,1);background-color:var(--input-background-color,var(--color-white));background-clip:padding-box;border:var(--input-border,1px solid rgba(0,0,0,.1));border-radius:var(--input-border-radius,var(--border-radius));outline:none;box-shadow:var(--input-box-shadow,none)}::-webkit-input-placeholder,input::-webkit-input-placeholder{color:var(--input-placeholder-color,var(--color-body));font-size:var(--font-size-base);opacity:.5}::-moz-placeholder,input::-moz-placeholder{color:var(--input-placeholder-color,var(--color-body));font-size:var(--font-size-base);opacity:.5}::-ms-input-placeholder,input::-ms-input-placeholder{color:var(--input-placeholder-color,var(--color-body));font-size:var(--font-size-base);opacity:.5}::placeholder{color:var(--input-placeholder-color,var(--color-body));font-size:var(--font-size-base);opacity:.5}input[type=search]{width:var(--search-input-width,auto);min-width:var(--search-input-min-width,0);max-width:var(--search-input-max-width,320px);font-size:var(--font-size-md);-webkit-appearance:none}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-results-button{display:none}iframe{width:100%;max-width:100%}iframe{border:0}figure{max-width:100%;-webkit-margin-end:0;margin-inline-end:0;-webkit-margin-start:0;margin-inline-start:0}.site-container{display:flex;flex-direction:column;flex:1;width:100%;max-width:var(--site-container-max-width,unset);margin:var(--site-container-margin,unset);background:var(--site-container-background,unset)}.wrap{position:var(--wrap-position,unset);width:var(--wrap-width,calc(100% - (var(--side-spacing) * 2)));max-width:var(--wrap-max-width);margin-right:auto;margin-left:auto}.site-inner{width:100%;margin:var(--site-inner-margin,var(--site-inner-margin-top,0) auto var(--site-inner-margin-bottom,0))}.content-sidebar-wrap{width:calc(100% - (var(--side-spacing) * 2));max-width:var(--wrap-max-width);margin:var(--content-sidebar-wrap-margin-top) auto var(--content-sidebar-wrap-margin-bottom)}.content{width:100%;max-width:var(--content-max-width);margin:var(--content-margin,var(--content-margin-top,0) var(--content-margin-sides,auto) var(--content-margin-bottom,0));--columns:0}.has-content-sidebar{--content-max-width:unset}.sidebar{margin-top:var(--sidebar-margin-top,var(--spacing-xl));font-size:var(--sidebar-font-size,var(--font-size-sm));--widget-margin-bottom:var(--spacing-xl);--entry-title-margin-bottom:var(--spacing-xs);--entry-title-font-size:var(--font-size-lg);--entry-content-margin:0 0 var(--spacing-md);--paragraph-margin-bottom:var(--spacing-xs)}.sidebar .widget:first-of-type{--widget-margin-top:0}.nav-after-header{position:relative;z-index:10;display:var(--nav-after-header-display,none);width:100%}.menu{display:var(--menu-display,flex);flex-wrap:var(--menu-flex-wrap,wrap);align-items:var(--menu-align-items,center);justify-content:var(--menu-justify-content,flex-start);width:100%;margin:0;font-weight:var(--menu-font-weight,inherit);font-size:var(--menu-font-size,var(--font-size-md));font-family:var(--menu-font-family,inherit);line-height:var(--menu-line-height,1.219);letter-spacing:var(--menu-letter-spacing,normal);text-transform:var(--menu-text-transform,normal);-webkit-columns:var(--menu-columns,auto);-moz-columns:var(--menu-columns,auto);columns:var(--menu-columns,auto);list-style-type:none;--link-text-decoration:var(--menu-item-link-text-decoration,none);--link-text-decoration-hover:var(--menu-item-link-text-decoration-hover,none)}.menu-item{position:relative;display:var(--menu-item-display,flex);flex-wrap:var(--menu-item-flex-wrap,wrap);justify-content:var(--menu-item-justify-content,flex-start);width:var(--menu-item-width,auto);margin:var(--menu-item-margin,0)}.menu-item-link{display:var(--menu-item-link-display,flex);flex:var(--menu-item-link-flex,unset);align-items:center;justify-content:var(--menu-item-link-justify-content,flex-start);width:var(--menu-item-link-width,auto);max-width:var(--menu-item-link-max-width,100%);padding:var(--menu-item-link-padding,var(--spacing-sm) var(--spacing-sm));color:var(--menu-item-link-color,var(--color-heading));text-align:var(--menu-item-link-text-align,start)}.menu-item-link>span{display:inline-flex;align-items:center;justify-content:center}.menu-item-has-children>a:after{display:var(--menu-item-dropdown-toggle,inline-block);width:6px;height:6px;margin-left:var(--menu-item-dropdown-margin-left,var(--spacing-xs));border-color:currentColor;border-style:solid;border-top:0;border-right-width:1px;border-bottom-width:1px;border-left:0;-webkit-transform:var(--sub-menu-toggle-transform,rotate(45deg));transform:var(--sub-menu-toggle-transform,rotate(45deg));content:""}.sub-menu{--menu-item-dropdown-margin-left:auto;--menu-item-width:100%;--menu-item-link-width:100%;--menu-item-link-color:var(--sub-menu-link-color,var(--color-body));--menu-item-link-color-hover:var(--sub-menu-link-color-hover,var(--color-primary));--menu-item-link-padding:var(--spacing-sm) var(--spacing-md);position:var(--sub-menu-position,relative);top:var(--sub-menu-top,100%);left:var(--sub-menu-left,auto);z-index:9;display:var(--sub-menu-display,none);flex:1 1 100%;flex-wrap:wrap;width:var(--sub-menu-width,18rem);margin:var(--sub-menu-margin,0);padding:var(--sub-menu-padding,var(--spacing-xxs) 0);font-size:var(--sub-menu-font-size,.9em);list-style-type:var(--sub-menu-list-style,none);background:var(--sub-menu-background,var(--color-white));border:var(--sub-menu-border,0);border-radius:var(--sub-menu-border-radius,0);opacity:var(--sub-menu-opacity,1);-webkit-animation:var(--sub-menu-animation,none);animation:var(--sub-menu-animation,none)}.mobile-menu,.sidebar{--menu-item-dropdown-toggle:none;--list-style-position:outside}.sidebar{--menu-display:block;--menu-item-link-padding:var(--spacing-xs) 0;--sub-menu-position:static;--sub-menu-display:block;--sub-menu-width:auto;--sub-menu-margin:0 0 0 var(--spacing-lg);--sub-menu-padding:0;--sub-menu-background:none;--sub-menu-list-style:disc;--sub-menu-border:none;--sub-menu-opacity:1}.menu-toggle{z-index:100;display:var(--menu-toggle-display,flex);flex-direction:var(--menu-toggle-flex-direction,row);align-items:center;justify-content:center;order:var(--menu-toggle-order,unset);min-height:2em;margin:0;padding:var(--menu-toggle-padding,0);--button-background:transparent;--button-background-hover:transparent;--button-text-decoration:none;--button-text-decoration-hover:none;--button-border:0;--button-border-hover:0;--button-box-shadow:0;--button-box-shadow-hover:0;--button-transform:0;--button-transform-hover:0}.menu-toggle-icon{position:relative;top:auto;right:auto;bottom:auto;margin:auto;color:var(--menu-toggle-color,var(--menu-item-link-color,var(--color-heading)));background:var(--menu-toggle-icon-background,currentColor)}.menu-toggle-icon,.menu-toggle-icon:after,.menu-toggle-icon:before{display:block;width:var(--menu-toggle-line-width,calc(var(--spacing-md) * 2));height:var(--menu-toggle-line-height,2px);border-radius:var(--menu-toggle-line-border-radius,var(--border-radius))}.menu-toggle-icon:after,.menu-toggle-icon:before{position:absolute;background:currentColor;content:""}.menu-toggle-icon:before{top:var(--menu-toggle-line-spacing,calc(var(--spacing-md) * -.5));-webkit-transform:var(--menu-toggle-line-before-transform,rotate(0deg));transform:var(--menu-toggle-line-before-transform,rotate(0deg))}.menu-toggle-icon:after{bottom:var(--menu-toggle-line-spacing,calc(var(--spacing-md) * -.5));-webkit-transform:var(--menu-toggle-line-after-transform,rotate(0deg));transform:var(--menu-toggle-line-after-transform,rotate(0deg))}.menu-toggle-icon+span{margin-left:var(--spacing-xs)}.sub-menu-toggle{display:var(--sub-menu-toggle-display,flex);align-items:center;justify-content:center;height:auto;margin:var(--sub-menu-toggle-margin,0);padding:1em;--button-background:transparent;--button-background-hover:transparent;--button-text-decoration:none;--button-text-decoration-hover:none;--button-border:0;--button-border-hover:0;--button-box-shadow:0;--button-box-shadow-hover:0;--button-transform:0;--button-transform-hover:0}.sub-menu-toggle-icon{width:.4em;height:.4em;border-color:var(--menu-item-link-color,var(--color-heading));border-style:solid;border-top:0;border-right-width:2px;border-bottom-width:2px;border-left:0;-webkit-transform:var(--sub-menu-toggle-transform,rotate(45deg));transform:var(--sub-menu-toggle-transform,rotate(45deg))}.mobile-menu{--menu-item-width:100%;--menu-item-link-flex:1;--wrap-display:block;--sub-menu-background:var(--color-header);--sub-menu-margin:0 0 var(--spacing-md) var(--spacing-xxs);position:absolute;top:100%;left:0;display:var(--mobile-menu-display,none);width:100%;max-height:calc(100vh - var(--header-height, 0px) - var(--header-shrink-offset));padding:var(--spacing-md) 0;overflow-y:auto;color:var(--mobile-menu-color,var(--color-body));background:var(--mobile-menu-background,var(--color-header));border-bottom:var(--mobile-menu-border-bottom,var(--border));-webkit-animation:var(--mobile-menu-animation,none);animation:var(--mobile-menu-animation,none)}.search-form{display:var(--search-form-display,flex)}.search-form-input{border-top-right-radius:0;border-bottom-right-radius:0}.search-form-submit{--button-margin:var(--search-button-margin,0 0 0 var(--search-button-margin-left,calc(var(--spacing-lg) * -1)));--button-padding:0.75em 1.25em;--button-font-size:var(--font-size-sm)}.search-form-submit-icon{width:1em;fill:currentColor}.widget{width:var(--widget-width,100%);margin:var(--widget-margin,var(--widget-margin-top,0) var(--widget-margin-right,var(--widget-margin-sides,0)) var(--widget-margin-bottom,var(--spacing-sm)) var(--widget-margin-left,var(--widget-margin-sides,0)));padding:var(--widget-padding,0);border:var(--widget-border,0);border-radius:var(--widget-border-radius,var(--border-radius));--entry-width:100%;--entry-wrap-padding:0}.entry-content{margin:var(--entry-content-margin,0 0 var(--entry-content-margin-bottom,var(--spacing-md)))}.entry-meta{margin:var(--entry-meta-margin,0 0 var(--spacing-xl) 0);font-size:var(--entry-meta-font-size,var(--font-size-sm));white-space:pre-wrap;text-align:var(--entry-meta-text-align,start)}.entry-meta>*{vertical-align:middle}.entry-title{font-size:var(--entry-title-font-size,var(--font-size-xxxxl))}.entry-title-single{margin-bottom:var(--entry-title-single-margin-bottom,var(--spacing-xl))}.entry{position:var(--entry-position,static);display:var(--entry-display,flex);flex:var(--entry-flex,1 1 calc((100% / var(--columns)) - var(--column-gap)));flex-direction:var(--entry-flex-direction,column);flex-wrap:var(--entry-flex-wrap,nowrap);width:var(--entry-width,auto);max-width:var(--entry-max-width,calc((100% / var(--columns)) - var(--column-gap)));margin:var(--entry-margin,0);padding:var(--entry-padding,0);overflow:var(--entry-overflow,unset);text-align:var(--align-text,inherit);background:var(--entry-background,unset);border:var(--entry-border,0);border-radius:var(--entry-border-radius,var(--border-radius));box-shadow:var(--entry-box-shadow,unset)}.entry-wrap{display:flex;flex:1;flex-direction:column;justify-content:var(--align-text-vertical);width:var(--entry-wrap-width,100%);margin:var(--entry-wrap-margin,0 auto);padding:var(--entry-wrap-padding,0);color:var(--entry-wrap-color,inherit);background:var(--entry-wrap-background,transparent);border:var(--entry-wrap-border,unset);border-radius:var(--entry-wrap-border-radius,unset);box-shadow:var(--entry-wrap-box-shadow,unset)}.entry-wrap>:not(.entry-overlay){z-index:1}@media only screen and (min-width:800px){p:last-child{--paragraph-margin-bottom:0}}@media only screen and (min-width:1000px){.site-inner{display:flex;flex:1;flex-direction:column}.content-sidebar .content-sidebar-wrap{display:grid;grid-template-columns:var(--content-sidebar-wrap-columns,1fr);-webkit-column-gap:var(--content-sidebar-gap);-moz-column-gap:var(--content-sidebar-gap);column-gap:var(--content-sidebar-gap)}.content-sidebar{--content-sidebar-wrap-columns:1fr var(--sidebar-width)}.content{order:var(--content-order,0)}.sidebar{width:var(--sidebar-width);--sidebar-margin-top:0}}@media only screen and (max-width:799px){h1,h2,h3{word-break:var(--heading-word-break,break-word)}}@media only screen and (max-width:599px){.mobile-menu{--sub-menu-toggle-margin:0 0 0 auto}}.site-header{position:var(--site-header-position,relative);top:var(--site-header-top,auto);z-index:12;width:100%;color:var(--color-body);background:var(--site-header-background,var(--color-header));border-bottom:var(--site-header-border-bottom,var(--border));box-shadow:var(--site-header-box-shadow,none)}.site-header-wrap{display:var(--site-header-wrap-display,flex);flex-wrap:var(--site-header-wrap-flex-wrap,wrap);align-items:var(--site-header-wrap-align-items,center);justify-content:var(--site-header-wrap-justify-content,var(--site-header-wrap-justify-content-mobile,unset));width:var(--site-header-wrap-width,calc(100% - (var(--side-spacing) * 2)));max-width:var(--site-header-wrap-max-width,var(--wrap-max-width));margin-right:auto;margin-left:auto}.header-spacer{display:block;height:var(--header-spacer-height,0)}:root{--title-area-padding:var(--title-area-padding-mobile) 0}.title-area{flex:var(--title-area-flex,1);order:var(--title-area-order,unset);margin:var(--title-area-margin,0);padding:var(--title-area-padding,var(--spacing-md) 0);color:var(--title-area-color,var(--color-heading));line-height:var(--title-area-line-height,var(--heading-line-height));text-align:var(--title-area-text-align,start);--link-color-hover:var(--color-link);--link-text-decoration:none;--link-text-decoration-hover:none}.title-area-first{--title-area-flex:0 1 auto}.site-title{display:var(--site-title-display,block);margin:var(--site-title-margin,auto);font-weight:var(--site-title-font-weight,var(--heading-font-weight));font-size:var(--site-title-font-size,var(--font-size-xl));font-family:var(--site-title-font-family,var(--heading-font-family))}.site-description{display:var(--site-description-display,block);margin:0;font-size:var(--site-description-font-size,smaller)}.custom-logo-link{display:flex;align-items:center;max-width:var(--custom-logo-width,18rem);margin:auto}.custom-logo{display:block;width:var(--viewport-width);max-width:100%}.header-section-mobile{display:var(--header-section-mobile-display,flex);flex:1;align-items:center}.header-right-mobile{justify-content:flex-end}.menu,:root{--icon-size:2em}.entry-content{--icon-size:4em;--search-block-margin:0 0 var(--spacing-md)}.wp-block-image{margin-top:1em}.screen-reader-shortcut,.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(100%);clip-path:inset(100%);height:1px;overflow:hidden;padding:0;position:absolute;white-space:nowrap;width:1px}.genesis-skip-link{margin:0}.genesis-skip-link li{width:0;height:0;list-style:none;background:var(--color-white)}:focus{outline:var(--focus-outline,var(--border))}.content{--alignfull-width:auto}.is-circle>:first-child,.is-square>:first-child{display:flex;flex-direction:column;place-content:center;grid-area:1/-1}.is-circle:before,.is-square:before{display:block;grid-area:1/-1;padding-bottom:100%;content:""}@media only screen and (min-width:1000px){.content-sidebar .content-sidebar-wrap{--alignfull-margin-right:0;--alignfull-margin-left:0;--alignwide-margin-right:0;--alignwide-margin-left:0}}:root{--font-scale:1.2;--font-size-base:15px;--body-font-weight:var(--font-weight-light);--border-radius:2px;--shadow:0 4px 24px 12px rgba(0,0,0,.025);--entry-spacing:calc(8px + 2vw);--entry-meta-font-size:var(--font-size-xs);--avatar-border-radius:50%}html{-moz-osx-font-smoothing:unset}.nav-after-header{--menu-item-link-color:var(--color-white);--menu-font-size:0.8em;--menu-letter-spacing:0.1rem;--menu-text-transform:uppercase;background-color:var(--color-heading)}body:not(.has-alignfull-first) .entry-wrap-single{margin-bottom:var(--spacing-xxl);padding:var(--entry-spacing);background:var(--color-white);border:var(--border);box-shadow:var(--shadow)}.entry-meta{letter-spacing:0.03125rem;text-transform:uppercase}</style>
+<meta name="description" content="This moist, rich banana bread with chocolate chips is made using whole wheat pastry flour. Perfect for breakfast, lunch boxes, and snacks." />
+<link rel="canonical" href="https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/" />
+<meta name="author" content="Sally" />
+<meta name="twitter:label1" content="Written by" />
+<meta name="twitter:data1" content="Sally" />
+<meta name="twitter:label2" content="Est. reading time" />
+<meta name="twitter:data2" content="2 minutes" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/#article","isPartOf":{"@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/"},"author":{"name":"Sally","@id":"https://www.realmomnutrition.com/#/schema/person/df6715bd3f0ba5c373fdcb7433343f49"},"headline":"Whole Wheat Banana Bread With Chocolate Chips","datePublished":"2019-05-13T16:36:13+00:00","dateModified":"2021-01-29T18:47:48+00:00","mainEntityOfPage":{"@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/"},"wordCount":482,"commentCount":18,"publisher":{"@id":"https://www.realmomnutrition.com/#organization"},"image":{"@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/#primaryimage"},"thumbnailUrl":"https://www.realmomnutrition.com/wp-content/uploads/BananaBread4.jpg","keywords":["banana bread","breads","breakfast","recipe","recipes"],"articleSection":["Breakfast","Recipes","Snacks","Sweets"],"inLanguage":"en-US","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/#respond"]}]},{"@type":"WebPage","@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/","url":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/","name":"Whole Wheat Banana Bread With Chocolate Chips","isPartOf":{"@id":"https://www.realmomnutrition.com/#website"},"primaryImageOfPage":{"@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/#primaryimage"},"image":{"@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/#primaryimage"},"thumbnailUrl":"https://www.realmomnutrition.com/wp-content/uploads/BananaBread4.jpg","datePublished":"2019-05-13T16:36:13+00:00","dateModified":"2021-01-29T18:47:48+00:00","description":"This moist, rich banana bread with chocolate chips is made using whole wheat pastry flour. Perfect for breakfast, lunch boxes, and snacks.","breadcrumb":{"@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/#primaryimage","url":"https://www.realmomnutrition.com/wp-content/uploads/BananaBread4.jpg","contentUrl":"https://www.realmomnutrition.com/wp-content/uploads/BananaBread4.jpg","width":780,"height":1165,"caption":"Whole Wheat Banana Bread With Chocolate Chips"},{"@type":"BreadcrumbList","@id":"https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.realmomnutrition.com/"},{"@type":"ListItem","position":2,"name":"Whole Wheat Banana Bread With Chocolate Chips"}]},{"@type":"WebSite","@id":"https://www.realmomnutrition.com/#website","url":"https://www.realmomnutrition.com/","name":"Real Mom Nutrition","description":"A no-judgments zone about feeding a family.","publisher":{"@id":"https://www.realmomnutrition.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.realmomnutrition.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://www.realmomnutrition.com/#organization","name":"Real Mom Nutrition","url":"https://www.realmomnutrition.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.realmomnutrition.com/#/schema/logo/image/","url":"https://www.realmomnutrition.com/wp-content/uploads/RMN-logo.jpg","contentUrl":"https://www.realmomnutrition.com/wp-content/uploads/RMN-logo.jpg","width":300,"height":232,"caption":"Real Mom Nutrition"},"image":{"@id":"https://www.realmomnutrition.com/#/schema/logo/image/"},"sameAs":["https://www.instagram.com/realmomnutrition/","https://www.pinterest.com/rmnutrition/","https://www.youtube.com/realmomnutrition","https://www.facebook.com/realmomnutrition","https://twitter.com/RMNutrition"]},{"@type":"Person","@id":"https://www.realmomnutrition.com/#/schema/person/df6715bd3f0ba5c373fdcb7433343f49","name":"Sally","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.realmomnutrition.com/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/dcea8ed14fe4b660e9ae85d6f69de809?s=96&d=blank&r=g","contentUrl":"https://secure.gravatar.com/avatar/dcea8ed14fe4b660e9ae85d6f69de809?s=96&d=blank&r=g","caption":"Sally"},"sameAs":["https://www.realmomnutrition.com"],"url":"https://www.realmomnutrition.com/author/sally/"}]}</script>
+
+<link rel='dns-prefetch' href='//bitter-feather-2551.ck.page' />
+<link rel='dns-prefetch' href='//scripts.mediavine.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//www.facebook.com' />
+<link rel='dns-prefetch' href='//connect.facebook.net' />
+<link rel='dns-prefetch' href='//f.convertkit.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//youtube.com' />
+<link rel='dns-prefetch' href='//i.ytimg.com' />
+<link rel="alternate" type="application/rss+xml" title="Real Mom Nutrition &raquo; Feed" href="https://www.realmomnutrition.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Real Mom Nutrition &raquo; Comments Feed" href="https://www.realmomnutrition.com/comments/feed/" />
+<link class="mai-preload" rel="preload" href="https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyC0ITw.woff2" as="font" type="font/woff2" crossorigin /><link class="mai-preload" rel="preload" href="https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2" as="font" type="font/woff2" crossorigin /><link class="mai-preload" rel="preload" as="image" imagesizes="(min-width: 1000px) 360px, 200px" imagesrcset="https://www.realmomnutrition.com/wp-content/uploads/RMN_web_FINAL-300x49.png 300w, https://www.realmomnutrition.com/wp-content/uploads/RMN_web_FINAL-768x125.png 768w, https://www.realmomnutrition.com/wp-content/uploads/RMN_web_FINAL.png 790w" />
+<link rel="alternate" type="application/rss+xml" title="Real Mom Nutrition &raquo; Whole Wheat Banana Bread With Chocolate Chips Comments Feed" href="https://www.realmomnutrition.com/banana-bread-with-chocolate-chips/feed/" />
+<script>function cpLoadCSS(e,t,n){"use strict";var i=window.document.createElement("link"),o=t||window.document.getElementsByTagName("script")[0];return i.rel="stylesheet",i.href=e,i.media="only x",o.parentNode.insertBefore(i,o),setTimeout(function(){i.media=n||"all"}),i}</script><style>.cp-popup-container .cpro-overlay,.cp-popup-container .cp-popup-wrapper{opacity:0;visibility:hidden;display:none}</style><link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/genesis-blocks/dist/style-blocks.build.css?ver=1666024878' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/convertkit/resources/frontend/css/broadcasts.css?ver=2.0.1' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/convertkit//resources/frontend/css/product.css?ver=2.0.1' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=6.0.3' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/social-pug/assets/dist/style-frontend-pro.2.16.2.css?ver=2.16.2' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<style id='dpsp-frontend-style-pro-inline-css' type='text/css'>
+
+				@media screen and ( max-width : 720px ) {
+					.dpsp-content-wrapper.dpsp-hide-on-mobile,
+					.dpsp-share-text.dpsp-hide-on-mobile,
+					.dpsp-content-wrapper .dpsp-network-label {
+						display: none;
+					}
+					.dpsp-has-spacing .dpsp-networks-btns-wrapper li {
+						margin:0 2% 10px 0;
+					}
+					.dpsp-network-btn.dpsp-has-label:not(.dpsp-has-count) {
+						max-height: 40px;
+						padding: 0;
+						justify-content: center;
+					}
+					.dpsp-content-wrapper.dpsp-size-small .dpsp-network-btn.dpsp-has-label:not(.dpsp-has-count){
+						max-height: 32px;
+					}
+					.dpsp-content-wrapper.dpsp-size-large .dpsp-network-btn.dpsp-has-label:not(.dpsp-has-count){
+						max-height: 46px;
+					}
+				}
+			
+								.dpsp-button-style-1 .dpsp-networks-btns-content.dpsp-networks-btns-wrapper .dpsp-network-btn .dpsp-network-icon,
+								.dpsp-button-style-1 .dpsp-networks-btns-content.dpsp-networks-btns-wrapper .dpsp-network-btn {
+									--customNetworkColor: #fa73bf;
+									--customNetworkHoverColor: #d1e338;
+									background: #fa73bf;
+									border-color: #fa73bf;
+								}
+							
+								.dpsp-button-style-1 .dpsp-networks-btns-content.dpsp-networks-btns-wrapper .dpsp-network-btn:hover .dpsp-network-icon,
+								.dpsp-button-style-1 .dpsp-networks-btns-content.dpsp-networks-btns-wrapper .dpsp-network-btn:focus .dpsp-network-icon,
+								.dpsp-button-style-1 .dpsp-networks-btns-content.dpsp-networks-btns-wrapper .dpsp-network-btn:hover,
+								.dpsp-button-style-1 .dpsp-networks-btns-content.dpsp-networks-btns-wrapper .dpsp-network-btn:focus {
+									border-color: #d1e338 !important;
+									background: #d1e338 !important;
+								}
+							.dpsp-networks-btns-wrapper.dpsp-networks-btns-content .dpsp-network-btn {--networkHover: rgba(209, 227, 56, 0.4); --networkAccent: rgba(209, 227, 56, 1);}
+</style>
+<link rel='preload' href='//www.realmomnutrition.com/wp-content/plugins/thrive-leads/editor-layouts/css/frontend.css?ver=3.13' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<script>document.addEventListener('DOMContentLoaded', function(event) {  if( typeof cpLoadCSS !== 'undefined' ) { cpLoadCSS('https://www.realmomnutrition.com/wp-content/plugins/convertpro/assets/modules/css/cp-popup.min.css?ver=1.7.4', 0, 'all'); } }); </script>
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/main.min.css?ver=2.25.3.11920221225' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/header.min.css?ver=2.25.3.11920221225' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/blocks.min.css?ver=2.25.3.11920221225' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/utilities.min.css?ver=2.25.3.11920221225' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/themes/delight.min.css?ver=2.25.3.11920221225' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/desktop.min.css?ver=2.25.3.11920221225' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='only screen and (min-width:1000px)' />
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' async="async" data-noptimize="1" data-cfasync="false" src='https://scripts.mediavine.com/tags/real-mom-nutrition.js?ver=6.0.3' id='mv-script-wrapper-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b' id='jquery-masonry-js' defer></script>
+<script type='text/javascript' id='tve_frontend-js-extra'>
+/* <![CDATA[ */
+var tve_frontend_options = {"is_editor_page":"","page_events":[],"is_single":"1","ajaxurl":"https:\/\/www.realmomnutrition.com\/wp-admin\/admin-ajax.php","social_fb_app_id":"","dash_url":"https:\/\/www.realmomnutrition.com\/wp-content\/plugins\/thrive-leads\/thrive-dashboard","translations":{"Copy":"Copy"},"post_id":"20338","ip":"69.162.173.112","current_user":[],"post_title":"Whole Wheat Banana Bread With Chocolate Chips","post_type":"post","post_url":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/","is_lp":"","post_request_data":[],"conditional_display":{"is_tooltip_dismissed":false}};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-content/plugins/thrive-leads/tcb/editor/js/dist/modules/general.min.js?ver=3.15' id='tve_frontend-js' defer></script>
+
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=UA-224161827-1' id='google_gtagjs-js' async></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["www.realmomnutrition.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "UA-224161827-1", {"anonymize_ip":true});
+</script>
+
+<link rel="https://api.w.org/" href="https://www.realmomnutrition.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.realmomnutrition.com/wp-json/wp/v2/posts/20338" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.realmomnutrition.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.realmomnutrition.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.0.3" />
+<link rel='shortlink' href='https://www.realmomnutrition.com/?p=20338' />
+<link rel="alternate" type="application/json+oembed" href="https://www.realmomnutrition.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.realmomnutrition.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.87.0" /> <style>
+			:root {
+				--mv-create-radius: 0;
+			}
+		</style>
+<link rel="preload" as="font" href="https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdo3cOWxw.woff" crossorigin>
+<link rel="preload" as="font" href="https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvoorCIPrcVIT9d4cw.woff" crossorigin>
+<link rel="preload" as="font" href="https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVsEpbCIPrcVIT9d4cw.woff" crossorigin>
+<link rel="preload" as="font" href="https://www.realmomnutrition.com/wp-content/fonts/raleway/1Pt_g8zYS_SKggPNyCgSQamb1W0lwk4S4VrMDrMfJh1Zyc6FYw.woff" crossorigin><link rel="pingback" href="https://www.realmomnutrition.com/xmlrpc.php" />
+
+<script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=G-P05PZ6TLGP"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P05PZ6TLGP');
+</script><link rel='preload' href='https://www.realmomnutrition.com/wp-content/uploads/Sally-RMN-Picky-Eaters-1.jpg' as='image'>
+<meta name="google-site-verification" content="nPf5Y79TkNLrcEIdM08ERl2Ijl89rXTDXT8_AAi1NLM" />
+<script type="rocketlazyloadscript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16214249-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '321329701557695');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=321329701557695&ev=PageView&noscript=1"
+/></noscript>
+
+<meta name="google-site-verification" content="2hpPEELi6_WQo54Q-s3buAygtT1-aVlE3NVWcsMJhIc" />
+<style type="text/css" id="tve_global_variables">:root{--tcb-background-author-image:url(https://secure.gravatar.com/avatar/dcea8ed14fe4b660e9ae85d6f69de809?s=256&d=blank&r=g);--tcb-background-user-image:url();--tcb-background-featured-image-thumbnail:url(https://www.realmomnutrition.com/wp-content/uploads/BananaBread4.jpg);}</style><style type="text/css" id="thrive-default-styles"></style><link rel="icon" href="https://www.realmomnutrition.com/wp-content/uploads/RMNavatar_B.jpg" sizes="32x32" />
+<link rel="icon" href="https://www.realmomnutrition.com/wp-content/uploads/RMNavatar_B.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.realmomnutrition.com/wp-content/uploads/RMNavatar_B.jpg" />
+<meta name="msapplication-TileImage" content="https://www.realmomnutrition.com/wp-content/uploads/RMNavatar_B.jpg" />
+<style type="text/css" id="wp-custom-css">
+			:root {
+	  --content-sidebar-wrap-margin-top: 0;
+}
+.sidebar {font-size: var(--sidebar-font-size,var(--font-size-md));}
+
+.entry-wrap {box-shadow:none !important;border:none !important;}
+
+.nav-after-header {
+    background: var(--color-white);
+    --menu-font-family: var(--heading-font-family);
+    --menu-font-weight: var(--heading-font-weight);
+    --menu-letter-spacing: 1px;
+    --menu-text-transform: uppercase;
+    --menu-item-link-color: var(--color-primary);
+    --menu-item-link-color-hover: var(--color-primary-dark);
+    --menu-item-link-background-hover: var(--color-primary-dark);
+    --menu-item-link-text-decoration: none;
+    --menu-item-link-text-decoration-hover: none;   
+	border-bottom: var(--border);
+}
+
+.entry-title {
+    font-size: var(--entry-title-font-size,var(--font-size-xxxl));
+}
+
+.entry-title.entry-title-single {
+	text-align: center;
+}
+
+.page-header-inner:not(:empty) {
+    --page-header-inner-background: hsla(0,0%,100%,.9);
+    --page-header-inner-box-shadow: 0;
+}
+@media only screen and (max-width: 800px) { .hideonmobile {display:none;}
+	
+	body {    font-size: var(--body-font-size,var(--font-size-lg));}
+}
+
+entry-content a {
+	font-weight: 700;
+}
+
+/* MV CSS START */
+.mv-create-header picture.mv-create-image {
+    position: absolute;
+    top: -97px;
+    left: 50%;
+    width: 194px;
+    height: 194px;
+    margin-left: -97px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+/* MV CSS END */		</style>
+<style id="mai-inline-styles">.header-stuck,:root{--custom-logo-width:200px;}:root{--breakpoint-xs:400px;--breakpoint-sm:600px;--breakpoint-md:800px;--breakpoint-lg:1000px;--breakpoint-xl:1200px;--title-area-padding-mobile:16px;--header-shrink-offset:67px;--body-font-family:Raleway;--body-font-weight:500;--body-font-weight-bold:700;--heading-font-family:Source Sans Pro;--heading-font-weight:700;--color-black:#000000;--color-white:#ffffff;--color-header:#ffffff;--color-background:#ffffff;--color-alt:#ffffff;--color-body:#302a2c;--color-heading:#302a2c;--color-link:#049fd3;--color-link-light:#05bdfa;--color-link-dark:#0379a0;--color-primary:#fa73bf;--color-primary-light:#fb9dd2;--color-primary-dark:#f844aa;--color-secondary:#fa73bf;--color-secondary-light:#fb9dd2;--color-secondary-dark:#f844aa;--button-color:var(--color-white);--button-secondary-color:var(--color-white);--button-link-url:url('https://www.realmomnutrition.com/wp-content/plugins/mai-icons/icons/svgs/regular/chevron-double-right.svg');--pagination-next-url:url('https://www.realmomnutrition.com/wp-content/plugins/mai-icons/icons/svgs/regular/chevron-double-right.svg');--pagination-previous-url:url('https://www.realmomnutrition.com/wp-content/plugins/mai-icons/icons/svgs/regular/chevron-double-left.svg');--entry-next-url:url('https://www.realmomnutrition.com/wp-content/plugins/mai-icons/icons/svgs/regular/chevron-double-right.svg');--entry-previous-url:url('https://www.realmomnutrition.com/wp-content/plugins/mai-icons/icons/svgs/regular/chevron-double-left.svg');--search-url:url('https://www.realmomnutrition.com/wp-content/plugins/mai-icons/icons/svgs/regular/search.svg');--page-header-overlay-opacity:0;--page-header-padding-top:2vw;--page-header-padding-bottom:2vw;--page-header-inner-max-width:var(--breakpoint-md);--page-header-justify-content:center;--page-header-text-align:center;}.nav-after-header{--menu-justify-content:center;}.has-black-color{color:var(--color-black) !important;--body-color:var(--color-black);--heading-color:var(--color-black);--caption-color:var(--color-black);--cite-color:var(--color-black);}.has-black-background-color{background-color:var(--color-black) !important;}.has-white-color{color:var(--color-white) !important;--body-color:var(--color-white);--heading-color:var(--color-white);--caption-color:var(--color-white);--cite-color:var(--color-white);}.has-white-background-color{background-color:var(--color-white) !important;}.has-header-color{color:var(--color-header) !important;--body-color:var(--color-header);--heading-color:var(--color-header);--caption-color:var(--color-header);--cite-color:var(--color-header);}.has-header-background-color{background-color:var(--color-header) !important;}.has-background-color{color:var(--color-background) !important;--body-color:var(--color-background);--heading-color:var(--color-background);--caption-color:var(--color-background);--cite-color:var(--color-background);}.has-background-background-color{background-color:var(--color-background) !important;}.has-alt-color{color:var(--color-alt) !important;--body-color:var(--color-alt);--heading-color:var(--color-alt);--caption-color:var(--color-alt);--cite-color:var(--color-alt);}.has-alt-background-color{background-color:var(--color-alt) !important;}.has-body-color{color:var(--color-body) !important;--body-color:var(--color-body);--heading-color:var(--color-body);--caption-color:var(--color-body);--cite-color:var(--color-body);}.has-body-background-color{background-color:var(--color-body) !important;}.has-heading-color{color:var(--color-heading) !important;--body-color:var(--color-heading);--heading-color:var(--color-heading);--caption-color:var(--color-heading);--cite-color:var(--color-heading);}.has-heading-background-color{background-color:var(--color-heading) !important;}.has-link-color{color:var(--color-link) !important;--body-color:var(--color-link);--heading-color:var(--color-link);--caption-color:var(--color-link);--cite-color:var(--color-link);}.has-link-background-color{background-color:var(--color-link) !important;}.has-primary-color{color:var(--color-primary) !important;--body-color:var(--color-primary);--heading-color:var(--color-primary);--caption-color:var(--color-primary);--cite-color:var(--color-primary);}.has-primary-background-color{background-color:var(--color-primary) !important;}.has-secondary-color{color:var(--color-secondary) !important;--body-color:var(--color-secondary);--heading-color:var(--color-secondary);--caption-color:var(--color-secondary);--cite-color:var(--color-secondary);}.has-secondary-background-color{background-color:var(--color-secondary) !important;}@media (min-width: 1000px){:root{--custom-logo-width:360px;--title-area-padding-desktop:36px;}}/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4QIFqPfE.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4SYFqPfE.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4QoFqPfE.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4Q4FqPfE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptsg8zYS_SKggPNyCg4TYFq.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCAIT5lu.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCkIT5lu.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCIIT5lu.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/raleway/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://www.realmomnutrition.com/wp-content/fonts/source-sans-pro/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script type="rocketlazyloadscript">
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script></head>
+<body class="post-template-default single single-post postid-20338 single-format-standard wp-custom-logo wp-embed-responsive cp_aff_false content-sidebar genesis-breadcrumbs-hidden no-page-header has-logo-center is-single has-sidebar no-js"><script type="rocketlazyloadscript">
+//<![CDATA[
+(function(){var c = document.body.classList;c.remove('no-js');c.add('js')})();
+//]]>
+</script><div class="site-container" id="top"><ul class="genesis-skip-link"><li><a href="#genesis-content" class="screen-reader-shortcut"> Skip to main content</a></li><li><a href="#nav-after-header" class="screen-reader-shortcut"> Skip to after header navigation</a></li><li><a href="#site-footer" class="screen-reader-shortcut"> Skip to site footer</a></li></ul><header class="site-header"><div class="site-header-wrap"><div class="title-area title-area-first"><a href="https://www.realmomnutrition.com/" class="custom-logo-link" rel="home"><img width="790" height="129" src="https://www.realmomnutrition.com/wp-content/uploads/RMN_web_FINAL.png" class="custom-logo" alt="Real Mom Nutrition" loading="eager" sizes="(min-width: 1000px) 360px, 200px" srcset="https://www.realmomnutrition.com/wp-content/uploads/RMN_web_FINAL-300x49.png 300w, https://www.realmomnutrition.com/wp-content/uploads/RMN_web_FINAL-768x125.png 768w, https://www.realmomnutrition.com/wp-content/uploads/RMN_web_FINAL.png 790w" /></a><p class="site-title screen-reader-text">Real Mom Nutrition</p><p class="site-description screen-reader-text">A no-judgments zone about feeding a family.</p></div><div class="header-section-mobile header-right-mobile"><button class="menu-toggle" aria-expanded="false" aria-pressed="false"><span class="menu-toggle-icon"></span><span class="screen-reader-text">Menu</span></button></div></div></header><span class="header-spacer"></span><nav class="nav-after-header" id="nav-after-header"><div class="wrap"><ul id="menu-menu-1" class="menu genesis-nav-menu"><li class="menu-item menu-item-has-children menu-item-first"><a class="menu-item-link"><span>About</span></a>
+<ul class="sub-menu">
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/about-real-mom-nutrition/"><span>Start Here</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/work-with-me/"><span>Work With Me</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/press/"><span>Press</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/disclosure/"><span>Disclosure &#038; Policies</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="/cdn-cgi/l/email-protection#a3d1c6c2cfcecccecdd6d7d1cad7cacccde3c4cec2cacf8dc0ccce"><span>Contact</span></a></li>
+</ul>
+</li>
+<li class="menu-item current_page_parent"><a class="menu-item-link" href="https://www.realmomnutrition.com/blog/"><span>New Posts</span></a></li>
+<li class="menu-item menu-item-has-children"><a class="menu-item-link"><span>Recipes</span></a>
+<ul class="sub-menu">
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/real-mom-nutrition-most-popular-recipes/"><span>Most Popular Recipes</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/category/recipes-2/breakfast/"><span>Breakfast</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/category/dinner/"><span>Dinner</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/category/snacks/"><span>Snacks</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/category/recipes-2/sweets/"><span>Desserts</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/category/recipes-2/drinks/"><span>Drinks</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children"><a class="menu-item-link"><span>Feeding Kids</span></a>
+<ul class="sub-menu">
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/picky-eaters/"><span>Picky Eating</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/lunch-boxes/"><span>Packing Lunches</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/nutrition-ideas-advice/"><span>Nutrition Ideas + Advice</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/school-wellness/"><span>School Wellness</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/snacks-in-sports/"><span>Snacks In Sports</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/meal-planning/"><span>Meal Planning + Food Shopping</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children"><a class="menu-item-link" href="javascript:void(0);"><span>Freebies</span></a>
+<ul class="sub-menu">
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/picky-eater-problem-solver-email-course/"><span>Free Picky Eating E-Course</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/pack-your-own-lunch-course/"><span>Free Lunch Packing E-Course</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-item-last"><a class="menu-item-link"><span>Shop</span></a>
+<ul class="sub-menu">
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/no-stress-dinner-planner/"><span>No-Stress Dinner Planner</span></a></li>
+<li class="menu-item"><a class="menu-item-link" href="https://www.realmomnutrition.com/lets-try-new-foods-book/"><span>Let’s Try New Foods Family Challenge</span></a></li>
+</ul>
+</li>
+</ul></div></nav><div class="site-inner"><div class="content-sidebar-wrap"><main class="content has-content-sidebar" id="genesis-content"><article class="entry entry-single no-entry-link type-post category-breakfast category-recipes-2 category-snacks category-sweets tag-banana-bread tag-breads tag-breakfast tag-recipe tag-recipes mv-content-wrapper grow-content-body" aria-label="Whole Wheat Banana Bread With Chocolate Chips"><div class="entry-wrap entry-wrap-single"><h1 class="entry-title entry-title-single">Whole Wheat Banana Bread With Chocolate Chips</h1>
+<div class="entry-meta entry-meta-before-content"><time class="entry-time">May 13, 2019</time> <span class="entry-author">by <a href="https://www.realmomnutrition.com/author/sally/" class="entry-author-link" rel="author"><span class="entry-author-name">Sally</span></a></span></div><div id="dpsp-content-top" class="dpsp-content-wrapper dpsp-shape-rectangular dpsp-size-small dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1" style="min-height:32px;position:relative">
+<ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-share dpsp-networks-btns-content dpsp-column-3 dpsp-has-button-icon-animation" style="padding:0;margin:0;list-style-type:none">
+<li class="dpsp-network-list-item dpsp-network-list-item-facebook" style="float:left">
+<a rel="nofollow noopener" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F&amp;t=Whole%20Wheat%20Banana%20Bread%20With%20Chocolate%20Chips" class="dpsp-network-btn dpsp-facebook dpsp-first dpsp-has-label" target="_blank" aria-label="Share on Facebook" title="Share on Facebook" style="font-size:14px;padding:0rem;max-height:32px"> <span class="dpsp-network-icon ">
+<span class="dpsp-network-icon-inner"></span>
+</span>
+<span class="dpsp-network-label">Share</span></a></li>
+<li class="dpsp-network-list-item dpsp-network-list-item-pinterest" style="float:left">
+<button data-href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F&amp;media=https%3A%2F%2Fwww.realmomnutrition.com%2Fwp-content%2Fuploads%2FBananaBreadPIN-1.png&amp;description=This%20easy%20Banana%20Bread%20with%20Chocolate%20Chips%20is%20moist%20and%20sweet.%20Perfect%20for%20breakfast%2C%20snacks%2C%20and%20lunch%20boxes.%20%23realmomnutrition%20%23bananabread%20%23breadrecipe%20%23breakfast%20%23snack" class="dpsp-network-btn dpsp-pinterest dpsp-has-label" aria-label="Save to Pinterest" title="Save to Pinterest" style="font-size:14px;padding:0rem;max-height:32px"> <span class="dpsp-network-icon ">
+<span class="dpsp-network-icon-inner"></span>
+</span>
+<span class="dpsp-network-label">Pin</span></button></li>
+<li class="dpsp-network-list-item dpsp-network-list-item-twitter" style="float:left">
+<a rel="nofollow noopener" href="https://twitter.com/intent/tweet?text=Whole%20Wheat%20Banana%20Bread%20With%20Chocolate%20Chips&amp;url=https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F&amp;via=RMnutrition" class="dpsp-network-btn dpsp-twitter dpsp-last dpsp-has-label" target="_blank" aria-label="Share on Twitter" title="Share on Twitter" style="font-size:14px;padding:0rem;max-height:32px"> <span class="dpsp-network-icon ">
+<span class="dpsp-network-icon-inner"></span>
+</span>
+<span class="dpsp-network-label">Tweet</span></a></li>
+</ul></div>
+<div class="entry-content entry-content-single"><span id="dpsp-post-content-markup" data-image-pin-it="false"></span><div class="mv-create-jtr-wrapper"><a href="#mv-creation-17-jtr" class="mv-create-jtr mv-create-jtr-slot-v2 mv-create-jtr-button-hollow mv-create-jtr-button-uppercase"><svg class="mv-create-jtr-caret" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 444.819 444.819" width="16px" height="16px"><path d="M434.252,114.203l-21.409-21.416c-7.419-7.04-16.084-10.561-25.975-10.561c-10.095,0-18.657,3.521-25.7,10.561 L222.41,231.549L83.653,92.791c-7.042-7.04-15.606-10.561-25.697-10.561c-9.896,0-18.559,3.521-25.979,10.561l-21.128,21.416 C3.615,121.436,0,130.099,0,140.188c0,10.277,3.619,18.842,10.848,25.693l185.864,185.865c6.855,7.23,15.416,10.848,25.697,10.848 c10.088,0,18.75-3.617,25.977-10.848l185.865-185.865c7.043-7.044,10.567-15.608,10.567-25.693 C444.819,130.287,441.295,121.629,434.252,114.203z" /></svg> Jump to Recipe</a></div><style>.mv-create-jtr-wrapper{margin-bottom:20px}a.mv-create-jtr-link{display:inline-block;padding:10px 10px 10px 0;color:#333;font-size:16px;text-decoration:none!important;-webkit-transition:color .5s;transition:color .5s}a.mv-create-jtr-link:hover,a.mv-create-jtr-link:focus{color:#666}.mv-create-jtr-link .mv-create-jtr-caret{margin-right:5px;padding-top:6px;fill:#333}.mv-create-jtr-link:hover .mv-create-jtr-caret,.mv-create-jtr-link:focus .mv-create-jtr-caret{fill:#666}a.mv-create-jtr-button-hollow{display:inline-block;padding:.75em 1.5em;border:1px solid #333;color:#333;background:transparent;box-shadow:none;text-shadow:none;font-size:16px;text-align:center;text-decoration:none!important;cursor:pointer;-webkit-transition:background .5s;transition:background .5s}a.mv-create-jtr-button-hollow:hover,a.mv-create-jtr-button-hollow:focus{border:1px solid #666;color:#666;background:transparent;box-shadow:none}.mv-create-jtr-button-hollow .mv-create-jtr-caret{margin-right:5px;padding-top:6px;fill:#333}.mv-create-jtr-button-hollow:hover .mv-create-jtr-caret,.mv-create-jtr-button-hollow:focus .mv-create-jtr-caret{fill:#666}.mv-create-jtr-button-uppercase{text-transform:uppercase}</style><p>This moist, sweet banana bread with chocolate chips is made using whole wheat pastry flour. It&#8217;s perfect for breakfast, lunch boxes, and snacks.</p>
+<p><img class="aligncenter size-full wp-image-20340" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20780%20522'%3E%3C/svg%3E" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="522" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1-300x201.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1-768x514.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1.jpg 780w" data-lazy-sizes="(max-width: 780px) 100vw, 780px" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1.jpg" /><noscript><img class="aligncenter size-full wp-image-20340" src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1.jpg" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="522" srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1-300x201.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1-768x514.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread9-1.jpg 780w" sizes="(max-width: 780px) 100vw, 780px" /></noscript></p>
+<p>Everything is better with chocolate chips. That seems to be a family motto of sorts around here. When there are overripe bananas lingering in the fruit bowl, they&#8217;re either frozen for smoothies or mashed into a loaf of this easy banana bread. And when I ask my boys their preference, they always choose adding chocolate chips.</p>
+<p><img class="aligncenter size-full wp-image-20341" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20780%201165'%3E%3C/svg%3E" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="1165" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread2-201x300.jpg 201w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread2-686x1024.jpg 686w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread2-768x1147.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread2.jpg 780w" data-lazy-sizes="(max-width: 780px) 100vw, 780px" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread2.jpg" /><noscript><img class="aligncenter size-full wp-image-20341" src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread2.jpg" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="1165" srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread2-201x300.jpg 201w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread2-686x1024.jpg 686w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread2-768x1147.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread2.jpg 780w" sizes="(max-width: 780px) 100vw, 780px" /></noscript></p>
+<p>This banana bread with chocolate chips is super moist thanks to the addition of unsweetened applesauce. Using brown sugar instead of white also lends more moistness&#8211;and I love the caramel flavor and deeper hue it gives too.&nbsp;</p>
+<p><img class="aligncenter size-full wp-image-20342" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20780%20780'%3E%3C/svg%3E" alt="Bobs Red Mill Whole Wheat Pastry Flour" width="780" height="780" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-150x150.jpg 150w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-300x300.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-320x320.jpg 320w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-500x500.jpg 500w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-768x768.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6.jpg 780w" data-lazy-sizes="(max-width: 780px) 100vw, 780px" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread6.jpg" /><noscript><img class="aligncenter size-full wp-image-20342" src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread6.jpg" alt="Bobs Red Mill Whole Wheat Pastry Flour" width="780" height="780" srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-150x150.jpg 150w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-300x300.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-320x320.jpg 320w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-500x500.jpg 500w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6-768x768.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread6.jpg 780w" sizes="(max-width: 780px) 100vw, 780px" /></noscript></p>
+<h2>What is Whole Wheat Pastry Flour?</h2>
+<p>This banana bread recipe calls for whole wheat pastry flour. If you&#8217;ve been baking your cookies and muffins with regular whole wheat flour, this switch will rock your world. Whole wheat pastry flour (also called graham flour) is made from a lower-protein wheat than regular whole wheat flour, so your baked goods will be softer and more tender. It&#8217;s best for baked goods like cookies, muffins, and pie crust but NOT yeast breads.</p>
+<p><img class="aligncenter size-full wp-image-20344" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20780%20585'%3E%3C/svg%3E" alt="Banana Bread Batter in Pan" width="780" height="585" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread8-300x225.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread8-500x375.jpg 500w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread8-768x576.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread8.jpg 780w" data-lazy-sizes="(max-width: 780px) 100vw, 780px" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread8.jpg" /><noscript><img class="aligncenter size-full wp-image-20344" src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread8.jpg" alt="Banana Bread Batter in Pan" width="780" height="585" srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread8-300x225.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread8-500x375.jpg 500w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread8-768x576.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread8.jpg 780w" sizes="(max-width: 780px) 100vw, 780px" /></noscript></p>
+<h2>What Kind of Pan Should I Use for Banana Bread?</h2>
+<p>Light-colored metal pans (such as aluminum) are generally recommended for quick breads like this. Darker metal pans tend to absorb too much heat, and you may end up with bread that&#8217;s burnt around the edges. When I tried this recipe using a glass loaf pan, the bread stuck horribly on the bottom despite generous greasing and flouring. Yet some people swear by glass pans for baking breads. If you decide to go glass, lower the oven temperature to 325 degrees F.</p>
+<p>As extra insurance, no matter what kind of pan you use, I recommend cutting a piece of parchment to fit just the bottom of the pan. Place it in the pan after greasing and flouring. No more worries about your loaf sticking to the bottom. It peels right off after baking.</p>
+<p><img class="aligncenter size-full wp-image-20345" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20780%201165'%3E%3C/svg%3E" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="1165" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread1-201x300.jpg 201w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread1-686x1024.jpg 686w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread1-768x1147.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread1.jpg 780w" data-lazy-sizes="(max-width: 780px) 100vw, 780px" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread1.jpg" /><noscript><img class="aligncenter size-full wp-image-20345" src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread1.jpg" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="1165" srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread1-201x300.jpg 201w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread1-686x1024.jpg 686w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread1-768x1147.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread1.jpg 780w" sizes="(max-width: 780px) 100vw, 780px" /></noscript></p>
+<p>Your loaf may also come out neater and cleaner if you allow it to rest in the pan for 15-20 minutes after baking before turning it out.</p>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td style="background-color: #99daea; width: 5px;">&nbsp;</td>
+<td style="background-color: #eeeeee; padding: 1.2em; border: 10px; border-color: #ffffff;">You might also like: <a href="https://www.realmomnutrition.com/chocolate-zucchini-bread/">Fudgy Chocolate Zucchini Bread</a></td>
+</tr>
+</tbody>
+</table>
+<p><img class="aligncenter size-full wp-image-20346" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20780%201165'%3E%3C/svg%3E" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="1165" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread4-201x300.jpg 201w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread4-686x1024.jpg 686w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread4-768x1147.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread4.jpg 780w" data-lazy-sizes="(max-width: 780px) 100vw, 780px" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread4.jpg" /><noscript><img class="aligncenter size-full wp-image-20346" src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread4.jpg" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="1165" srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread4-201x300.jpg 201w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread4-686x1024.jpg 686w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread4-768x1147.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread4.jpg 780w" sizes="(max-width: 780px) 100vw, 780px" /></noscript></p>
+<h2>Can I Use This Recipe For Banana Bread Muffins?</h2>
+<p>Yes! To make muffins from this recipe, allow batter to sit for 15 minutes (your muffins will rise up higher). Line a muffin tin with paper liners, or grease and flour compartments well. Bake muffins at 350 degrees F for about 20 minutes or until a toothpick inserted in the center comes out clean.</p>
+<a class="dpsp-click-to-tweet dpsp-style-3 dpsp-click-to-tweet-cta-left dpsp-click-to-tweet-cta-icon-animation" href="https://twitter.com/intent/tweet?text=Whole%20Wheat%20Banana%20Bread%20with%20Chocolate%20Chips%3A&amp;url=https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F&amp;via=RMnutrition">
+<span class="dpsp-click-to-tweet-content">
+Whole Wheat Banana Bread with Chocolate Chips:	</span>
+<span class="dpsp-click-to-tweet-footer">
+<span class="dpsp-click-to-tweet-cta">
+<span>Click to Tweet</span> <i class="dpsp-network-btn dpsp-twitter">
+<span class="dpsp-network-icon">
+<span class="dpsp-network-icon-inner">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 30 32"><path d="M28.928 7.296q-1.184 1.728-2.88 2.976 0 0.256 0 0.736 0 2.336-0.672 4.64t-2.048 4.448-3.296 3.744-4.608 2.624-5.792 0.96q-4.832 0-8.832-2.592 0.608 0.064 1.376 0.064 4.032 0 7.168-2.464-1.888-0.032-3.36-1.152t-2.048-2.848q0.608 0.096 1.088 0.096 0.768 0 1.536-0.192-2.016-0.416-3.328-1.984t-1.312-3.68v-0.064q1.216 0.672 2.624 0.736-1.184-0.8-1.888-2.048t-0.704-2.752q0-1.568 0.8-2.912 2.176 2.656 5.248 4.256t6.656 1.76q-0.16-0.672-0.16-1.312 0-2.4 1.696-4.064t4.064-1.696q2.528 0 4.224 1.824 1.952-0.384 3.68-1.408-0.672 2.048-2.56 3.2 1.664-0.192 3.328-0.896z"></path></svg> </span>
+</span>
+</i>
+</span>
+</span>
+</a>
+<p><img class="aligncenter size-full wp-image-20347" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20780%201165'%3E%3C/svg%3E" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="1165" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread3-201x300.jpg 201w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread3-686x1024.jpg 686w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread3-768x1147.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread3.jpg 780w" data-lazy-sizes="(max-width: 780px) 100vw, 780px" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread3.jpg" /><noscript><img class="aligncenter size-full wp-image-20347" src="https://www.realmomnutrition.com/wp-content/uploads/BananaBread3.jpg" alt="Whole Wheat Banana Bread With Chocolate Chips" width="780" height="1165" srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBread3-201x300.jpg 201w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread3-686x1024.jpg 686w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread3-768x1147.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBread3.jpg 780w" sizes="(max-width: 780px) 100vw, 780px" /></noscript></p>
+<div id="mv-creation-17-jtr-hint-wrapper" class="mv-create-jtr-hint-wrapper">
+<div id="mv-creation-17-jtr" class="mv-pre-create-target">
+<div class="mv-create-jtr-continue" style="display:none"><a href="#mv-creation-17" class="mv-create-jtr mv-create-jtr-link mv-create-jtr-button-uppercase"><svg class="mv-create-jtr-caret" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 444.819 444.819" width="16px" height="16px"><path d="M434.252,114.203l-21.409-21.416c-7.419-7.04-16.084-10.561-25.975-10.561c-10.095,0-18.657,3.521-25.7,10.561 L222.41,231.549L83.653,92.791c-7.042-7.04-15.606-10.561-25.697-10.561c-9.896,0-18.559,3.521-25.979,10.561l-21.128,21.416 C3.615,121.436,0,130.099,0,140.188c0,10.277,3.619,18.842,10.848,25.693l185.864,185.865c6.855,7.23,15.416,10.848,25.697,10.848 c10.088,0,18.75-3.617,25.977-10.848l185.865-185.865c7.043-7.044,10.567-15.608,10.567-25.693 C444.819,130.287,441.295,121.629,434.252,114.203z" /></svg> Continue to Content</a></div> </div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Recipe","name":"Whole Wheat Banana Bread With Chocolate Chips","author":{"@type":"Person","name":"Sally"},"datePublished":"2019-11-10","recipeYield":12,"description":"This moist, sweet banana bread with chocolate chips is made using whole wheat pastry flour. It&#x27;s perfect for breakfast, lunch boxes, and snacks.","image":["https:\/\/www.realmomnutrition.com\/wp-content\/uploads\/BananaBreadSquare-720x720.jpg","https:\/\/www.realmomnutrition.com\/wp-content\/uploads\/BananaBreadSquare-720x540.jpg","https:\/\/www.realmomnutrition.com\/wp-content\/uploads\/BananaBreadSquare.jpg","https:\/\/www.realmomnutrition.com\/wp-content\/uploads\/BananaBreadSquare-720x405.jpg","https:\/\/www.realmomnutrition.com\/wp-content\/uploads\/BananaBreadSquare-735x735.jpg"],"recipeCuisine":"American","prepTime":"PT15M","cookTime":"PT55M","performTime":"PT55M","totalTime":"PT1H10M","recipeIngredient":["3 ripe medium bananas, mashed","2 large eggs","1\/2 cup canola oil","1\/2 cup  unsweetened applesauce","3\/4 cup brown sugar, packed","1 1\/2 cups whole wheat pastry flour","1 teaspoon baking soda","1\/2  teaspoon salt","1\/4  teaspoon  cinnamon","1\/4 teaspoon baking powder","1\/2 cup semi-sweet chocolate chips, divided"],"recipeInstructions":[{"@type":"HowToStep","text":"Butter\/grease and flour a metal baking pan. For extra insurance, cut a piece of parchment to size and place just on the bottom of the pan after greasing and flouring. Heat oven to 350 degrees F.","position":1,"name":"Butter\/grease and flour a metal baking pan. For...","url":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/#mv_create_17_1"},{"@type":"HowToStep","text":"Combine mashed bananas, eggs, canola oil, unsweetened applesauce, and brown sugar in a medium bowl and stir well.","position":2,"name":"Combine mashed bananas, eggs, canola oil, unsweetened applesauce,...","url":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/#mv_create_17_2"},{"@type":"HowToStep","text":"In a separate bowl, combine the flour, baking soda, baking powder, cinnamon, and salt and stir well.","position":3,"name":"In a separate bowl, combine the flour, baking...","url":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/#mv_create_17_3"},{"@type":"HowToStep","text":"Add dry ingredients to wet ingredients and stir until combined (but don't over-mix). Fold in 1\/4 cup of the chips into the batter.","position":4,"name":"Add dry ingredients to wet ingredients and stir...","url":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/#mv_create_17_4"},{"@type":"HowToStep","text":"Pour batter into prepared pan and sprinkle top with remaining 1\/4 cup of chips. Bake on center rack for 50-60 minutes or until a toothpick inserted into the center comes out clean.","position":5,"name":"Pour batter into prepared pan and sprinkle top...","url":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/#mv_create_17_5"},{"@type":"HowToStep","text":"Remove pan from the oven and place on a cooling rack. Let loaf rest in the pan for 15-20 minutes. Invert bread out of pan and set to cool. To store leftovers, store (cooled) bread in a ziplock bag or container with a lid and use within three days--if keeping any longer, refrigerate.","position":6,"name":"Remove pan from the oven and place on...","url":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/#mv_create_17_6"}],"keywords":"chocolate chip,moist,recipe,sweet,whole wheat,","nutrition":{"@type":"NutritionInformation","calories":"52 calories","carbohydrateContent":"35 grams carbohydrates","cholesterolContent":"31 milligrams cholesterol","fatContent":"13 grams fat","fiberContent":"3 grams fiber","proteinContent":"4 grams protein","saturatedFatContent":"2 grams saturated fat","servingSize":"1\/12 of recipe","sodiumContent":"220 milligrams sodium","sugarContent":"20 grams sugar","transFatContent":"0 grams trans fat","unsaturatedFatContent":"10 grams unsaturated fat"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.2","reviewCount":15},"url":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/"}</script> <section id="mv-creation-17" class="mv-create-card mv-create-card-17 mv-recipe-card mv-create-card-style-centered mv-no-js mv-create-center-cards mv-create-has-uppercase mv-create-has-image " style="position: relative;">
+<div class="mv-create-wrapper">
+<header class="mv-create-header">
+<img width="720" height="720" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20720%20720'%3E%3C/svg%3E" class="mv-create-image no_pin ggnoads" data-pin-nopin="true" alt="Whole Wheat Banana Bread With Chocolate Chips" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-150x150.jpg 150w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-200x200.jpg 200w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-300x300.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-320x320.jpg 320w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-480x480.jpg 480w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-500x500.jpg 500w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-720x720.jpg 720w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-735x735.jpg 735w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-768x768.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare.jpg 788w" data-lazy-sizes="(max-width: 720px) 100vw, 720px" data-pin-media="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare.jpg" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-720x720.jpg"><noscript><img width="720" height="720" src="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-720x720.jpg" class="mv-create-image no_pin ggnoads" data-pin-nopin="true" alt="Whole Wheat Banana Bread With Chocolate Chips" srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-150x150.jpg 150w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-200x200.jpg 200w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-300x300.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-320x320.jpg 320w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-480x480.jpg 480w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-500x500.jpg 500w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-720x720.jpg 720w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-735x735.jpg 735w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-768x768.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare.jpg 788w" sizes="(max-width: 720px) 100vw, 720px" data-pin-media="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare.jpg"></noscript><div class="mv-pinterest-btn mv-pinterest-btn-right" data-mv-pinterest-desc="Whole%20Wheat%20Banana%20Bread%20With%20Chocolate%20Chips" data-mv-pinterest-img-src="https%3A%2F%2Fwww.realmomnutrition.com%2Fwp-content%2Fuploads%2FBananaBreadSquare.jpg" data-mv-pinterest-url="https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F"></div>
+<h1 class="mv-create-title mv-create-title-primary">Whole Wheat Banana Bread With Chocolate Chips</h1>
+<div class="mv-create-times mv-create-times-3">
+<div class="mv-create-time mv-create-time-yield">
+<em class="mv-create-time-label mv-create-lowercase mv-create-strong">Yield: </em>
+<span class="mv-create-time-format mv-create-uppercase">12 </span>
+</div>
+<div class="mv-create-time mv-create-time-prep">
+<em class="mv-create-time-label mv-create-lowercase mv-create-strong">Prep Time: </em>
+<span class="mv-create-time-format mv-create-uppercase"><span class="mv-time-part mv-time-minutes">15 minutes</span> </span>
+</div>
+<div class="mv-create-time mv-create-time-active">
+<em class="mv-create-time-label mv-create-lowercase mv-create-strong">Cook Time: </em>
+<span class="mv-create-time-format mv-create-uppercase"><span class="mv-time-part mv-time-minutes">55 minutes</span> </span>
+</div>
+<div class="mv-create-time mv-create-time-total">
+<em class="mv-create-time-label mv-create-lowercase mv-create-strong">Total Time: </em>
+<span class="mv-create-time-format mv-create-uppercase"><span class="mv-time-part mv-time-hours">1 hour</span> <span class="mv-time-part mv-time-minutes">10 minutes</span> </span>
+</div>
+</div>
+<div class="mv-create-description">
+<p>This moist, sweet banana bread with chocolate chips is made using whole wheat pastry flour. It&#x27;s perfect for breakfast, lunch boxes, and snacks.</p>
+</div>
+<div id="mv-create-17" class="mv-create-reviews" data-mv-create-id="17" data-mv-create-rating="4.2" data-mv-create-total-ratings="15" data-mv-rest-url="https://www.realmomnutrition.com/wp-json/"></div>
+
+<form class="mv-create-print-form">
+<button class="mv-create-button mv-create-print-button" data-mv-print="https://www.realmomnutrition.com/wp-json/mv-create/v1/creations/17/print">
+Print </button>
+</form>
+</header>
+<div class="mv-create-target mv-create-primary-unit"><div class="mv_slot_target" data-slot="recipe"></div></div> <div class="mv-create-ingredients">
+<h2 class="mv-create-ingredients-title mv-create-title-secondary">Ingredients</h2>
+<h3></h3>
+<ul>
+<li>
+3 ripe medium bananas, mashed </li>
+<li>
+2 large eggs </li>
+<li>
+1/2 cup canola oil </li>
+<li>
+1/2 cup unsweetened applesauce </li>
+<li>
+3/4 cup brown sugar, packed </li>
+<li>
+1 1/2 cups whole wheat pastry flour </li>
+<li>
+1 teaspoon baking soda </li>
+<li>
+1/2 teaspoon salt </li>
+<li>
+1/4 teaspoon cinnamon </li>
+<li>
+1/4 teaspoon baking powder </li>
+<li>
+1/2 cup semi-sweet chocolate chips, divided </li>
+</ul>
+</div>
+<div class="mv-create-hands-free"></div>
+<div class="mv-create-instructions mv-create-instructions-slot-v2">
+<h2 class="mv-create-instructions-title mv-create-title-secondary">Instructions</h2>
+<ol><li id="mv_create_17_1">Butter/grease and flour a metal baking pan. For extra insurance, cut a piece of parchment to size and place just on the bottom of the pan after greasing and flouring. Heat oven to 350 degrees F. </li><li id="mv_create_17_2">Combine mashed bananas, eggs, canola oil, unsweetened applesauce, and brown sugar in a medium bowl and stir well. </li><li id="mv_create_17_3">In a separate bowl, combine the flour, baking soda, baking powder, cinnamon, and salt and stir well. </li><li id="mv_create_17_4">Add dry ingredients to wet ingredients and stir until combined (but don't over-mix). Fold in 1/4 cup of the chips into the batter. </li><li id="mv_create_17_5">Pour batter into prepared pan and sprinkle top with remaining 1/4 cup of chips. Bake on center rack for 50-60 minutes or until a toothpick inserted into the center comes out clean. </li><li id="mv_create_17_6">Remove pan from the oven and place on a cooling rack. Let loaf rest in the pan for 15-20 minutes. Invert bread out of pan and set to cool. To store leftovers, store (cooled) bread in a ziplock bag or container with a lid and use within three days--if keeping any longer, refrigerate. </li></ol> </div>
+<div class="mv-create-products">
+<h2 class="mv-create-products-title mv-create-title-secondary">Recommended Products</h2>
+<p class="mv-create-affiliate-disclaimer">As an Amazon Associate and member of other affiliate programs, I earn from qualifying purchases.</p>
+<ul class="mv-create-products-list">
+<li class="mv-create-products-listitem">
+<a class="mv-create-products-link" href="https://amzn.to/2NxAeTG" rel="nofollow noopener" target="_blank">
+<div class="mv-create-products-imgwrap" id="img-wrap-86">
+<img class="mv-create-products-img obj-fit no_pin ggnoads" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20240%20240'%3E%3C/svg%3E" alt="Bob&#039;s Red Mill Pastry Flour Whole Wheat" nopin="nopin" height="240" width="240" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/81l5ZiIoj7L._SY445_-200x200.jpg" /><noscript><img class="mv-create-products-img obj-fit no_pin ggnoads" src="https://www.realmomnutrition.com/wp-content/uploads/81l5ZiIoj7L._SY445_-200x200.jpg" alt="Bob&#039;s Red Mill Pastry Flour Whole Wheat" nopin="nopin" height="240" width="240" /></noscript>
+</div>
+<div class="mv-create-products-product-name">
+Bob&#039;s Red Mill Pastry Flour Whole Wheat </div>
+</a>
+</li>
+<li class="mv-create-products-listitem">
+<a class="mv-create-products-link" href="https://amzn.to/2NUxFKu" rel="nofollow noopener" target="_blank">
+<div class="mv-create-products-imgwrap" id="img-wrap-87">
+<img class="mv-create-products-img obj-fit no_pin ggnoads" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20240%20240'%3E%3C/svg%3E" alt="Steel Loaf Pan " nopin="nopin" height="240" width="240" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/81C-kNcKoUL._SX466_-200x200.jpg" /><noscript><img class="mv-create-products-img obj-fit no_pin ggnoads" src="https://www.realmomnutrition.com/wp-content/uploads/81C-kNcKoUL._SX466_-200x200.jpg" alt="Steel Loaf Pan " nopin="nopin" height="240" width="240" /></noscript>
+</div>
+<div class="mv-create-products-product-name">
+Steel Loaf Pan  </div>
+</a>
+</li>
+<li class="mv-create-products-listitem">
+<a class="mv-create-products-link" href="https://amzn.to/2p4jnhV" rel="nofollow noopener" target="_blank">
+<div class="mv-create-products-imgwrap" id="img-wrap-88">
+</div>
+<div class="mv-create-products-product-name">
+Parchment Baking Paper </div>
+</a>
+</li>
+</ul>
+</div>
+<div class="mv-create-nutrition">
+<div class="mv-create-nutrition-box">
+<h6 class="mv-create-nutrition-title mv-create-strong"><span>Nutrition Information:</span></h6>
+<span class="mv-create-nutrition-item mv-create-nutrition-yield"><span class="mv-create-nutrition-label mv-create-uppercase">Yield:</span> 12</span>
+<span class="mv-create-nutrition-item mv-create-nutrition-serving-size"><span class="mv-create-nutrition-label mv-create-uppercase">Serving Size:</span> 1/12 of recipe</span>
+<br><span class="mv-create-nutrition-amount"><em>Amount Per Serving:</em></span>
+<span class="mv-create-nutrition-item mv-create-nutrition-calories"><span class="mv-create-nutrition-label mv-create-uppercase">Calories:</span> 52</span><span class="mv-create-nutrition-item mv-create-nutrition-total-fat"><span class="mv-create-nutrition-label mv-create-uppercase">Total Fat:</span> 13g</span><span class="mv-create-nutrition-item mv-create-nutrition-saturated-fat mv-create-nutrition-indent"><span class="mv-create-nutrition-label mv-create-uppercase">Saturated Fat:</span> 2g</span><span class="mv-create-nutrition-item mv-create-nutrition-trans-fat mv-create-nutrition-indent"><span class="mv-create-nutrition-label mv-create-uppercase">Trans Fat:</span> 0g</span><span class="mv-create-nutrition-item mv-create-nutrition-unsaturated-fat mv-create-nutrition-indent"><span class="mv-create-nutrition-label mv-create-uppercase">Unsaturated Fat:</span> 10g</span><span class="mv-create-nutrition-item mv-create-nutrition-cholesterol"><span class="mv-create-nutrition-label mv-create-uppercase">Cholesterol:</span> 31mg</span><span class="mv-create-nutrition-item mv-create-nutrition-sodium"><span class="mv-create-nutrition-label mv-create-uppercase">Sodium:</span> 220mg</span><span class="mv-create-nutrition-item mv-create-nutrition-carbohydrates"><span class="mv-create-nutrition-label mv-create-uppercase">Carbohydrates:</span> 35g</span><span class="mv-create-nutrition-item mv-create-nutrition-fiber mv-create-nutrition-indent"><span class="mv-create-nutrition-label mv-create-uppercase">Fiber:</span> 3g</span><span class="mv-create-nutrition-item mv-create-nutrition-sugar mv-create-nutrition-indent"><span class="mv-create-nutrition-label mv-create-uppercase">Sugar:</span> 20g</span><span class="mv-create-nutrition-item mv-create-nutrition-protein"><span class="mv-create-nutrition-label mv-create-uppercase">Protein:</span> 4g</span>
+</div>
+</div>
+</div>
+<footer class="mv-create-footer">
+<div class="mv-create-footer-flexbox">
+<div class="mv-create-copy">&copy; Sally</div>
+<div class="mv-create-categories">
+<span class="mv-create-cuisine">
+<strong class="mv-create-uppercase mv-create-strong">
+Cuisine:
+</strong>
+American </span>
+</div>
+<img width="735" height="735" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20735%20735'%3E%3C/svg%3E" alt="" data-pin-description="" class="mv-create-pinterest no_pin ggnoads" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-150x150.jpg 150w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-200x200.jpg 200w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-300x300.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-320x320.jpg 320w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-480x480.jpg 480w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-500x500.jpg 500w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-720x720.jpg 720w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-735x735.jpg 735w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-768x768.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare.jpg 788w" data-lazy-sizes="(max-width: 735px) 100vw, 735px" data-pin-media="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare.jpg" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-735x735.jpg"><noscript><img width="735" height="735" src="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-735x735.jpg" alt="" data-pin-description="" class="mv-create-pinterest no_pin ggnoads" srcset="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-150x150.jpg 150w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-200x200.jpg 200w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-300x300.jpg 300w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-320x320.jpg 320w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-480x480.jpg 480w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-500x500.jpg 500w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-720x720.jpg 720w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-735x735.jpg 735w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare-768x768.jpg 768w, https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare.jpg 788w" sizes="(max-width: 735px) 100vw, 735px" data-pin-media="https://www.realmomnutrition.com/wp-content/uploads/BananaBreadSquare.jpg"></noscript>
+</div>
+</footer>
+</section>
+</div>
+<span id="tve_leads_end_content" style="display: block; visibility: hidden; border: 1px solid transparent;"></span><span class="cp-load-after-post"></span><span style="display:none" class="tl-placeholder-f-type-post_footer"></span></div><div id="dpsp-content-bottom" class="dpsp-content-wrapper dpsp-shape-rectangular dpsp-size-small dpsp-has-spacing dpsp-show-on-mobile dpsp-button-style-1" style="min-height:32px;position:relative">
+<ul class="dpsp-networks-btns-wrapper dpsp-networks-btns-share dpsp-networks-btns-content dpsp-column-3 dpsp-has-button-icon-animation" style="padding:0;margin:0;list-style-type:none">
+<li class="dpsp-network-list-item dpsp-network-list-item-facebook" style="float:left">
+<a rel="nofollow noopener" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F&amp;t=Whole%20Wheat%20Banana%20Bread%20With%20Chocolate%20Chips" class="dpsp-network-btn dpsp-facebook dpsp-first dpsp-has-label" target="_blank" aria-label="Share on Facebook" title="Share on Facebook" style="font-size:14px;padding:0rem;max-height:32px"> <span class="dpsp-network-icon ">
+<span class="dpsp-network-icon-inner"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 18 32"><path d="M17.12 0.224v4.704h-2.784q-1.536 0-2.080 0.64t-0.544 1.92v3.392h5.248l-0.704 5.28h-4.544v13.568h-5.472v-13.568h-4.544v-5.28h4.544v-3.904q0-3.328 1.856-5.152t4.96-1.824q2.624 0 4.064 0.224z"></path></svg></span>
+</span>
+<span class="dpsp-network-label">Share</span></a></li>
+<li class="dpsp-network-list-item dpsp-network-list-item-pinterest" style="float:left">
+<button rel="nofollow noopener" data-href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F&amp;media=https%3A%2F%2Fwww.realmomnutrition.com%2Fwp-content%2Fuploads%2FBananaBreadPIN-1.png&amp;description=This%20easy%20Banana%20Bread%20with%20Chocolate%20Chips%20is%20moist%20and%20sweet.%20Perfect%20for%20breakfast%2C%20snacks%2C%20and%20lunch%20boxes.%20%23realmomnutrition%20%23bananabread%20%23breadrecipe%20%23breakfast%20%23snack" class="dpsp-network-btn dpsp-pinterest dpsp-has-label" aria-label="Save to Pinterest" title="Save to Pinterest" style="font-size:14px;padding:0rem;max-height:32px"> <span class="dpsp-network-icon ">
+<span class="dpsp-network-icon-inner"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 23 32"><path d="M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z"></path></svg></span>
+</span>
+<span class="dpsp-network-label">Pin</span></button></li>
+<li class="dpsp-network-list-item dpsp-network-list-item-twitter" style="float:left">
+<a rel="nofollow noopener" href="https://twitter.com/intent/tweet?text=Whole%20Wheat%20Banana%20Bread%20With%20Chocolate%20Chips&amp;url=https%3A%2F%2Fwww.realmomnutrition.com%2Fbanana-bread-with-chocolate-chips%2F&amp;via=RMnutrition" class="dpsp-network-btn dpsp-twitter dpsp-last dpsp-has-label" target="_blank" aria-label="Share on Twitter" title="Share on Twitter" style="font-size:14px;padding:0rem;max-height:32px"> <span class="dpsp-network-icon ">
+<span class="dpsp-network-icon-inner"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 30 32"><path d="M28.928 7.296q-1.184 1.728-2.88 2.976 0 0.256 0 0.736 0 2.336-0.672 4.64t-2.048 4.448-3.296 3.744-4.608 2.624-5.792 0.96q-4.832 0-8.832-2.592 0.608 0.064 1.376 0.064 4.032 0 7.168-2.464-1.888-0.032-3.36-1.152t-2.048-2.848q0.608 0.096 1.088 0.096 0.768 0 1.536-0.192-2.016-0.416-3.328-1.984t-1.312-3.68v-0.064q1.216 0.672 2.624 0.736-1.184-0.8-1.888-2.048t-0.704-2.752q0-1.568 0.8-2.912 2.176 2.656 5.248 4.256t6.656 1.76q-0.16-0.672-0.16-1.312 0-2.4 1.696-4.064t4.064-1.696q2.528 0 4.224 1.824 1.952-0.384 3.68-1.408-0.672 2.048-2.56 3.2 1.664-0.192 3.328-0.896z"></path></svg></span>
+</span>
+<span class="dpsp-network-label">Tweet</span></a></li>
+</ul></div>
+<div class="entry-meta entry-meta-after-content"><span class="entry-terms entry-terms-category">Category: <a href="https://www.realmomnutrition.com/category/recipes-2/breakfast/" rel="tag">Breakfast</a>, <a href="https://www.realmomnutrition.com/category/recipes-2/" rel="tag">Recipes</a>, <a href="https://www.realmomnutrition.com/category/recipes-2/snacks/" rel="tag">Snacks</a>, <a href="https://www.realmomnutrition.com/category/recipes-2/sweets/" rel="tag">Sweets</a></span><span class="entry-terms entry-terms-post_tag">Tag: <a href="https://www.realmomnutrition.com/tag/banana-bread/" rel="tag">banana bread</a>, <a href="https://www.realmomnutrition.com/tag/breads/" rel="tag">breads</a>, <a href="https://www.realmomnutrition.com/tag/breakfast/" rel="tag">breakfast</a>, <a href="https://www.realmomnutrition.com/tag/recipe/" rel="tag">recipe</a>, <a href="https://www.realmomnutrition.com/tag/recipes/" rel="tag">recipes</a></span></div></div><div class="adjacent-entry-pagination pagination"><div class="pagination-previous"><a href="https://www.realmomnutrition.com/pepperoni-rolls/" rel="prev" class="adjacent-entry-link"><span class="screen-reader-text">Previous Post:</span><span class="adjacent-entry-link-inner"><picture class="adjacent-entry-image">
+<source type="image/webp" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/PepperoniRolls8-80x80.jpg.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2080%2080&#039;%3E%3C/svg%3E" />
+<img width="80" height="80" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2080%2080&#039;%3E%3C/svg%3E" alt="" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/PepperoniRolls8-80x80.jpg" />
+</picture>
+<noscript><picture class="adjacent-entry-image" loading="lazy">
+<source type="image/webp" srcset="https://www.realmomnutrition.com/wp-content/uploads/PepperoniRolls8-80x80.jpg.webp"/>
+<img width="80" height="80" src="https://www.realmomnutrition.com/wp-content/uploads/PepperoniRolls8-80x80.jpg" alt="" loading="lazy"/>
+</picture>
+</noscript>Easy Pepperoni Rolls Recipe Your Family Will Love!</span></a>
+</div><div class="pagination-next"><a href="https://www.realmomnutrition.com/how-to-compost-at-home/" rel="next" class="adjacent-entry-link"><span class="screen-reader-text">Next Post:</span><span class="adjacent-entry-link-inner">Want to Compost At Home? Here&rsquo;s How to Get Started<picture class="adjacent-entry-image">
+<source type="image/webp" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/Composting-5-80x80.jpg.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2080%2080&#039;%3E%3C/svg%3E" />
+<img width="80" height="80" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%2080%2080&#039;%3E%3C/svg%3E" alt="" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/Composting-5-80x80.jpg" />
+</picture>
+<noscript><picture class="adjacent-entry-image" loading="lazy">
+<source type="image/webp" srcset="https://www.realmomnutrition.com/wp-content/uploads/Composting-5-80x80.jpg.webp"/>
+<img width="80" height="80" src="https://www.realmomnutrition.com/wp-content/uploads/Composting-5-80x80.jpg" alt="" loading="lazy"/>
+</picture>
+</noscript></span></a>
+</div></div></article>
+<input type="hidden" name="llc_ajax_url" id="llc_ajax_url" value="https://www.realmomnutrition.com/wp-admin/admin-ajax.php" />
+<input type="hidden" name="llc_post_id" id="llc_post_id" value="20338" />
+<div id="llc_comments">
+<div style="text-align: center;">
+<div id="llc-comments-loader" style="display: none;">
+
+
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="data:image/gif;base64,R0lGODlhNgA3APMJAMfHx6KiopycnO7u7rm5ufDw8Obm5rS0tM7Ozv///wAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAJACwAAAAANgA3AAAEwDDJSau9OOvNu/9gKI5kaZ6lcQjCYaAnws4CApMGTb93uOqsQy8EpA1Bxdnx8wMKl51ckXccEIIDjExnWw4CuuxFhc0AwIDRVUcwnWdpYtEENsqBdJ1oTWuX3ixxIAV1MwUxaDhrBIdQjo+QkZKTlJWWHG+CjpkagDWPnpoVhSyPpAEZp6Z6Wn2grmaJkJyXtba3uLm6u5O0iAGiH6G/gSOqeXZ3SsjLIcNusHuyv8G8kb65z7nH26zZ0d/A1uNHEQAh+QQJCgAJACwHAAYALQAvAAAEsjDJSWsdRAgyrP/gNwRa2YVoOmWlRqhw2LZxbc2lrUts++62AqlV8BgOLgPwwuJ4EDhECEACLBMGnEb59C2R2sNnmANqy7fZ8qz5UEtWIBgndlevWS33moLOpHwwR0mBhYaHiImKiyhvcYwJjpFejG8uZG2MmJsBkJuWG5CgVpKQkwGPpqqrrK2ur7A7pXyzdnC0lGNqV5syu2u/XbdXo413gbWxhsmqxa29z8HNuazMMBEAIfkECQoACQAsBwAHAC8ALgAABLAwyUmrBSEAy7v/EiaMG2ieVDaOaGuqqyt3IjnflVji/DkQpMFJ10sMYCPhpybY3YAr2wcZ6EWjIKr1ylpGnTPo10TsFaiFoqwAJaTV8Lh8Tq/bfYfRwXCncREhGWByBlxJTINweYaLWHWGkFWPkYh2jVcHCWV1hYZ8fRQIf6AWBot7pKmqq6ytYYJwm14riS6VWVdFWriOPLuzUjy3ILLCsK6gxarDq7/Nua3Mq8ouEQAh+QQJCgAJACwHAAcALgAuAAAErjDJSasFIQDLu/8JJowbaJ5TNo5oC6qrK3MiOd+UWOJ83+k+CRBUE+xwxSMHxuoxA69Vk/ckSpWzpGno4wa/4LB4TC6bz+gBgTQQZrDhwVN9Na+lxmoZz4/t+1pld3VeYwVzaBUFdwQFiY+QkZJpByMHBpIIfAhWGj0GfQKYP3U4lX0HHno3oVMWqzOtAh6BN6d8qbRvn6GjiZp4nF+FFAanl2C1kLCPzL+lmbs4EQAh+QQJCgAJACwHAAcALQAwAAAEsTDJSasFIQDLu/+YIG5faVaZKJ6smapt3IWjbFchee+8l/eTH0gl0O1oxc9r1VsGlMRnMzpUGW/I6yWjxXKB4LB4TC6bz+g0S5j+ZdtEJPPsdKadb/Sbrf+q/4CBgoOEhRQDBCMDJXw3A06LM3E9iVEEHnY8UTAdmTubc1tWlJuXPn4dBgciBwYcBZBACJsIr5UEBUAGoAKuaqugB3+8oXTEf8Clf7ugvmqzloKqrM4xEQAh+QQJCgAJACwHAAcALQAvAAAErjDJSasFIQDLu/+YIG5faVaZKJ6smapt3IWjbFchee+8l/eTH0gl0O1oxc9r1VsGlMRnMzpUGW/I6yWjxXKB4LB4TC6bz+g0S5j+ZdtEJPPsdKadb/Sbrf+q/4CBgoMlBgciBwaCCFFJfwaNIoo8fBWHkQeUcR2RMDt2HJ1zNqAWl42ZR5sckJGTqhpVqxYDBIgDYIa3HQNOuIC2UQSBncSRgcGzagW+ggXBBAU3EQAh+QQJCgAJACwFAAcALwAuAAAErTDJSauVIARwu/9dJowcaJ6UNo5oa6qrK4erUM74JN5573u7H0bDA9aKMxHpVQv8YCwQ1OmbmpS2HxZ5CQq9wrB4TC6bzz3DYXQwoGlNxLtiaK7c5+DaLjjkj3wxZlOBUWVTe3Z+Zlt1fHiMRENxcxZqbJCVmpucnZ6WBJieA1MDWpIgoU0EPltSfFVNr3axNamKrUcgBaWnGycFqgQFny5gna6eVsqynsnOqDMRACH5BAUKAAkALAYABwAuAC4AAASyMMlJq00gBHC7/1cmjBxonpM2jmgLqqsrh6tQzpVxjIfxiTfcBFEjCWWG4sp3BH52SsGhWQtWojEhjNXBcnHbgAeqnApFxk4yyjxrrBZiEXGc6Xjtun7P7/v/gCYDBHiBHgNhA4YSToRFBItoNliLYZSGYY5VkVUFiYsYbxIFjgQFoKipqqusra6BTnuxP5t1knBXRXphL7p1vLQruC63JrO2oq+cG6/FrcCs0KvOrccuEQA7"><noscript><img src="data:image/gif;base64,R0lGODlhNgA3APMJAMfHx6KiopycnO7u7rm5ufDw8Obm5rS0tM7Ozv///wAAAAAAAAAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAJACwAAAAANgA3AAAEwDDJSau9OOvNu/9gKI5kaZ6lcQjCYaAnws4CApMGTb93uOqsQy8EpA1Bxdnx8wMKl51ckXccEIIDjExnWw4CuuxFhc0AwIDRVUcwnWdpYtEENsqBdJ1oTWuX3ixxIAV1MwUxaDhrBIdQjo+QkZKTlJWWHG+CjpkagDWPnpoVhSyPpAEZp6Z6Wn2grmaJkJyXtba3uLm6u5O0iAGiH6G/gSOqeXZ3SsjLIcNusHuyv8G8kb65z7nH26zZ0d/A1uNHEQAh+QQJCgAJACwHAAYALQAvAAAEsjDJSWsdRAgyrP/gNwRa2YVoOmWlRqhw2LZxbc2lrUts++62AqlV8BgOLgPwwuJ4EDhECEACLBMGnEb59C2R2sNnmANqy7fZ8qz5UEtWIBgndlevWS33moLOpHwwR0mBhYaHiImKiyhvcYwJjpFejG8uZG2MmJsBkJuWG5CgVpKQkwGPpqqrrK2ur7A7pXyzdnC0lGNqV5syu2u/XbdXo413gbWxhsmqxa29z8HNuazMMBEAIfkECQoACQAsBwAHAC8ALgAABLAwyUmrBSEAy7v/EiaMG2ieVDaOaGuqqyt3IjnflVji/DkQpMFJ10sMYCPhpybY3YAr2wcZ6EWjIKr1ylpGnTPo10TsFaiFoqwAJaTV8Lh8Tq/bfYfRwXCncREhGWByBlxJTINweYaLWHWGkFWPkYh2jVcHCWV1hYZ8fRQIf6AWBot7pKmqq6ytYYJwm14riS6VWVdFWriOPLuzUjy3ILLCsK6gxarDq7/Nua3Mq8ouEQAh+QQJCgAJACwHAAcALgAuAAAErjDJSasFIQDLu/8JJowbaJ5TNo5oC6qrK3MiOd+UWOJ83+k+CRBUE+xwxSMHxuoxA69Vk/ckSpWzpGno4wa/4LB4TC6bz+gBgTQQZrDhwVN9Na+lxmoZz4/t+1pld3VeYwVzaBUFdwQFiY+QkZJpByMHBpIIfAhWGj0GfQKYP3U4lX0HHno3oVMWqzOtAh6BN6d8qbRvn6GjiZp4nF+FFAanl2C1kLCPzL+lmbs4EQAh+QQJCgAJACwHAAcALQAwAAAEsTDJSasFIQDLu/+YIG5faVaZKJ6smapt3IWjbFchee+8l/eTH0gl0O1oxc9r1VsGlMRnMzpUGW/I6yWjxXKB4LB4TC6bz+g0S5j+ZdtEJPPsdKadb/Sbrf+q/4CBgoOEhRQDBCMDJXw3A06LM3E9iVEEHnY8UTAdmTubc1tWlJuXPn4dBgciBwYcBZBACJsIr5UEBUAGoAKuaqugB3+8oXTEf8Clf7ugvmqzloKqrM4xEQAh+QQJCgAJACwHAAcALQAvAAAErjDJSasFIQDLu/+YIG5faVaZKJ6smapt3IWjbFchee+8l/eTH0gl0O1oxc9r1VsGlMRnMzpUGW/I6yWjxXKB4LB4TC6bz+g0S5j+ZdtEJPPsdKadb/Sbrf+q/4CBgoMlBgciBwaCCFFJfwaNIoo8fBWHkQeUcR2RMDt2HJ1zNqAWl42ZR5sckJGTqhpVqxYDBIgDYIa3HQNOuIC2UQSBncSRgcGzagW+ggXBBAU3EQAh+QQJCgAJACwFAAcALwAuAAAErTDJSauVIARwu/9dJowcaJ6UNo5oa6qrK4erUM74JN5573u7H0bDA9aKMxHpVQv8YCwQ1OmbmpS2HxZ5CQq9wrB4TC6bzz3DYXQwoGlNxLtiaK7c5+DaLjjkj3wxZlOBUWVTe3Z+Zlt1fHiMRENxcxZqbJCVmpucnZ6WBJieA1MDWpIgoU0EPltSfFVNr3axNamKrUcgBaWnGycFqgQFny5gna6eVsqynsnOqDMRACH5BAUKAAkALAYABwAuAC4AAASyMMlJq00gBHC7/1cmjBxonpM2jmgLqqsrh6tQzpVxjIfxiTfcBFEjCWWG4sp3BH52SsGhWQtWojEhjNXBcnHbgAeqnApFxk4yyjxrrBZiEXGc6Xjtun7P7/v/gCYDBHiBHgNhA4YSToRFBItoNliLYZSGYY5VkVUFiYsYbxIFjgQFoKipqqusra6BTnuxP5t1knBXRXphL7p1vLQruC63JrO2oq+cG6/FrcCs0KvOrccuEQA7"></noscript> </div>
+
+</div>
+</div></main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar" id="genesis-sidebar-primary"><h2 class="genesis-sidebar-title screen-reader-text">Sidebar</h2><section id="user-profile-2" class="widget user-profile"><div class="widget-wrap"><h3 class="widgettitle widget-title">Hi! I&#8217;m Sally.</h3>
+<p><span class="alignleft"><img alt='' src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20125%20125'%3E%3C/svg%3E" data-lazy-srcset='https://secure.gravatar.com/avatar/dcea8ed14fe4b660e9ae85d6f69de809?s=250&#038;d=blank&#038;r=g 2x' class='avatar avatar-125 photo' height='125' width='125' data-lazy-src="https://secure.gravatar.com/avatar/dcea8ed14fe4b660e9ae85d6f69de809?s=125&#038;d=blank&#038;r=g" /><noscript><img alt='' src='https://secure.gravatar.com/avatar/dcea8ed14fe4b660e9ae85d6f69de809?s=125&#038;d=blank&#038;r=g' srcset='https://secure.gravatar.com/avatar/dcea8ed14fe4b660e9ae85d6f69de809?s=250&#038;d=blank&#038;r=g 2x' class='avatar avatar-125 photo' height='125' width='125' /></noscript></span>I’m a registered dietitian and mom of two, and I believe that every mom can feel successful and confident about feeding her kids, let go of the stress, and enjoy mealtime again. <a class="pagelink" href="https://www.realmomnutrition.com/about-real-mom-nutrition/">Read More…</a></p>
+</div></section>
+<section id="text-47" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><div align="center">
+<p><picture class="aligncenter wp-image-26805 size-full">
+<source type="image/webp" data-lazy-srcset="https://www.realmomnutrition.com/wp-content/uploads/Picky-Eater-Opt-In-Box.png.webp" srcset="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20600%20777&#039;%3E%3C/svg%3E" />
+<img src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20viewBox=&#039;0%200%20600%20777&#039;%3E%3C/svg%3E" alt="Free Printable! 5 Things to Say to Your Picky Eater for a More Peaceful Mealtime" width="600" height="777" data-lazy-src="https://www.realmomnutrition.com/wp-content/uploads/Picky-Eater-Opt-In-Box.png" />
+</picture>
+<noscript><picture class="aligncenter wp-image-26805 size-full">
+<source type="image/webp" srcset="https://www.realmomnutrition.com/wp-content/uploads/Picky-Eater-Opt-In-Box.png.webp"/>
+<img src="https://www.realmomnutrition.com/wp-content/uploads/Picky-Eater-Opt-In-Box.png" alt="Free Printable! 5 Things to Say to Your Picky Eater for a More Peaceful Mealtime" width="600" height="777"/>
+</picture>
+</noscript></p>
+<span class="tve-leads-two-step-trigger tl-2step-trigger-24699"><a class="button">Get it!</a></span>
+</div>
+</div>
+</div></section>
+<section id="search-4" class="widget widget_search"><div class="widget-wrap"><form class="search-form" method="get" action="https://www.realmomnutrition.com/" role="search"><label class="search-form-label screen-reader-text" for="searchform-1">Search this website</label><input class="search-form-input" type="search" name="s" id="searchform-1" placeholder="Search this website"><button class="search-form-submit button-secondary" type="submit" value="Search"><span class="screen-reader-text">Submit search</span><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" class="search-form-submit-icon" width="24" height="24"><path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg></button><meta content="https://www.realmomnutrition.com/?s={s}"></form></div></section>
+</aside></div></div><footer class="site-footer" id="site-footer"><div class="wp-container-2 wp-block-group alignfull has-alt-color has-heading-background-color has-text-color has-background has-dark-background has-xs-padding-top has-xs-padding-bottom"><div class="wp-block-group__inner-container">
+<p class="has-text-align-center has-sm-font-size">Copyright &#x000A9;&nbsp;2022 &middot; <a href="https://www.realmomnutrition.com">Real Mom Nutrition</a> &middot; All Rights Reserved <br> Banner image by&nbsp;<a href="http://www.michelledanielphotography.com/">Michelle Daniel Photography</a><br><a href="https://www.realmomnutrition.com/disclosure/">Disclosure &amp; Privacy Policy</a></p>
+</div></div>
+</footer></div><a href="#mv-creation-17" id="mv-create-screen-reader-text-in-footer" class="mv-create-screen-reader-text">Skip to Recipe</a><script type="rocketlazyloadscript">var screenReaderLink=document.getElementById("mv-create-screen-reader-text-in-footer");document.body.prepend(screenReaderLink)</script><style>.mv-create-screen-reader-text{overflow:hidden;clip:rect(1px,1px,1px,1px);position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;border:0;clip-path:inset(50%)}.mv-create-screen-reader-text:focus{clip:auto!important;z-index:1000000;top:5px;left:5px;width:auto;height:auto;padding:15px 23px 14px;color:#444;background-color:#eee;font-size:1em;line-height:normal;text-decoration:none;clip-path:none}</style><div id="mv-grow-data" data-settings='{&quot;general&quot;:{&quot;contentSelector&quot;:false,&quot;show_count&quot;:{&quot;content&quot;:false,&quot;sidebar&quot;:false,&quot;pop_up&quot;:false,&quot;sticky_bar&quot;:false},&quot;isTrellis&quot;:false},&quot;post&quot;:{&quot;ID&quot;:20338,&quot;categories&quot;:[{&quot;ID&quot;:145},{&quot;ID&quot;:94},{&quot;ID&quot;:147},{&quot;ID&quot;:146}]},&quot;shareCounts&quot;:{&quot;pinterest&quot;:618,&quot;facebook&quot;:253,&quot;twitter&quot;:0},&quot;shouldRun&quot;:true,&quot;buttonSVG&quot;:{&quot;share&quot;:{&quot;height&quot;:32,&quot;width&quot;:26,&quot;paths&quot;:[&quot;M20.8 20.8q1.984 0 3.392 1.376t1.408 3.424q0 1.984-1.408 3.392t-3.392 1.408-3.392-1.408-1.408-3.392q0-0.192 0.032-0.448t0.032-0.384l-8.32-4.992q-1.344 1.024-2.944 1.024-1.984 0-3.392-1.408t-1.408-3.392 1.408-3.392 3.392-1.408q1.728 0 2.944 0.96l8.32-4.992q0-0.128-0.032-0.384t-0.032-0.384q0-1.984 1.408-3.392t3.392-1.408 3.392 1.376 1.408 3.424q0 1.984-1.408 3.392t-3.392 1.408q-1.664 0-2.88-1.024l-8.384 4.992q0.064 0.256 0.064 0.832 0 0.512-0.064 0.768l8.384 4.992q1.152-0.96 2.88-0.96z&quot;]},&quot;facebook&quot;:{&quot;height&quot;:32,&quot;width&quot;:18,&quot;paths&quot;:[&quot;M17.12 0.224v4.704h-2.784q-1.536 0-2.080 0.64t-0.544 1.92v3.392h5.248l-0.704 5.28h-4.544v13.568h-5.472v-13.568h-4.544v-5.28h4.544v-3.904q0-3.328 1.856-5.152t4.96-1.824q2.624 0 4.064 0.224z&quot;]},&quot;pinterest&quot;:{&quot;height&quot;:32,&quot;width&quot;:23,&quot;paths&quot;:[&quot;M0 10.656q0-1.92 0.672-3.616t1.856-2.976 2.72-2.208 3.296-1.408 3.616-0.448q2.816 0 5.248 1.184t3.936 3.456 1.504 5.12q0 1.728-0.32 3.36t-1.088 3.168-1.792 2.656-2.56 1.856-3.392 0.672q-1.216 0-2.4-0.576t-1.728-1.568q-0.16 0.704-0.48 2.016t-0.448 1.696-0.352 1.28-0.48 1.248-0.544 1.12-0.832 1.408-1.12 1.536l-0.224 0.096-0.16-0.192q-0.288-2.816-0.288-3.36 0-1.632 0.384-3.68t1.184-5.152 0.928-3.616q-0.576-1.152-0.576-3.008 0-1.504 0.928-2.784t2.368-1.312q1.088 0 1.696 0.736t0.608 1.824q0 1.184-0.768 3.392t-0.8 3.36q0 1.12 0.8 1.856t1.952 0.736q0.992 0 1.824-0.448t1.408-1.216 0.992-1.696 0.672-1.952 0.352-1.984 0.128-1.792q0-3.072-1.952-4.8t-5.12-1.728q-3.552 0-5.952 2.304t-2.4 5.856q0 0.8 0.224 1.536t0.48 1.152 0.48 0.832 0.224 0.544q0 0.48-0.256 1.28t-0.672 0.8q-0.032 0-0.288-0.032-0.928-0.288-1.632-0.992t-1.088-1.696-0.576-1.92-0.192-1.92z&quot;]},&quot;twitter&quot;:{&quot;height&quot;:32,&quot;width&quot;:30,&quot;paths&quot;:[&quot;M28.928 7.296q-1.184 1.728-2.88 2.976 0 0.256 0 0.736 0 2.336-0.672 4.64t-2.048 4.448-3.296 3.744-4.608 2.624-5.792 0.96q-4.832 0-8.832-2.592 0.608 0.064 1.376 0.064 4.032 0 7.168-2.464-1.888-0.032-3.36-1.152t-2.048-2.848q0.608 0.096 1.088 0.096 0.768 0 1.536-0.192-2.016-0.416-3.328-1.984t-1.312-3.68v-0.064q1.216 0.672 2.624 0.736-1.184-0.8-1.888-2.048t-0.704-2.752q0-1.568 0.8-2.912 2.176 2.656 5.248 4.256t6.656 1.76q-0.16-0.672-0.16-1.312 0-2.4 1.696-4.064t4.064-1.696q2.528 0 4.224 1.824 1.952-0.384 3.68-1.408-0.672 2.048-2.56 3.2 1.664-0.192 3.328-0.896z&quot;]}},&quot;utmParams&quot;:[],&quot;pinterest&quot;:{&quot;pinDescriptionSource&quot;:&quot;image_alt_tag&quot;,&quot;pinDescription&quot;:&quot;This easy Banana Bread with Chocolate Chips is moist and sweet. Perfect for breakfast, snacks, and lunch boxes. #realmomnutrition #bananabread #breadrecipe #breakfast #snack&quot;,&quot;pinTitle&quot;:null,&quot;pinImageURL&quot;:&quot;https:\/\/www.realmomnutrition.com\/wp-content\/uploads\/BananaBreadPIN-1.png&quot;,&quot;pinnableImages&quot;:&quot;all_images&quot;,&quot;postImageHidden&quot;:null,&quot;postImageHiddenMultiple&quot;:null,&quot;lazyLoadCompatibility&quot;:null,&quot;buttonPosition&quot;:&quot;top-left&quot;,&quot;buttonShape&quot;:&quot;rectangular&quot;,&quot;showButtonLabel&quot;:&quot;yes&quot;,&quot;buttonLabelText&quot;:&quot;Save&quot;,&quot;buttonShareBehavior&quot;:&quot;post_image&quot;,&quot;hoverButtonShareBehavior&quot;:&quot;hover_image&quot;,&quot;minimumImageWidth&quot;:&quot;200&quot;,&quot;minimumImageHeight&quot;:&quot;200&quot;,&quot;showImageOverlay&quot;:null,&quot;postTypeDisplay&quot;:null,&quot;imagePinIt&quot;:&quot;0&quot;,&quot;hasContent&quot;:&quot;1&quot;,&quot;shareURL&quot;:&quot;https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/&quot;,&quot;bypassClasses&quot;:[&quot;mv-grow-bypass&quot;,&quot;no_pin&quot;],&quot;bypassDenyClasses&quot;:[&quot;dpsp-post-pinterest-image-hidden-inner&quot;,&quot;mv-create-pinterest&quot;],&quot;ignoreSelectors&quot;:[&quot;.mv-list-img-container&quot;],&quot;hoverButtonIgnoreClasses&quot;:[&quot;lazyloaded&quot;,&quot;lazyload&quot;,&quot;td-animation-stack&quot;,&quot;ezlazyloaded&quot;,&quot;penci-lazy&quot;,&quot;ut-lazy&quot;,&quot;ut-image-loaded&quot;,&quot;ut-animated-image&quot;],&quot;disableIframes&quot;:null},&quot;inlineContentHook&quot;:[&quot;genesis_loop&quot;,&quot;loop_start&quot;]}'></div> <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		function genesisBlocksShare( url, title, w, h ){
+			var left = ( window.innerWidth / 2 )-( w / 2 );
+			var top  = ( window.innerHeight / 2 )-( h / 2 );
+			return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=600, height=600, top='+top+', left='+left);
+		}
+	</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>( $ => {
+	/**
+	 * Displays toast message from storage, it is used when the user is redirected after login
+	 */
+	if ( window.sessionStorage ) {
+		$( window ).on( 'tcb_after_dom_ready', () => {
+			let message = sessionStorage.getItem( 'tcb_toast_message' );
+
+			if ( message ) {
+				tcbToast( sessionStorage.getItem( 'tcb_toast_message' ), false );
+				sessionStorage.removeItem( 'tcb_toast_message' );
+			}
+		} );
+	}
+
+	/**
+	 * Displays toast message
+	 */
+	function tcbToast( message, error, callback ) {
+		/* Also allow "message" objects */
+		if ( typeof message !== 'string' ) {
+			message = message.message || message.error || message.success;
+		}
+		if ( ! error ) {
+			error = false;
+		}
+		TCB_Front.notificationElement.toggle( message, error ? 'error' : 'success', callback );
+	}
+} )( typeof ThriveGlobal === 'undefined' ? jQuery : ThriveGlobal.$j );
+</script><style type="text/css" id="tcb-style-base-tve_notifications-27474" onLoad="typeof window.lightspeedOptimizeStylesheet === 'function' && window.lightspeedOptimizeStylesheet()" class="tcb-lightspeed-style"></style><style type="text/css" id="tve_notification_styles"></style>
+<div class="tvd-toast tve-fe-message" style="display: none">
+<div class="tve-toast-message tve-success-message">
+<div class="tve-toast-icon-container">
+<span class="tve_tick thrv-svg-icon"></span>
+</div>
+<div class="tve-toast-message-container"></div>
+</div>
+</div><style>.wp-container-2 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-2 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-2 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/mediavine-create/client/build/card-centered.1.9.3.css?ver=1.9.3' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/footer.min.css?ver=2.25.3.11920221225' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<link rel='preload' href='https://www.realmomnutrition.com/wp-content/themes/mai-delight/style.css?ver=2.0.1.4920211636' data-rocket-async="style" as="style" onload="this.onload=null;this.rel='stylesheet'" onerror="this.removeAttribute('data-rocket-async')" type='text/css' media='all' />
+<script type='text/javascript' id='convertkit-broadcasts-js-extra'>
+/* <![CDATA[ */
+var convertkit_broadcasts = {"ajax_url":"https:\/\/www.realmomnutrition.com\/wp-admin\/admin-ajax.php","action":"convertkit_broadcasts_render","debug":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-content/plugins/convertkit/resources/frontend/js/broadcasts.js?ver=2.0.1' id='convertkit-broadcasts-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://bitter-feather-2551.ck.page/commerce.js?ver=2.0.1' id='convertkit-commerce-js' defer></script>
+<script type='text/javascript' id='convertkit-js-js-extra'>
+/* <![CDATA[ */
+var convertkit = {"ajaxurl":"https:\/\/www.realmomnutrition.com\/wp-admin\/admin-ajax.php","debug":"","nonce":"2dd0d8a615","subscriber_id":"","tag":"","post_id":"20338"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-content/plugins/convertkit/resources/frontend/js/convertkit.js?ver=2.0.1' id='convertkit-js-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='dpsp-frontend-js-pro-js-before'>
+		var dpsp_pin_button_data = {"pin_description_source":"image_alt_tag","pinterest_pinnable_images":"all_images","pinterest_button_share_behavior":"post_image","button_position":"top_left","button_shape":"rectangular","minimum_image_width":"200","minimum_image_height":"200","show_button_text_label":"yes","button_text_label":"Save","button_share_behavior":"hover_image","pinterest_description":"This easy Banana Bread with Chocolate Chips is moist and sweet. Perfect for breakfast, snacks, and lunch boxes. #realmomnutrition #bananabread #breadrecipe #breakfast #snack","pinterest_image_url":"https:\/\/www.realmomnutrition.com\/wp-content\/uploads\/BananaBreadPIN-1.png"}
+	
+</script>
+<script type='text/javascript' async data-noptimize src='https://www.realmomnutrition.com/wp-content/plugins/social-pug/assets/dist/front-end-pro.2.16.2.js?ver=2.16.2' id='dpsp-frontend-js-pro-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='//www.realmomnutrition.com/wp-content/plugins/thrive-leads/js/frontend.min.js?ver=3.13' id='tve_leads_frontend-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-content/plugins/genesis-blocks/dist/assets/js/dismiss.js?ver=1666024878' id='genesis-blocks-dismiss-js-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/www.realmomnutrition.com","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-includes/js/comment-reply.min.js?ver=6.0.3' id='comment-reply-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.4.0' id='skip-links-js' defer></script>
+<script type='text/javascript' id='tve-dash-frontend-js-extra'>
+/* <![CDATA[ */
+var tve_dash_front = {"ajaxurl":"https:\/\/www.realmomnutrition.com\/wp-admin\/admin-ajax.php","force_ajax_send":"1","is_crawler":"","recaptcha":[],"post_id":"20338"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-content/plugins/thrive-leads/thrive-dashboard/js/dist/frontend.min.js?ver=3.16' id='tve-dash-frontend-js' defer></script>
+<script type='text/javascript' id='mv_create/client.js-js-extra'>
+/* <![CDATA[ */
+var MV_CREATE_SETTINGS = {"__API_ROOT__":"https:\/\/www.realmomnutrition.com\/wp-json\/","__REVIEWS_DIV__":null,"__PROMPT_THRESHOLD__":"5.5","__SUBMIT_THRESHOLD__":"4","__PX_BETWEEN_ADS__":null,"__OPTIONS__":{"reviews_ctas":false,"jtc_enabled":true,"asset_url":"https:\/\/www.realmomnutrition.com\/wp-content\/plugins\/mediavine-create\/","wakeLockEnabled":false}};
+var MV_CREATE_I18N = {"COMMENTS":"Comments","COMMENTS_AND_REVIEWS":"Comments & Reviews","RATING":"Rating","REVIEWS":"Reviews","RATING_SUBMITTED":"Your rating has been submitted. Write a review below (optional).","X_REVIEWS_FOR":"%1$s Reviews for %2$s","X_REVIEW_FOR":"%1$s Review for %2$s","LOADING":"Loading","VIEW_MORE":"View More","NUM_REVIEW":"%s Review","NUM_REVIEWS":"%s Reviews","REVIEW":"Review","NUM_STARS":"%s Stars","STARS":"Stars","STAR":"Star","TITLE":"Title","ANONYMOUS_USER":"Anonymous User","NO_TITLE":"No Title","CONTENT":"Content","NO_RATINGS":"No Ratings","NAME":"Name","EMAIL":"Email","REVIEW_TITLE":"Review Title","REVIEW_CONTENT":"Review","CONSENT":"To submit this review, I consent to the collection of this data.","SUBMIT_REVIEW":"Submit Review","SUBMITTING":"Submitting","UPDATE":"Update Review","THANKS_RATING":"Thanks for the rating!","DID_YOU_MAKE_THIS":"Did you make this? Tell us about it!","LEAVE_REVIEW":"Leave a review","THANKS_REVIEW":"Thanks for the review!","PRINT":"Print","YIELD":"Yield","SERVING_SIZE":"Serving Size","AMOUNT_PER_SERVING":"Amount Per Serving","CUISINE":"Cuisine","PROJECT_TYPE":"Project Type","TYPE":"Type","CATEGORY":"Category","RECOMMENDED_PRODUCTS":"Recommended Products","AFFILIATE_NOTICE":"As an Amazon Associate and member of other affiliate programs, I earn from qualifying purchases.","TOOLS":"Tools","MATERIALS":"Materials","INGREDIENTS":"Ingredients","INSTRUCTIONS":"Instructions","NOTES":"Notes","CALORIES":"Calories","TOTAL_FAT":"Total Fat","SATURATED_FAT":"Saturated Fat","TRANS_FAT":"Trans Fat","UNSATURATED_FAT":"Unsaturated Fat","CHOLESTEROL":"Cholesterol","SODIUM":"Sodium","CARBOHYDRATES":"Carbohydrates","NET_CARBOHYDRATES":"Net Carbohydrates","FIBER":"Fiber","SUGAR":"Sugar","SUGAR_ALCOHOLS":"Sugar Alcohols","PROTEIN":"Protein"};
+/* ]]> */
+</script>
+<script type='text/javascript' async data-noptimize src='https://www.realmomnutrition.com/wp-content/plugins/mediavine-create/client/build/bundle.1.9.3.js?ver=1.9.3' id='mv_create/client.js-js'></script>
+<script type='text/javascript' id='lazy-load-for-comments-js-extra'>
+/* <![CDATA[ */
+var llcstrings = {"loading_error":"Error occurred while loading comments. Please reload this page."};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://www.realmomnutrition.com/wp-content/plugins/lazy-load-for-comments/public/js/llc_scroll.min.js?ver=1.0.10' id='lazy-load-for-comments-js' defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/js/min/global.min.js?ver=2.25.3.11920221225" id="mai-engine-global-js" async="async"></script>
+<script type='text/javascript' id='mai-engine-menus-js-extra'>
+/* <![CDATA[ */
+var maiMenuVars = {"ariaLabel":"Mobile Menu","subMenuToggle":"Sub Menu","disableMicroData":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" src="https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/js/min/menus.min.js?ver=2.25.3.11920221225" id="mai-engine-menus-js" async="async"></script>
+<script type='text/javascript' id='cp-popup-script-js-extra'>
+/* <![CDATA[ */
+var cp_ajax = {"url":"https:\/\/www.realmomnutrition.com\/wp-admin\/admin-ajax.php","ajax_nonce":"353748d27f","assets_url":"https:\/\/www.realmomnutrition.com\/wp-content\/plugins\/convertpro\/assets\/","not_connected_to_mailer":"This form is not connected with any mailer service! Please contact web administrator.","timer_labels":"Years,Months,Weeks,Days,Hours,Minutes,Seconds","timer_labels_singular":"Year,Month,Week,Day,Hour,Minute,Second","image_on_ready":"","cpro_mx_valid":"0","invalid_email_id":"Invalid Email Address!"};
+var cp_pro = {"inactive_time":"60"};
+var cp_pro_url_cookie = {"days":"30"};
+var cp_v2_ab_tests = {"cp_v2_ab_tests_object":[]};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' defer="defer" src='https://www.realmomnutrition.com/wp-content/plugins/convertpro/assets/modules/js/cp-popup.min.js?ver=1.7.4' id='cp-popup-script-js'></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">var tcb_current_post_lists=JSON.parse('[]'); var tcb_post_lists=tcb_post_lists?[...tcb_post_lists,...tcb_current_post_lists]:tcb_current_post_lists;</script><script type="rocketlazyloadscript" data-rocket-type="text/javascript">/*<![CDATA[*/if ( !window.TL_Const ) {var TL_Const={"security":"bf3df0e7f1","ajax_url":"https:\/\/www.realmomnutrition.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":1,"main_group_id":24706,"display_options":{"allowed_post_types":[],"flag_url_match":false},"two_step_ids":["24699"],"custom_post_data":{"http_referrer":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/"},"current_screen":{"screen_type":4,"screen_id":20338},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin","tcb_token","tve_labels","tve_mapping","_api_custom_fields","_sendParams","_autofill"]};} else { window.TL_Front && TL_Front.extendConst && TL_Front.extendConst({"security":"bf3df0e7f1","ajax_url":"https:\/\/www.realmomnutrition.com\/wp-admin\/admin-ajax.php","forms":[],"action_conversion":"tve_leads_ajax_conversion","action_impression":"tve_leads_ajax_impression","ajax_load":1,"main_group_id":24706,"display_options":{"allowed_post_types":[],"flag_url_match":false},"two_step_ids":["24699"],"custom_post_data":{"http_referrer":"https:\/\/www.realmomnutrition.com\/banana-bread-with-chocolate-chips\/"},"current_screen":{"screen_type":4,"screen_id":20338},"ignored_fields":["email","_captcha_size","_captcha_theme","_captcha_type","_submit_option","_use_captcha","g-recaptcha-response","__tcb_lg_fc","__tcb_lg_msg","_state","_form_type","_error_message_option","_back_url","_submit_option","url","_asset_group","_asset_option","mailchimp_optin","tcb_token","tve_labels","tve_mapping","_api_custom_fields","_sendParams","_autofill"]})} /*]]> */</script><span style="display:none" class="tl-placeholder-f-type-two_step_24699"></span>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+
+				jQuery(document).on( "cp_after_form_submit", function( e, element, response
+					, style_slug ) {
+
+					if( false == response.data.error ) {
+
+						if( 'undefined' !== typeof response.data['cfox_data']  ) {
+							var form_data = JSON.parse( response.data['cfox_data']  );
+
+							form_data.overwrite_tags = false;
+
+							if( 'undefined' !== typeof convertfox ) {
+								convertfox.identify( form_data );
+							}
+						}
+					}
+
+				});
+
+
+			</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.realmomnutrition.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>"use strict";function wprRemoveCPCSS(){var preload_stylesheets=document.querySelectorAll('link[data-rocket-async="style"][rel="preload"]');if(preload_stylesheets&&0<preload_stylesheets.length)for(var stylesheet_index=0;stylesheet_index<preload_stylesheets.length;stylesheet_index++){var media=preload_stylesheets[stylesheet_index].getAttribute("media")||"all";if(window.matchMedia(media).matches)return void setTimeout(wprRemoveCPCSS,200)}var elem=document.getElementById("rocket-critical-css");elem&&"remove"in elem&&elem.remove()}window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script><noscript><link rel='stylesheet' id='genesis-blocks-style-css-css'  href='https://www.realmomnutrition.com/wp-content/plugins/genesis-blocks/dist/style-blocks.build.css?ver=1666024878' type='text/css' media='all' /><link rel='stylesheet' id='wp-block-library-css'  href='https://www.realmomnutrition.com/wp-includes/css/dist/block-library/style.min.css?ver=6.0.3' type='text/css' media='all' /><link rel='stylesheet' id='convertkit-broadcasts-css'  href='https://www.realmomnutrition.com/wp-content/plugins/convertkit/resources/frontend/css/broadcasts.css?ver=2.0.1' type='text/css' media='all' /><link rel='stylesheet' id='convertkit-gutenberg-block-product-frontend-css'  href='https://www.realmomnutrition.com/wp-content/plugins/convertkit//resources/frontend/css/product.css?ver=2.0.1' type='text/css' media='all' /><link rel='stylesheet' id='tm_clicktotweet-css'  href='https://www.realmomnutrition.com/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=6.0.3' type='text/css' media='all' /><link rel='stylesheet' id='dpsp-frontend-style-pro-css'  href='https://www.realmomnutrition.com/wp-content/plugins/social-pug/assets/dist/style-frontend-pro.2.16.2.css?ver=2.16.2' type='text/css' media='all' /><link rel='stylesheet' id='tve_leads_forms-css'  href='//www.realmomnutrition.com/wp-content/plugins/thrive-leads/editor-layouts/css/frontend.css?ver=3.13' type='text/css' media='all' /><link rel='stylesheet' id='mai-engine-main-css'  href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/main.min.css?ver=2.25.3.11920221225' type='text/css' media='all' /><link rel='stylesheet' id='mai-engine-header-css'  href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/header.min.css?ver=2.25.3.11920221225' type='text/css' media='all' /><link rel='stylesheet' id='mai-engine-blocks-css'  href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/blocks.min.css?ver=2.25.3.11920221225' type='text/css' media='all' /><link rel='stylesheet' id='mai-engine-utilities-css'  href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/utilities.min.css?ver=2.25.3.11920221225' type='text/css' media='all' /><link rel='stylesheet' id='mai-engine-theme-css'  href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/themes/delight.min.css?ver=2.25.3.11920221225' type='text/css' media='all' /><link rel='stylesheet' id='mai-engine-desktop-css'  href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/desktop.min.css?ver=2.25.3.11920221225' type='text/css' media='only screen and (min-width:1000px)' /><link rel='stylesheet' id='mv-create-card_centered-css'  href='https://www.realmomnutrition.com/wp-content/plugins/mediavine-create/client/build/card-centered.1.9.3.css?ver=1.9.3' type='text/css' media='all' /><link rel='stylesheet' id='mai-engine-footer-css'  href='https://www.realmomnutrition.com/wp-content/plugins/mai-engine/assets/css/footer.min.css?ver=2.25.3.11920221225' type='text/css' media='all' /><link rel='stylesheet' id='mai-delight-css'  href='https://www.realmomnutrition.com/wp-content/themes/mai-delight/style.css?ver=2.0.1.4920211636' type='text/css' media='all' /></noscript></body></html>
