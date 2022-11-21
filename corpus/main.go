@@ -158,6 +158,9 @@ func main() {
 	f.Sync()
 
 	// MAIN MEASURE LIST
+	for k, v := range corpusMeasuresMap {
+		corpusMeasuresMap[k+"."] = v
+	}
 	pl = make(pairList, len(corpusMeasuresMap))
 	i = 0
 	for k := range corpusMeasuresMap {
@@ -182,6 +185,12 @@ func main() {
 	corpusNumbers := strings.Split(string(b), "\n")
 	for v := range corpusFractionNumberMap {
 		corpusNumbers = append(corpusNumbers, v)
+	}
+	for f := 0.0; f < 20; f += 0.05 {
+		corpusNumbers = append(corpusNumbers, fmt.Sprint(f))
+	}
+	for f := 0.0; f < 20; f += 0.1 {
+		corpusNumbers = append(corpusNumbers, fmt.Sprint(f))
 	}
 	for i, c := range corpusNumbers {
 		corpusNumbers[i] = " " + strings.TrimSpace(c) + " "
@@ -313,8 +322,8 @@ type fractionNumber struct {
 }
 
 var corpusFractionNumberMap = map[string]fractionNumber{
-	"½": fractionNumber{"1/2", 1.0 / 2},
-	"¼": fractionNumber{"1/4", 1.0 / 4},
+	"½": {"1/2", 1.0 / 2},
+	"¼": {"1/4", 1.0 / 4},
 	"¾": fractionNumber{"3/4", 3.0 / 4},
 	"⅛": fractionNumber{"1/8", 1.0 / 8},
 	"⅜": fractionNumber{"3/8", 3.0 / 8},

@@ -305,7 +305,7 @@ func getIngredientLinesInHTML(htmlS string) (lineInfos []LineInfo, err error) {
 				// try to capture JSON and if successful, do a hard exit
 				lis, errJSON := extractLinesFromJavascript(c.Data)
 				if errJSON == nil && len(lis) > 2 {
-					log.Tracef("got ingredients from JSON")
+					log.Debug("got ingredients from JSON")
 					*lineInfos = lis
 					done = true
 					return
@@ -427,6 +427,10 @@ func scoreLine(line string) (score int, lineInfo LineInfo) {
 	lineInfo.IngredientsInString = GetIngredientsInString(lineInfo.Line)
 	lineInfo.AmountInString = GetNumbersInString(lineInfo.Line)
 	lineInfo.MeasureInString = GetMeasuresInString(lineInfo.Line)
+	log.Debug(line)
+	log.Debug(lineInfo.Line)
+	log.Debug(lineInfo.AmountInString)
+	log.Debug(lineInfo.MeasureInString)
 	if len(lineInfo.IngredientsInString) == 2 && len(lineInfo.IngredientsInString[1].Word) > len(lineInfo.IngredientsInString[0].Word) {
 		lineInfo.IngredientsInString[0] = lineInfo.IngredientsInString[1]
 	}

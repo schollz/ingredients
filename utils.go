@@ -217,7 +217,7 @@ func SanitizeLine(s string) string {
 	}
 
 	// remove non-alphanumeric
-	reg, _ := regexp.Compile("[^a-zA-Z0-9/]+")
+	reg, _ := regexp.Compile("[^a-zA-Z0-9/.]+")
 	s = reg.ReplaceAllString(s, " ")
 
 	// replace fractions with unicode fractions
