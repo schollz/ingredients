@@ -11,6 +11,7 @@ import (
 	"math"
 	"net/http"
 	"strings"
+	"time"
 
 	"github.com/jinzhu/inflection"
 	log "github.com/schollz/logger"
@@ -139,7 +140,10 @@ func NewFromString(htmlString string) (r *Recipe, err error) {
 
 // NewFromURL generates a new parser from a url
 func NewFromURL(url string) (r *Recipe, err error) {
-	resp, err := http.Get(url)
+	client := http.Client{
+		Timeout:10*time.Second,
+	}
+	resp, err := client.Get(url)
 	if err != nil {
 		return
 	}
