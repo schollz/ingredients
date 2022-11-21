@@ -195,6 +195,9 @@ func (r *Recipe) parseRecipe() (rerr error) {
 		if len(strings.TrimSpace(lineInfo.Line)) < 3 || len(strings.TrimSpace(lineInfo.Line)) > 150 {
 			continue
 		}
+		if strings.Contains(strings.ToLower(lineInfo.Line), "serving size") {
+			continue
+		}
 		if strings.Contains(strings.ToLower(lineInfo.Line), "yield") {
 			continue
 		}
