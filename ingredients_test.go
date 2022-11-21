@@ -41,6 +41,10 @@ type URLIngredients struct {
 var ts = []URLIngredients{
 	//
 	{
+		"https://lifemadesimplebakes.com/banana-chocolate-chip-cookies/",
+		[]string{"1/2 c. butter", "1/4 c. brown sugar", "1/4 c. sugar", "1/2 c. banana", "1 whole egg", "1 tsp. vanilla", "1 1/3 c. flour", "1 tsp. baking powder", "1/2 tsp. salt", "1 c. chocolate chip"},
+	},
+	{
 		"https://www.allrecipes.com/recipe/234172/chocolate-chip-banana-cookies/",
 		[]string{"1/2 cup walnut", "1 cup flour", "1/2 cup whole wheat flour", "1 teaspoon salt", "1/2 teaspoon baking soda", "1/2 cup brown sugar", "1/2 cup sugar", "1 whole egg", "1/2 cup banana", "1 cup oat", "8 ounces chocolate chip"},
 	},
