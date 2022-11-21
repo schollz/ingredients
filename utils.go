@@ -247,14 +247,16 @@ var conversionToCup = map[string]float64{
 	"can":        1.75,
 }
 var ingredientToCups = map[string]float64{
-	"eggs":    0.25,
-	"egg":     0.25,
-	"garlic":  0.0280833,
-	"chicken": 3,
-	"celery":  0.5,
-	"onion":   1,
-	"carrot":  1,
-	"butter":  0.5,
+	"eggs":      0.25,
+	"egg":       0.25,
+	"egg yolks": 0.125,
+	"egg yolk":  0.125,
+	"garlic":    0.0280833,
+	"chicken":   3,
+	"celery":    0.5,
+	"onion":     1,
+	"carrot":    1,
+	"butter":    0.5,
 }
 
 func cupsToOther(cups float64, ingredient string) (amount float64, measure string) {
