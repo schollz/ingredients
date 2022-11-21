@@ -141,7 +141,7 @@ func NewFromString(htmlString string) (r *Recipe, err error) {
 // NewFromURL generates a new parser from a url
 func NewFromURL(url string) (r *Recipe, err error) {
 	client := http.Client{
-		Timeout:10*time.Second,
+		Timeout: 10 * time.Second,
 	}
 	resp, err := client.Get(url)
 	if err != nil {
@@ -193,6 +193,9 @@ func (r *Recipe) parseRecipe() (rerr error) {
 	j := 0
 	for _, lineInfo := range r.Lines {
 		if len(strings.TrimSpace(lineInfo.Line)) < 3 || len(strings.TrimSpace(lineInfo.Line)) > 150 {
+			continue
+		}
+		if strings.Contains(strings.ToLower(lineInfo.Line), "yield") {
 			continue
 		}
 

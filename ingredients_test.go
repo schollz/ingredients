@@ -41,6 +41,10 @@ type URLIngredients struct {
 var ts = []URLIngredients{
 	//
 	{
+		"https://www.kingarthurbaking.com/recipes/simply-perfect-pancakes-recipe",
+		[]string{"2 whole egg", "1 1/4 cups milk", "3 tablespoons vegetable oil", "1 1/2 cups flour", "3/4 teaspoon salt", "2 teaspoons baking powder", "2 tablespoons milk powder"},
+	},
+	{
 		"https://www.truvia.com/recipes/chocolate-chip-banana-cookies",
 		[]string{"1/3 cup butter", "1/4 cup sugar", "1 whole egg", "1/2 cup banana", "1/2 teaspoon vanilla", "1 cup flour", "1 teaspoon baking powder", "1/4 teaspoon salt", "1/8 teaspoon baking soda", "1 cup chocolate chip", "1/3 cup butter", "1/4 cup sugar", "1 whole egg", "1/2 cup banana", "1/2 teaspoon vanilla", "1 cup flour", "1 teaspoon baking powder", "1/4 teaspoon salt", "1/8 teaspoon baking soda", "1 cup chocolate chip"},
 	},
