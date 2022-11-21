@@ -423,14 +423,9 @@ func scoreLine(line string) (score int, lineInfo LineInfo) {
 	lineInfo = LineInfo{}
 	lineInfo.LineOriginal = line
 	lineInfo.Line = SanitizeLine(line)
-
 	lineInfo.IngredientsInString = GetIngredientsInString(lineInfo.Line)
 	lineInfo.AmountInString = GetNumbersInString(lineInfo.Line)
 	lineInfo.MeasureInString = GetMeasuresInString(lineInfo.Line)
-	log.Debug(line)
-	log.Debug(lineInfo.Line)
-	log.Debug(lineInfo.AmountInString)
-	log.Debug(lineInfo.MeasureInString)
 	if len(lineInfo.IngredientsInString) == 2 && len(lineInfo.IngredientsInString[1].Word) > len(lineInfo.IngredientsInString[0].Word) {
 		lineInfo.IngredientsInString[0] = lineInfo.IngredientsInString[1]
 	}
