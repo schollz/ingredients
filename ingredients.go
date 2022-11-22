@@ -315,7 +315,7 @@ func getIngredientLinesInHTML(htmlS string) (lineInfos []LineInfo, err error) {
 				// try to capture JSON and if successful, do a hard exit
 				lis, errJSON := extractLinesFromJavascript(c.Data)
 				if errJSON == nil && len(lis) > 2 {
-					log.Debug("got ingredients from JSON")
+					log.Trace("got ingredients from JSON")
 					*lineInfos = lis
 					done = true
 					return
