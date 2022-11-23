@@ -19,6 +19,14 @@ import (
 	"golang.org/x/net/html/atom"
 )
 
+func init() {
+	inflection.AddSingular("(clove)(s)?$", "${1}")
+	inflection.AddSingular("(potato)(es)?$", "${1}")
+	inflection.AddSingular("(tomato)(es)?$", "${1}")
+	inflection.AddUncountable("molasses")
+	inflection.AddUncountable("bacon")
+}
+
 // Recipe contains the info for the file and the lines
 type Recipe struct {
 	FileName    string       `json:"filename"`

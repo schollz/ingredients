@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<title>Gingerbread Waffle Recipe - Carbon's Golden Malted</title>		
+		<meta name="keywords" content="Carbon's Golden Malted Waffles, pancake recipes, Robby's pancakes, apple and sausage pancakes, breakfast recipes" />
+		<meta name="description" content="Carbon's Golden Malted Waffles and Pancakes - Gingerbread Waffle Recipe">
+		<meta name="author" content="Carbon's Golden Malted Waffles">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- Web Fonts  -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+		<!-- Libs CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="vendor/owl-carousel/owl.carousel.css" media="screen">
+		<link rel="stylesheet" href="vendor/owl-carousel/owl.theme.css" media="screen">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css" media="screen">
+		<link rel="stylesheet" href="vendor/isotope/jquery.isotope.css" media="screen">
+		<link rel="stylesheet" href="vendor/mediaelement/mediaelementplayer.css" media="screen">
+		
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+		<link rel="stylesheet" href="css/theme-animate.css">
+
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" href="css/theme-responsive.css" />
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skins/default.css">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr.js"></script>
+
+		<!--[if IE]>
+			<link rel="stylesheet" href="css/ie.css">
+		<![endif]-->
+
+		<!--[if lte IE 8]>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header">
+				<div class="container">
+					<h1 class="logo">
+						<a href="index.html">
+					
+		<img class="logo-default" alt="Carbon's Golden Malted Waffles and Pancakes" width="150" height="103" data-sticky-width="100" data-sticky-height="68" src="images/CarbonsGoldenMalted.png">
+		<img class="logo-small" alt="Carbon's Golden Malted Waffles and Pancakes" width="73" height="50" src="images/CarbonsGoldenMalted.png">
+	</a>								</h1>	
+				
+					<nav>
+						<ul class="nav nav-pills nav-top">
+							<li>
+								<a href="about-us"><i class="icon icon-angle-right"></i>About Us</a>							</li>
+							<li>
+								<a href="contact-us"><i class="icon icon-angle-right"></i>Contact Us</a>							</li>
+							<li class="phone">
+								<span><i class="icon icon-phone"></i>1.888.596.4040</span>							</li>
+							<ul class="social-icons">
+							<li class="facebook"><a href="https://www.facebook.com/goldenmalted" target="_blank" title="Facebook">Facebook</a></li>
+							<li class="twitter"><a href="https://twitter.com/goldenmalted" target="_blank" title="Twitter">Twitter</a></li>
+							<li class="linkedin"><a href="https://www.linkedin.com/company/503094" target="_blank" title="Linkedin">Linkedin</a></li>
+							<li class="youtube"><a href="https://www.youtube.com/user/CarbonsGoldenMalted" target="_blank" title="YouTube">YouTube</a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/golden_malted/" target="_blank" title="Instagram">Instagram</a></li>
+						</ul>
+						</ul>
+					</nav>
+					<button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+						<i class="icon icon-bars"></i>					</button>
+				</div>
+				<div class="navbar-collapse nav-main-collapse collapse">
+					<div class="container">
+				
+									<nav class="nav-main mega-menu">
+							<ul class="nav nav-pills nav-main" id="mainMenu">
+								<li class="dropdown active">
+									<a class="dropdown-toggle" href="http://www.goldenmalted.com">
+										Home</a>								</li>
+												
+												
+									
+													
+							
+								<li class="dropdown mega-menu-item mega-menu-fullwidth">
+									<a class="dropdown-toggle" href="http://shop.goldenmalted.com">
+										Shop for Home
+										<i class="icon icon-angle-down"></i>									</a>
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Waffle and Pancake Mixes</span>
+																<ul class="sub-menu">
+																	<li><a href="http://shop.goldenmalted.com/Product/GM.20_32OZ/Original_Waffle_Pancake_Mix_-_Our_Most_Popular_Mix.aspx
+">Original</a></li>
+																	<li><a href="http://shop.goldenmalted.com/Product/AW.20_32OZ/Just_Add_Water_Non-GMO_Waffle_Pancake_Mix.aspx
+">Just Add Water</a></li>
+                                                             <!--       <li><a href="https://shop.goldenmalted.com/Product/GM.20_ORG.20_1.2F_16/Organic_Original_Waffle_Pancake_Mix_-_16_oz_Canister.aspx
+">Organic Original</a></li>-->
+                                                                    <li><a href="https://shop.goldenmalted.com/Product/RB.20_1.2F_33/Original_Robby_s_Buttermilk_Pancake_Mix_-_Premium_Classic_Canister.aspx
+">Robby's Pancake Mix</a></li>	<!--<li><a href="http://shop.goldenmalted.com/Product/BLUE.20_32OZ/Blueberry_Waffle_Pancake_Mix.aspx
+">Blueberry</a></li>-->
+                                                                    <li><a href="https://shop.goldenmalted.com/Product/GF.20_32OZ/Gluten_Free_Waffle_Pancake_Mix.aspx
+">Gluten Free</a></li><!--<li><a href="http://shop.goldenmalted.com/Product/PUMP.20_32OZ/Pumpkin_Waffle_Pancake_Mix.aspx"
+>Pumpkin</a></li>-->
+			</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Syrups &amp; Toppings </span>
+																<ul class="sub-menu">
+																	
+																	<li><a href="http://shop.goldenmalted.com/Product/CLASSIC.20_SYRUP.20_12OZ/Classic_Syrup_12oz_Bottle.aspx
+">Classic Syrup</a></li>
+																	<li><a href="http://shop.goldenmalted.com/Product/SF.20_SYRUP.20_12OZ/Sugar_Free_Syrup_12oz_Bottle.aspx
+">Sugar Free Syrup</a></li>
+																	<li><a href="https://shop.goldenmalted.com/Product/PURE.20_RETAIL.20_SYRUP/Golden_Malted_Pure_Maple_Syrup_8oz_Bottle.aspx
+">Pure Maple Syrup</a></li>
+															
+
+																</ul>
+															</li>
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Waffle Bakers &amp; Accessories</span>
+																<ul class="sub-menu">
+																	<li><a href="https://shop.goldenmalted.com/Product/RETAILBAKER/Golden_Malted_Belgian_Waffle_Maker.aspx
+">Golden Malted Belgian Waffle Maker</a></li>
+																	<li><a href="http://shop.goldenmalted.com/Product/132/Premium_Grid_Conditioner.aspx
+">Premium Grid Conditioner</a></li>
+																	
+																</ul>
+															</li>
+
+														</ul>
+													</div>
+													<div class="col-md-3">
+														<ul class="sub-menu">
+															<li>
+																<span class="mega-menu-sub-title">Gift Sets and Value Packs</span>
+																<ul class="sub-menu"><li><a href="http://shop.goldenmalted.com/Product/DELUXE.20_WAFFLE.20_STARTER.20_KIT/Deluxe_Waffle_Starter_Kit.aspx
+">Deluxe Starter Kit</a></li>
+																	<li><a href="http://shop.goldenmalted.com/Product/PREMIER.20_WAFFLE.2F_PANCAKE.20_GIFT/Premier_Waffle_and_Pancake_Gift_Set.aspx
+">Premier Waffle and Pancake Gift Set</a></li>														<!--	<li><a href="http://shop.goldenmalted.com/Product/3.20_MIX.20_VALUE.20_PACK/3_Mix_Value_Pack.aspx
+">3-Mix Value Pack</a></li> -->
+	
+
+                                      
+
+          <li><a href="http://shop.goldenmalted.com/Product/MIX.20_.2F_.20_SYRUP.20_VALUE.20_PACK/Waffle_and_Pancake_Essentials_Value_Pack.aspx
+">Waffle and Pancake Essentials Value Pack</a></li>
+                                                                    
+																	
+																</ul>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								
+								
+						
+								
+								
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="fresh-baked-waffle-program">
+										Waffle Program for Hotels, restaurants &amp; Schools
+										<i class="icon icon-angle-down"></i>									</a>	<ul class="dropdown-menu">
+										<li><a href="food-services-products">Products</a></li>
+                                    
+										<li><a href="https://portal.goldenmalted.com/eSSS/Login.aspx" target="_blank">Pay Invoice</a></li>
+									
+									</ul>
+								</li>
+								
+								
+							
+
+									<li>
+									<a href="recipes">
+										Recipes</a></li>
+                                        
+                                        		<li>
+									<a href="https://goldenmalted.acquiretm.com/home.aspx?client=CarbonsGM">Job Opportunities</a></li>
+										
+							
+								
+									</ul>
+							
+						</nav>
+					</div>
+				</div>
+			</header>
+<div role="main" class="main">
+
+				
+				<section class="page-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<ul class="breadcrumb">
+									<li><a href="http://www.goldenmalted.com">Home</a></li>
+									<li><a href="recipes">Recipes</a></li>
+									<li class="active">Gingerbread Waffles</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<h1>Gingerbread Waffles</h1>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="container">
+					
+				
+
+		
+						<div class="col-md-6">
+							<img src="images/recipes/gingerbread-waffles.png" class="img-rounded img-responsive"></span>
+						  <p class="lead push-top"><a href="javascript:window.print()"><i class="fa fa-print"></i> Print Recipe</a><br>
+				           <a href="http://www.pinterest.com/pin/create/button/?url=http://www.goldenmalted.com/gingerbread-pancake-recipe.html&media=http://www.goldenmalted.com/images/Gingerbread-Waffles-Pinterest.png&description=FEATURED%20RECIPE%20-%20Gingerbread%20Waffles" data-pin-do="buttonBookmark"  data-pin-color="red" data-pin-height="28"><img src="http://assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" /></a></p></div>   
+
+ 
+
+					
+
+						<div class="col-md-3">
+						<h2><strong>Ingredients</strong></h2>
+						<ul class="simple-post-list">
+						  <strong>Gingerbread Waffles</strong>
+						  <li style="margin-top:0; padding-top:0px"><strong></strong></li>
+							<li>2 cups of <a href="http://shop.goldenmalted.com/Product/AW.20_32OZ/Just_Add_Water_Non-GMO_Waffle_Pancake_Mix.aspx" target="_blank">Golden Malted Just Add Water Waffle and Pancake Mix</a></li>
+							<li>4 teaspoons molasses</li>
+							<li>&frac12; teaspoon ground cinnamon</li>
+							<li>1/8 teaspoon ground cloves</li>
+							<li>1-&frac12; cups water</li>
+							<li><a href="https://shop.goldenmalted.com/Product/PURE.20_RETAIL.20_SYRUP/Golden_Malted_Pure_Maple_Syrup_8oz_Bottle.aspx" target="_blank">Anderson's Maple Syrup</a> (optional)</li>
+						</ul>
+</div>
+				  <div class="col-md-3">
+					<h3><strong>Preparation</strong></h3>
+                    <ol>
+                      <li>In a small bowl, combine <a href="http://shop.goldenmalted.com/Product/AW.20_32OZ/Just_Add_Water_Non-GMO_Waffle_Pancake_Mix.aspx" target="_blank">Golden Malted Just Add Water Waffle and Pancake Mix</a>, molasses, cinnamon, ginger and cloves. </li>
+                      <li>Stir in water just until dry ingredients are moistened.</li>
+                      <li>Ladle batter onto hot waffle iron and remove when the outside becomes crispy. We recommend using the <a href="https://shop.goldenmalted.com/Product/RETAILBAKER/Golden_Malted_Belgian_Waffle_Maker.aspx" target="_blank">Golden Malted Belgian Waffle Maker</a> - makes perfect waffles every time</li>
+                      <li>Top with <a href="https://shop.goldenmalted.com/Product/PURE.20_RETAIL.20_SYRUP/Golden_Malted_Pure_Maple_Syrup_8oz_Bottle.aspx" target="_blank">Anderson's Pure Maple Syrup</a> if desired. </li>
+                      <li>Enjoy!</li>
+                    </ol>
+			
+</div></div>
+
+					
+		  </div></div></div></div>
+
+<div class="row">
+						<div class="col-md-12">
+							<section class="call-to-action featured footer">
+				<div class="container">
+					<div class="row">
+						<div class="center">
+							<h3><strong>FREE </strong>3-6 Day Shipping on Retail Orders Over $49! <a href="http://shop.goldenmalted.com" class="btn btn-lg btn-primary" data-appear-animation="bounceIn">Start Shopping Now!</a> <span class="arrow hlb hidden-md hidden-sm hidden-md" data-appear-animation="rotateInUpLeft" style="top: -22px;"></span></h3>
+						</div>
+					</div>
+				</div>
+			</section>
+</div></div>
+<footer id="footer">
+				<div class="container">
+					<div class="row">
+					  <div class="footer-ribbon">
+							<span>Stay in Touch</span>						</div>
+						<div class="col-md-3">
+							<div class="quicklinks">
+								<h4>Quick Links</h4>
+								<nav id="sub-menu">
+									<ul>
+										<li><a href="http://shop.goldenmalted.com">Shop for Home</a></li>
+                                        	<ul>
+                                            <li><a href="http://shop.goldenmalted.com/Category/2_1/Waffle_and_Pancake_Mixes.aspx
+">Waffle and Pancake Mixes</a></li>
+                                            <li><a href="http://shop.goldenmalted.com/Category/6_1/Waffle_Bakers_and_Accessories.aspx
+">Waffle Bakers and Accessories</a></li>
+                                            <li><a href="http://shop.goldenmalted.com/Category/3_1/Gift_Sets_and_Value_Packs.aspx
+">Value Packs and Gift Sets</a></li>
+                                            </ul>
+										<li><a href="https://portal.goldenmalted.com/eSSS/Login.aspx">Shop for Business</a></li>
+                                        	<ul>
+                                            <li><a href="fresh-baked-waffle-program">Waffle Program</a></li>
+                                            <li><a href="food-services-products">Products</a></li>
+                                            <!--<li><a href="https://shop.goldenmalted.com/ordering/Login.aspx">Distributor Login</a></li>-->
+                                            <li><a href="https://portal.goldenmalted.com/eSSS/Login.aspx" target="_blank">Pay Invoice</a></li>
+                                            </ul>
+									
+									</ul>
+								</nav>
+			
+							
+							</div>
+						</div>
+						<div class="col-md-3">
+							<h4>Latest Tweet</h4>
+							<div id="tweet" class="twitter" data-account-id="GoldenMalted">
+								<p>Please wait...</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="contact-details">
+								<h4>Contact Us</h4>
+								<ul class="contact">
+									<li>
+									  <p><i class="icon icon-map-marker"></i> <strong>Address: </strong>4101 William Richardson Drive South Bend, IN 46628 </p>
+									</li>
+									<li>
+									  <p><i class="icon icon-phone"></i> <strong>Phone: </strong>888.596.4040</p>
+									</li>
+									<li><p><i class="icon icon-envelope"></i> <strong>Email:</strong> <a href="mailto:ncdcs@goldenmalted.com">ncdcs@goldenmalted.com</a></p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<h4>Follow Us</h4>
+							<div class="social-icons">
+								<ul class="social-icons">
+									<li class="facebook"><a href="https://www.facebook.com/goldenmalted" target="_blank" data-placement="bottom" rel="tooltip" title="Facebook">Facebook</a></li>
+									<li class="twitter"><a href="https://twitter.com/goldenmalted" target="_blank" data-placement="bottom" rel="tooltip" title="Twitter">Twitter</a></li>
+									<li class="linkedin"><a href="https://www.linkedin.com/company/503094" target="_blank" data-placement="bottom" rel="tooltip" title="Linkedin">Linkedin</a></li>
+									<li class="youtube"><a href="https://www.youtube.com/user/CarbonsGoldenMalted" target="_blank" data-placement="bottom" rel="tooltip" title="YouTube">YouTube</a></li>
+								</ul>
+							</div>
+						</div>
+				</div></div>
+				
+<div class="footer-copyright">
+					<div class="container">
+						<div class="row">
+												
+							<div class="col-md-10">	&copy; Copyright <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script>. All Rights Reserved.
+								<nav id="sub-menu">
+									<ul>
+										<li><a href="contact-us">Contact Us</a></li>
+										<li><a href="faq">FAQs</a></li>
+										<!--<li><a href="https://goldenmalted.acquiretm.com/home.aspx?client=CarbonsGM">Job Opportunities</a></li>-->
+										<li><a href="terms-of-use">Terms of Use</a></li>
+										<li><a href="privacy-policy">Privacy</a></li>
+									</ul>
+								</nav>
+						
+							</div>
+						</div>
+					</div>
+				</div>
+
+		</div>
+			</footer>
+		</div>
+
+		<!-- Libs -->
+		<script src="vendor/jquery.js"></script>
+		<script src="vendor/jquery.appear.js"></script>
+		<script src="vendor/jquery.easing.js"></script>
+		<script src="vendor/jquery.cookie.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.js"></script>
+		<script src="vendor/jquery.validate.js"></script>
+		<script src="vendor/jquery.stellar.js"></script>
+		<script src="vendor/jquery.knob.js"></script>
+		<script src="vendor/jquery.gmap.js"></script>
+		<script src="vendor/twitterjs/twitter.js"></script>
+		<script src="vendor/isotope/jquery.isotope.js"></script>
+		<script src="vendor/owl-carousel/owl.carousel.js"></script>
+		<script src="vendor/jflickrfeed/jflickrfeed.js"></script>
+		<script src="vendor/magnific-popup/magnific-popup.js"></script>
+		<script src="vendor/mediaelement/mediaelement-and-player.js"></script>
+        
+        <!-- Please call pinit.js only once per page -->
+		<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js" data-pin-hover="true"></script>
+		
+		<!-- Theme Initializer -->
+		<script src="js/theme.plugins.js"></script>
+		<script src="js/theme.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="js/custom.js"></script>
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-9369624-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+	</body>
+</html>

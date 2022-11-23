@@ -41,6 +41,14 @@ type URLIngredients struct {
 var ts = []URLIngredients{
 	//
 	{
+		"https://www.goldenmalted.com/gingerbread-waffle-recipe",
+		[]string{"2 cups water", "4 teaspoons molasses", "1/2 teaspoon cinnamon", "1/8 teaspoon clove", "1 1/2 cups water"},
+	},
+	{
+		"https://www.charismashah.com/cache1/2017/8/14/chai-belgian-waffles",
+		[]string{"1 c flour", "1/4 c wheat flour", "1/2 c brown rice", "1 tsp baking powder", "1/2 tsp baking soda", "1/2 tsp salt", "1 1/3 c buttermilk", "3 whole egg", "3 tbs sugar", "1/2 c milk", "2 tsp chai", "1 tsp vanilla", "1/2 cup heath bar"},
+	},
+	{
 		"https://www.kingarthurbaking.com/recipes/simply-perfect-pancakes-recipe",
 		[]string{"2 whole egg", "1 1/4 cups milk", "3 tablespoons vegetable oil", "1 1/2 cups flour", "3/4 teaspoon salt", "2 teaspoons baking powder", "2 tablespoons milk powder"},
 	},
