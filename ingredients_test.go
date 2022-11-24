@@ -41,6 +41,10 @@ type URLIngredients struct {
 var ts = []URLIngredients{
 	//
 	{
+		"https://www.wifemamafoodie.com/cinnamon-rolls/index.html",
+		[]string{"2 1/4 teaspoon yeast", "1 teaspoon salt", "1/3 cup avocado oil", "1/4 cup maple syrup"},
+	},
+	{
 		"https://www.goldenmalted.com/gingerbread-waffle-recipe",
 		[]string{"2 cups water", "4 teaspoons molasses", "1/2 teaspoon cinnamon", "1/8 teaspoon clove", "1 1/2 cups water"},
 	},

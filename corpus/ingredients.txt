@@ -200,7 +200,6 @@ clementine juice
 cocchi americano
 cocktail sausage
 coconut macaroon
-compressed yeast
 cornflake cereal
 cornichon pickle
 cornish game hen
@@ -335,7 +334,6 @@ caramel topping
 cerignola olive
 challah brioche
 champagne grape
-champagne yeast
 charentai melon
 chervil parsley
 chicken carcass
@@ -989,7 +987,6 @@ honey mustard
 inch baguette
 inch tortilla
 instant flour
-instant yeast
 irish whiskey
 italian basil
 italian bread
@@ -1906,7 +1903,6 @@ burger bun
 butter oil
 buttermilk
 cake flour
-cake yeast
 calf liver
 campanelle
 candy cane
