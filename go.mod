@@ -3,7 +3,7 @@ module github.com/schollz/ingredients
 go 1.12
 
 require (
-	github.com/goccy/go-json v0.9.11 // indirect
+	github.com/goccy/go-json v0.9.11
 	github.com/jinzhu/inflection v1.0.0
 	github.com/schollz/logger v1.2.0
 	github.com/schollz/progressbar/v3 v3.7.6
