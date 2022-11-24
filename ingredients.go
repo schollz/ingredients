@@ -5,7 +5,7 @@ package ingredients
 
 import (
 	"bytes"
-	"encoding/json"
+	// "encoding/json"
 	"fmt"
 	"io/ioutil"
 	"math"
@@ -13,6 +13,7 @@ import (
 	"strings"
 	"time"
 
+	json "github.com/goccy/go-json"
 	"github.com/jinzhu/inflection"
 	log "github.com/schollz/logger"
 	"golang.org/x/net/html"

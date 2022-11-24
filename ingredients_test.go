@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path"
+	"runtime/pprof"
 	"strings"
 	"testing"
 
@@ -133,6 +134,31 @@ func TestTable(t *testing.T) {
 			ingredients[i] = fmt.Sprintf("%s %s %s", AmountToString(ing.Measure.Amount), ing.Measure.Name, ing.Name)
 		}
 		assert.Equal(t, t0.Ingredients, ingredients)
+	}
+}
+
+func BenchmarkTable(b *testing.B) {
+	f, perr := os.Create("cpu.pprof")
+	if perr != nil {
+		panic(perr)
+	}
+	pprof.StartCPUProfile(f)
+	defer pprof.StopCPUProfile()
+	for i := 0; i < b.N; i++ {
+		for i, t0 := range ts {
+			log.Info(i, t0.URL)
+			fileToGet := t0.URL
+			fileToGet = strings.TrimPrefix(fileToGet, "https://")
+			if string(fileToGet[len(fileToGet)-1]) == "/" {
+				fileToGet += "index.html"
+			}
+			fileToGet = path.Join("testing", "sites", fileToGet)
+			r, _ := NewFromFile(fileToGet)
+			ingredients := make([]string, len(r.IngredientList().Ingredients))
+			for i, ing := range r.IngredientList().Ingredients {
+				ingredients[i] = fmt.Sprintf("%s %s %s", AmountToString(ing.Measure.Amount), ing.Measure.Name, ing.Name)
+			}
+		}
 	}
 }
 
