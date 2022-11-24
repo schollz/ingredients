@@ -1196,7 +1196,6 @@ butter pecan
 butter sauce
 butterscotch
 calrose rice
-can chickpea
 candied peel
 caraway seed
 cardamom pod
@@ -3843,7 +3842,6 @@ goat cheese
 ice
 kidney beans
 mozzarella cheese
-can cream of chicken soup
 chicken thighs
 tofu
 corn tortillas
